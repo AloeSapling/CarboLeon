@@ -1,0 +1,12 @@
+.leaflet-container {
+  height:100%;
+  width: 100%;
+}
+.mapp {
+  width: 100%;
+  height: 88vh;
+  position: relative;
+  background: #fff;
+  color: #000;
+  z-index: 5;
+}

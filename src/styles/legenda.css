@@ -1,0 +1,43 @@
+.lContainer{
+    border-radius: 30px;
+    width: max-content;
+    height: fit-content;
+    background-color: rgb(235, 235, 235);
+    padding: 15px;
+    opacity: 0.8;
+}
+.inline{
+    display: inline-block;
+}
+.iDiv{
+    aspect-ratio: 1/1;
+    width: 21px;
+    border-radius: 5px;
+    border: 1px black dashed
+}
+.dRed{
+    background-color: #d10035;
+}
+.dVRed{
+    background-color: #890633;
+}
+.dGreen{
+    background-color: #009c7b;
+}
+.dYellow{
+    background-color: #f5e155;
+}
+.dOrange{
+    background-color: #fd9b45;
+}
+.dPurple{
+    background-color: #a571e0;
+}
+.LEContainer{
+    display: flex;
+    align-items: end;
+    margin-bottom: 4px;
+}
+.LEContainer > h3{
+    padding-left: 12px;
+}
