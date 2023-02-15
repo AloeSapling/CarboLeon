@@ -1,0 +1,24 @@
+.THE-section{
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 28px;
+    background-color: white;
+    margin-top: 34px;
+}
+.divV{
+    aspect-ratio: 3.5/1;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.uberC{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.forecast-weather{
+    width: 70vw !important;
+}
