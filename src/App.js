@@ -7,6 +7,7 @@ import { Home, About, Contact, Error, Map } from "./pages";
 const App = () => {
   return (
     <BrowserRouter>
+    {/* lubie placki */}
       <div className="app">
         <Navbar />
           <Routes>
