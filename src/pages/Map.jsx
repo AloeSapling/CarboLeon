@@ -3,8 +3,10 @@ function map() {
     return(
         <>
         <div className="bg-img"></div>
-        <div className="mapp">
-            <MapElem></MapElem>
+        <div className="margin4">
+            <div className="mapp">
+                <MapElem></MapElem>
+            </div>
         </div>
         </>
     )
