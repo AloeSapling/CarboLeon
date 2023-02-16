@@ -110,7 +110,7 @@ const Main = ({ currentData, forecastData, date }) => {
                 <div>
                   <div className="prop-title">
                     <TbTemperature />
-                    <span> Temperatura Odczuwalna</span>
+                    <span>Temperatura Odczuwalna</span>
                   </div>
                   <h3 className="measurement">{Math.round(currentData.main.feels_like)} °C</h3>
                 </div>

@@ -54,7 +54,7 @@ function Home() {
 
   if(currentWeather && forecastWeather) return (
     <div className='body'>
-    <div className="background-img"><h1>CarboLeon<br />Know what YOU BREATHE</h1></div>
+    <div className="background-img"><h1>CarboLeon<br />Wiedz, czym ODDYCHASZ</h1></div>
     <div className="margin2">
       <div className="uberC">
         <div className="container">
@@ -67,7 +67,7 @@ function Home() {
               <FaSearch />
               <input 
               type="text" 
-              placeholder="Type a city name..." 
+              placeholder="Wpisz nazwę miasta..." 
               value={location}
               onChange ={(e) => setLocation(e.target.value)}
               onKeyDown={searchLocation}
@@ -83,7 +83,7 @@ function Home() {
         </div>
         </section>
         <div className="sContainer">
-          <h1>Our Sponsors:</h1>
+          <h1>Nasi Sponsorzy:</h1>
           <div className="sponsors">
             <a href='https://www.e-tronix.eu/'>
               <img src={sponsor}/>
