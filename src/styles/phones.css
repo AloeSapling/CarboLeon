@@ -1,61 +1,9 @@
 @media screen and (max-width: 799px){
-    .asside{
-        width: 60px;
-    }
-    svg {
-        width: 25px;
-        height: 25px;
-      }
-    .container{
-        padding-left: 0px;
-        padding-top: 0;
-        padding-bottom: 0;
-        width: 90vw;
-    }
-    .sponsors{
-        padding-right: 100px;
-    }
-    p{
-        font-size: 15px;
-        padding: 5px;
-        margin: 5px;
-    }
-    .search{
-        width: 55vw;
-        padding-left: 0;
-        margin-left: 0 !important; 
-        padding-top: 1.5vh;
-        padding-right: 0vh !important; 
-        padding-bottom: 1.5vh;
-        padding-left: 0 !important;
-        margin-right: 0 !important;
-        margin-bottom: 50px !important;
-    }
-    /* input{
-        width: 200px;
-    } */
-    .weather-params{
-        width: 50vw;
-    }
-    .current-temp{
-        width: 55vw !important;
-        margin: 0 !important;
-    }
     .reveal-button{
         width: 55vw !important;
     }
     .forecast-weather{
         width: 55vw !important;
-    }
-    .city{
-        font-size: 5vw !important;
-        text-align: center;
-        /* margin-right: 25px !important; */
-        /* transform: translateX(5vw) !important; */
-        line-height: 100px;
-    }
-    .weather-icon{
-        display: none;
     }
     .THE-section .divV{
         height: 400px;
@@ -68,37 +16,12 @@
     .leaflet-control-attribution{
         height: 50px;
     }
-    .title{
-        font-size: 20px !important;
-        margin-bottom: 10px !important;
-    }
     .air-conditions{
         padding-top: 10px !important;
         height: fit-content !important;
-        width: 55vw !important;
-
-        
+        width: 55vw !important;  
     }
-    .details{
-        grid-template-columns: repeat(1, 1fr) !important;
 
-    }
-    /* .detail-icons{
-        display: none;
-    } */ 
-    /* .splide > li div img p{
-        width: 55vw !important;
-        height: 10px !important;
-
-    } */
-    li{
-        width: fit-content !important;
-        
-    }
-    /* .forecast-weather{
-        margin-left: 0;
-        padding-left: 0;
-    } */
     .cTitle{
         font-size: 15px;
     }

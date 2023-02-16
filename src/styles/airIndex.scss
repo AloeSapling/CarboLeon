@@ -1,3 +1,5 @@
+@import "../constants/breakpoints";
+
 .container {
   color: #828282;
   background: rgb(255, 255, 255);
@@ -19,6 +21,11 @@
     border-radius: 30px;
     gap: 50px;
 
+    @include xs {
+      width: 70px;
+      font-size: 15px;
+    }
+
     div {
       cursor: pointer;
       display: flex;
@@ -27,27 +34,32 @@
       flex-direction: column;
       transition: 0.3s;
       gap: 5px;
+      color: #828282;
 
       svg {
         width: 40px;
         height: 40px;
+
+        @include xs {
+          width: 25px;
+          height: 25px;
+        }
       }
       &:hover {
         color: #000;
       }
+      
     }
   }
   .main {
     padding: 0 15px 15px;
     height: 100%;
+    text-align: left;
 
     .search {
-      justify-self: left;
       padding: 1.5vh;
-      overflow: hidden;
       border: none;
       outline: none;
-      margin: 0 auto;
       border-radius: 10px;
       background: #e7e9ee;
       display: flex;
@@ -74,8 +86,9 @@
       .current-temp {
         background-color: #e7e9ee;
         padding: 20px;
+        width: 100%;
         border-radius: 30px;
-        margin: 20px 40px 0 40px;
+        margin: 40px 0 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -85,6 +98,10 @@
           font-size: 2rem;
           font-weight: 600;
           margin: 20px 0 0;
+
+          @include xs {
+            margin: 0;
+          }
         }
 
         .weather-description {
@@ -95,7 +112,12 @@
           font-size: 3rem;
           font-weight: 700;
           color: #000;
-          margin: 40px 0;
+          margin: 40px 0 0 30px;
+
+          @include xs {
+            font-size: 2rem;
+            margin: 0;
+          }
         }
         .weather-icon {
           width: 25%;
@@ -177,6 +199,11 @@
               font-size: 1.1em;
               font-weight: 500;
             }
+          }
+          .measurement {
+            margin-top: 20px;
+            margin-left: 40px;
+            font-size: 30px;
           }
         }
       }

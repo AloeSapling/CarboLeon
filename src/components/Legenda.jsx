@@ -8,15 +8,15 @@ Control.Watermark = Control.extend({
     <div class='lContainer'>
       <div class='LEContainer'>
         <div class='inline iDiv dVRed'></div>
-        <h3 class='inline'>Ekstremalnie Złe<h3/>
+        <h3 class='inline'>Ekstremalnie Słabe<h3/>
       </div>
       <div class='LEContainer'>
         <div class='inline iDiv dPurple'></div>
-        <h3 class='inline'>Bardzo Złe<h3/>
+        <h3 class='inline'>Bardzo Słabe<h3/>
       </div>
       <div class='LEContainer'>
           <div class='inline iDiv dRed'></div>
-          <h3 class='inline'>Złe<h3/>
+          <h3 class='inline'>Słabe<h3/>
       </div>
       <div class='LEContainer'>
         <div class='inline iDiv dOrange'></div>
