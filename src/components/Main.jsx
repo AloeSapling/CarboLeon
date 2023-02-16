@@ -1,44 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { TbWind, TbTemperature } from "react-icons/tb";
 import { WiHumidity, WiBarometer } from "react-icons/wi";
 
 const days = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
+  "Poniedziałek",
+  "Wtorek",
+  "Środa",
+  "Czwartek",
+  "Piątek",
+  "Sobota",
+  "Niedziela",
 ];
 const months = [
-  "December",
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
+  "Grudzień",
+  "Styczeń",
+  "Luty",
+  "Marzec",
+  "Kwiecień",
+  "Maj",
+  "Czerwiec",
+  "Lipiec",
+  "Sierpień",
+  "Październik",
+  "Listopad",
+  "Grudzień",
 ];
 
 const Main = ({ currentData, forecastData, date }) => {
-  console.log(currentData);
-  console.log(forecastData);
-  const [isDropdown, setIsDropdown] = React.useState(false);
-  function Clicky(){
-      if(!isDropdown){
-          setIsDropdown(true)
-      } else{
-          setIsDropdown(false)
-      }
-  }
+  const [isDropdown, setIsDropdown] = useState(false);
+  
   return (
     <div className="weather-params">
       <div className="current-temp">
@@ -63,8 +55,8 @@ const Main = ({ currentData, forecastData, date }) => {
         />
       </div>
       <div>
-        <button onClick={Clicky} className='reveal-button'>
-          <p>Click me to {isDropdown ? "hide" : "reveal"} Details</p>
+        <button onClick={() => setIsDropdown(!isDropdown)} className='reveal-button'>
+          <p>Kliknij mnie żeby {isDropdown ? "zchować" : "rozwinąć"} detale</p>
           <div>
             <p>{isDropdown ? "\u2227" : "\u2228"}</p>
           </div>
@@ -72,37 +64,37 @@ const Main = ({ currentData, forecastData, date }) => {
         <div className={`${isDropdown ? "contain" : ""}`}>
           <div className="noShow">
             <div className="air-conditions">
-              <p className="title">Weather Details</p>
+              <p className="title">Detale Pogodowe</p>
               <div className="details">
                 <div>
                   <div className="prop-title">
                     {/* <WiBarometer  className="detail-icons"/> */}
                     {/* <span>Ciśnienie</span> */}
                   </div>
-                  <h3><WiBarometer  className="detail-icons"/><span>Pressure</span><br/><br/>{Math.round(currentData.main.pressure)} hPa</h3>
+                  <h3><WiBarometer  className="detail-icons"/><span>Ciśnienie</span><br/><br/>{Math.round(currentData.main.pressure)} hPa</h3>
                 </div>
                 <div>
                   <div className="prop-title">
 
                   </div>
-                  <h3><WiHumidity className="detail-icons"/><span>Air Humidity</span><br/><br/>{Math.round(currentData.main.humidity)} %</h3>
+                  <h3><WiHumidity className="detail-icons"/><span>Wilgotność</span><br/><br/>{Math.round(currentData.main.humidity)} %</h3>
                 </div>
                 <div>
                   <div className="prop-title">
 
                   </div>
-                  <h3><TbWind className="detail-icons"/><span>Wind Speed</span><br/><br/>{Math.round(currentData.wind.speed)} m/h</h3>
+                  <h3><TbWind className="detail-icons"/><span>Wiatr</span><br/><br/>{Math.round(currentData.wind.speed)} m/h</h3>
                 </div>
                 <div>
                   <div className="prop-title">
 
                   </div>
-                  <h3><TbTemperature className="detail-icons"/><span> Sensed temperature</span><br/><br/>{Math.round(currentData.main.feels_like)} °C</h3>
+                  <h3><TbTemperature className="detail-icons"/><span>Odczuwalna Temperatura</span><br/><br/>{Math.round(currentData.main.feels_like)} °C</h3>
                 </div>
               </div>
             </div>
             <div className="forecast-weather">
-              <p className="title">Scheduled weather</p>
+              <p className="title">Zapowiadana Pogoda</p>
               <Splide
                 options={{
                   perPage: 4,
@@ -140,3 +132,5 @@ const Main = ({ currentData, forecastData, date }) => {
 };
 
 export default Main;
+
+//twórca John333 

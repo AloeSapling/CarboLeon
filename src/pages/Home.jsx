@@ -54,7 +54,7 @@ function Home() {
 
   if(currentWeather && forecastWeather) return (
     <div className='body'>
-    <div className="background-img"><h1>CarboLeon <br/> Know what YOU BREATHE</h1></div>
+    <div className="background-img"><h1>CarboLeon</h1><h1>Know what YOU BREATHE</h1></div>
     <div className="margin2">
       <div className="uberC">
         <div className="container">
