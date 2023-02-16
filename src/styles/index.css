@@ -82,7 +82,7 @@ body {
 .bg-img{
     width: 100vw;
     height: 12vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('/public/background.jpg') center center;
+    background: green;
     display: flex;
     align-items: center;
     justify-content: center;

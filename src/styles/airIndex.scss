@@ -9,6 +9,7 @@
   grid-template-columns: 0.7fr 5fr;
   width: 90vw;
   gap: 3vw;
+
   .asside {
     height: 100%;
     display: flex;
@@ -26,34 +27,37 @@
       font-size: 15px;
     }
 
-    div {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      transition: 0.3s;
-      gap: 5px;
-      color: #828282;
+    a {
+      text-decoration: none;
 
-      svg {
-        width: 40px;
-        height: 40px;
-
-        @include xs {
-          width: 25px;
-          height: 25px;
+      div {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.3s;
+        gap: 5px;
+        color: #828282;
+  
+        svg {
+          width: 40px;
+          height: 40px;
+  
+          @include xs {
+            width: 25px;
+            height: 25px;
+          }
         }
-      }
-      &:hover {
-        color: #000;
-      }
+        &:hover {
+          color: #000;
+        }
+    }
       
     }
   }
   .main {
     padding: 0 15px 15px;
-    height: 100%;
     text-align: left;
 
     .search {
@@ -127,7 +131,7 @@
         color: #000;
         border-radius: 30px;
         background: #e7e9ee;
-        width: 55vw;
+        width: 75vw;
         padding: 40px 20px;
         display: flex;
         flex-direction: column;

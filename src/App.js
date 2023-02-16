@@ -9,13 +9,13 @@ const App = () => {
     <BrowserRouter>
       <div className="app">
         <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/map" element={<Map />} />
-            <Route path="*" element={ <Error />} /> 
-          </Routes>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/map" element={<Map />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );

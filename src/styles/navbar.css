@@ -42,7 +42,7 @@ nav ul a::after {
     left: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, transparent, #fff);
+    background: linear-gradient(90deg, transparent, var(--text-color));
     transition: width 0.3s;
 }
 

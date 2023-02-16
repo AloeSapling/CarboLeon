@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import sponsor from '../pages/sponsorIMG/Logo-ETRONIX-rgb.png'
+
+import Sponsors from '../components/Sponsors'
 
 function About() {
   const [isDropdown, setIsDropdown] = React.useState(false);
@@ -29,21 +30,8 @@ function About() {
           </main>
         </div>
         <button className='dropdownAbout' onClick={Clicky}> { isDropdown ? 'Hide' : 'Show more'}</button>
-        <section className="sContainer">
-        <h1>Our Sponsors:</h1>
-          <div className="sponsors">
-            <a href='https://www.e-tronix.eu/'>
-              <img src={sponsor} alt="sponsor"/>
-            </a>
-            {/* <a href='https://google.com'>
-              <img src={sponsor} alt="sponsor"/>
-            </a>
-            <a href='https://youtube.com'>
-              <img src={sponsor} alt="sponsor"/>
-            </a> */}
-          </div>
-        </section>
     </div>
+    <Sponsors />
     </>
 
   )

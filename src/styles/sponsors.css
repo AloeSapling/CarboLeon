@@ -1,9 +1,9 @@
 .sponsors{
-    display: grid;
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-items: center;
-    grid-template-columns: repeat(4,1fr);
+    /* grid-template-columns: repeat(4,1fr); */
     gap: 4%;
 }
 .sContainer{

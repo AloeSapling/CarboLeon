@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { FaSearch } from "react-icons/fa";
-import { Main, Asside, Forecast } from "../components";
+import { Main, Asside } from "../components";
+import Sponsors from "../components/Sponsors";
 import { MapElem } from "../components/MapElem"
-import sponsor from "../pages/sponsorIMG/Logo-ETRONIX-rgb.png"
+
 import '../styles/home.css'
 import '../styles/sponsors.css'
 import "../styles/airIndex.scss";
@@ -82,21 +83,8 @@ function Home() {
           <MapElem></MapElem>
         </div>
         </section>
-        <div className="sContainer">
-          <h1>Nasi Sponsorzy:</h1>
-          <div className="sponsors">
-            <a href='https://www.e-tronix.eu/'>
-              <img src={sponsor}/>
-            </a>
-            {/* <a href='https://google.com'>
-              <img src={sponsor}/>
-            </a>
-            <a href='https://youtube.com'>
-              <img src={sponsor}/>
-            </a> */}
-          </div>
-        </div>
     </div>
+    <Sponsors />
     </div>
   )
 }
