@@ -30,13 +30,7 @@ const months = [
 
 const Main = ({ currentData, forecastData, date }) => {
   const [isDropdown, setIsDropdown] = useState(false);
-  function Clicky(){
-      if(!isDropdown){
-          setIsDropdown(true)
-      } else{
-          setIsDropdown(false)
-      }
-  }
+  
   return (
     <div className="weather-params">
       <div className="current-temp">
@@ -61,7 +55,7 @@ const Main = ({ currentData, forecastData, date }) => {
         />
       </div>
       <div>
-        <button onClick={Clicky} className='reveal-button'>
+        <button onClick={() => setIsDropdown(!isDropdown)} className='reveal-button'>
           <p>Kliknij mnie żeby {isDropdown ? "zchować" : "rozwinąć"} detale</p>
           <div>
             <p>{isDropdown ? "\u2227" : "\u2228"}</p>
