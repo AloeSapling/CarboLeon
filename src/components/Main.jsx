@@ -132,3 +132,5 @@ const Main = ({ currentData, forecastData, date }) => {
 };
 
 export default Main;
+
+//twórca John333 
