@@ -30,7 +30,24 @@
     "Sponsors": {
         "1": "Our Sponsors"
     },
-    "Days":{
-        "mon": "Monday"
-    }
+    "Months": [
+        {"mont":"December"},
+        {"mont":"January"}, 
+        {"mont":"February"}, 
+        {"mont":"March"}, 
+        {"mont":"April"}, 
+        {"mont":"May"}, 
+        {"mont":"June"}, 
+        {"mont":"July"}, 
+        {"mont":"August"}, 
+        {"mont":"September"}, 
+        {"mont":"October"}, 
+        {"mont":"November"}, 
+        {"mont":"December"}
+    ]
+
+    
+
+    
+        
 }
