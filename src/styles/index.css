@@ -68,7 +68,6 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('/public/background.jpg') center center;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .background-img h1:nth-child(1) {

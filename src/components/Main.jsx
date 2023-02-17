@@ -76,12 +76,12 @@ const Main = ({ currentData, forecastData, date }) => {
           onClick={() => setIsDropdown(!isDropdown)}
           className="reveal-button"
         >
-          <p>Kliknij mnie żeby {isDropdown ? "zchować" : "rozwinąć"} detale</p>
+          <p>Kliknij, aby {isDropdown ? "zchować" : "rozwinąć"} detale</p>
           <div>
             <p>{isDropdown ? "\u2227" : "\u2228"}</p>
           </div>
         </button>
-        <div className={`${isDropdown ? "contain" : ""}`}>
+        <div className={`contain ${isDropdown ? "show" : ""}`}>
           <div className="noShow">
             <div className="air-conditions">
               <p className="title">Detale pogodowe</p>

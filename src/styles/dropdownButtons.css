@@ -1,29 +1,37 @@
 .reveal-button{
     background-color: #e7e9ee;
-    border-color: transparent;
+    border: none;
     border-radius: 30px;
     overflow: hidden;
     width: 100%;
     display: flex;
-    height: fit-content;
     align-items: center;
 }
-.reveal-button>p{
-    width: 90%;
+
+.reveal-button p {
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
 }
-.reveal-button>div{
+
+.reveal-button> p{
+    flex: 7;
+    padding: 40px;
+    font-size: large;
+    font-weight: 600;
+}
+.reveal-button > div{
     display: flex;
+    padding: 100px 0;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 1/1;
-    width: 10%;
+    flex: 1;
     text-align: center;
     background-color: rgb(196, 196, 209);
 }
-.reveal-button p{
-    font-size: large;
-    font-weight: bold;
-}
+
+
+
 .aboutDropLess{
     height: 250px;
     overflow: hidden;
@@ -39,9 +47,11 @@
     z-index: 400;
     width: fit-content;
 }
-.contain div{
-    display: block;
-}
-.noShow{
+
+.contain {
     display: none;
+}
+
+.contain.show {
+    display: block;
 }

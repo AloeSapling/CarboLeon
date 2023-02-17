@@ -19,7 +19,6 @@ function Home() {
   const [forecastWeather, setForecastWeather] = useState(null)
   const [date, setDate] = useState(null)
   const [location, setLocation] = useState("")
-  const [error, setError] = useState(null)
 
   const baseUrl = "https://api.openweathermap.org/data/2.5";
 
