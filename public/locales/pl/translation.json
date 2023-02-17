@@ -1,0 +1,35 @@
+{
+    "Contact": {
+        "title": "Skontaktuj się z nami",
+        "1": "Mamy różne kontakty i media społecznościowe. Jeśli otrzymałeś jakąkolwiek wiadomość lub prośbę od kontaktu lub mediów społecznościowych, których nie ma na liście, oznacza to, że nie zostały one wysłane przez nas, ale przez osobę, która próbuje się pod nas podszyć.",
+        "2": "Prosimy o szacunek i nie spamowanie żadnych kontaktów",
+        "3": "Nasze serwisy społecznościowe:",
+        "4": "Skontaktuj się z nami na:",
+        "5": "w przypadku zapytań biznesowych:"
+    },
+    "About": {
+        "1": "O nas",
+        "Text": "Carboleon to projekt realizowany przez niewielką, ale ambitną grupę nastolatków w ramach ogólnopolskiej olimpiady „Zwolnieni z Teorii”. Konkurs polega na stworzeniu projektu, którego podstawą jest bycie pomocnym społeczeństwu. Naszym podejściem do tematu konkursu jest strona internetowa, która pomaga w pozyskiwaniu aktualnych informacji o jakości powietrza i atmosferze. Poświęciliśmy się również temu, aby informacje te były dokładne, łatwo dostępne i szczegółowe, a jednocześnie łatwe do zrozumienia. Aby wykonać to trudne zadanie, zdecydowaliśmy się stworzyć stronę internetową z informacjami podzielonymi na 2 kategorie: „indeks powietrza” i „mapa zanieczyszczenia”. \\Indeks powietrza koncentruje się wokół atmosferycznej części naszej strony internetowej, dostarczając danych dotyczących konkretnego miasta na temat aktualnej i nadchodzącej pogody. Możesz wybrać, które miasto pokazuje, wpisując je w pasku wyszukiwania nad wyżej wymienionymi danymi. Istnieje długa lista miast, w których możesz sprawdzić pogodę w czasie rzeczywistym! Jest to możliwe dzięki API, którego używamy o nazwie „openweathermap”.\\W sekcji „mapa zanieczyszczeń” możesz znaleźć (jak sama nazwa wskazuje) mapę, która pokazuje poziomy zanieczyszczeń na określonych obszarach. Zwróć uwagę na użycie słowa „obszary”, a nie miasta, ponieważ miasta, chociaż nie są całkowicie błędnym stwierdzeniem, po prostu nie opisują dokładnie tego, co faktycznie pokazuje mapa. Widzisz, chociaż możesz znaleźć poziomy zanieczyszczenia miasta, najprawdopodobniej znajdziesz wiele znaczników, z których każdy ma swoją własną wartość. Oznacza to, że znajdziesz poziomy zanieczyszczenia nie dla miasta, ale dla określonego obszaru miasta - dzięki temu nasza mapa jest znacznie bardziej precyzyjna. Wspomniane wcześniej „poziomy” mają swoją określoną wartość, w zależności od tego, jak nisko lub jak wysoko mieszczą się w innym, oznaczonym kolorami zakresie. Są to: bardzo źle, bardzo źle, źle, trochę źle, dobrze i bardzo dobrze. Istnieje również menu, które pozwala zmienić sposób wyświetlania mapy. Obejmuje to oglądanie lotnisk, mapę topograficzną i widok satelitarny. Wszystko to jest obsługiwane przez Leaflet i „openstreetmap”.\\Dane, które dostarczamy, pochodzą z ponad 70 krajów. Dzięki informacjom, które dostarczamy, możesz podejmować bardziej przemyślane decyzje dotyczące różnych rzeczy, takich jak: gdzie się przenieść, gdzie podróżować, jakie środki ostrożności należy zachować podczas podróży, a także być na bieżąco z lokalną i globalną sytuacją dotyczącą zanieczyszczenia powietrza i pogody warunki. Możliwość zobaczenia warunków pogodowych, a także zanieczyszczenia innych miejsc w porównaniu z naszym obszarem, pomaga nam lepiej zrozumieć, czy nasza obecna sytuacja jest naprawdę zła. Rozumiemy, że zanieczyszczenie powietrza jest poważnym problemem globalnym i tak go traktujemy. Chociaż Carboleon nie pomaga w podejmowaniu środków ostrożności przed tymi zagrożeniami, może pomóc ci lepiej zrozumieć, jaki poziom środków ostrożności należy podjąć, aby chronić siebie i twoich bliskich. Stając się bardziej świadomymi jakości powietrza w naszych miastach, możemy pozytywnie wpłynąć na świat. Więc dołącz do nas i stwórzmy zdrowsze jutro już dziś! P.S Nie zapomnij sprawdzić naszych kont w mediach społecznościowych, Twoje wsparcie będzie bardzo mile widziane! ",
+        "title": "Dowiedz się czegoś o nas"
+    },
+    "Home": {
+        "title": "Wiedz, czym ODDYCHASZ",
+        "input": "Wpisza nazwę miasta",
+        "part1": "Kliknij mnie żeby",
+        "hide": "schować",
+        "show": "rozwinąć",
+        "part2": "detale",
+        "weatherDet": "Detale pogodowe",
+        "presure": "Ciśnienie",
+        "hum": "Wilgotność",
+        "wind": "wiatr",
+        "sesns": "Wyczuwana temperatura",
+        "Fore": "Zapowiadana pogoda"
+    },
+    "Sponsors": {
+        "1": "Nasi Sponsorzy"
+    },
+    "Days":{
+        "mon": "Poniedziałek"
+    }
+}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { FaSearch } from "react-icons/fa";
 import { Main, Asside } from "../components";
@@ -22,7 +23,7 @@ function Home() {
   const [location, setLocation] = useState("");
 
   const baseUrl = "https://api.openweathermap.org/data/2.5";
-
+  const {t} = useTranslation()
   const setSearchingLocation = (location) => {
     axios
         .get(
@@ -55,7 +56,7 @@ function Home() {
 
   if(currentWeather && forecastWeather) return (
     <div className='body'>
-    <div className="background-img"><h1>CarboLeon<br />Wiedz, czym ODDYCHASZ</h1></div>
+    <div className="background-img"><h1>CarboLeon<br />{t("Home.title")}</h1></div>
     <div className="margin2">
       <div className="uberC">
         <div className="container">
@@ -68,7 +69,7 @@ function Home() {
               <FaSearch />
               <input 
               type="text" 
-              placeholder="Wpisz nazwę miasta..." 
+              placeholder={t("Home.input")} 
               value={location}
               onChange ={(e) => setLocation(e.target.value)}
               onKeyDown={searchLocation}

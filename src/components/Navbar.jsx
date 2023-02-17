@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
 import "../styles/navbar.css";
+import { useTranslation } from "react-i18next";
+
+
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,15 +17,31 @@ const Navbar = () => {
     }
   };
 
+  const {i18n} = useTranslation()
+
+  function handleClick(lang){
+    i18n.changeLanguage(lang)
+    
+  }
+
   window.addEventListener("scroll", changeColor);
 
+
+  
   return (
+
     <nav className={color ? "bg" : ""}>
       <Link to="/" className="full-logo">
         <img src={"logo.png"} alt="logo" className="logo" />
         <p>CarboLeon</p>
       </Link>
       <ul className={isOpen ? "open" : ""}>
+      <button onClick={() => handleClick('en')}> 
+            English
+        </button>
+        <button onClick={() => handleClick('pl')}> 
+            Polish
+        </button>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -47,3 +66,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

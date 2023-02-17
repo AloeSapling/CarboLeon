@@ -3,8 +3,19 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { TbWind, TbTemperature } from "react-icons/tb";
 import { WiHumidity, WiBarometer } from "react-icons/wi";
-
+import { useTranslation } from "react-i18next";
+//January, February, March, April, May, June, July, August, September, October, November, December
+/*
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+*/
 const days = [
+  // `${t("Days.mon")}`,
   "Poniedziałek",
   "Wtorek",
   "Środa",
@@ -28,10 +39,12 @@ const months = [
   "Grudzień",
 ];
 
+
 const Main = ({ currentData, forecastData, date }) => {
+
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
-
+  const {t} = useTranslation()
   const resizeSplideRows = () => {
     if (window.innerWidth > 1500) setSplideRows(4);
     else if (window.innerWidth < 1500 && window.innerWidth > 900)
@@ -76,7 +89,7 @@ const Main = ({ currentData, forecastData, date }) => {
           onClick={() => setIsDropdown(!isDropdown)}
           className="reveal-button"
         >
-          <p>Kliknij mnie żeby {isDropdown ? "zchować" : "rozwinąć"} detale</p>
+          <p>{t("Home.part1")} {isDropdown ? `${t("Home.hide")}` : `${t("Home.show")}`} {t("Home.part2")}</p>
           <div>
             <p>{isDropdown ? "\u2227" : "\u2228"}</p>
           </div>
@@ -84,40 +97,40 @@ const Main = ({ currentData, forecastData, date }) => {
         <div className={`${isDropdown ? "contain" : ""}`}>
           <div className="noShow">
             <div className="air-conditions">
-              <p className="title">Detale pogodowe</p>
+              <p className="title">{t("Home.weatherDet")}</p>
               <div className="details">
                 <div>
                   <div className="prop-title">
                     <WiBarometer />
-                    <span>Ciśnienie</span>
+                    <span>{t("Home.presure")}</span>
                   </div>
                   <h3 className="measurement">{Math.round(currentData.main.pressure)} hPa</h3>
                 </div>
                 <div>
                   <div className="prop-title">
                     <WiHumidity />
-                    <span>Wilgotność</span>
+                    <span>{t("Home.hum")}</span>
                   </div>
                   <h3 className="measurement">{Math.round(currentData.main.humidity)} %</h3>
                 </div>
                 <div>
                   <div className="prop-title">
                     <TbWind />
-                    <span>Wiatr</span>
+                    <span>{t("Home.wind")}</span>
                   </div>
                   <h3 className="measurement">{Math.round(currentData.wind.speed)} m/h</h3>
                 </div>
                 <div>
                   <div className="prop-title">
                     <TbTemperature />
-                    <span>Temperatura Odczuwalna</span>
+                    <span>{t("Home.sens")}</span>
                   </div>
                   <h3 className="measurement">{Math.round(currentData.main.feels_like)} °C</h3>
                 </div>
               </div>
             </div>
             <div className="forecast-weather">
-              <p className="title">Zapowiadana Pogoda</p>
+              <p className="title">{t("Home.Fore")}</p>
               <Splide
                 options={{
                   perPage: splideRows,
