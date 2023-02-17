@@ -107,7 +107,7 @@
 
       .current-temp {
         background-color: #e7e9ee;
-        padding: 20px;
+        padding: 30px;
         width: 100%;
         border-radius: 30px;
         margin-top: 40px ;
@@ -119,13 +119,8 @@
           color: #000;
           font-size: 2rem;
           font-weight: 600;
-          margin: 20px 0 0;
-
-          @include xs {
-            margin: 0;
-          }
         }
-        
+
         .temp {
           font-size: 3rem;
           font-weight: 700;
@@ -145,10 +140,11 @@
         color: #000;
         border-radius: 30px;
         background: #e7e9ee;
-        width: 75vw;
+        width: 77vw;
         padding: 40px 20px;
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
 
         @include breakpoint(950px) {
           width: 73vw;
