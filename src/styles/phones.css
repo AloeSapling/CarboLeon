@@ -1,7 +1,4 @@
-@media screen and (max-width: 799px){
-    .reveal-button{
-        width: 55vw !important;
-    }   
+@media screen and (max-width: 799px){ 
     .THE-section .divV{
         height: 400px;
 
@@ -12,11 +9,6 @@
 
     .leaflet-control-attribution{
         height: 50px;
-    }
-    .air-conditions{
-        padding-top: 10px !important;
-        height: fit-content !important;
-        width: 55vw !important;  
     }
 
     .cTitle{

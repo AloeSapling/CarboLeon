@@ -96,7 +96,7 @@ const Main = ({ currentData, forecastData, date }) => {
             <p>{isDropdown ? "\u2227" : "\u2228"}</p>
           </div>
         </button>
-        <div className={`${isDropdown ? "contain" : ""}`}>
+        <div className={`contain ${isDropdown ? "show" : ""}`}>
           <div className="noShow">
             <div className="air-conditions">
               <p className="title">{t("Home.weatherDet")}</p>
