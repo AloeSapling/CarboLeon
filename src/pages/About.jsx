@@ -3,14 +3,8 @@ import React, { useState } from 'react'
 import Sponsors from '../components/Sponsors'
 
 function About() {
-  const [isDropdown, setIsDropdown] = React.useState(false);
-  function Clicky(){
-      if(!isDropdown){
-          setIsDropdown(true)
-      } else{
-          setIsDropdown(false)
-      }
-  }
+  const [isDropdown, setIsDropdown] = useState(false);
+
   return (
     <>
         <div className="background-img">
@@ -29,7 +23,7 @@ function About() {
           </div>
           </main>
         </div>
-        <button className='dropdownAbout' onClick={Clicky}> { isDropdown ? 'Hide' : 'Show more'}</button>
+        <button className='dropdownAbout' onClick={() => setIsDropdown(!isDropdown)}> { isDropdown ? 'Hide' : 'Show more'}</button>
     </div>
     <Sponsors />
     </>
