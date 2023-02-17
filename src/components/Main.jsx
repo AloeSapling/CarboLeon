@@ -41,6 +41,7 @@ const months = [
 
 
 const Main = ({ currentData, forecastData, date }) => {
+  console.log(date)
 
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
@@ -68,9 +69,10 @@ const Main = ({ currentData, forecastData, date }) => {
             <p className="city">
               {currentData.name}, {currentData.sys.country}
             </p>
-            <p className="weather-description">
-              {currentData.weather[0].description}
-              {days[date.getUTCDate() - 1]}, {date.getUTCDate()}{" "}
+            <p className="weather-description">{currentData.weather[0].description}</p>
+            <p className="time-info">
+              {days[date.getDay() - 1]}
+              , {date.getUTCDate()}{" "}
               {months[date.getMonth() + 1]}{" "}
             </p>
             <p></p>
@@ -94,7 +96,7 @@ const Main = ({ currentData, forecastData, date }) => {
             <p>{isDropdown ? "\u2227" : "\u2228"}</p>
           </div>
         </button>
-        <div className={`${isDropdown ? "contain" : ""}`}>
+        <div className={`contain ${isDropdown ? "show" : ""}`}>
           <div className="noShow">
             <div className="air-conditions">
               <p className="title">{t("Home.weatherDet")}</p>

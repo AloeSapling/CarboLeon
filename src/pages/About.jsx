@@ -31,7 +31,7 @@ function About() {
           </div>
           </main>
         </div>
-        <button className='dropdownAbout' onClick={Clicky}> { isDropdown ? 'Hide' : 'Show more'}</button>
+        <button className='dropdownAbout' onClick={() => setIsDropdown(!isDropdown)}> { isDropdown ? 'Hide' : 'Show more'}</button>
     </div>
     <Sponsors />
     </>
