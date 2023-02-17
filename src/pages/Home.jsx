@@ -73,7 +73,7 @@ function Home() {
     setSearchingLocation("Kraków");
   }, []);
 
-  if (currentWeather && forecastWeather)
+  if (currentWeather && forecastWeather && date)
     return (
       <div className="body">
         <div className="background-img">
