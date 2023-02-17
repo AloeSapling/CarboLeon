@@ -15,10 +15,11 @@ import "../styles/dropdownButtons.css";
 import "../styles/legenda.css";
 
 function Home() {
-  const [currentWeather, setCurrentWeather] = useState(null);
-  const [forecastWeather, setForecastWeather] = useState(null);
-  const [date, setDate] = useState(null);
-  const [location, setLocation] = useState("");
+  const [currentWeather, setCurrentWeather] = useState(null)
+  const [forecastWeather, setForecastWeather] = useState(null)
+  const [date, setDate] = useState(null)
+  const [location, setLocation] = useState("")
+  const [error, setError] = useState(null)
 
   const baseUrl = "https://api.openweathermap.org/data/2.5";
 
@@ -26,20 +27,39 @@ function Home() {
     fetch(
       `${baseUrl}/weather?q=${location}&units=metric&lang=pl&appid=${process.env.REACT_APP_API_KEY}`
     )
-      .then((res) => res.json())
       .then((res) => {
-        setCurrentWeather(res.data);
-      });
+        if (!res.ok) {
+          console.log('fail');
+        }
+        else {
+          console.log('success');
+          return res.json();        
+        }
+      })
+      .then((data) => {
+        setCurrentWeather(data);
+      })
+      .catch(err => {
+        console.log(err)
+      })
     fetch(
       `${baseUrl}/forecast?q=${location}&units=metric&lang=pl&appid=${process.env.REACT_APP_API_KEY}`
     )
-      .then((res) => res.json())
       .then((res) => {
-        setForecastWeather(res.data.list);
+        if (!res.ok) {
+          console.log('fail');
+        }
+        else {
+          console.log('success');
+          return res.json();        
+        }
       })
-      .catch(e => {
-        
-      });
+      .then((data) => {
+        setForecastWeather(data.list);
+      })
+      .catch(err => {
+        console.log(err)
+      })
     setDate(new Date());
     setLocation("");
   };
