@@ -29,11 +29,11 @@ const Navbar = () => {
         <p>CarboLeon</p>
       </Link>
       <ul className={isOpen ? "open" : ""}>
-        <button className="langBtn" onClick={() => handleClick("en")}>
-          <img className="langimg" src={"flags/uk.png"} />
+      <button className="langBtn" onClick={() => handleClick('en')}> 
+            <img className="langimg" src="flags/uk.png"/>
         </button>
-        <button className="langBtn" onClick={() => handleClick("pl")}>
-          <img className="langimg" src={"flags/Poland.png"} />
+        <button className="langBtn" onClick={() => handleClick('pl')}> 
+            <img className="langimg" src="flags/poland.png"/>
         </button>
         <li>
           <Link to="/">Home</Link>
