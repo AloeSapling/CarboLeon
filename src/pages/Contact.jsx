@@ -1,22 +1,29 @@
+import { useTranslation } from "react-i18next";
 import React from 'react'
 import YTQR from './qrCodes/YTQR.png'
 import TTQR from './qrCodes/TTQR.png'
 import FBQR from './qrCodes/FBQR.png'
 import IGQR from './qrCodes/IGQR.png'
 
+
+
+
 function Contact() {
+
+ const {t} = useTranslation()
+
   return (
     <>
         <div className="background-img">
-    <h1>Contact us</h1>
+    <h1>{t("Contact.title")}</h1>
   </div>
   <div className='margin2'>
     <div className='tContainer'>
-      <h1 className='cTitle'>We have various contacts and social medias. If you have recieved any message or request from a contact or social media that isn't listed here, then it wasn't sent by us but by a person who is attempting to impersonate us.</h1>
-      <h1 className='cTitle'>Please be respectful and do not spam any of our contacts.</h1>
+      <h1 className='cTitle'>{t("Contact.1")}</h1>
+      <h1 className='cTitle'>{t("Contact.2")}</h1>
     </div>
     <div className='socials'>
-      <div className='iSocial blankus'> <h1>Our socials:</h1> </div>
+      <div className='iSocial blankus'> <h1>{t("Contact.3")}</h1> </div>
     </div>
     <div className='socials'>
         <a href='https://www.instagram.com/carbo_leon333/' target='_blank' rel='noreferer'>
@@ -53,11 +60,11 @@ function Contact() {
         </a>
     </div>
     <div className='socials'>
-      <div className='iSocial blankus'> <h1>Contact us at:</h1> </div>
+      <div className='iSocial blankus'> <h1>{t("Contact.4")}</h1> </div>
     </div>
         <div className='socials'>
           <div className='iSocial blanku contact'>
-            <p>for business inquiries:</p>carbo.leon333@gmail.com</div>
+            <p>{t("Contact.5")}</p>carbo.leon333@gmail.com</div>
         </div>
   </div>
     </>
@@ -66,3 +73,4 @@ function Contact() {
 }
 
 export default Contact
+
