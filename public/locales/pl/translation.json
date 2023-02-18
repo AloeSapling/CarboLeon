@@ -43,5 +43,13 @@
         {"mont":"Październik"}, 
         {"mont":"Listopad"}, 
         {"mont":"Grudzień"}
-    ]
+    ],
+    "apiLang": {
+        "lang": "pl"
+    },
+    "asside": {
+        "about": "O Nas",
+        "consup": "Pomoc i Kontakt",
+        "map": "Mapa"
+    }
 }

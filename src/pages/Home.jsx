@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import axios from "axios";
 import { FaSearch } from "react-icons/fa";
 import { Main, Asside } from "../components";
 import Sponsors from "../components/Sponsors";

@@ -3,15 +3,17 @@ nav.bg {
     --text-color: rgb(18, 179, 18);  
 }
 .langBtn{
-
-    height: 50px;
+    width: 5vh;
+    height: 5vh;
     padding: 0;
     border: none;
     border-radius: 100px;
-    width: 50px;
+    cursor: pointer;
 }
+
 .langimg{
-    width: 50px;
+    width: 100%;
+    height: 100%;
 }
 nav {
     display: flex;
@@ -34,6 +36,7 @@ nav ul {
     display: flex;
     flex: 1.3;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul a {

@@ -115,6 +115,10 @@
         align-items: center;
         justify-content: space-between;
 
+        @include md {
+          flex-direction: column;
+        }
+
         .city {
           color: #000;
           font-size: 2rem;
@@ -133,7 +137,11 @@
           }
         }
         .weather-icon {
-          width: 25%;
+          width: 40%;
+
+          @include md {
+            width: 90%;
+          }
         }
       }
       .forecast-weather {
@@ -187,6 +195,7 @@
               font-weight: 500;
               color: #828282;
               font-size: 1.1em;
+              margin-bottom: 35px;
             }
 
             .temp {

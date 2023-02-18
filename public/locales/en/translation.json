@@ -44,10 +44,13 @@
         {"mont":"October"}, 
         {"mont":"November"}, 
         {"mont":"December"}
-    ]
-
-    
-
-    
-        
+    ],
+    "apiLang": {
+        "lang": "en"
+    },
+    "asside": {
+        "about": "About",
+        "consup": "Contact and Support",
+        "map": "Map"
+    }   
 }
