@@ -3,9 +3,12 @@ nav.bg {
     --text-color: rgb(18, 179, 18);  
 }
 .langBtn{
-    width: fit-content;
-    height: auto;
+
+    height: 50px;
+    padding: 0;
     border: none;
+    border-radius: 100px;
+    width: 50px;
 }
 .langimg{
     width: 50px;
