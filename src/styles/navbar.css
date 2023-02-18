@@ -5,6 +5,7 @@ nav.bg {
 .langBtn{
     width: fit-content;
     height: auto;
+    border: none;
 }
 .langimg{
     width: 50px;
