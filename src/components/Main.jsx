@@ -41,8 +41,7 @@ const months = [
 
 
 const Main = ({ currentData, forecastData, date }) => {
-  console.log(date)
-
+  console.log(date);
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
   const {t} = useTranslation()
@@ -69,10 +68,11 @@ const Main = ({ currentData, forecastData, date }) => {
             <p className="city">
               {currentData.name}, {currentData.sys.country}
             </p>
-            <p className="weather-description">{currentData.weather[0].description}</p>
+            <p className="weather-description">
+              {currentData.weather[0].description}
+            </p>
             <p className="time-info">
-              {days[date.getDay() - 1]}
-              , {date.getUTCDate()}{" "}
+              {days[date.getDay() - 1]}, {date.getUTCDate()}{" "}
               {months[date.getMonth() + 1]}{" "}
             </p>
             <p></p>
