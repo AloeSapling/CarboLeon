@@ -2,7 +2,13 @@ nav.bg {
     --background: rgba(255, 255, 255, 0.9);
     --text-color: rgb(18, 179, 18);  
 }
-
+.langBtn{
+    width: fit-content;
+    height: auto;
+}
+.langimg{
+    width: 50px;
+}
 nav {
     display: flex;
     position: fixed;

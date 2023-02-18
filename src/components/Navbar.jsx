@@ -36,11 +36,11 @@ const Navbar = () => {
         <p>CarboLeon</p>
       </Link>
       <ul className={isOpen ? "open" : ""}>
-      <button onClick={() => handleClick('en')}> 
-            English
+      <button className="langBtn" onClick={() => handleClick('en')}> 
+            <img className="langimg" src="flags/Brit.svg"/>
         </button>
-        <button onClick={() => handleClick('pl')}> 
-            Polish
+        <button className="langBtn" onClick={() => handleClick('pl')}> 
+            <img className="langimg" src="flags/poland.svg"/>
         </button>
         <li>
           <Link to="/">Home</Link>
