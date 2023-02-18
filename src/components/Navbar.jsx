@@ -37,10 +37,10 @@ const Navbar = () => {
       </Link>
       <ul className={isOpen ? "open" : ""}>
       <button className="langBtn" onClick={() => handleClick('en')}> 
-            <img className="langimg" src="flags/Brit.svg"/>
+            <img className="langimg" src="flags/uk.png"/>
         </button>
         <button className="langBtn" onClick={() => handleClick('pl')}> 
-            <img className="langimg" src="flags/poland.svg"/>
+            <img className="langimg" src="flags/poland.png"/>
         </button>
         <li>
           <Link to="/">Home</Link>
