@@ -75,15 +75,22 @@ function Home() {
     setSearchingLocation("Kraków");
   }, []);
 
-  if(currentWeather && forecastWeather) return (
-    <div className='body'>
-    <div className="background-img"><h1>CarboLeon<br />{t("Home.title")}</h1></div>
-    <div className="margin2">
-      <div className="uberC">
-        <div className="container">
-          <div className="asside">
-            <Asside />
-          </div>
+  if (currentWeather && forecastWeather)
+    return (
+      <div className="body">
+        <div className="background-img">
+          <h1>
+            CarboLeon
+            <br />
+            {t("Home.title")}
+          </h1>
+        </div>
+        <div className="margin2">
+          <div className="uberC">
+            <div className="container">
+              <div className="asside">
+                <Asside />
+              </div>
 
           <div className="main">
             <div className="search">

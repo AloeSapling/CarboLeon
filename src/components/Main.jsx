@@ -14,8 +14,8 @@ Friday
 Saturday
 Sunday
 */
+
 const days = [
-  // `${t("Days.mon")}`,
   "Poniedziałek",
   "Wtorek",
   "Środa",
@@ -54,6 +54,7 @@ const Main = ({ currentData, forecastData, date }) => {
     else setSplideRows(1);
   };
 
+  
   window.addEventListener("resize", resizeSplideRows);
 
   useEffect(() => {
@@ -70,10 +71,8 @@ const Main = ({ currentData, forecastData, date }) => {
             </p>
             <p className="weather-description">
               {currentData.weather[0].description}
-            </p>
-            <p className="time-info">
-              {days[date.getDay() - 1]}, {date.getUTCDate()}{" "}
-              {months[date.getMonth() + 1]}{" "}
+              {days[date.getUTCDate() - 1]}, {date.getUTCDate()}{" "}
+              {t(`Months.${[date.getMonth() + 1]}.mont`)}{" "}
             </p>
             <p></p>
           </div>
@@ -149,7 +148,7 @@ const Main = ({ currentData, forecastData, date }) => {
                     </p>
                     <p className="time-info">
                       {new Date(x.dt * 1000).getUTCDate()}{" "}
-                      {months[new Date(x.dt * 1000).getMonth() + 1]} |{"  "}
+                      {t(`Months.${[date.getMonth() + 1]}.mont`)} |{"  "}
                       {new Date(x.dt * 1000)
                         .toLocaleTimeString(undefined)
                         .slice(0, 5)}
