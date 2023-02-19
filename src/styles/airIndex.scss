@@ -8,10 +8,11 @@
   display: grid;
   grid-template-columns: 0.7fr 5fr;
   width: 100%;
-  gap: 3vw;
+  gap: 3vh;
 
   @include xs {
     padding: 10px;
+    grid-template-columns: 1fr;
   }
 
   .asside {
@@ -27,8 +28,9 @@
     gap: 50px;
 
     @include xs {
-      width: 70px;
       font-size: 15px;
+      height: 70px;
+      flex-direction: row;
     }
 
     a {
@@ -94,6 +96,7 @@
         border: none;
         outline: none;
         color: #000;
+        width: 100%;
       }
       ::placeholder {
         color: #828282;
@@ -102,7 +105,7 @@
     .weather-params {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 3vh;
       width: 100%;
 
       .current-temp {
@@ -110,7 +113,7 @@
         padding: 30px;
         width: 100%;
         border-radius: 30px;
-        margin-top: 40px ;
+        margin-top: 3vh ;
         display: flex;
         align-items: center;
         justify-content: space-between;
