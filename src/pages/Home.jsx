@@ -25,7 +25,7 @@ function Home() {
   const {t} = useTranslation()
   const setSearchingLocation = (location) => {
     fetch(
-      `${baseUrl}/weather?q=${location}&units=metric&lang=pl&appid=${process.env.REACT_APP_API_KEY}`
+      `${baseUrl}/weather?q=${location}&units=metric&lang=${t("test.len")}&appid=${process.env.REACT_APP_API_KEY}`
     )
       .then((res) => {
         if (!res.ok) {

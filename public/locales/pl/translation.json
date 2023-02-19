@@ -51,5 +51,16 @@
         "about": "O Nas",
         "consup": "Pomoc i Kontakt",
         "map": "Mapa"
-    }
+    },
+    "Legend": {
+        "good": "Dobre",
+        "fine": "W porządku",
+        "sbad": "Średnie",
+        "bad": "Słabe",
+        "vbad": "Bardzo słabe",
+        "ebad": "Okropne"
+    },
+    "test":{
+        "len":"pl"
+    }   
 }
