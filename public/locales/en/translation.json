@@ -52,5 +52,14 @@
         "about": "About",
         "consup": "Contact and Support",
         "map": "Map"
+    },
+    "Legend": {
+        "good": "good",
+        "fine": "fine",
+        "worse": "worse",
+        "bad": "bad",
+        "vbad": "very bad",
+        "ebad": "extremely bad"
     }   
+
 }
