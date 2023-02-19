@@ -39,12 +39,11 @@ const months = [
   "Grudzień",
 ];
 
-
 const Main = ({ currentData, forecastData, date }) => {
   console.log(date);
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   const resizeSplideRows = () => {
     if (window.innerWidth > 1500) setSplideRows(4);
     else if (window.innerWidth < 1500 && window.innerWidth > 900)
@@ -54,7 +53,6 @@ const Main = ({ currentData, forecastData, date }) => {
     else setSplideRows(1);
   };
 
-  
   window.addEventListener("resize", resizeSplideRows);
 
   useEffect(() => {
@@ -90,7 +88,11 @@ const Main = ({ currentData, forecastData, date }) => {
           onClick={() => setIsDropdown(!isDropdown)}
           className="reveal-button"
         >
-          <p>{t("Home.part1")} {isDropdown ? `${t("Home.hide")}` : `${t("Home.show")}`} {t("Home.part2")}</p>
+          <p>
+            {t("Home.part1")}{" "}
+            {isDropdown ? `${t("Home.hide")}` : `${t("Home.show")}`}{" "}
+            {t("Home.part2")}
+          </p>
           <div>
             <p>{isDropdown ? "\u2227" : "\u2228"}</p>
           </div>
@@ -105,28 +107,36 @@ const Main = ({ currentData, forecastData, date }) => {
                     <WiBarometer />
                     <span>{t("Home.presure")}</span>
                   </div>
-                  <h3 className="measurement">{Math.round(currentData.main.pressure)} hPa</h3>
+                  <h3 className="measurement">
+                    {Math.round(currentData.main.pressure)} hPa
+                  </h3>
                 </div>
                 <div>
                   <div className="prop-title">
                     <WiHumidity />
                     <span>{t("Home.hum")}</span>
                   </div>
-                  <h3 className="measurement">{Math.round(currentData.main.humidity)} %</h3>
+                  <h3 className="measurement">
+                    {Math.round(currentData.main.humidity)} %
+                  </h3>
                 </div>
                 <div>
                   <div className="prop-title">
                     <TbWind />
                     <span>{t("Home.wind")}</span>
                   </div>
-                  <h3 className="measurement">{Math.round(currentData.wind.speed)} m/h</h3>
+                  <h3 className="measurement">
+                    {Math.round(currentData.wind.speed)} m/h
+                  </h3>
                 </div>
                 <div>
                   <div className="prop-title">
                     <TbTemperature />
                     <span>{t("Home.sens")}</span>
                   </div>
-                  <h3 className="measurement">{Math.round(currentData.main.feels_like)} °C</h3>
+                  <h3 className="measurement">
+                    {Math.round(currentData.main.feels_like)} °C
+                  </h3>
                 </div>
               </div>
             </div>

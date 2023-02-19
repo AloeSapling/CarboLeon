@@ -27,11 +27,7 @@
     width: 100%;
     border-radius: 30px;
 }
-img{
-    width: 15vw;
-    height: auto;
 
-}
 .about{
     position: relative;
     display: flex;
