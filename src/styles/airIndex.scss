@@ -10,7 +10,7 @@
   width: 100%;
   gap: 3vh;
 
-  @include xs {
+  @include md {
     padding: 10px;
     grid-template-columns: 1fr;
   }
@@ -27,9 +27,8 @@
     border-radius: 30px;
     gap: 50px;
 
-    @include xs {
-      font-size: 15px;
-      height: 70px;
+    @include md {
+      font-size: 15px;  
       flex-direction: row;
     }
 

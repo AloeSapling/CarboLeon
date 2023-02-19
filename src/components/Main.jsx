@@ -4,16 +4,6 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import { TbWind, TbTemperature } from "react-icons/tb";
 import { WiHumidity, WiBarometer } from "react-icons/wi";
 import { useTranslation } from "react-i18next";
-//January, February, March, April, May, June, July, August, September, October, November, December
-/*
-Monday
-Tuesday
-Wednesday
-Thursday
-Friday
-Saturday
-Sunday
-*/
 
 const days = [
   "Poniedziałek",
@@ -23,21 +13,7 @@ const days = [
   "Piątek",
   "Sobota",
   "Niedziela",
-];
-const months = [
-  "Grudzień",
-  "Styczeń",
-  "Luty",
-  "Marzec",
-  "Kwiecień",
-  "Maj",
-  "Czerwiec",
-  "Lipiec",
-  "Sierpień",
-  "Październik",
-  "Listopad",
-  "Grudzień",
-];
+]
 
 const Main = ({ currentData, forecastData, date }) => {
   console.log(date);
@@ -172,7 +148,7 @@ const Main = ({ currentData, forecastData, date }) => {
                     </p>
                   </SplideSlide>
                 ))}
-              </Splide>
+              </Splide> 
             </div>
           </div>
         </div>

@@ -56,7 +56,7 @@ nav ul a::after {
     width: 0;
     height: 3px;
     background: linear-gradient(90deg, transparent, var(--text-color));
-    transition: width 0.3s;
+    transition: 0.3s;
 }
 
 nav ul a:hover::after {
@@ -142,7 +142,8 @@ nav ul a:hover::after {
     .nav-toggle > .bar {
         position: relative;
         width: 32px;
-        height: 2px;
+        height: 3px;
+        border-radius: 2px;
         background: var(--text-color);
         transition: all 0.45s ease-in-out;
     }
@@ -151,14 +152,14 @@ nav ul a:hover::after {
     .nav-toggle > .bar::after {
         content: "";
         position: absolute;
-        height: 2px;
+        height: 3px;
         background: var(--text-color);
         border-radius: 2px;
         transition: all 0.45s ease-in-out;
     }
     
     .nav-toggle > .bar::before {
-        width: 25px;
+        width: 32px;
         transform: translateY(-8px);
         right: 0;
     }
