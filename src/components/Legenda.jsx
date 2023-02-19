@@ -9,27 +9,27 @@ Control.Watermark = Control.extend({
     <div class='lContainer'>
       <div class='LEContainer'>
         <div class='inline iDiv dVRed'></div>
-        <h3 class='inline'>Ekstremalnie Słabe (300+)<h3/>
+        <h3 class='inline'>Zagrożenie dla życia (300+)<h3/>
       </div>
       <div class='LEContainer'>
         <div class='inline iDiv dPurple'></div>
-        <h3 class='inline'>Bardzo Słabe (200-300)<h3/>
+        <h3 class='inline'>Bardzo niezdrowa (201-300)<h3/>
       </div>
       <div class='LEContainer'>
           <div class='inline iDiv dRed'></div>
-          <h3 class='inline'>Słabe (150-200)<h3/>
+          <h3 class='inline'>Niezdrowa (151-200)<h3/>
       </div>
       <div class='LEContainer'>
         <div class='inline iDiv dOrange'></div>
-        <h3 class='inline'>Średnie (100-150)<h3/>
+        <h3 class='inline'>Niezdrowa dla osób wrażliwych (101-150)<h3/>
       </div>
       <div class='LEContainer'>
         <div class='inline iDiv dYellow'></div>
-        <h3 class='inline'>W Porządku (50-100)<h3/>
+        <h3 class='inline'>Średnia (51-100)<h3/>
       </div>
       <div class='LEContainer'>
         <div class='inline iDiv dGreen'></div>
-        <h3 class='inline'>Bardzo dobre (0-50)<h3/>
+        <h3 class='inline'>Dobra (0-50)<h3/>
       </div>
     </div>
     `

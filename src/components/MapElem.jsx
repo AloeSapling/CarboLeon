@@ -98,7 +98,7 @@ export const MapElem = () => {
             </LayersControl.Overlay>
             <LayersControl.Overlay name='Lotniska'>
             <TileLayer
-            url="https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png"
+            url="https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=<insert-your-apikey-here> "
             subdomains={['mt0','mt1','mt2','mt3']}
             attribution='Map <a href="https://memomaps.de/">memomaps.de</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             noWrap={true}
