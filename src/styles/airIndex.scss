@@ -67,16 +67,6 @@
     align-items: center;
     text-align: left;
 
-    @include breakpoint(420px) {
-      width: 93%;
-    }
-
-    @include xxxs {
-      width: 85%;
-    }
-    @include breakpoint(370px) {
-      width: 77%;
-    }
 
     .search {
       padding: 1.5vh;
@@ -157,25 +147,11 @@
         flex-direction: column;
         margin: 0 auto;
 
-        @include breakpoint(950px) {
-          width: 73vw;
-        }
-
-        @include breakpoint(830px) {
-          width: 70vw;
-        }
-
         @include xs {
-          width: 75vw;
+          width: 90vw;
         }
 
-        @include xxs {
-          width: 70vw;
-        }
 
-        @include xxxs {
-          width: 67vw;
-        }
 
         .title {
           font-weight: 700;
