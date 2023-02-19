@@ -1,15 +1,12 @@
 .sponsors{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-items: center;
-    /* grid-template-columns: repeat(4,1fr); */
     gap: 4%;
 }
 .sContainer{
-    width: 100%;
+    width: 100vw;
     background-color: white;
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +19,6 @@
 .sponsors a{
     padding: 14px;
     flex: 1;
-    width: fit-content;
 }
 
 .sContainer img {
