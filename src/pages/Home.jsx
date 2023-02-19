@@ -19,7 +19,7 @@ function Home() {
   const [currentWeather, setCurrentWeather] = useState(null)
   const [forecastWeather, setForecastWeather] = useState(null)
   const [date, setDate] = useState(null)
-  const [location, setLocation] = useState("")
+  const [location, setLocation] = useState(null)
 
   const baseUrl = "https://api.openweathermap.org/data/2.5";
   const {t} = useTranslation()
@@ -33,6 +33,7 @@ function Home() {
         }
         else {
           console.log('success');
+          localStorage.setItem("city", location)
           return res.json();        
         }
       })
@@ -51,7 +52,8 @@ function Home() {
         }
         else {
           console.log('success');
-          return res.json();        
+          localStorage.setItem("city", location)    
+          return res.json();    
         }
       })
       .then((data) => {
@@ -66,12 +68,14 @@ function Home() {
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
+      localStorage.setItem("city", location)
       setSearchingLocation(location);
     }
   };
 
   useEffect(() => {
-    setSearchingLocation("Kraków");
+    if(localStorage.getItem("city")) setSearchingLocation(localStorage.getItem("city"))
+    else setSearchingLocation("Kraków")
   }, []);
 
   if (currentWeather && forecastWeather)

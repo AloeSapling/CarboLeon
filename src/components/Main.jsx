@@ -16,7 +16,6 @@ const days = [
 ]
 
 const Main = ({ currentData, forecastData, date }) => {
-  console.log(date);
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
   const { t } = useTranslation();
