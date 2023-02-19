@@ -1,5 +1,6 @@
 import React from 'react'
 import sponsor from '../pages/sponsorIMG/Logo-ETRONIX-rgb.png'
+import sponsoroko from '../pages/sponsorIMG/okodesign.png'
 import { useTranslation } from 'react-i18next'
 
 const Sponsors = () => {
@@ -10,6 +11,9 @@ const Sponsors = () => {
           <div className="sponsors">
             <a href="https://www.e-tronix.eu/">
               <img src={sponsor} alt="sponsor" />
+            </a>
+            <a href="https://www.oko-design.com/">
+              <img src={sponsoroko} alt="sponsor" />
             </a>
           </div>
         </section>
