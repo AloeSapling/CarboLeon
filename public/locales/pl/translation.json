@@ -59,5 +59,8 @@
         "bad": "Słabe",
         "vbad": "Bardzo słabe",
         "ebad": "Okropne"
+    },
+    "test":{
+        "len":"pl"
     }   
 }

@@ -60,6 +60,10 @@
         "bad": "bad",
         "vbad": "very bad",
         "ebad": "extremely bad"
+    },
+    "test":{
+        "len":"en"
     }   
+
 
 }

@@ -29,12 +29,12 @@ const Navbar = () => {
         <p>CarboLeon</p>
       </Link>
       <ul className={isOpen ? "open" : ""}>
-      <button className="langBtn" onClick={() => handleClick('en')}> 
+      <a href=""><button className="langBtn" onClick={() => handleClick('en')}> 
             <img className="langimg" src="flags/uk.png"/>
-        </button>
-        <button className="langBtn" onClick={() => handleClick('pl')}> 
+        </button></a>
+        <a href=""><button className="langBtn" onClick={() => handleClick('pl')}> 
             <img className="langimg" src="flags/poland.png"/>
-        </button>
+        </button></a>
         <li>
           <Link to="/">Home</Link>
         </li>
