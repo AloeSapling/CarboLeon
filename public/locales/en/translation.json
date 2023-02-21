@@ -63,7 +63,13 @@
     },
     "test":{
         "len":"en"
-    }   
+    },
+    "layer": {
+        "satelite": "Satelite",
+        "topographicMap": "Topographic Map",
+        "airports": "Airports",
+        "airPollution": "Air Pollution"
+    }
 
 
 }

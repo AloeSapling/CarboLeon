@@ -14,8 +14,11 @@ import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 import L, { map } from "leaflet";
 import  Legenda  from './Legenda';
+import { useTranslation } from 'react-i18next';
 
 export const MapElem = () => {
+    const { t } = useTranslation()
+
     const mapBounds = [
         [-90,-180],   
         [90,180],
@@ -81,7 +84,7 @@ export const MapElem = () => {
             noWrap="true"
             />
             <LayersControl>
-            <LayersControl.Overlay name='Satelita'>
+            <LayersControl.Overlay name={t("layer.satelite")}>
             <TileLayer
             url="http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
             subdomains={['mt0','mt1','mt2','mt3']}
@@ -89,14 +92,14 @@ export const MapElem = () => {
             noWrap={true}
             />
             </LayersControl.Overlay>
-            <LayersControl.Overlay name='Mapa topograficzna'>
+            <LayersControl.Overlay name={t("layer.topographicMap")}>
             <TileLayer
             url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
             attribution='Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
             noWrap={true}
             />
             </LayersControl.Overlay>
-            <LayersControl.Overlay name='Lotniska'>
+            <LayersControl.Overlay name={t("layer.airports")}>
             <TileLayer
             url="https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=<insert-your-apikey-here> "
             subdomains={['mt0','mt1','mt2','mt3']}
@@ -104,7 +107,7 @@ export const MapElem = () => {
             noWrap={true}
             />
             </LayersControl.Overlay>
-            <LayersControl.Overlay checked name='Zanieczyszczenie Powietrza'>
+            <LayersControl.Overlay checked name={t("layer.airPollution")}>
             <TileLayer 
             url={`https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=${process.env.REACT_API_KEY}`}
             subdomains={['mt0','mt1','mt2','mt3']}
@@ -113,10 +116,10 @@ export const MapElem = () => {
             />
             </LayersControl.Overlay>
             </LayersControl>
-            <Search provider={new OpenStreetMapProvider()}>
+            {/* <Search provider={new OpenStreetMapProvider()}>
             <Marker>
             </Marker>
-            </Search>
+            </Search> */}
             <Legenda/>
             {/* <MinimapControl position="topright" /> */}
         </MapContainer>

@@ -62,5 +62,11 @@
     },
     "test":{
         "len":"pl"
-    }   
+    },
+    "layer": {
+        "satelite": "Satelita",
+        "topographicMap": "Mapa Topograficzna",
+        "airports": "Lotniska",
+        "airPollution": "Zanieczyszczenie Powietrza"
+    }
 }
