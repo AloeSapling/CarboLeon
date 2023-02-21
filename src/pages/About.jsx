@@ -31,7 +31,7 @@ function About() {
           </div>
           </main>
         </div>
-        <button className='dropdownAbout' onClick={() => setIsDropdown(!isDropdown)}> { isDropdown ? t("About.btn-hide") : t("About.btn-show")}</button>
+        <button className='dropdownAbout' onClick={() => setIsDropdown(!isDropdown)}> { isDropdown ? t("About.btn-show") : t("About.btn-hide")}</button>
     </div>
     <Sponsors />
     </>
