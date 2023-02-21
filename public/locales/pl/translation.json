@@ -55,8 +55,8 @@
     "Legend": {
         "good": "Dobre (0-50)",
         "fine": "Średnie (51-100)",
-        "sbad": "Niezdrowe dla osób wrażliwych (101-150)",
-        "bad": "Niezdrowe (151-200)",
+        "worse": "Niezdrowe dla osób wrażliwych (101-150)",
+        "bad":  "Niezdrowe (151-200)",
         "vbad": "Bardzo niezdrowe (201-300)",
         "ebad": "Zagrożenie dla życia (300+)"
     },
