@@ -6,8 +6,8 @@
     opacity: 0.8;
     position: absolute;
     z-index: 100000;
-    bottom: 5px;
-    left: 5px;
+    bottom: 8px;
+    left: 8px;
 }
 .inline{
     display: inline-block;
