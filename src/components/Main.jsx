@@ -5,15 +5,7 @@ import { TbWind, TbTemperature } from "react-icons/tb";
 import { WiHumidity, WiBarometer } from "react-icons/wi";
 import { useTranslation } from "react-i18next";
 
-const days = [
-  "Poniedziałek",
-  "Wtorek",
-  "Środa",
-  "Czwartek",
-  "Piątek",
-  "Sobota",
-  "Niedziela",
-];
+
 
 const Main = ({ currentData, forecastData, date }) => {
   const [isDropdown, setIsDropdown] = useState(false);
@@ -46,7 +38,7 @@ const Main = ({ currentData, forecastData, date }) => {
               {currentData.weather[0].description}
             </p>
             <p>
-              {days[date.getDay() - 1]}, {date.getUTCDate()}{" "}
+              {t(`Days.${[date.getDay() - 1]}.day`)}, {date.getUTCDate()}{" "}
               {t(`Months.${[date.getMonth() + 1]}.mont`)}{" "}
             </p>
           </div>
@@ -130,7 +122,7 @@ const Main = ({ currentData, forecastData, date }) => {
                 {forecastData.map((x, index) => (
                   <SplideSlide key={index} className="splide-slide">
                     <p className="time-info">
-                      {days[new Date(x.dt * 1000).getDay() - 1]}
+                      {t(`Days.${[new Date(x.dt * 1000).getDay() - 1]}.day`)}
                     </p>
                     <p className="time-info">
                       {new Date(x.dt * 1000).getUTCDate()}{" "}

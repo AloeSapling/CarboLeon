@@ -14,6 +14,16 @@
         "btn-hide": "Schowaj",
         "btn-show": "Pokaż więcej"
     },
+    "Days": [
+            
+        {"day":"Poniedziałek"},
+        {"day":"Wtorek"},
+        {"day":"Środa"},
+        {"day":"Czwartek"},
+        {"day":"Piątek"},
+        {"day":"Sobota"},
+        {"day":"Niedziela"}
+        ],
     "Home": {
         "title": "Wiedz, czym ODDYCHASZ",
         "input": "Wpisza nazwę miasta",

@@ -47,6 +47,16 @@
         {"mont":"November"}, 
         {"mont":"December"}
     ],
+    "Days": [
+            
+            {"day":"Monday"},
+            {"day":"Tuesday"},
+            {"day":"Wednesday"},
+            {"day":"Thursday"},
+            {"day":"Friday"},
+            {"day":"Saturday"},
+            {"day":"Sunday"}
+    ],
     "apiLang": {
         "lang": "en"
     },
