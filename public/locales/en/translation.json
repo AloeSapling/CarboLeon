@@ -54,12 +54,12 @@
         "map": "Map"
     },
     "Legend": {
-        "good": "good",
-        "fine": "fine",
-        "worse": "worse",
-        "bad": "bad",
-        "vbad": "very bad",
-        "ebad": "extremely bad"
+        "good": "good (0-50)",
+        "fine": "fine (51-100)",
+        "worse": "worse (101-150)",
+        "bad": "bad (151-200)",
+        "vbad": "very bad (201-300)",
+        "ebad": "extremely bad (300+)"
     },
     "test":{
         "len":"en"

@@ -13,7 +13,7 @@ import osm from "../pages/osm-providers.js";
 import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 import L, { map } from "leaflet";
-import { LegendControl } from './Legenda';
+import  Legenda  from './Legenda';
 
 export const MapElem = () => {
     const mapBounds = [
@@ -117,11 +117,11 @@ export const MapElem = () => {
             <Marker>
             </Marker>
             </Search>
-            <LegendControl position='bottomleft'/>
+            <Legenda/>
             {/* <MinimapControl position="topright" /> */}
         </MapContainer>
         </>
     );
 }
 export default MapElem
-// TWÓRCA: BARTOSZ GRZYB MASTER / Legenda: AloeS
+// TWÓRCA: BARTOSZ GRZYB MASTER / Legenda: AloeS and John333🔥
