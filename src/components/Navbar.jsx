@@ -29,23 +29,39 @@ const Navbar = () => {
         <p>CarboLeon</p>
       </Link>
       <ul className={isOpen ? "open" : ""}>
-      <a href=""><button className="langBtn" onClick={() => handleClick('en')}> 
-            <img className="langimg" src="flags/uk.png"/>
-        </button></a>
-        <a href=""><button className="langBtn" onClick={() => handleClick('pl')}> 
-            <img className="langimg" src="flags/poland.png"/>
-        </button></a>
         <li>
-          <Link to="/">Home</Link>
+          <a href="">
+            <button className="langBtn" onClick={() => handleClick("en")}>
+              <img className="langimg" src="flags/uk.png" />
+            </button>
+          </a>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <a href="">
+            <button className="langBtn" onClick={() => handleClick("pl")}>
+              <img className="langimg" src="flags/poland.png" />
+            </button>
+          </a>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/" className="header-link">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/map">Pollution Map</Link>
+          <Link to="/about" className="header-link">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" className="header-link">
+            Contact
+          </Link>
+        </li>
+        <li>
+          <Link to="/map" className="header-link">
+            Pollution Map
+          </Link>
         </li>
       </ul>
       <div

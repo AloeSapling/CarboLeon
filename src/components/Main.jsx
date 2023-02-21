@@ -13,7 +13,7 @@ const days = [
   "Piątek",
   "Sobota",
   "Niedziela",
-]
+];
 
 const Main = ({ currentData, forecastData, date }) => {
   const [isDropdown, setIsDropdown] = useState(false);
@@ -44,10 +44,11 @@ const Main = ({ currentData, forecastData, date }) => {
             </p>
             <p className="weather-description">
               {currentData.weather[0].description}
-              {days[date.getUTCDate() - 1]}, {date.getUTCDate()}{" "}
+            </p>
+            <p>
+              {days[date.getDay() - 1]}, {date.getUTCDate()}{" "}
               {t(`Months.${[date.getMonth() + 1]}.mont`)}{" "}
             </p>
-            <p></p>
           </div>
           <p className="temp">{Math.round(currentData.main.temp)} °C </p>
           {/* <p className="temp">jakość powietrza: </p>  to jest do zrobienia*/}
@@ -129,7 +130,7 @@ const Main = ({ currentData, forecastData, date }) => {
                 {forecastData.map((x, index) => (
                   <SplideSlide key={index} className="splide-slide">
                     <p className="time-info">
-                      {days[new Date(x.dt * 1000).getUTCDate() - 1]}
+                      {days[new Date(x.dt * 1000).getDay() - 1]}
                     </p>
                     <p className="time-info">
                       {new Date(x.dt * 1000).getUTCDate()}{" "}
@@ -147,7 +148,7 @@ const Main = ({ currentData, forecastData, date }) => {
                     </p>
                   </SplideSlide>
                 ))}
-              </Splide> 
+              </Splide>
             </div>
           </div>
         </div>

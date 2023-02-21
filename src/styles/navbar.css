@@ -48,7 +48,7 @@ nav ul a {
     position: relative;
 }
 
-nav ul a::after {
+nav ul .header-link::after {
     content: "";
     position: absolute;
     top: 110%;
@@ -59,7 +59,7 @@ nav ul a::after {
     transition: 0.3s;
 }
 
-nav ul a:hover::after {
+nav ul .header-link:hover::after {
     width: 100%;
 }
 
@@ -106,7 +106,7 @@ nav ul a:hover::after {
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
     nav ul {
         color: #fff;
         border-top: 3px solid var(--text-color);
