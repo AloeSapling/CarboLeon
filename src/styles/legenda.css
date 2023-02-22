@@ -5,7 +5,7 @@
     padding: 15px;
     opacity: 0.8;
     position: absolute;
-    z-index: 100000;
+    z-index: 1000;
     bottom: 8px;
     left: 8px;
 }
@@ -16,7 +16,6 @@
     aspect-ratio: 1/1;
     width: 21px;
     border-radius: 5px;
-    border: 1px black dashed
 }
 .dRed{
     background-color: #d10035;

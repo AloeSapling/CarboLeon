@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 const Sponsors = () => {
   const {t} = useTranslation()
   return (
-    <section className="sContainer">
+    <footer className="sContainer">
           <h1>{t("Sponsors.1")}</h1>
           <div className="sponsors">
             <a href="https://www.e-tronix.eu/" target="_blank">
@@ -17,7 +17,7 @@ const Sponsors = () => {
               <img src={sponsoroko} alt="sponsor" />
             </a>
           </div>
-        </section>
+        </footer>
   )
 }
 
