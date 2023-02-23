@@ -30,15 +30,15 @@ const Navbar = () => {
       </Link>
       <ul className={isOpen ? "open" : ""}>
         <li>
-          <a href="">
-            <button className="langBtn" onClick={() => handleClick("en")}>
+          <a href="  ">
+            <button className="langBtn" onClick={() => handleClick("en")} alt="uk button">
               <img className="langimg" src="flags/uk.png" alt="uk flag"/>
             </button>
           </a>
         </li>
         <li>
-          <a href="">
-            <button className="langBtn" onClick={() => handleClick("pl")}>
+          <a href="  ">
+            <button className="langBtn" onClick={() => handleClick("pl")} alt="polang button">
               <img className="langimg" src="flags/poland.png" alt="poland flag"/>
             </button>
           </a>

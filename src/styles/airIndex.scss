@@ -1,7 +1,9 @@
 @import "../constants/breakpoints";
 
+$grey-color: #6d6d6d;
+
 .container {
-  color: #828282;
+  color: $grey-color;
   background: rgba(39, 109, 43, .5);
   padding: 40px;
   border-radius: 30px;
@@ -43,7 +45,7 @@
         flex-direction: column;
         transition: 0.3s;
         gap: 5px;
-        color: #828282;
+        color: $grey-color;
   
         svg {
           width: 40px;
@@ -88,7 +90,7 @@
         width: 100%;
       }
       ::placeholder {
-        color: #828282;
+        color: $grey-color;
       }
     }
     .weather-params {
@@ -171,7 +173,7 @@
             .time-info {
               text-align: center;
               font-weight: 500;
-              color: #828282;
+              color: $grey-color;
               font-size: 1.1em;
             }
 
@@ -215,7 +217,7 @@
           }
 
           .prop-title {
-            color: #828282;
+            color: $grey-color;
             display: flex;
             align-items: center;
             gap: 10px;
