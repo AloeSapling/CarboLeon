@@ -15,7 +15,7 @@
         "btn-show": "Pokaż więcej"
     },
     "Days": [
-            
+        {"day":"Niedziela"},
         {"day":"Poniedziałek"},
         {"day":"Wtorek"},
         {"day":"Środa"},

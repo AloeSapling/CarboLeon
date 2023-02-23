@@ -38,7 +38,7 @@ const Main = ({ currentData, forecastData, date }) => {
               {currentData.weather[0].description}
             </p>
             <p>
-              {t(`Days.${[date.getDay() - 1]}.day`)}, {date.getUTCDate()}{" "}
+              {t(`Days.${[date.getDay()]}.day`)}, {date.getUTCDate()}{" "}
               {t(`Months.${[date.getMonth() + 1]}.mont`)}{" "}
             </p>
           </div>
@@ -122,7 +122,7 @@ const Main = ({ currentData, forecastData, date }) => {
                 {forecastData.map((x, index) => (
                   <SplideSlide key={index} className="splide-slide">
                     <p className="time-info">
-                      {t(`Days.${[new Date(x.dt * 1000).getDay() - 1]}.day`)}
+                      {t(`Days.${[new Date(x.dt * 1000).getDay()]}.day`)}
                     </p>
                     <p className="time-info">
                       {new Date(x.dt * 1000).getUTCDate()}{" "}

@@ -2,14 +2,13 @@ import React from "react";
 import "../styles/geosearch.css";
 import "../styles/map.css";
 import "../styles/LeafletCSS&IMG/leaflet.css";
-// import { useEffect, useRef, useState } from "react";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MapContainer, useMap, FeatureGroup, TileLayer, LayersControl, Marker } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { OpenStreetMapProvider, GeoSearchControl } from "leaflet-geosearch";
 import icon from "../styles/LeafletCSS&IMG/icon";
 import { EditControl } from "react-leaflet-draw";
-// import osm from "../pages/osm-providers.js";
+import osm from "../pages/osm-providers.js";
 import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 import L from "leaflet";
@@ -35,14 +34,14 @@ export const MapElem = () => {
       "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-shadow.png",
   });
 
-//   const [center, setCenter] = useState({ lat: 24.4539, lng: 54.3773 });
-//   const ZOOM_LEVEL = 12;
-//   const mapRef = useRef();
+  const [center, setCenter] = useState({ lat: 24.4539, lng: 54.3773 });
+  const ZOOM_LEVEL = 12;
+  const mapRef = useRef();
 
   const _created = (e) => console.log(e);
   const Search = (props) => {
     const map = useMap();
-    // const { provider } = props;
+    const { provider } = props;
 
     useEffect(() => {
       const provider = new OpenStreetMapProvider();
