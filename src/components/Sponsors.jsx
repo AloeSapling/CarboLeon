@@ -9,11 +9,11 @@ const Sponsors = () => {
   return (
     <footer className="sContainer">
           <h1>{t("Sponsors.1")}</h1>
-          <div className="sponsors">
-            <a href="https://www.e-tronix.eu/" target="_blank">
+          <div className="sponsor">
+            <a href="https://www.e-tronix.eu/">
               <img src={sponsor} alt="sponsor" />
             </a>
-            <a href="https://www.oko-design.com/" target="_blank">
+            <a href="https://www.oko-design.com/">
               <img src={sponsoroko} alt="sponsor" />
             </a>
           </div>

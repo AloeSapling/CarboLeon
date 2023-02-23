@@ -32,14 +32,14 @@ const Navbar = () => {
         <li>
           <a href="">
             <button className="langBtn" onClick={() => handleClick("en")}>
-              <img className="langimg" src="flags/uk.png" />
+              <img className="langimg" src="flags/uk.png" alt="uk flag"/>
             </button>
           </a>
         </li>
         <li>
           <a href="">
             <button className="langBtn" onClick={() => handleClick("pl")}>
-              <img className="langimg" src="flags/poland.png" />
+              <img className="langimg" src="flags/poland.png" alt="poland flag"/>
             </button>
           </a>
         </li>

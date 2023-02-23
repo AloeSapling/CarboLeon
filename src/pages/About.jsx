@@ -3,14 +3,8 @@ import { useTranslation } from "react-i18next";
 import Sponsors from '../components/Sponsors'
 
 function About() {
-  const [isDropdown, setIsDropdown] = React.useState(false);
-  function Clicky(){
-      if(!isDropdown){
-          setIsDropdown(true)
-      } else{
-          setIsDropdown(false)
-      }
-  }
+  const [isDropdown, setIsDropdown] = useState(false);
+
   const {t} = useTranslation()
   return (
     <>

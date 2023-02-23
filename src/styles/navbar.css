@@ -93,9 +93,9 @@ nav ul .header-link:hover::after {
 
 
 
-@media screen and (max-width: 1400px) {    
+@media screen and (max-width: 1500px) {    
     nav ul a {
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 700;
         letter-spacing: 1px;
     }

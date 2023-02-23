@@ -4,7 +4,7 @@ import App from './App'
 import './i18next'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-    <Suspense fallback={(<div>Loading ~~~~~~</div>)}>
+    <Suspense fallback={(<div>Loading...</div>)}>
         <App />
     </Suspense>
 )
