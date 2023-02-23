@@ -48,7 +48,7 @@ const Main = ({ currentData, forecastData, date }) => {
         <img
           alt="weather"
           className="weather-icon"
-          src={`icons/${currentData.weather[0].icon}.png`}
+          src={`webpicons/${currentData.weather[0].icon}.webp`}
         />
       </div>
       <div>
@@ -132,7 +132,7 @@ const Main = ({ currentData, forecastData, date }) => {
                         .slice(0, 5)}
                     </p>
                     <img
-                      src={`icons/${x.weather[0].icon}.png`}
+                      src={`webpicons/${x.weather[0].icon}.webp`}
                       alt="weather-icon"
                     />
                     <p className="temp">

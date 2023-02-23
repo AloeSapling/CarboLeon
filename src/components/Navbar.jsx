@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <nav className={color ? "bg" : ""}>
       <Link to="/" className="full-logo">
-        <img src={"logo.png"} alt="logo" className="logo" />
+        <img src={"logo.webp"} alt="logo" className="logo" />
         <p>CarboLeon</p>
       </Link>
       <ul className={isOpen ? "open" : ""}>
@@ -38,7 +38,7 @@ const Navbar = () => {
         </li>
         <li>
           <a href="  ">
-            <button className="langBtn" onClick={() => handleClick("pl")} alt="polang button">
+            <button className="langBtn" onClick={() => handleClick("pl")} alt="poland button">
               <img className="langimg" src="flags/poland.png" alt="poland flag"/>
             </button>
           </a>
