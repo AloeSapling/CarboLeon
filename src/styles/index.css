@@ -28,7 +28,7 @@ body {
 
 .margin {
     padding: 3vh 4vw 7vh 4vw;
-    background:   linear-gradient(to bottom right,rgb(184, 255, 184), rgb(44, 124, 44)) ;
+    background:   linear-gradient(to bottom right,rgb(115, 154, 73), rgb(44, 124, 44)) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,12 +36,12 @@ body {
 
 .margin2{
     padding: 5vh 2.5vw;
-    background:   linear-gradient(to bottom right,rgb(184, 255, 184), rgb(44, 124, 44)) ;
+    background:   linear-gradient(to bottom right,rgb(115, 154, 73), rgb(44, 124, 44)) ;
 }
 
 .margin3{
     padding: 3vh 3vw 7vh 3vw;
-    background:   linear-gradient(to bottom right,rgb(184, 255, 184), rgb(44, 124, 44)) ;
+    background:   linear-gradient(to bottom right,rgb(115, 154, 73), rgb(44, 124, 44)) ;
     display: flex;
     justify-content: center;
     align-items: center;
