@@ -1,26 +1,28 @@
-.sponsors{
+.sContainer .sponsor{
     display: flex;
-    align-items: center;
-    justify-items: center;
-    gap: 4%;
+    gap: .30rem;
+    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    flex-wrap: wrap;
 }
 .sContainer{
     width: 100vw;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    padding: 0 10vw;
 }
 .sContainer>h1{
-    padding-top: 24px;
+    padding: 24px;
+    text-align: center;
 }
-.sponsors a{
+.sponsor a{
     padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
 }
 
-.sContainer img {   
-    width: 75%;
+.sContainer .sponsor img {
+    width: 300px;
 }
+
+
