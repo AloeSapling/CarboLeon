@@ -5,8 +5,6 @@ import { TbWind, TbTemperature } from "react-icons/tb";
 import { WiHumidity, WiBarometer } from "react-icons/wi";
 import { useTranslation } from "react-i18next";
 
-
-
 const Main = ({ currentData, forecastData, date }) => {
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
@@ -48,7 +46,7 @@ const Main = ({ currentData, forecastData, date }) => {
         <img
           alt="weather"
           className="weather-icon"
-          src={`webpicons/${currentData.weather[0].icon}.webp`}
+          src={`images/webpicons/${currentData.weather[0].icon}.webp`}
         />
       </div>
       <div>
@@ -65,8 +63,10 @@ const Main = ({ currentData, forecastData, date }) => {
             <p>{isDropdown ? "\u2227" : "\u2228"}</p>
           </div>
         </button>
-        <div className={`contain ${isDropdown ? "show" : ""}`}>
-          <div className="noShow">
+        {/* <div className={`contain ${isDropdown ? "show" : ""}`}> */}
+        {/* <div className="noShow"> */}
+        {isDropdown ? (
+          <>
             <div className="air-conditions">
               <p className="title">{t("Home.weatherDet")}</p>
               <div className="details">
@@ -132,7 +132,7 @@ const Main = ({ currentData, forecastData, date }) => {
                         .slice(0, 5)}
                     </p>
                     <img
-                      src={`webpicons/${x.weather[0].icon}.webp`}
+                      src={`images/webpicons/${x.weather[0].icon}.webp`}
                       alt="weather-icon"
                     />
                     <p className="temp">
@@ -142,10 +142,12 @@ const Main = ({ currentData, forecastData, date }) => {
                 ))}
               </Splide>
             </div>
-          </div>
-        </div>
+          </>
+        ) : null}
+        {/* </div> */}
       </div>
     </div>
+    // </div>
   );
 };
 

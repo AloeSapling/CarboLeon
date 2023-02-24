@@ -1,5 +1,9 @@
 .sContainer .sponsor{
+.sContainer .sponsor{
     display: flex;
+    gap: .30rem;
+    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    flex-wrap: wrap;
     gap: .30rem;
     /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
     flex-wrap: wrap;
@@ -8,19 +12,28 @@
     width: 100vw;
     background-color: white;
     padding: 0 10vw;
+    padding: 0 10vw;
 }
 .sContainer>h1{
     padding: 24px;
     text-align: center;
+    padding: 24px;
+    text-align: center;
 }
 .sponsor a{
+.sponsor a{
     padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
 }
 
+.sContainer .sponsor img {
+    width: 300px;
 .sContainer .sponsor img {
     width: 300px;
 }

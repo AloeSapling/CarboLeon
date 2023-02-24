@@ -25,21 +25,21 @@ const Navbar = () => {
   return (
     <nav className={color ? "bg" : ""}>
       <Link to="/" className="full-logo">
-        <img src={"logo.webp"} alt="logo" className="logo" />
+        <img src={"images/logo.webp"} alt="logo" className="logo" />
         <p>CarboLeon</p>
       </Link>
       <ul className={isOpen ? "open" : ""}>
         <li>
           <a href="  ">
             <button className="langBtn" onClick={() => handleClick("en")} alt="uk button">
-              <img className="langimg" src="flags/uk.png" alt="uk flag"/>
+              <img className="langimg" src="images/flags/uk.png" alt="uk flag"/>
             </button>
           </a>
         </li>
         <li>
           <a href="  ">
             <button className="langBtn" onClick={() => handleClick("pl")} alt="poland button">
-              <img className="langimg" src="flags/poland.png" alt="poland flag"/>
+              <img className="langimg" src="images/flags/poland.png" alt="poland flag"/>
             </button>
           </a>
         </li>
