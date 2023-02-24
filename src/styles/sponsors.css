@@ -1,5 +1,4 @@
 .sContainer .sponsor{
-.sContainer .sponsor{
     display: flex;
     gap: .30rem;
     /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
@@ -21,7 +20,6 @@
     text-align: center;
 }
 .sponsor a{
-.sponsor a{
     padding: 14px;
     display: flex;
     align-items: center;
@@ -32,8 +30,6 @@
     flex: 1;
 }
 
-.sContainer .sponsor img {
-    width: 300px;
 .sContainer .sponsor img {
     width: 300px;
 }
