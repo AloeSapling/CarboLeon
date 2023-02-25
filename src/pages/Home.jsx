@@ -28,10 +28,7 @@ function Home() {
   };
   const { t } = useTranslation();
   const setSearchingLocation = async (location) => {
-    const geolocate = await fetch(
-      `${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY}`
-    ).then((res) => res.json());
-    console.log(geolocate);
+    const geolocate = await fetch(`${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY}`).then((res) => res.json());
     if (!geolocate.length) {
       alert("nie znaleziono miasta");
     } else {
@@ -66,7 +63,6 @@ function Home() {
   useEffect(() => {
     if(localStorage.getItem("city")) setSearchingLocation(localStorage.getItem("city"))
     else setSearchingLocation("Warszawa")
-    // setSearchingLocation("London");
   }, []);
 
   if (currentWeather && forecastWeather)
