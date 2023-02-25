@@ -6,6 +6,7 @@ import { WiHumidity, WiBarometer } from "react-icons/wi";
 import { useTranslation } from "react-i18next";
 
 const Main = ({ currentData, forecastData, date }) => {
+  console.log(currentData, forecastData)
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
   const { t } = useTranslation();

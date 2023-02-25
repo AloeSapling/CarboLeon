@@ -73,6 +73,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('/public/images/background.webp') center center;
     display: flex;
     align-items: center;
+    background-size: cover;
 }
 
 .background-img h1:nth-child(1) {

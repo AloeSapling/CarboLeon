@@ -132,6 +132,7 @@ $grey-color: #6d6d6d;
         }
         .weather-icon {
           width: 40%;
+          height: 100%;
 
           @include md {
             width: 90%;

@@ -16,66 +16,57 @@ import "../styles/dropdownButtons.css";
 import "../styles/legenda.css";
 
 function Home() {
-  const [currentWeather, setCurrentWeather] = useState(null)
-  const [forecastWeather, setForecastWeather] = useState(null)
-  const [date, setDate] = useState(null)
-  const [location, setLocation] = useState(null)
+  const [currentWeather, setCurrentWeather] = useState(null);
+  const [forecastWeather, setForecastWeather] = useState([]);
+  const [date, setDate] = useState(null);
+  const [location, setLocation] = useState(null);
 
-  const baseUrl = "https://api.openweathermap.org/data/2.5";
-  const {t} = useTranslation()
-  const setSearchingLocation = (location) => {
-    fetch(
-      `${baseUrl}/weather?q=${location}&units=metric&lang=${t("test.len")}&appid=${process.env.REACT_APP_API_KEY}`
-    )
-      .then((res) => {
-        if (!res.ok) {
-          console.log('fail');
-        }
-        else {
-          console.log('success');
-          localStorage.setItem("city", location)
-          return res.json();        
-        }
-      })
-      .then((data) => {
-        setCurrentWeather(data);
-      })
-      .catch(err => {
-        console.log(err)
-      })
-    fetch(
-      `${baseUrl}/forecast?q=${location}&units=metric&lang=pl&appid=${process.env.REACT_APP_API_KEY}`
-    )
-      .then((res) => {
-        if (!res.ok) {
-          console.log('fail');
-        }
-        else {
-          console.log('success');
-          localStorage.setItem("city", location)    
-          return res.json();    
-        }
-      })
-      .then((data) => {
-        setForecastWeather(data.list);
-      })
-      .catch(err => {
-        console.log(err)
-      })
-    setDate(new Date());
+  const api = {
+    weatherCurrentApi: "http://api.openweathermap.org/data/2.5/weather?",
+    geolocationApi: "http://api.openweathermap.org/geo/1.0/direct?",
+    weatherForecastApi: "http://api.openweathermap.org/data/2.5/forecast?",
+  };
+  const { t } = useTranslation();
+  const setSearchingLocation = async (location) => {
+    const geolocate = await fetch(
+      `${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY}`
+    ).then((res) => res.json());
+    console.log(geolocate);
+    if (!geolocate.length) {
+      alert("nie znaleziono miasta");
+    } else {
+      const lat = geolocate[0].lat;
+      const lon = geolocate[0].lon;
+
+      const currentWeatherData = await fetch(
+        `${api.weatherCurrentApi}lat=${lat}&lon=${lon}&units=metric&lang=${t(
+          "test.len"
+        )}&appid=${process.env.REACT_APP_API_KEY}`
+      ).then((res) => res.json());
+
+      const forecastWeatherData = await fetch(
+        `${api.weatherForecastApi}lat=${lat}&lon=${lon}&units=metric&lang=pl&appid=${process.env.REACT_APP_API_KEY}`
+      ).then((res) => res.json());
+
+      setCurrentWeather(currentWeatherData);
+      setForecastWeather(forecastWeatherData.list);
+      setDate(new Date());
+      // localStorage.setItem("city", location)
+    }
+
     setLocation("");
   };
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
-      localStorage.setItem("city", location)
       setSearchingLocation(location);
     }
   };
 
   useEffect(() => {
-    if(localStorage.getItem("city")) setSearchingLocation(localStorage.getItem("city"))
-    else setSearchingLocation("Kraków")
+    // if(localStorage.getItem("city")) setSearchingLocation(localStorage.getItem("city"))
+    // else setSearchingLocation("Kraków")
+    setSearchingLocation("London");
   }, []);
 
   if (currentWeather && forecastWeather)
@@ -95,30 +86,34 @@ function Home() {
                 <Asside />
               </div>
 
-          <div className="main">
-            <div className="search">
-              <FaSearch />
-              <input 
-              type="text" 
-              placeholder={t("Home.input")} 
-              value={location}
-              onChange ={(e) => setLocation(e.target.value)}
-              onKeyDown={searchLocation}
-              />
+              <div className="main">
+                <div className="search">
+                  <FaSearch />
+                  <input
+                    type="text"
+                    placeholder={t("Home.input")}
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
+                    onKeyDown={searchLocation}
+                  />
+                </div>
+                <Main
+                  currentData={currentWeather}
+                  forecastData={forecastWeather}
+                  date={date}
+                />
+              </div>
             </div>
-            <Main currentData={currentWeather} forecastData={forecastWeather} date={date} />
           </div>
+          <section className="THE-section">
+            <div className="divV">
+              <MapElem></MapElem>
+            </div>
+          </section>
         </div>
+        <Sponsors />
       </div>
-      <section className="THE-section">
-        <div className="divV">
-          <MapElem></MapElem>
-        </div>
-        </section>
-    </div>
-    <Sponsors />
-    </div>
-  )
+    );
 }
 
 export default Home;
