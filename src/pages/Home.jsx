@@ -51,7 +51,7 @@ function Home() {
       setCurrentWeather(currentWeatherData);
       setForecastWeather(forecastWeatherData.list);
       setDate(new Date());
-      // localStorage.setItem("city", location)
+      localStorage.setItem("city", location)
     }
 
     setLocation("");
@@ -64,9 +64,9 @@ function Home() {
   };
 
   useEffect(() => {
-    // if(localStorage.getItem("city")) setSearchingLocation(localStorage.getItem("city"))
-    // else setSearchingLocation("Kraków")
-    setSearchingLocation("London");
+    if(localStorage.getItem("city")) setSearchingLocation(localStorage.getItem("city"))
+    else setSearchingLocation("Warszawa")
+    // setSearchingLocation("London");
   }, []);
 
   if (currentWeather && forecastWeather)
