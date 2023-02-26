@@ -1,0 +1,93 @@
+{
+    "Contact": {
+        "title": "Contact us",
+        "1": "We have various contacts and social medias. If you have recieved any message or request from a contact or social media that isn't listed here, then it wasn't sent by us but by a person who is attempting to impersonate us.",
+        "2": "Please be respectful and do not spam any of our contacts.",
+        "3": "Our socials:",
+        "4": "Contact us at:",
+        "5": "for business inquiries:"
+
+    },
+    "About": {
+        "1": "About Us",
+        "Text": "Carboleon is a website whose purpose is to show and educate about the global and local situation of air pollution. Thanks to the hard work and commitment of the development team, this goal has not only been fulfilled, but also expanded to provide knowledge about more then just air pollution! Now, alongside a pollution map that's easy to read and use, the website also features a weather index. To help the site function, it uses various API's including 'openstreetmap', 'leaflet', 'waqi' and 'openweather'. The project is for a polish national competition called 'Zwolnieni z Teorii' and is funded by it's sponsor: 'e-tronix.pl', 'oko-design'. Check out our social media's to find more interesting content related to our cause!",
+        "title": "Find out something about us",
+        "btn-hide": "Hide",
+        "btn-show": "Show More"
+    },
+    "Home": {
+        "title": "Know what YOU BREATHE",
+        "input": "Enter the city name",
+        "part1": "Click me to ",
+        "hide": "hide",
+        "show": "show",
+        "part2": "details",
+        "weatherDet": "Weather details",
+        "presure": "pressure",
+        "hum": "Humidity",
+        "wind": "Wind",
+        "sens": "Sensed temperature",
+        "Fore": "Forecasted weather"
+    },
+    "Sponsors": {
+        "1": "Our Sponsors"
+    },
+    "Months": [
+        {"mont":"December"},
+        {"mont":"January"}, 
+        {"mont":"February"}, 
+        {"mont":"March"}, 
+        {"mont":"April"}, 
+        {"mont":"May"}, 
+        {"mont":"June"}, 
+        {"mont":"July"}, 
+        {"mont":"August"}, 
+        {"mont":"September"}, 
+        {"mont":"October"}, 
+        {"mont":"November"}, 
+        {"mont":"December"}
+    ],
+    "Days": [
+            {"day":"Sunday"},
+            {"day":"Monday"},
+            {"day":"Tuesday"},
+            {"day":"Wednesday"},
+            {"day":"Thursday"},
+            {"day":"Friday"},
+            {"day":"Saturday"},
+            {"day":"Sunday"}
+    ],
+    "apiLang": {
+        "lang": "en"
+    },
+    "asside": {
+        "about": "About",
+        "consup": "Contact and Support",
+        "map": "Map"
+    },
+    "Legend": {
+        "good": "Good (0-50)",
+        "fine": "Fine (51-100)",
+        "worse": "Worse (101-150)",
+        "bad": "Bad (151-200)",
+        "vbad": "Very bad (201-300)",
+        "ebad": "Extremely bad (300+)"
+    },
+    "test":{
+        "len":"en"
+    },
+    "layer": {
+        "satelite": "Satelite",
+        "topographicMap": "Topographic Map",
+        "airports": "Airports",
+        "airPollution": "Air Pollution"
+    },
+    "NavBar": {
+        "Home": "Home",
+        "About": "About us",
+        "Contact": "Contact",
+        "PolMap": "Pollution Map"
+    }
+
+
+}

@@ -1,0 +1,91 @@
+{
+    "Contact": {
+        "title": "Skontaktuj się z nami",
+        "1": "Mamy różne kontakty i media społecznościowe. Jeśli otrzymałeś jakąkolwiek wiadomość lub prośbę od kontaktu lub mediów społecznościowych, których nie ma na liście, oznacza to, że nie zostały one wysłane przez nas, ale przez osobę, która próbuje się pod nas podszyć.",
+        "2": "Prosimy o szacunek i nie spamowanie żadnych kontaktów",
+        "3": "Nasze serwisy społecznościowe:",
+        "4": "Skontaktuj się z nami na:",
+        "5": "w przypadku zapytań biznesowych:"
+    },
+    "About": {
+        "1": "O nas",
+        "Text": "Carboleon to strona internetowa, której powołaniem jest pokazywać i edukować o globalnej jak i lokalnej sytuacji zanieczyszczenia powietrza. Dzięki ciężkiej pracy i determinacji drużyny deweloperskiej, ten cel nie tylko został zrealizowany, ale też został rozszerzony aby dostarczać wiedzę o więcej niż tylko zanieczyszczeniu powietrza! Teraz, razem z mapą zanieczyszczeń, która jest łatwa to przeczytania i użytkowania, ta strona internetowa posiada również indeks pogody. Aby pomoć stronie funkcjonować, wykorzystuje ona różnego rodzaju API, w tym: 'openstreetmap', 'leaflet', 'waqi' i 'openweather'. Ten projekt został stworzony dla ogólnopolskiej olympiady zwanej 'Zwolnieni z Teorii' i jest fundowana przez jego sponsora: 'e-tronix.pl' i 'oko-design'. Sprawdź nasze social media aby znaleźć więcej treści związanych z naszym celem.",
+        "title": "Dowiedz się czegoś o nas",
+        "btn-hide": "Schowaj",
+        "btn-show": "Pokaż więcej"
+    },
+    "Days": [
+        {"day":"Niedziela"},
+        {"day":"Poniedziałek"},
+        {"day":"Wtorek"},
+        {"day":"Środa"},
+        {"day":"Czwartek"},
+        {"day":"Piątek"},
+        {"day":"Sobota"},
+        {"day":"Niedziela"}
+        ],
+    "Home": {
+        "title": "Wiedz, czym ODDYCHASZ",
+        "input": "Wpisza nazwę miasta",
+        "part1": "Kliknij mnie żeby",
+        "hide": "schować",
+        "show": "rozwinąć",
+        "part2": "detale",
+        "weatherDet": "Detale pogodowe",
+        "presure": "Ciśnienie",
+        "hum": "Wilgotność",
+        "wind": "wiatr",
+        "sesns": "Wyczuwana temperatura",
+        "Fore": "Zapowiadana pogoda"
+    },
+    "Sponsors": {
+        "1": "Nasi Sponsorzy"
+    },
+    "Months": [
+        {"mont":"Grudzień"},
+        {"mont":"Styczeń"}, 
+        {"mont":"Luty"}, 
+        {"mont":"Marzec"}, 
+        {"mont":"Kwiecień"}, 
+        {"mont":"Maj"}, 
+        {"mont":"Czerwiec"}, 
+        {"mont":"Lipiec"}, 
+        {"mont":"Sierpień"}, 
+        {"mont":"Wrzesień"}, 
+        {"mont":"Październik"}, 
+        {"mont":"Listopad"}, 
+        {"mont":"Grudzień"}
+    ],
+    "apiLang": {
+        "lang": "pl"
+    },
+    "asside": {
+        "about": "O Nas",
+        "consup": "Pomoc i Kontakt",
+        "map": "Mapa"
+    },
+    "Legend": {
+        "good": "Dobre (0-50)",
+        "fine": "Średnie (51-100)",
+        "worse": "Niezdrowe dla osób wrażliwych (101-150)",
+        "bad":  "Niezdrowe (151-200)",
+        "vbad": "Bardzo niezdrowe (201-300)",
+        "ebad": "Zagrożenie dla życia (300+)"
+    },
+    "test":{
+        "len":"pl"
+    },
+    "layer": {
+        "satelite": "Satelita",
+        "topographicMap": "Mapa Topograficzna",
+        "airports": "Lotniska",
+        "airPollution": "Zanieczyszczenie Powietrza"
+    },
+    "NavBar": {
+        "Home": "Strona Główna",
+        "About": "O nas",
+        "Contact": "Kontakt",
+        "PolMap": "Mapa"
+    }
+
+}

@@ -1,0 +1,89 @@
+.sectar{
+    display: block;
+}
+.SAContain{
+    display: inline-block;
+}
+.sponsorIContainer{
+    display: inline-block;
+    position: relative;
+    top: 0;
+}
+.cTitle{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.tContainer{
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+.iSocial{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding:20px;
+    width: fit-content;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 10px;
+}
+.iSocial>p{
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+}
+.insta{
+    background-image: linear-gradient(to top left, rgb(192, 1, 151), rgb(255, 185, 246));
+}
+.tik{
+    background-image: linear-gradient(to bottom right,rgb(120, 96, 255), rgb(0, 0, 0));
+}
+.youtub{
+    background-image: linear-gradient(to top left, rgb(192, 1, 1), rgb(255, 185, 185));
+}
+.faceboo{
+    background-image: linear-gradient(to top left, rgb(1, 132, 192), rgb(185, 235, 255));
+}
+.blanku{
+    background-color: rgb(228, 228, 228);
+}
+.blankus{
+    background-color: rgb(241, 241, 241);
+    width: 70%;
+}
+.contact{
+    margin-bottom: 20px;
+    width: fit-content;
+}
+.contact>p{
+    font-weight: bold;
+    margin: 4px;
+    color: black;
+}
+.qr{
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    width: fit-content;
+}
+.qrCode{
+    min-width: 215px;
+    min-height: 260px;
+    max-width: 215px;
+    max-height: 260px;
+}
+.socials a{
+    color: inherit;
+    text-decoration: inherit;
+    margin-top: 10px;
+}

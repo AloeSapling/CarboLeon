@@ -1,0 +1,41 @@
+@media screen and (max-width: 799px){ 
+    .THE-section .divV{
+        height: 400px;
+
+    }
+    .divV{
+        width: 100%;
+    }
+
+    .leaflet-control-attribution{
+        height: 50px;
+    }
+
+    .cTitle{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1431px){
+    .leaflet-draw-toolbar  {
+        display: none;
+    }
+}
+@media screen and (max-width: 1324px) {
+    .iDiv{
+        max-width:11px;
+    }
+    .LEContainer > h3{
+        font-size: xx-small;
+    }
+}
+@media screen and (max-width: 799px) {
+    .lContainer{
+        margin-bottom: 50px;
+        margin-left: 0 !important;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .lContainer{
+        margin-left: 50px;
+    }
+}

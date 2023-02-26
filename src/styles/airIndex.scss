@@ -1,0 +1,248 @@
+@import "../constants/breakpoints";
+
+$grey-color: #6d6d6d;
+
+.container {
+  color: $grey-color;
+  background: rgba(39, 109, 43, .5);
+  padding: 40px;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 0.7fr 5fr;
+  width: 100%;
+  gap: 3vh;
+
+  @include md {
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .asside {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    background: #e7e9ee;
+    border-radius: 30px;
+    gap: 50px;
+
+    @include md {
+      font-size: 15px;  
+      flex-direction: row;
+    }
+
+    a {
+      text-decoration: none;
+
+      div {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.3s;
+        gap: 5px;
+        color: $grey-color;
+  
+        svg {
+          width: 40px;
+          height: 40px;
+  
+          @include xs {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        &:hover {
+          color: #000;
+        }
+    }
+      
+    }
+  }
+  .main {
+    padding: 0;
+    align-items: center;
+    text-align: left;
+
+
+    .search {
+      padding: 1.5vh;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      background: #e7e9ee;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+
+      input {
+        flex: 1;
+        font-size: 1em;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #000;
+        width: 100%;
+      }
+      ::placeholder {
+        color: $grey-color;
+      }
+    }
+    .weather-params {
+      display: flex;
+      flex-direction: column;
+      gap: 3vh;
+      width: 100%;
+
+      .current-temp {
+        background-color: #e7e9ee;
+        padding: 30px;
+        width: 100%;
+        border-radius: 30px;
+        margin-top: 3vh ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include md {
+          flex-direction: column;
+        }
+
+        .city {
+          color: #000;
+          font-size: 2rem;
+          font-weight: 600;
+        }
+
+        .temp {
+          font-size: 3rem;
+          font-weight: 700;
+          color: #000;
+          margin: 40px 0 0 30px;
+
+          @include xs {
+            font-size: 2rem;
+            margin: 0;
+          }
+        }
+        .weather-icon {
+          width: 40%;
+          height: 100%;
+
+          @include md {
+            width: 90%;
+          }
+        }
+      }
+      .forecast-weather {
+        color: #000;
+        border-radius: 30px;
+        background: #e7e9ee;
+        width: 77vw;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        @include xs {
+          width: 90vw;
+        }
+
+
+
+        .title {
+          font-weight: 700;
+          font-size: 1.4em;
+          margin-bottom: 50px;
+          text-align: center;
+        }
+
+        .splide {
+          flex: 1;
+
+          .splide-slide {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+
+            .time-info {
+              text-align: center;
+              font-weight: 500;
+              color: $grey-color;
+              font-size: 1.1em;
+            }
+
+            .temp {
+              font-weight: 700;
+              font-size: 1.4em;
+            }
+
+            img {
+              margin-top: 30px;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .air-conditions {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #000;
+        border-radius: 30px;
+        background: #e7e9ee;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-weight: 700;
+          font-size: 1.4em;
+          margin-bottom: 50px;
+          text-align: center;
+        }
+
+        .details {
+          flex: 1;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 50px;
+
+          @include xs {
+            grid-template-columns: 1fr;
+          }
+
+          .prop-title {
+            color: $grey-color;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            svg {
+              font-size: 1.7em;
+            }
+            span {
+              font-size: 1.1em;
+              font-weight: 500;
+            }
+          }
+          .measurement {
+            margin-top: 20px;
+            margin-left: 40px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .forecast {
+      background: #dadce1;
+      border-radius: 30px;
+      padding: 15px;
+    }
+  }
+}
