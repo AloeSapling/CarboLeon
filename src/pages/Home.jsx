@@ -37,7 +37,6 @@ function Home() {
     } else {
       const lat = geolocate[0].lat;
       const lon = geolocate[0].lon;
-      console.log(geolocate)
       setErrorInfo(false)
       const currentWeatherData = await fetch(
         `${api.weatherCurrentApi}lat=${lat}&lon=${lon}&units=metric&lang=${t(
