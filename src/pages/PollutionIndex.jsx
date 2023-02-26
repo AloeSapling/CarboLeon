@@ -4,7 +4,7 @@ import Sponsors from '../components/Sponsors'
 
 function PollutionIndex() {
     const [pollutionLevel, setPollutionLevel] = useState('good');
-  document.title = "CarboLeon | PollutionsTexts"
+  document.title = "CarboLeon | PollutionTexts"
   const {t} = useTranslation()
   return (
     <>
@@ -14,17 +14,17 @@ function PollutionIndex() {
       <div className='margin3'>
         <div className='mContainer'>
           <main className='main'> {/* The main about section */}
-          <h1>{t("PollutionsTextTitles.what")}</h1>
+          <h1>{t("PollutionTextTitles.what")}</h1>
           <div>
-            {t("PollutionsTexts.what")}
+            {t("PollutionTexts.what")}
           </div>
-          <h1>{t("PollutionsTextTitles.why")}</h1>
+          <h1>{t("PollutionTextTitles.why")}</h1>
           <div>
-            {t("PollutionsTexts.why")}
+            {t("PollutionTexts.why")}
           </div>
-          <h1>{t("PollutionsTextTitles.wFight")}</h1>
+          <h1>{t("PollutionTextTitles.wFight")}</h1>
           <div>
-            {t("PollutionsTexts.wFight")}
+            {t("PollutionTexts.wFight")}
           </div>
           <div>
             <label for='pollutions'> {t("PollutionIndexTitles.dropdowntitle")} </label>
@@ -38,9 +38,10 @@ function PollutionIndex() {
           </select>
           <label> {t("PollutionIndexTitles.dropdowntitle2")}</label>
           </div>
-          <h1>{t(`PollutionsTextTitles.${pollutionLevel}`)}</h1>
+          <h1>{t(`PollutionTextTitles.${pollutionLevel}`)}</h1>
+          <h1>{t("PollutionTexts.wDo")}</h1>
           <div>
-            {t(`PollutionsTexts.${pollutionLevel}`)}
+            {t(`PollutionTexts.${pollutionLevel}`)}
           </div>
           </main>
         </div>
