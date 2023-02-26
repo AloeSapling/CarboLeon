@@ -97,5 +97,16 @@
         "bad": "Twoje miasto/okolica jest zanieczyszczone więcej niż powinno być - co jest niedobre. Podobnie jak przy średnich poziomach zanieczyszczeniach powietrza powinieneś zacząć myśleć nad kupieniem sobie maseczki i/lub kupienia sobie oczyszczacza powietrza(jeżeli cię stać na niego) a jak doświadczasz problemy płucne to warto się skontaktować z lekarzem. Powinieneś też pomyśleć nad porozmawianiem z swoimi przyjacziółmi, sąsiadami i/lub rodziny na temat zanieczyszczenia i co mogą zrobić żeby się uchronić/je limitować. Spróbuj często jechać autobusem albo na rowerze do pracy/szkoły.",
         "vbad": "Twoje miasto/okolica cierpi z powodu zanieczyszczenia powietrza. Jest rekomendowane nosić maseczkę i zmienić swój styl życia na bardziej “zielony”. Poinformuj innych w twoim mieście/okolicy o problemie. Jeśli doświadczasz oznaki problemów/bólu z sercem/płucami i lub ciągłe bóle głowy - powinieneś skontaktować się z lekarzem. Może powinieneś zacząć chodzić regularnie do lekarza. Ogranicz czas spędzany blisko dymu i innych form zanieczyszczenia, jeśli to nie jest możliwe, unikaj wdychania niego. Pogoda jaką przynosi zanieczyszczenie, może spowodować depresję lub inne choroby psychiczne, staraj się unikać nabywania ich. Jeżeli jest to możliwe, przemyśl wyprowadzkę.",
         "ebad": "Twoje miasto/okolica w dużym stopniu cierpi z powodu zanieczyszczenia powietrza. Jest bardzo rekomendowane nosić maseczkę i zmienić swój styl życia na bardziej “zielony”. Poinformuj innych w twoim mieście/okolicy o okropnej sytuacji i problemie. Jeśli doświadczasz: ciągłe kaszlanie, ciągłe bóle głowu lub bólu serca/klatki piersiowej - powinieneś skontaktować się z lekarzem. Powinieneś zacząć chodzić regularnie do lekarza. Ogranicz czas spędzany blisko dymu i innych form zanieczyszczenia, jeśli to nie jest możliwe, unikaj wdychania niego. Pogoda jaką przynosi zanieczyszczenie, może spowodować depresję lub inne choroby psychiczne, staraj się unikać nabywania ich. Jeżeli jest to możliwe, weź pod dużą uwagę rozważanie wyprowadzki."
+    },
+    "PollutionsTextTitles": {
+        "what":"Czym jest zanieczyszczenie powietrza?",
+        "why": "Czemu powinno cię to obchodzić zanieczyszczenie powietrza?",
+        "wFight": "Co możesz zrobić, żeby zwalczyć zanieczyszczenie powietrza?",
+        "good": "Dobre (0-50)",
+        "fine": "Umiarkowane (51-100)",
+        "worse": "Średnie (101-150)",
+        "bad": "Niezdrowe (151-200)",
+        "vbad": "Bardzo niezdrowe (201-300)",
+        "ebad": "Zagrożające życiu (300+)"
     }
 }

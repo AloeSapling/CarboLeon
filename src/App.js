@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components";
-import { Home, About, Contact, Error, Map } from "./pages";
+import { Home, About, Contact, Error, Map, PollutionIndex } from "./pages";
 
 
 
@@ -20,7 +20,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/map" element={<Map />} />
-          <Route path="*" element={<Error />} />/
+          <Route path="*" element={<Error />} />
+          <Route path="/pollutionindex" element={<PollutionIndex />} />
         </Routes>
       </div>
     </BrowserRouter>
