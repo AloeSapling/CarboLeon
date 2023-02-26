@@ -49,105 +49,99 @@ const Main = ({ currentData, forecastData, date }) => {
           src={`images/webpicons/${currentData.weather[0].icon}.webp`}
         />
       </div>
-      <div>
-        <button
-          onClick={() => setIsDropdown(!isDropdown)}
-          className="reveal-button"
-        >
-          <p>
-            {t("Home.part1")}{" "}
-            {isDropdown ? `${t("Home.hide")}` : `${t("Home.show")}`}{" "}
-            {t("Home.part2")}
-          </p>
-          <div>
-            <p>{isDropdown ? "\u2227" : "\u2228"}</p>
-          </div>
-        </button>
-        {/* <div className={`contain ${isDropdown ? "show" : ""}`}> */}
-        {/* <div className="noShow"> */}
-        {isDropdown ? (
-          <>
-            <div className="air-conditions">
-              <p className="title">{t("Home.weatherDet")}</p>
-              <div className="details">
-                <div>
-                  <div className="prop-title">
-                    <WiBarometer />
-                    <span>{t("Home.presure")}</span>
-                  </div>
-                  <h3 className="measurement">
-                    {Math.round(currentData.main.pressure)} hPa
-                  </h3>
+      <button
+        onClick={() => setIsDropdown(!isDropdown)}
+        className="reveal-button"
+      >
+        <p>
+          {t("Home.part1")}{" "}
+          {isDropdown ? `${t("Home.hide")}` : `${t("Home.show")}`}{" "}
+          {t("Home.part2")}
+        </p>
+        <div>
+          <p>{isDropdown ? "\u2227" : "\u2228"}</p>
+        </div>
+      </button>
+      {isDropdown ? (
+        <>
+          <div className="air-conditions">
+            <p className="title">{t("Home.weatherDet")}</p>
+            <div className="details">
+              <div>
+                <div className="prop-title">
+                  <WiBarometer />
+                  <span>{t("Home.presure")}</span>
                 </div>
-                <div>
-                  <div className="prop-title">
-                    <WiHumidity />
-                    <span>{t("Home.hum")}</span>
-                  </div>
-                  <h3 className="measurement">
-                    {Math.round(currentData.main.humidity)} %
-                  </h3>
+                <h3 className="measurement">
+                  {Math.round(currentData.main.pressure)} hPa
+                </h3>
+              </div>
+              <div>
+                <div className="prop-title">
+                  <WiHumidity />
+                  <span>{t("Home.hum")}</span>
                 </div>
-                <div>
-                  <div className="prop-title">
-                    <TbWind />
-                    <span>{t("Home.wind")}</span>
-                  </div>
-                  <h3 className="measurement">
-                    {Math.round(currentData.wind.speed)} m/h
-                  </h3>
+                <h3 className="measurement">
+                  {Math.round(currentData.main.humidity)} %
+                </h3>
+              </div>
+              <div>
+                <div className="prop-title">
+                  <TbWind />
+                  <span>{t("Home.wind")}</span>
                 </div>
-                <div>
-                  <div className="prop-title">
-                    <TbTemperature />
-                    <span>{t("Home.sens")}</span>
-                  </div>
-                  <h3 className="measurement">
-                    {Math.round(currentData.main.feels_like)} °C
-                  </h3>
+                <h3 className="measurement">
+                  {Math.round(currentData.wind.speed)} m/h
+                </h3>
+              </div>
+              <div>
+                <div className="prop-title">
+                  <TbTemperature />
+                  <span>{t("Home.sens")}</span>
                 </div>
+                <h3 className="measurement">
+                  {Math.round(currentData.main.feels_like)} °C
+                </h3>
               </div>
             </div>
-            <div className="forecast-weather">
-              <p className="title">{t("Home.Fore")}</p>
-              <Splide
-                options={{
-                  perPage: splideRows,
-                  arrows: false,
-                  pagination: false,
-                  frag: "free",
-                }}
-                className="splide"
-              >
-                {forecastData.map((x, index) => (
-                  <SplideSlide key={index} className="splide-slide">
-                    <p className="time-info">
-                      {t(`Days.${[new Date(x.dt * 1000).getDay()]}.day`)}
-                    </p>
-                    <p className="time-info">
-                      {new Date(x.dt * 1000).getUTCDate()}{" "}
-                      {t(`Months.${[date.getMonth() + 1]}.mont`)} |{"  "}
-                      {new Date(x.dt * 1000)
-                        .toLocaleTimeString(undefined)
-                        .slice(0, 5)}
-                    </p>
-                    <img
-                      src={`images/webpicons/${x.weather[0].icon}.webp`}
-                      alt="weather-icon"
-                    />
-                    <p className="temp">
-                      {Math.round(x.main.temp_min + x.main.temp_max) / 2} °C
-                    </p>
-                  </SplideSlide>
-                ))}
-              </Splide>
-            </div>
-          </>
-        ) : null}
-        {/* </div> */}
-      </div>
+          </div>
+          <div className="forecast-weather">
+            <p className="title">{t("Home.Fore")}</p>
+            <Splide
+              options={{
+                perPage: splideRows,
+                arrows: false,
+                pagination: false,
+                frag: "free",
+              }}
+              className="splide"
+            >
+              {forecastData.map((x, index) => (
+                <SplideSlide key={index} className="splide-slide">
+                  <p className="time-info">
+                    {t(`Days.${[new Date(x.dt * 1000).getDay()]}.day`)}
+                  </p>
+                  <p className="time-info">
+                    {new Date(x.dt * 1000).getUTCDate()}{" "}
+                    {t(`Months.${[date.getMonth() + 1]}.mont`)} |{"  "}
+                    {new Date(x.dt * 1000)
+                      .toLocaleTimeString(undefined)
+                      .slice(0, 5)}
+                  </p>
+                  <img
+                    src={`images/webpicons/${x.weather[0].icon}.webp`}
+                    alt="weather-icon"
+                  />
+                  <p className="temp">
+                    {Math.round(x.main.temp_min + x.main.temp_max) / 2} °C
+                  </p>
+                </SplideSlide>
+              ))}
+            </Splide>
+          </div>
+        </>
+      ) : null}
     </div>
-    // </div>
   );
 };
 

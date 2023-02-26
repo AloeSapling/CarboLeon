@@ -27,6 +27,7 @@
     "Home": {
         "title": "Wiedz, czym ODDYCHASZ",
         "input": "Wpisza nazwę miasta",
+        "error": "Nie znaleziono miasta. Spróbuj ponownie",
         "part1": "Kliknij mnie żeby",
         "hide": "schować",
         "show": "rozwinąć",

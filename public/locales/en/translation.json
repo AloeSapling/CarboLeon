@@ -18,6 +18,7 @@
     "Home": {
         "title": "Know what YOU BREATHE",
         "input": "Enter the city name",
+        "error": "Incorrect city. Please try again",
         "part1": "Click me to ",
         "hide": "hide",
         "show": "show",

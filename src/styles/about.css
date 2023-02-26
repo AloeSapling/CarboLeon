@@ -7,9 +7,11 @@
 .main h1{
     text-decoration: underline;
     font-size: 42px;
+    margin-bottom: 20px;
 }
 .main>div{
     display: block;
+    line-height: 170%;
 }
 .main>div>p{
     font-size: clamp(1rem, 3vw, 2rem); 
