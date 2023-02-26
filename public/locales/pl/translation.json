@@ -66,11 +66,11 @@
     },
     "Legend": {
         "good": "Dobre (0-50)",
-        "fine": "Średnie (51-100)",
-        "worse": "Niezdrowe dla osób wrażliwych (101-150)",
+        "fine": "Umiarkowane (51-100)",
+        "worse": "Średnie (101-150)",
         "bad":  "Niezdrowe (151-200)",
         "vbad": "Bardzo niezdrowe (201-300)",
-        "ebad": "Zagrożenie dla życia (300+)"
+        "ebad": "Zagrożające życiu (300+)"
     },
     "test":{
         "len":"pl"
@@ -86,6 +86,16 @@
         "About": "O nas",
         "Contact": "Kontakt",
         "PolMap": "Mapa"
+    },
+    "PollutionsTexts": {
+        "what":"Zanieczyszczenie powietrza to kontaminacja powietrza przez szkodliwe dla środowiska substancje. Są one szkodliwe ponieważ zmieniają naturalne cechy atmosfery ziemskiej. Do nich zaliczamy cząsteczki, które możemy wdychać złożony z siarczanów, azotanów, amoniaku, chlorków sodu, czarnego węgla, pyłu mineralnego lub wody. Nazywamy je również “cząstkami stałymi” (PM z ang. “Particulate Matter”). PM może być o różnych rozmiarach i jest generalnie definiowany swoją średnicą aerodynamiczną, z czego PM2.5 oraz PM10 są najbardziej pospolitymi w ramach regulacyjnych i istotnych dla zdrowia.",
+        "why": "Wiele osób cierpi z powodu zanieczyszczenia powietrza, i nawet o tym nie wiedząc, ty możesz być jednym z nich! Duża część ludzkości nie rozumie powagę tej sytuacji. 7 milionów - taka jest liczba osób które zmarły PRZEDWCZEŚNIE z powodu zanieczyszczenia i jego skutków. Jest również bardzo możliwe,  że kontaminacja powietrza przyczyniła się do wielu śmierci osób starszych. Podobnie jak z wieloma rakami, jest trudno wykryć w wczesnych fazach, że cierpisz z tego powodu. Część powodu dlaczego posiada tą cechę jest ponieważ to dosłownie może powodować raka płuc lub inne choroby jak np. Udary, choroby serca, ostre i przewlekłe choroby układu oddechowego. Dla większości, jak nie wszystkich śmiertelnych skutków zanieczyszczonego powietrza, trudno jest znaleźć powód chorób, jak i symptomy będące niezauważalne, nieistniejące lub przypominające pospolite choroby póki nie będzie za późno…",
+        "wFight": "Jeżeli chodzi o zwalczanie zanieczyszczenie powietrza, to najlepsza rzecz jaką możesz zrobić to poinformować innych o problemie, sprzeciwiać się usuwaniu obiektów, które usuwają CO2 (np. Lasy albo inne rośliny) i wspierać fundacje, które sadzą więcej roślin. Choć dobrze jest to robić, zwalczanie poziomu który teraz mamy to jedynie pół problemu - trzeba również zwalczyć źródła tej kontaminacji powietrza. Ważne w tym jest pamiętać, że choć pojedynczy człowiek może niewiele zdziałać, to grupy indywidualnych osób już mogą wiele, ale jak każda z osób, która mogłaby być częścią tej grupy, nie jest ponieważ uważa, że jej czyny są bezsensowne, to wtedy nic nie zostanie zdziałane. Do rzeczy, które ty i inni możecie robić należą: zmiana formy transport - najlepiej zmienić modę transportu na pociągi, autobusy, rowery lub zwykłe chodzenie (jeśli jest to niemożliwe to zmiana na auto hybrydowe lub elektryczne jest krokiem w dobrą stronę), zmień swoje ogrzewanie domowe na elektryczne lub gazowe, bądź uważny na temat od jakich firm kupujesz produkty - kupując od nich produkt wspierasz ich oraz ich działania (jeśli ich działania tworzą zanieczyszczenie, to wtedy wspierasz to kupując ich produkty).",
+        "good": "Twoje miasto/okolica nie jest zbytnio zanieczyszczona, więc nie możesz za dużo zrobić, żeby się uchronić, bo nie ma za bardzo przed czym (przynajmniej jeśli chodzi o zanieczyszczenie). Powinieneś się cieszyć i być wdzięczny, że ty i/lub urzędnicy krajowi/miasta i/lub twoi współmieszkańcy miasta utrzymują je czyste.",
+        "fine": "Twoje miasto/okolica nie jest aż tak zanieczyszczone. Nie powinieneś musieć się zbytnio martwić o zanieczyszczeniu. Jeżeli doświadczasz problemy płucne, to jest możliwość, że powinieneś pójść z tym do lekarza lub zacząć nosić maseczkę albo kupić sobie oczyszczacz powietrza (jeżeli cię stać na niego).",
+        "worse": "Twoje miasto/okolica jest trochę zanieczyszczone. Powinieneś zacząć myśleć nad kupieniem sobie maseczki i/lub kupienia sobie oczyszczacza powietrza(jeżeli cię stać na niego). Jak doświadczasz problemy płucne to warto się skontaktować z lekarzem. Spróbuj jechać autobusem albo na rowerze do pracy/szkoły.",
+        "bad": "Twoje miasto/okolica jest zanieczyszczone więcej niż powinno być - co jest niedobre. Podobnie jak przy średnich poziomach zanieczyszczeniach powietrza powinieneś zacząć myśleć nad kupieniem sobie maseczki i/lub kupienia sobie oczyszczacza powietrza(jeżeli cię stać na niego) a jak doświadczasz problemy płucne to warto się skontaktować z lekarzem. Powinieneś też pomyśleć nad porozmawianiem z swoimi przyjacziółmi, sąsiadami i/lub rodziny na temat zanieczyszczenia i co mogą zrobić żeby się uchronić/je limitować. Spróbuj często jechać autobusem albo na rowerze do pracy/szkoły.",
+        "vbad": "Twoje miasto/okolica cierpi z powodu zanieczyszczenia powietrza. Jest rekomendowane nosić maseczkę i zmienić swój styl życia na bardziej “zielony”. Poinformuj innych w twoim mieście/okolicy o problemie. Jeśli doświadczasz oznaki problemów/bólu z sercem/płucami i lub ciągłe bóle głowy - powinieneś skontaktować się z lekarzem. Może powinieneś zacząć chodzić regularnie do lekarza. Ogranicz czas spędzany blisko dymu i innych form zanieczyszczenia, jeśli to nie jest możliwe, unikaj wdychania niego. Pogoda jaką przynosi zanieczyszczenie, może spowodować depresję lub inne choroby psychiczne, staraj się unikać nabywania ich. Jeżeli jest to możliwe, przemyśl wyprowadzkę.",
+        "ebad": "Twoje miasto/okolica w dużym stopniu cierpi z powodu zanieczyszczenia powietrza. Jest bardzo rekomendowane nosić maseczkę i zmienić swój styl życia na bardziej “zielony”. Poinformuj innych w twoim mieście/okolicy o okropnej sytuacji i problemie. Jeśli doświadczasz: ciągłe kaszlanie, ciągłe bóle głowu lub bólu serca/klatki piersiowej - powinieneś skontaktować się z lekarzem. Powinieneś zacząć chodzić regularnie do lekarza. Ogranicz czas spędzany blisko dymu i innych form zanieczyszczenia, jeśli to nie jest możliwe, unikaj wdychania niego. Pogoda jaką przynosi zanieczyszczenie, może spowodować depresję lub inne choroby psychiczne, staraj się unikać nabywania ich. Jeżeli jest to możliwe, weź pod dużą uwagę rozważanie wyprowadzki."
     }
-
 }
