@@ -37,9 +37,7 @@
 }
 .LEContainer{
     display: flex;
-    align-items: flex-end;
+    align-items: ceter;
     margin-bottom: 4px;
-}
-.LEContainer > h3{
-    padding-left: 12px;
+    gap: 20px;
 }
