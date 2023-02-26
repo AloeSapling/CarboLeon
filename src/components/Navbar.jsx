@@ -40,8 +40,6 @@ const Navbar = () => {
           >
             <img className="langimg" src="images/flags/uk.png" alt="uk flag" />
           </button>
-        </li>
-        <li>
           <button
             className="langBtn"
             onClick={() => {
@@ -75,6 +73,11 @@ const Navbar = () => {
         <li>
           <Link to="/map" className="header-link">
           {t("NavBar.PolMap")}
+          </Link>
+        </li>
+        <li>
+          <Link to="/pollutionindex" className="header-link">
+          {t("NavBar.PolIndex")}
           </Link>
         </li>
       </ul>

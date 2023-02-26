@@ -86,7 +86,8 @@
         "Home": "Strona Główna",
         "About": "O nas",
         "Contact": "Kontakt",
-        "PolMap": "Mapa"
+        "PolMap": "Mapa",
+        "PolIndex": "Info o Zanieczyszczeniu"
     },
     "PollutionsTexts": {
         "what":"Zanieczyszczenie powietrza to kontaminacja powietrza przez szkodliwe dla środowiska substancje. Są one szkodliwe ponieważ zmieniają naturalne cechy atmosfery ziemskiej. Do nich zaliczamy cząsteczki, które możemy wdychać złożony z siarczanów, azotanów, amoniaku, chlorków sodu, czarnego węgla, pyłu mineralnego lub wody. Nazywamy je również “cząstkami stałymi” (PM z ang. “Particulate Matter”). PM może być o różnych rozmiarach i jest generalnie definiowany swoją średnicą aerodynamiczną, z czego PM2.5 oraz PM10 są najbardziej pospolitymi w ramach regulacyjnych i istotnych dla zdrowia.",

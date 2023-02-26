@@ -87,7 +87,8 @@
         "Home": "Home",
         "About": "About us",
         "Contact": "Contact",
-        "PolMap": "Pollution Map"
+        "PolMap": "Pollution Map",
+        "PolIndex": "Pollution Info"
     },
     "PollutionsTexts": {
         "what":"Air pollution is the contamination of air by pollutants. Pollutants are particles that change the natural characteristics of the atmosphere. Here we can specifically mention inhalable particles, composed of sulfate, nitrates, ammonia, sodium chloride, black carbon, mineral dust or water. These are also called “particulate matter”(PM). PM can be of different sizes and is generally defined by their aerodynamic diameter, with PM2.5 and PM10 the most common in the regulatory framework and relevant for health.",
