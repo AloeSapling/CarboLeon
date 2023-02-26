@@ -19,6 +19,7 @@ function Home() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecastWeather, setForecastWeather] = useState([]);
   const [date, setDate] = useState(null);
+  const [errorInfo, setErrorInfo] = useState(false);
   const [location, setLocation] = useState(null);
 
   const api = {
@@ -32,11 +33,11 @@ function Home() {
   const setSearchingLocation = async (location) => {
     const geolocate = await fetch(`${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY}`).then((res) => res.json());
     if (!geolocate.length) {
-      alert("nie znaleziono miasta");
+      setErrorInfo(true)
     } else {
       const lat = geolocate[0].lat;
       const lon = geolocate[0].lon;
-
+      setErrorInfo(false)
       const currentWeatherData = await fetch(
         `${api.weatherCurrentApi}lat=${lat}&lon=${lon}&units=metric&lang=${t(
           "test.len"
@@ -84,7 +85,7 @@ function Home() {
                 <Asside />
               </div>
 
-              <div className="main">
+              <div className="home-main">
                 <div className="search">
                   <FaSearch />
                   <input
@@ -94,7 +95,9 @@ function Home() {
                     onChange={(e) => setLocation(e.target.value)}
                     onKeyDown={searchLocation}
                   />
+                 
                 </div>
+                {errorInfo ? <h1 className="error">{t("Home.error")}</h1> : null}
                 <Main
                   currentData={currentWeather}
                   forecastData={forecastWeather}

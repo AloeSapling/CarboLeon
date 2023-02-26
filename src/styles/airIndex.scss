@@ -63,22 +63,33 @@ $grey-color: #6d6d6d;
       
     }
   }
-  .main {
+  .home-main {
     padding: 0;
     align-items: center;
     text-align: left;
 
+    .error {
+      color: #000;
+      background: rgb(233, 233, 0);
+      padding: 10px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 3vh;
+      border-radius: 15px;
+    }
 
     .search {
       padding: 1.5vh;
       border: none;
       outline: none;
       border-radius: 10px;
+
       background: #e7e9ee;
       display: flex;
       align-items: center;
       gap: 20px;
       width: 100%;
+      margin-bottom: 3vh;
 
       input {
         flex: 1;
@@ -104,7 +115,6 @@ $grey-color: #6d6d6d;
         padding: 30px;
         width: 100%;
         border-radius: 30px;
-        margin-top: 3vh ;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -191,8 +201,6 @@ $grey-color: #6d6d6d;
         }
       }
       .air-conditions {
-        margin-top: 20px;
-        margin-bottom: 20px;
         color: #000;
         border-radius: 30px;
         background: #e7e9ee;
