@@ -1,5 +1,7 @@
 import { MapElem } from "../components/MapElem";
 function map() {
+
+    document.title = "CarboLeon | Map" 
     return(
         <>
         <div className="bg-img"></div>

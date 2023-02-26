@@ -30,18 +30,32 @@ const Navbar = () => {
       </Link>
       <ul className={isOpen ? "open" : ""}>
         <li>
-          <a href="  ">
-            <button className="langBtn" onClick={() => handleClick("en")} alt="uk button">
-              <img className="langimg" src="images/flags/uk.png" alt="uk flag"/>
-            </button>
-          </a>
+          <button
+            className="langBtn"
+            onClick={() => {
+              handleClick("en");
+              window.location.reload();
+            }}
+            alt="uk button"
+          >
+            <img className="langimg" src="images/flags/uk.png" alt="uk flag" />
+          </button>
         </li>
         <li>
-          <a href="  ">
-            <button className="langBtn" onClick={() => handleClick("pl")} alt="poland button">
-              <img className="langimg" src="images/flags/poland.png" alt="poland flag"/>
-            </button>
-          </a>
+          <button
+            className="langBtn"
+            onClick={() => {
+              handleClick("pl");
+              window.location.reload();
+            }}
+            alt="poland button"
+          >
+            <img
+              className="langimg"
+              src="images/flags/poland.png"
+              alt="poland flag"
+            />
+          </button>
         </li>
         <li>
           <Link to="/" className="header-link">

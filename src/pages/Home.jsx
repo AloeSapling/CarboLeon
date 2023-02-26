@@ -26,6 +26,8 @@ function Home() {
     geolocationApi: "http://api.openweathermap.org/geo/1.0/direct?",
     weatherForecastApi: "http://api.openweathermap.org/data/2.5/forecast?",
   };
+
+  document.title = "CarboLeon | Home"
   const { t } = useTranslation();
   const setSearchingLocation = async (location) => {
     const geolocate = await fetch(`${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY}`).then((res) => res.json());

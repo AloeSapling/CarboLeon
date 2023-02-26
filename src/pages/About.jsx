@@ -5,6 +5,7 @@ import Sponsors from '../components/Sponsors'
 function About() {
   const [isDropdown, setIsDropdown] = useState(false);
 
+  document.title = "CarboLeon | About"
   const {t} = useTranslation()
   return (
     <>
