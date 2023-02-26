@@ -109,5 +109,18 @@
         "bad": "Niezdrowe (151-200)",
         "vbad": "Bardzo niezdrowe (201-300)",
         "ebad": "Zagrożające życiu (300+)"
+    },
+    "PollutionIndexTitles": {
+        "bgIMG": "Dowiedz się więcej o zanieczyszczeniu tutaj!",
+        "dropdowntitle": "Twoje miasto/okolica ma...",
+        "dropdowntitle2": "poziom zanieczyszczenia"
+    },
+    "PollutionDropdown": {
+        "good": "dobry",
+        "fine": "umiarkowany",
+        "worse": "średni",
+        "bad": "niezdrowy",
+        "vbad": "bardzo niezdrowy",
+        "ebad": "zagrażający życiu"
     }
 }

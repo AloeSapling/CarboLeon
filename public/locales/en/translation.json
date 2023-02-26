@@ -110,6 +110,19 @@
         "bad": "Bad (151-200)",
         "vbad": "Very bad (201-300)",
         "ebad": "Extremely bad (300+)"
+    },
+    "PollutionIndexTitles": {
+        "bgIMG": "Find out more about air pollution here!",
+        "dropdowntitle": "Your city has...",
+        "dropdowntitle2": "levels of air pollutions"
+    },
+    "PollutionDropdown": {
+        "good": "good",
+        "fine": "fine",
+        "worse": "worse",
+        "bad": "bad",
+        "vbad": "very bad",
+        "ebad": "extremely bad"
     }
 
 }

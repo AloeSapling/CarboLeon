@@ -9,7 +9,7 @@ function PollutionIndex() {
   return (
     <>
         <div className="background-img">
-    <h1>{t("About.title")}</h1>
+    <h1>{t("PollutionIndexTitles.bgIMG")}</h1>
   </div>
       <div className='margin3'>
         <div className='mContainer'>
@@ -27,16 +27,17 @@ function PollutionIndex() {
             {t("PollutionsTexts.wFight")}
           </div>
           <div>
-            <label for='pollutions'>Your city/area has...</label>
-          </div>
-          <select id='pollutions' name='pollutions' defaultValue="good" onChange={e => setPollutionLevel(e.target.value)}>
-                <option value='good'>Good air quality</option>
-                <option value='fine'>Fine air quality</option>
-                <option value='worse'>Worse air quality</option>
-                <option value='bad'>Bad air quality</option>
-                <option value='vbad'>Very bad air quality</option>
-                <option value='ebad'>Extremely bad air quality</option>
+            <label for='pollutions'> {t("PollutionIndexTitles.dropdowntitle")} </label>
+            <select id='pollutions' name='pollutions' defaultValue="good" onChange={e => setPollutionLevel(e.target.value)}>
+                <option value='good'>{t("PollutionDropdown.good")}</option>
+                <option value='fine'>{t("PollutionDropdown.fine")}</option>
+                <option value='worse'>{t("PollutionDropdown.worse")}</option>
+                <option value='bad'>{t("PollutionDropdown.bad")}</option>
+                <option value='vbad'>{t("PollutionDropdown.vbad")}</option>
+                <option value='ebad'>{t("PollutionDropdown.ebad")}</option>
           </select>
+          <label> {t("PollutionIndexTitles.dropdowntitle2")}</label>
+          </div>
           <h1>{t(`PollutionsTextTitles.${pollutionLevel}`)}</h1>
           <div>
             {t(`PollutionsTexts.${pollutionLevel}`)}
