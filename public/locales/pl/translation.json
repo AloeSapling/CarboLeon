@@ -80,5 +80,12 @@
         "topographicMap": "Mapa Topograficzna",
         "airports": "Lotniska",
         "airPollution": "Zanieczyszczenie Powietrza"
+    },
+    "NavBar": {
+        "Home": "Strona Główna",
+        "About": "O nas",
+        "Contact": "Kontakt",
+        "PolMap": "Mapa"
     }
+
 }

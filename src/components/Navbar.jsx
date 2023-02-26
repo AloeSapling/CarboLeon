@@ -14,7 +14,7 @@ const Navbar = () => {
     }
   };
 
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   function handleClick(lang) {
     i18n.changeLanguage(lang);
@@ -59,22 +59,22 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/" className="header-link">
-            Home
+            {t("NavBar.Home")}
           </Link>
         </li>
         <li>
           <Link to="/about" className="header-link">
-            About
+          {t("NavBar.About")}
           </Link>
         </li>
         <li>
           <Link to="/contact" className="header-link">
-            Contact
+          {t("NavBar.Contact")}
           </Link>
         </li>
         <li>
           <Link to="/map" className="header-link">
-            Pollution Map
+          {t("NavBar.PolMap")}
           </Link>
         </li>
       </ul>

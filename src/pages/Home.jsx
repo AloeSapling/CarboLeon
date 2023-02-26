@@ -22,9 +22,9 @@ function Home() {
   const [location, setLocation] = useState(null);
 
   const api = {
-    weatherCurrentApi: "http://api.openweathermap.org/data/2.5/weather?",
-    geolocationApi: "http://api.openweathermap.org/geo/1.0/direct?",
-    weatherForecastApi: "http://api.openweathermap.org/data/2.5/forecast?",
+    weatherCurrentApi: "https://api.openweathermap.org/data/2.5/weather?",
+    geolocationApi: "https://api.openweathermap.org/geo/1.0/direct?",
+    weatherForecastApi: "https://api.openweathermap.org/data/2.5/forecast?",
   };
 
   document.title = "CarboLeon | Home"

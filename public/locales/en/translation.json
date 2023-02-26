@@ -81,6 +81,12 @@
         "topographicMap": "Topographic Map",
         "airports": "Airports",
         "airPollution": "Air Pollution"
+    },
+    "NavBar": {
+        "Home": "Home",
+        "About": "About us",
+        "Contact": "Contact",
+        "PolMap": "Pollution Map"
     }
 
 
