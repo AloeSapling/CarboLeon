@@ -28,16 +28,18 @@ function Home() {
     weatherForecastApi: "https://api.openweathermap.org/data/2.5/forecast?",
   };
 
-  document.title = "CarboLeon | Home"
+  document.title = "CarboLeon | Home";
   const { t } = useTranslation();
   const setSearchingLocation = async (location) => {
-    const geolocate = await fetch(`${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY}`).then((res) => res.json());
+    const geolocate = await fetch(
+      `${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY}`
+    ).then((res) => res.json());
     if (!geolocate.length) {
-      setErrorInfo(true)
+      setErrorInfo(true);
     } else {
       const lat = geolocate[0].lat;
       const lon = geolocate[0].lon;
-      setErrorInfo(false)
+      setErrorInfo(false);
       const currentWeatherData = await fetch(
         `${api.weatherCurrentApi}lat=${lat}&lon=${lon}&units=metric&lang=${t(
           "test.len"
@@ -51,7 +53,7 @@ function Home() {
       setCurrentWeather(currentWeatherData);
       setForecastWeather(forecastWeatherData.list);
       setDate(new Date());
-      localStorage.setItem("city", location)
+      localStorage.setItem("city", location);
     }
 
     setLocation("");
@@ -64,19 +66,17 @@ function Home() {
   };
 
   useEffect(() => {
-    if(localStorage.getItem("city")) setSearchingLocation(localStorage.getItem("city"))
-    else setSearchingLocation("Warszawa")
+    if (localStorage.getItem("city"))
+      setSearchingLocation(localStorage.getItem("city"));
+    else setSearchingLocation("Warszawa");
   }, []);
 
   if (currentWeather && forecastWeather)
     return (
       <div className="body">
         <div className="background-img">
-          <h1>
-            CarboLeon
-            <br />
-            {t("Home.title")}
-          </h1>
+          <h1>CarboLeon</h1>
+          <h1>{t("Home.title")}</h1>
         </div>
         <div className="margin2">
           <div className="uberC">
@@ -95,9 +95,10 @@ function Home() {
                     onChange={(e) => setLocation(e.target.value)}
                     onKeyDown={searchLocation}
                   />
-                 
                 </div>
-                {errorInfo ? <h1 className="error">{t("Home.error")}</h1> : null}
+                {errorInfo ? (
+                  <h1 className="error">{t("Home.error")}</h1>
+                ) : null}
                 <Main
                   currentData={currentWeather}
                   forecastData={forecastWeather}

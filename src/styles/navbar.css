@@ -22,7 +22,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    top: 0;
     height: 12vh;
     padding: 0 2vw;
     transition: height .3s ease;
