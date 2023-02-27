@@ -43,6 +43,9 @@ const Main = ({ currentData, forecastData, date }) => {
           <p className="temp">{Math.round(currentData.main.temp)} °C </p>
           {/* <p className="temp">jakość powietrza: </p>  to jest do zrobienia*/}
         </div>
+        <div>
+          <p>test</p>
+        </div>
         <img
           alt="weather"
           className="weather-icon"
