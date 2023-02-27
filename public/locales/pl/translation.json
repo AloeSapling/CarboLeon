@@ -114,8 +114,8 @@
     },
     "PollutionIndexTitles": {
         "bgIMG": "Dowiedz się więcej o zanieczyszczeniu tutaj!",
-        "dropdowntitle": "Twoje miasto/okolica ma...",
-        "dropdowntitle2": "poziom zanieczyszczenia"
+        "dropdowntitle": "Zobacz co możesz zrobić na",
+        "dropdowntitle2": "poziom zanieczyszczenia twojego miasta/okolicy"
     },
     "PollutionDropdown": {
         "good": "dobry",
@@ -123,6 +123,7 @@
         "worse": "średni",
         "bad": "niezdrowy",
         "vbad": "bardzo niezdrowy",
-        "ebad": "zagrażający życiu"
+        "ebad": "zagrażający życiu",
+        "all": "każdy"
     }
 }

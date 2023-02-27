@@ -115,8 +115,8 @@
     },
     "PollutionIndexTitles": {
         "bgIMG": "Find out more about air pollution here!",
-        "dropdowntitle": "Your city has...",
-        "dropdowntitle2": "levels of air pollutions"
+        "dropdowntitle": "View what you can do about",
+        "dropdowntitle2": "levels of air pollutions in your city/area"
     },
     "PollutionDropdown": {
         "good": "good",
@@ -124,7 +124,8 @@
         "worse": "worse",
         "bad": "bad",
         "vbad": "very bad",
-        "ebad": "extremely bad"
+        "ebad": "extremely bad",
+        "all": "all"
     }
 
 }
