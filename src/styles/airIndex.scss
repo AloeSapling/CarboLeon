@@ -121,6 +121,7 @@ $grey-color: #6d6d6d;
 
         @include md {
           flex-direction: column;
+          text-align: center;
         }
 
         .city {
