@@ -30,8 +30,6 @@ const Asside = () => {
               <p>{t("asside.map")}</p>
             </div>
           </Link>
-          <div>tekst</div>
-          <div>tekst</div>
       </div>
     </>
   );

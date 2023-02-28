@@ -5,33 +5,32 @@
     padding: 20px;
 }
 .main h1{
-    text-decoration: underline;
     font-size: 42px;
     margin-bottom: 20px;
 }
 .main>div{
     display: block;
-    line-height: 170%;
+    line-height: 155%;
+    font-weight: 500;
 }
 .main>div>p{
-    font-size: clamp(1rem, 3vw, 2rem); 
-    line-height: 32px;
     white-space: pre-wrap;
-    text-align: left;
     padding-top: 12px;
-    font-weight: 380;
-}
-.main>div>p>a{
-    color: rgb(0, 0, 177);
+    display: grid;
+    place-items: center;
 }
 .mContainer{
-    background-color: white;
     width: 100%;
     border-radius: 30px;
+    color: #fff;
+    border: solid hsl(120, 48%, 35%) 5px;
+    background: rgb(44, 124, 44);
 }
 
 .about{
+    font-size: clamp(1.75vh, 2.25vh, 2.75vh); 
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
     position: relative;
-    display: flex;
-    justify-content: center;
 }

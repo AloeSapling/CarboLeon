@@ -8,7 +8,7 @@
         "5": "w przypadku zapytań biznesowych i wsparcia:"
     },
     "About": {
-        "1": "O nas",
+        "1": "Czym jest CarboLeon ?",
         "Text": "Carboleon to strona internetowa, której powołaniem jest pokazywać i edukować o globalnej jak i lokalnej sytuacji zanieczyszczenia powietrza. Dzięki ciężkiej pracy i determinacji drużyny deweloperskiej, ten cel nie tylko został zrealizowany, ale też został rozszerzony aby dostarczać wiedzę o więcej niż tylko zanieczyszczeniu powietrza! Teraz, razem z mapą zanieczyszczeń, która jest łatwa to przeczytania i użytkowania, ta strona internetowa posiada również indeks pogody. Aby pomoć stronie funkcjonować, wykorzystuje ona różnego rodzaju API, w tym: 'openstreetmap', 'leaflet', 'waqi' i 'openweather'. Ten projekt został stworzony dla ogólnopolskiej olympiady zwanej 'Zwolnieni z Teorii' i jest fundowana przez jego sponsora: 'e-tronix.pl' i 'oko-design'. Sprawdź nasze social media aby znaleźć więcej treści związanych z naszym celem.",
         "title": "Dowiedz się czegoś o nas",
         "btn-hide": "Schowaj",
@@ -62,7 +62,7 @@
     },
     "asside": {
         "about": "O Nas",
-        "consup": "Pomoc i Kontakt",
+        "consup": "Kontakt",
         "map": "Mapa"
     },
     "Legend": {

@@ -10,7 +10,7 @@
     },
     "About": {
         "1": "About Us",
-        "Text": "Carboleon is a website whose purpose is to show and educate about the global and local situation of air pollution. Thanks to the hard work and commitment of the development team, this goal has not only been fulfilled, but also expanded to provide knowledge about more then just air pollution! Now, alongside a pollution map that's easy to read and use, the website also features a weather index. To help the site function, it uses various API's including 'openstreetmap', 'leaflet', 'waqi' and 'openweather'. The project is for a polish national competition called 'Zwolnieni z Teorii' and is funded by it's sponsor: 'e-tronix.pl', 'oko-design'. Check out our social media's to find more interesting content related to our cause!",
+        "Text": "Carboleon is a website whose purpose is to show and educate about the global and local situation of air pollution. Thanks to the hard work and commitment of the development team, this goal has not only been fulfilled, but also expanded to provide knowledge about more then just air pollution!\n\n Now, alongside a pollution map that's easy to read and use, the website also features a weather index.\n To help the site function, it uses various API's including 'openstreetmap', 'leaflet', 'waqi' and 'openweather'.\n\n The project is for a polish national competition called 'Zwolnieni z Teorii' and is funded by it's sponsor: 'e-tronix.pl', 'oko-design'.\n\n Check out our social media's to find more interesting content related to our cause!",
         "title": "Find out something about us",
         "btn-hide": "Hide",
         "btn-show": "Show More"
@@ -63,7 +63,7 @@
     },
     "asside": {
         "about": "About",
-        "consup": "Contact and Support",
+        "consup": "Contact",
         "map": "Map"
     },
     "Legend": {
