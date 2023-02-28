@@ -20,8 +20,7 @@ $grey-color: #6d6d6d;
   .asside {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 15px;
     text-align: center;
