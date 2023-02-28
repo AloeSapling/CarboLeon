@@ -20,6 +20,36 @@ const Main = ({ currentData, forecastData, date }) => {
 
   window.addEventListener("resize", resizeSplideRows);
 
+  /* JAK COŚ TO POWIEDZONKA I POGODA MAJĄ BYĆ PO KOLEI TUTAJ MACIE STRONĘ DO WSZYSTKICH NAZW POGODY:  
+
+
+
+  https://openweathermap.org/weather-conditions   
+
+
+
+    "WEATHER CONDITION CODES" I SZUKACIE W KOLUMNIE MAIN*/
+  const weather = ["Zostań w domu, jest burza, najlepiej napij się ciepłej herbatki :D","Jest pochmurno, zalecam zostać w domu","Pada deszcz napisz się herbatki","Jest Ładna pogoda, warto wyjść na zewnątrz",]
+  const array2=["Thunderstorm","Clouds", "Rain", "Clear", ]
+
+  const powiedzonka = () => {
+    let i =0
+    while(currentData.weather[0].main != array2[i]){
+
+      for(let a=0; a<array2.length;a++){
+        i++
+        if(currentData.weather[0].main === array2[a]){
+          return weather[a]
+        }
+      }
+    }
+ 
+  }
+
+  
+
+
+
   useEffect(() => {
     resizeSplideRows();
   }, []);
@@ -44,7 +74,7 @@ const Main = ({ currentData, forecastData, date }) => {
           {/* <p className="temp">jakość powietrza: </p>  to jest do zrobienia*/}
         </div>
         <div>
-          <p>test</p>
+          <p>{powiedzonka()}</p>
         </div>
         <img
           alt="weather"
