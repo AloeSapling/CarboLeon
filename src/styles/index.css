@@ -73,24 +73,17 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('/public/images/backgroundCameleon.webp') center center;
     display: flex;
     align-items: center;
+    flex-direction: column;
     background-size: cover;
+    justify-content: center;
+    gap: 10px;
 }
 
-.background-img h1:nth-child(1) {
+.background-img h1 {
     text-align: center;
-    z-index:12;
     color: white;
-    display: block;
-    width: 100%;
 }
 
-.background-img h1:nth-child(2) {
-    text-align: center;
-    z-index:12;
-    color: white;
-    display: block;
-    width: 100%;
-}
 
 .bg-img{
     width: 100vw;
