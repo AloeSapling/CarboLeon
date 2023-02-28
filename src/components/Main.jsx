@@ -20,6 +20,64 @@ const Main = ({ currentData, forecastData, date }) => {
 
   window.addEventListener("resize", resizeSplideRows);
 
+  
+  // const powiedzonka = () => {
+  //   if(currentData.weather[0].main === "Clouds"){
+  //     console.log(currentData.weather[0].main)
+  //     return "Jest pochmurno"
+  //   }
+  //   else if(currentData.weather[0].main === "Clear"){
+  //     return "Jest Ładna pogoda, warto wyjść na zewnątrz"
+  //   }
+  //   else if(currentData.weather[0].main === "Fog" || currentData.weather[0].main === "Mist"){
+  //     return "Jest obecna mgła, uważaj na drodze !"
+  //   }
+  //   else if(currentData.weather[0].description === "sleet" || currentData.weather[0].description === "sleet" || currentData.weather[0].description === "rain and snow" || currentData.weather[0].description === "shower sleet"||currentData.weather[0].description === "light shower sleet"){
+  //     return "Deszcz ze śniegiem, w taką pogodę nawet bałwana nie można ulepić :("
+  //   }
+  //   else if(currentData.weather[0].description === "snow"){
+  //     return "Let it snow !"
+  //   }
+  //   else if(currentData.weather[0].description === "heavy snow"){
+  //     return "OGROMNA ilość śniegu"
+  //   }
+  //   else if(currentData.weather[0].main === "Thunderstorm"){
+  //     return "Zostań w domu, jest burza, najlepiej napij się ciepłej herbatki :D"
+  //   }
+  //   else if(currentData.weather[0].main === "Drizzle"){
+  //     return "Pada deszcz, idealny czas na spędzenie trochę czasu w swoim domu"
+  //   }
+    
+  // }
+
+  // const weather = {
+  //   "Thunderstorm": "Zostań w domu, jest burza, najlepiej napij się ciepłej herbatki :D",
+  //   "Clouds": "Jest Ładna pogoda, warto wyjść na zewnątrz",
+  //   "Rain": "Pada deszcz napisz się herbatki",
+  //   "Clear": "Jest Ładna pogoda, warto wyjść na zewnątrz",
+  // }
+
+  const weather = ["Zostań w domu, jest burza, najlepiej napij się ciepłej herbatki :D","Jest pochmurno, zalecam zostać w domu","Pada deszcz napisz się herbatki","Jest Ładna pogoda, warto wyjść na zewnątrz",]
+  const array2=["Thunderstorm","Clouds", "Rain", "Clear", ]
+
+  const powiedzonka = () => {
+    let i =0
+    while(currentData.weather[0].main != array2[i]){
+
+      for(let a=0; a<array2.length;a++){
+        i++
+        if(currentData.weather[0].main === array2[a]){
+          return weather[a]
+        }
+      }
+    }
+ 
+  }
+
+  
+
+
+
   useEffect(() => {
     resizeSplideRows();
   }, []);
@@ -44,7 +102,7 @@ const Main = ({ currentData, forecastData, date }) => {
           {/* <p className="temp">jakość powietrza: </p>  to jest do zrobienia*/}
         </div>
         <div>
-          <p>test</p>
+          <p>{powiedzonka()}</p>
         </div>
         <img
           alt="weather"
