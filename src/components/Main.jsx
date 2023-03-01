@@ -4,8 +4,8 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import { TbWind, TbTemperature } from "react-icons/tb";
 import { WiHumidity, WiBarometer } from "react-icons/wi";
 import { useTranslation } from "react-i18next";
-
-const Main = ({ currentData, forecastData, date }) => {
+export let test = "undefined"
+const Main = ({ currentData, forecastData, date, childToParent }) => {
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
   const { t } = useTranslation();
@@ -42,7 +42,7 @@ const Main = ({ currentData, forecastData, date }) => {
   Ponieważ jest random, to obok key dodaj liczbe w zakresie od 1-ilosctekstow, wtedy przy danej wylosowanej liczbie będzie dany tekst
   
   jeśli zmienisz ilość zranodmowyzowanych wypowiedzi to zmień też iloscTekstow*/
-  
+  test = "defined"
   const iloscTekstow = 3
   const weatherTips = {
     "Thunderstorm1": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
@@ -58,6 +58,7 @@ const Main = ({ currentData, forecastData, date }) => {
     "Rain3": "Pada deszcz napisz się herbatki",
     "Clear3": "Jest Ładna pogoda, warto wyjść na zewnątrz"
   }
+  const [weatherText, setWeatherText] = useState("undefined")
   useEffect(() => {
     resizeSplideRows();
   }, []);
