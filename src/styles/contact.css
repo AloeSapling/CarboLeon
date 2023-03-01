@@ -15,7 +15,9 @@
 }
 .tContainer{
     border-radius: 30px;
-    background-color: rgb(255, 255, 255);
+    color: #fff;
+    border: solid hsl(120, 48%, 35%) 5px;
+    background: rgb(44, 124, 44);
     padding: 20px;
 }
 .socials{
@@ -55,11 +57,15 @@
     background-image: linear-gradient(to top left, rgb(1, 132, 192), rgb(185, 235, 255));
 }
 .blanku{
-    background-color: rgb(228, 228, 228);
+    color: #fff;
+    border: solid hsl(120, 48%, 35%) 5px;
+    background: rgb(44, 124, 44);
     font-size: 25px;
 }
 .blankus{
-    background-color: rgb(241, 241, 241);
+    color: #fff;
+    border: solid hsl(120, 48%, 35%) 5px;
+    background: rgb(44, 124, 44);
     width: 70%;
 }
 .contact{
@@ -69,7 +75,6 @@
 .contact>p{
     font-weight: bold;
     margin: 4px;
-    color: black;
 }
 .qr{
     background-color: white;
