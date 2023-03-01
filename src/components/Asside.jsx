@@ -12,26 +12,34 @@ const Asside = () => {
   return (
     <>
       <div className="aContainer">
-          <Link to='/about'>
+          <div className="logosContainer">
+            <Link to='/about'>
+              <div>
+                <TbZoomQuestion />
+                <p>{t("asside.about")}</p>
+              </div>
+            </Link>
+            <Link to="/contact">
+              <div>
+                <TiPhoneOutline />
+                <p>{t("asside.consup")}</p>
+              </div>
+            </Link>
+            <Link to="/map">
+              <div>
+                <TbMap2 />
+                <p>{t("asside.map")}</p>
+              </div>
+            </Link>
+          </div>
+          <div className="aPollution">
             <div>
-              <TbZoomQuestion />
-              <p>{t("asside.about")}</p>
+              <img/>
+              <h1>zle zanieczyszcenie</h1>
             </div>
-          </Link>
-          <Link to="/contact">
-            <div>
-              <TiPhoneOutline />
-              <p>{t("asside.consup")}</p>
-            </div>
-          </Link>
-          <Link to="/map">
-            <div>
-              <TbMap2 />
-              <p>{t("asside.map")}</p>
-            </div>
-          </Link>
-          <div>tekst</div>
-          <div>tekst</div>
+            <p>tekst</p>
+            <Link to='/pollutionindex'><p>Dowiedz się więcej tutaj</p></Link>
+          </div>
       </div>
     </>
   );
