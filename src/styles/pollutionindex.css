@@ -1,4 +1,7 @@
+.main>.noShowow{
+    display: none;
+}
+
 .bold {
     font-weight: 700;
 }
-
