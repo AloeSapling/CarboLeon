@@ -16,8 +16,8 @@
 .tContainer{
     border-radius: 30px;
     color: #fff;
-    border: solid hsl(120, 48%, 35%) 5px;
-    background: rgb(44, 124, 44);
+    /* border: solid hsl(120, 48%, 35%) 5px; */
+    background: rgba(39, 109, 43, 0.5);
     padding: 20px;
 }
 .socials{
@@ -58,14 +58,12 @@
 }
 .blanku{
     color: #fff;
-    border: solid hsl(120, 48%, 35%) 5px;
-    background: rgb(44, 124, 44);
+    background: rgba(39, 109, 43, 0.5);
     font-size: 25px;
 }
 .blankus{
     color: #fff;
-    border: solid hsl(120, 48%, 35%) 5px;
-    background: rgb(44, 124, 44);
+    background: rgba(39, 109, 43, 0.5);
     width: 70%;
 }
 .contact{

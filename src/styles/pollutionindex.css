@@ -1,8 +1,37 @@
 .bold {
     font-weight: 700;
 }
-
-.pollution-icon {
-    height: 300px;
-    aspect-ratio: 16/9;
+.PollutionIndexContainer{
+    background: linear-gradient(#739a49,#2c7c2c);
+    color: white;
+}
+.PollutionIndexContainer h2{
+    margin: 2.5vh auto;
+}
+#odd-h2{
+    margin-top: .5vh;
+}
+#odd-p{
+    margin-bottom: 3vh;
+}
+.PollutionIndexContainer .select-h2{
+    margin: 2.5vh auto 1.5vh auto;
+}
+select{
+    height: 2vh;
+    width: 10vw;
+    background: rgba(39,109,43,.5);
+    border: 0; 
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.select{
+    margin: 3.5vh auto;
+    font-size: 2vh;
+}
+.PollutionText{
+    margin: 0 auto;
+    max-width: 90%;
 }

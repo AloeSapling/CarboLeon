@@ -23,12 +23,10 @@
     width: 100%;
     border-radius: 30px;
     color: #fff;
-    border: solid hsl(120, 48%, 35%) 5px;
-    background: rgb(44, 124, 44);
+    background: rgba(39, 109, 43, 0.5);
 }
 
 .about{
-    font-size: clamp(1.75vh, 2.25vh, 2.75vh); 
     width: 95%;
     text-align: center;
     margin: 0 auto;
