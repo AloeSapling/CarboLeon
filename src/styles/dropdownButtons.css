@@ -38,8 +38,8 @@
 }
 .dropdownAbout{
     color: #fff;
-    background: rgb(44, 124, 44);
-    border: solid hsl(120, 48%, 35%) 5px;
+    background: rgba(39, 109, 43, 0.5);
+    border: 0;
     border-radius: 30px;
     font-size: x-large;
     margin-top: 5px;

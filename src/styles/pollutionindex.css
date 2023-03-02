@@ -5,4 +5,10 @@
 .bold {
     font-weight: 700;
 }
-
+.PollutionIndexContainer{
+    background: linear-gradient(to bottom right,#739a49,#2c7c2c);
+    color: white;
+}
+.PollutionIndexContainer h1{
+    margin: 2vh auto;
+}
