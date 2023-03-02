@@ -4,8 +4,8 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import { TbWind, TbTemperature } from "react-icons/tb";
 import { WiHumidity, WiBarometer } from "react-icons/wi";
 import { useTranslation } from "react-i18next";
-
-const Main = ({ currentData, forecastData, date }) => {
+export let test = "undefined"
+const Main = ({ currentData, forecastData, date, childToParent }) => {
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
   const { t } = useTranslation();
@@ -19,32 +19,48 @@ const Main = ({ currentData, forecastData, date }) => {
   };
 
   window.addEventListener("resize", resizeSplideRows);
+  // const array2=["Thunderstorm","Clouds", "Rain", "Clear", ]
+  // const powiedzonka = () => {
+  //   // console.log(weatherTips[`${currentData.weather[0].main}`])
+  //   return weatherTips[`${currentData.weather[0].main}`]
+  //   // let i =0
+  //   // while(currentData.weather[0].main != array2[i]){
 
-  /* JAK COŚ TO POWIEDZONKA I POGODA MAJĄ BYĆ PO KOLEI TUTAJ MACIE STRONĘ DO WSZYSTKICH NAZW POGODY:  
+  //   //   for(let a=0; a<array2.length;a++){
+  //   //     i++
+  //   //     if(currentData.weather[0].main === array2[a]){
+  //   //       return weather[a]
+  //   //     }
+  //   //   }
+  //   // }
+  // }
 
-
-
-  https://openweathermap.org/weather-conditions   
+  /* Jak coś to na stronce https://openweathermap.org/weather-conditions w sekcji "weather condition codes" w kolumnie main są nazwy pogody.
+  
+  W object "weatherTips" wystarczy dać nazwę pogody jako key.
+  
+  Ponieważ jest random, to obok key dodaj liczbe w zakresie od 1-ilosctekstow, wtedy przy danej wylosowanej liczbie będzie dany tekst
+  
+  jeśli zmienisz ilość zranodmowyzowanych wypowiedzi to zmień też iloscTekstow*/
+  test = "defined"
+  const iloscTekstow = 3
+  const weatherTips = {
+    "Thunderstorm1": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
+    "Clouds1": "Jest pochmurno, zalecam zostać w domu",
+    "Rain1": "Pada deszcz napisz się herbatki",
+    "Clear1": "Jest Ładna pogoda, warto wyjść na zewnątrz",
+    "Thunderstorm2": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
+    "Clouds2": "Jest pochmurno, zalecam zostać w domu",
+    "Rain2": "Pada deszcz napisz się herbatki",
+    "Clear2": "Jest Ładna pogoda, warto wyjść na zewnątrz",
+    "Thunderstorm3": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
+    "Clouds3": "Jest pochmurno, zalecam zostać w domu",
+    "Rain3": "Pada deszcz napisz się herbatki",
+    "Clear3": "Jest Ładna pogoda, warto wyjść na zewnątrz"
+  }
 
   
 
-    "WEATHER CONDITION CODES" I SZUKACIE W KOLUMNIE MAIN*/
-  const weather = ["Zostań w domu, jest burza, najlepiej napij się ciepłej herbatki :D","Jest pochmurno, zalecam zostać w domu","Pada deszcz napisz się herbatki","Jest Ładna pogoda, warto wyjść na zewnątrz",]
-  const array2=["Thunderstorm","Clouds", "Rain", "Clear", ]
-
-  const powiedzonka = () => {
-    let i =0
-    while(currentData.weather[0].main != array2[i]){
-
-      for(let a=0; a<array2.length;a++){
-        i++
-        if(currentData.weather[0].main === array2[a]){
-          return weather[a]
-        }
-      }
-    }
- 
-  }
 
 
   useEffect(() => {
@@ -71,7 +87,7 @@ const Main = ({ currentData, forecastData, date }) => {
           {/* <p className="temp">jakość powietrza: </p>  to jest do zrobienia*/}
         </div>
         <div>
-          <p>{powiedzonka()}</p>
+          <p>{weatherTips[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`]}</p>
         </div>
         <img
           alt="weather"

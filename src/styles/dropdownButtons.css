@@ -37,8 +37,9 @@
     overflow: hidden;
 }
 .dropdownAbout{
-    background-color: white;
-    border: transparent;
+    color: #fff;
+    background: rgb(44, 124, 44);
+    border: solid hsl(120, 48%, 35%) 5px;
     border-radius: 30px;
     font-size: x-large;
     margin-top: 5px;

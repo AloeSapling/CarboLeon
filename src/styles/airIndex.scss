@@ -8,7 +8,7 @@ $grey-color: #6d6d6d;
   padding: 40px;
   border-radius: 30px;
   display: grid;
-  grid-template-columns: 0.7fr 5fr;
+  grid-template-columns: 1.6fr 4.4fr;
   width: 100%;
   gap: 3vh;
 
@@ -19,11 +19,8 @@ $grey-color: #6d6d6d;
 
   .asside {
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
+    width: 100%;
+    padding: 28px;
     text-align: center;
     background: #e7e9ee;
     border-radius: 30px;
