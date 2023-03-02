@@ -1,0 +1,6 @@
+options +FollowSymLinks
+RewriteEngine on 
+
+
+RewriteCond %{HTTP_HOST} ^carboleon.eu(.*) [NC]
+RewriteRule ^(.*)$ https://www.carboleon.eu/$1 [R=301,L] 

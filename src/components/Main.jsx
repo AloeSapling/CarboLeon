@@ -58,7 +58,11 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
     "Rain3": "Pada deszcz napisz się herbatki",
     "Clear3": "Jest Ładna pogoda, warto wyjść na zewnątrz"
   }
-  const [weatherText, setWeatherText] = useState("undefined")
+
+  
+
+
+
   useEffect(() => {
     resizeSplideRows();
   }, []);
