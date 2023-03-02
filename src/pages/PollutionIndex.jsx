@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Sponsors from "../components/Sponsors";
-import "../styles/pollutionindex.css";
+import '../styles/pollutionindex.css'
 
 const PollutionIndex = () => {
   document.title = "CarboLeon | Pollution Index";
@@ -12,12 +12,12 @@ const PollutionIndex = () => {
   const [all, setAll] = useState(false);
   const url = "https://api.openweathermap.org/data/2.5/air_pollution?";
 
-  function selectOnChange(props) {
-    if (props == "all") {
-      setAll(true);
-    } else {
-      setAll(false);
-      setPollutionLevel(props);
+  function selectOnChange(props){
+    if(props == "all"){
+      setAll(true)
+    } else{
+      setAll(false)
+      setPollutionLevel(props)
     }
   }
   useEffect(() => {
@@ -162,4 +162,4 @@ const PollutionIndex = () => {
     );
 };
 
-export default PollutionIndex;
+export default PollutionIndex
