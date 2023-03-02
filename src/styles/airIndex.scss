@@ -20,7 +20,7 @@ $grey-color: #6d6d6d;
   .asside {
     height: 100%;
     width: 100%;
-    padding: 28px;
+    padding: 28px 15px;
     text-align: center;
     background: #e7e9ee;
     display: flex;
@@ -28,9 +28,22 @@ $grey-color: #6d6d6d;
     border-radius: 30px;
     gap: 5vh;
 
-    @include md {
-      font-size: 15px;  
-      flex-direction: row;
+    .logosContainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      @include md {
+        width: 50%;
+
+      }
+      @include xs {
+        width: 70%;
+      }
+      @include xxs {
+        width: 100%;
+      }
     }
 
     a {
@@ -153,14 +166,14 @@ $grey-color: #6d6d6d;
         color: #000;
         border-radius: 30px;
         background: #e7e9ee;
-        width: 77vw;
+        width: 65vw;
         padding: 40px 20px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
 
-        @include xs {
-          width: 90vw;
+        @include md {
+          width: 92vw;
         }
 
 

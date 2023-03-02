@@ -4,7 +4,6 @@ import { TbZoomQuestion } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useState } from 'react'
-import '../styles/asside.css'
 
 const Asside = () => {
 
