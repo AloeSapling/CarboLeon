@@ -58,20 +58,7 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
     "Rain3": "Pada deszcz napisz się herbatki",
     "Clear3": "Jest Ładna pogoda, warto wyjść na zewnątrz"
   }
-  const weatherTipsNight = {
-    "Thunderstorm1": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
-    "Clouds1": "Jest pochmurno, zalecam zostać w domu",
-    "Rain1": "Pada deszcz napisz się herbatki",
-    "Clear1": "Jest Ładna pogoda, warto wyjść na zewnątrz",
-    "Thunderstorm2": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
-    "Clouds2": "Jest pochmurno, zalecam zostać w domu",
-    "Rain2": "Pada deszcz napisz się herbatki",
-    "Clear2": "Jest Ładna pogoda, warto wyjść na zewnątrz",
-    "Thunderstorm3": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
-    "Clouds3": "Jest pochmurno, zalecam zostać w domu",
-    "Rain3": "Pada deszcz napisz się herbatki",
-    "Clear3": "Jest Ładna pogoda, warto wyjść na zewnątrz"
-  }
+  const weatherTipsNight = "Dobranoc"
   const isDay = true
   useEffect(() => {
     resizeSplideRows();
@@ -97,7 +84,7 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
           {/* <p className="temp">jakość powietrza: </p>  to jest do zrobienia*/}
         </div>
         <div>
-          <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipsNight[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`]}</p>
+          <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipsNight}</p>
         </div>
         <img
           alt="weather"
