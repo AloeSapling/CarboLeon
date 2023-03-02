@@ -44,7 +44,7 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
   jeśli zmienisz ilość zranodmowyzowanych wypowiedzi to zmień też iloscTekstow*/
   test = "defined"
   const iloscTekstow = 3
-  const weatherTips = {
+  const weatherTipsDay = {
     "Thunderstorm1": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
     "Clouds1": "Jest pochmurno, zalecam zostać w domu",
     "Rain1": "Pada deszcz napisz się herbatki",
@@ -58,7 +58,8 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
     "Rain3": "Pada deszcz napisz się herbatki",
     "Clear3": "Jest Ładna pogoda, warto wyjść na zewnątrz"
   }
-  const [weatherText, setWeatherText] = useState("undefined")
+  const weatherTipsNight = "Dobranoc"
+  const isDay = true
   useEffect(() => {
     resizeSplideRows();
   }, []);
@@ -83,7 +84,7 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
           {/* <p className="temp">jakość powietrza: </p>  to jest do zrobienia*/}
         </div>
         <div>
-          <p>{weatherTips[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`]}</p>
+          <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipsNight}</p>
         </div>
         <img
           alt="weather"
