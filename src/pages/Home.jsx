@@ -28,7 +28,7 @@ function Home() {
     weatherForecastApi: "https://api.openweathermap.org/data/2.5/forecast?",
   };
 
-  document.title = "CarboLeon | Home";
+  document.title = "Carboleon - Sprawdź jakość powietrza, pogodę oraz ciekawe miejsca w twojej okolicy";
   const { t } = useTranslation();
   const setSearchingLocation = async (location) => {
     const geolocate = await fetch(
