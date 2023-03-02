@@ -13,7 +13,7 @@ const PollutionIndex = () => {
   const url = "https://api.openweathermap.org/data/2.5/air_pollution?";
 
   function selectOnChange(props){
-    if(props == "all"){
+    if(props === "all"){
       setAll(true)
     } else{
       setAll(false)

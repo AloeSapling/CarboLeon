@@ -23,8 +23,10 @@ $grey-color: #6d6d6d;
     padding: 28px;
     text-align: center;
     background: #e7e9ee;
+    display: flex;
+    flex-direction: column;
     border-radius: 30px;
-    gap: 50px;
+    gap: 5vh;
 
     @include md {
       font-size: 15px;  

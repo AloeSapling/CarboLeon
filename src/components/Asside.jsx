@@ -22,8 +22,7 @@ const Asside = () => {
   const sourceIMG = levels[`${pollutionLevel}`]
   const randomTexts = 3
   return (
-    <>
-      <div className="aContainer">
+      <>
           <div className="logosContainer">
             <Link to='/about'>
               <div>
@@ -44,7 +43,6 @@ const Asside = () => {
               </div>
             </Link>
           </div>
-          <div className="aPollution">
             <div>
               {/* Zmienić tutaj height i width na cos innego */}
             <img src={`images/pollutionicons/${sourceIMG}.webp`}height="45px" width="80px" alt={`pollution icon for ${pollutionLevel} levels of pollutions`}/>
@@ -54,9 +52,7 @@ const Asside = () => {
             <p>{t(`AssideTexts.${pollutionLevel}`)}</p>
             <p>{t(`AssideTexts.random${Math.floor(Math.random()*randomTexts+1)}`)}</p>
             <Link to='/pollutionindex'><p>{pollutionLevel==="good" ? `${t(`AssideTexts.link1`)}` : `${t(`AssideTexts.link2`)}`}</p></Link>
-          </div>
-      </div>
-    </>
+          </>
   );
 };
 
