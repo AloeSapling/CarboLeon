@@ -26,7 +26,7 @@ const Main = ({ currentData, forecastData, date }) => {
 
   https://openweathermap.org/weather-conditions   
 
-
+  
 
     "WEATHER CONDITION CODES" I SZUKACIE W KOLUMNIE MAIN*/
   const weather = ["Zostań w domu, jest burza, najlepiej napij się ciepłej herbatki :D","Jest pochmurno, zalecam zostać w domu","Pada deszcz napisz się herbatki","Jest Ładna pogoda, warto wyjść na zewnątrz",]
@@ -45,9 +45,6 @@ const Main = ({ currentData, forecastData, date }) => {
     }
  
   }
-
-  
-
 
 
   useEffect(() => {
