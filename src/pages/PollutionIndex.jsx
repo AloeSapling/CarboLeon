@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Sponsors from "../components/Sponsors";
-import "../styles/pollutionindex.css";
+import "../styles/pollutionIndex.css";
 
 const PollutionIndex = () => {
   document.title = "CarboLeon | Pollution Index";
