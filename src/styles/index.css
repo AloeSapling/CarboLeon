@@ -93,3 +93,21 @@ body {
     align-items: center;
     justify-content: center;
 }
+.green{
+    color: green;
+}
+.yellow{
+    color: rgb(165, 165, 44);
+}
+.worse{
+    color: orange;
+}
+.bad{
+    color: red;
+}
+.vbad{
+    color: purple;
+}
+.idk{
+    color: darkred;
+}
