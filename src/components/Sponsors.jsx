@@ -14,6 +14,9 @@ const Sponsors = () => {
             <a href="https://www.oko-design.com/" rel="noreferrer" target="_blank">
               <img src={"images/sponsorIMG/okodesign.webp"} alt="sponsor" />
             </a>
+            <a href="https://www.zsel1.pl/" rel="noreferrer" target="_blank">
+              <img src={"images/sponsorIMG/ZSE.webp"} alt="sponsor" />
+            </a>
             
           </div>
         </footer>
