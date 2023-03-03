@@ -18,8 +18,8 @@
     margin: 2.5vh auto 1.5vh auto;
 }
 select{
-    height: 2vh;
-    width: 10vw;
+    height: 3vh;
+    width: fit-content;
     background: rgba(39,109,43,.5);
     border: 0; 
     border-radius: 25px;
@@ -34,4 +34,33 @@ select{
 .PollutionText{
     margin: 0 auto;
     max-width: 90%;
+}
+.pollution-info-container{
+    width: 100%;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+    border-radius: 1000px;
+    padding-top: .1vh;
+    padding-bottom: 1vh;
+    margin: 3vh auto;
+}
+.selected-info{
+    background: rgba(39,109,43,.5);
+}
+.good{
+    background: rgb(0, 156, 123);
+}
+.fine{
+    background: #f5e155;
+}
+.worse{
+    background: #fd9b45;
+}
+.bad{
+    background: #d10035;
+}
+.vbad{
+    background: #a571e0;
+}
+.ebad{
+    background: #890633;
 }
