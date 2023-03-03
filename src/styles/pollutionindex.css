@@ -18,6 +18,7 @@
     margin: 2.5vh auto 1.5vh auto;
 }
 select{
+    outline: none;
     height: 3vh;
     width: fit-content;
     background: rgba(39,109,43,.5);
