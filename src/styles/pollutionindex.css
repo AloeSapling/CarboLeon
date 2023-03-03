@@ -1,3 +1,8 @@
 .bold {
     font-weight: 700;
 }
+
+.pollution-icon {
+    height: 300px;
+    aspect-ratio: 16/9;
+}
