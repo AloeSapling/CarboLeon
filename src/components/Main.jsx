@@ -4,8 +4,10 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import { TbWind, TbTemperature } from "react-icons/tb";
 import { WiHumidity, WiBarometer } from "react-icons/wi";
 import { useTranslation } from "react-i18next";
-export let test = "undefined"
-const Main = ({ currentData, forecastData, date, childToParent }) => {
+
+
+const Main = ({ currentData, forecastData, date }) => {
+
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
   const { t } = useTranslation();
@@ -42,7 +44,7 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
   Ponieważ jest random, to obok key dodaj liczbe w zakresie od 1-ilosctekstow, wtedy przy danej wylosowanej liczbie będzie dany tekst
   
   jeśli zmienisz ilość zranodmowyzowanych wypowiedzi to zmień też iloscTekstow*/
-  test = "defined"
+
   const iloscTekstow = 3
   const weatherTipsDay = {
     "Thunderstorm1": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
@@ -66,7 +68,7 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
     resizeSplideRows();
   }, []);
 
-  return (
+   return (
     <div className="weather-params">
       <div className="current-temp">
         <div>
@@ -83,7 +85,6 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
             </p>
           </div>
           <p className="temp">{Math.round(currentData.main.temp)} °C </p>
-          {/* <p className="temp">jakość powietrza: </p>  to jest do zrobienia*/}
         </div>
         <div>
           <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipNight}</p>

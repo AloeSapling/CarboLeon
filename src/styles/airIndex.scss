@@ -44,36 +44,67 @@ $grey-color: #6d6d6d;
       @include xxs {
         width: 100%;
       }
-    }
 
-    a {
-      text-decoration: none;
-
-      div {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        transition: 0.3s;
-        gap: 5px;
-        color: $grey-color;
+      a {
+        text-decoration: none;
   
-        svg {
-          width: 40px;
-          height: 40px;
-  
-          @include xs {
-            width: 25px;
-            height: 25px;
+        div {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          transition: 0.3s;
+          gap: 5px;
+          color: $grey-color;
+    
+          svg {
+            width: 40px;
+            height: 40px;
+    
+            @include xs {
+              width: 25px;
+              height: 25px;
+            }
           }
-        }
-        &:hover {
-          color: #000;
-        }
+          &:hover {
+            color: #000;
+          }
+      }
+        
+      }
     }
-      
+
+    .pollution-params {
+      position: relative;
+
+      .pollution-icon {
+        height: 180px;
+        width: 202.56px;
+        cursor: pointer;
+      }
+
+      .hover-div {
+        pointer-events: none;
+        display: none;
+        position: absolute;
+        background: rgba(112, 111, 111, 0.6);
+        color: #fff;
+        padding: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 150px;
+        width: 55%;
+        border-radius: 20px;
+
+        .pollution-params-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
     }
+
   }
   .home-main {
     padding: 0;

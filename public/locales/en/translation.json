@@ -16,6 +16,7 @@
         "btn-show": "Show More"
     },
     "Home": {
+        "pageTitle": "Check air quality, weather and interesting places in your area",
         "title": "Know what YOU BREATHE",
         "input": "Enter the city name",
         "error": "Incorrect city. Please try again",

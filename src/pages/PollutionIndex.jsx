@@ -4,8 +4,8 @@ import Sponsors from "../components/Sponsors";
 import "../styles/pollutionindex.css";
 
 const PollutionIndex = () => {
-  document.title = "CarboLeon | Pollution Index";
   const { t } = useTranslation();
+  document.title = `CarboLeon | ${t("NavBar.PolIndex")}`;
 
   const [pollutionData, setPollutionData] = useState(null);
   const [pollutionLevel, setPollutionLevel] = useState("good");
@@ -34,71 +34,7 @@ const PollutionIndex = () => {
         <div className="background-img">
           <h1>{t("PollutionIndexTitles.bgIMG")}</h1>
         </div>
-        {/* <div className="margin3"> */}
-        {/* <div className="pollution-params">
-<img
-src={`images/pollutionicons/${pollutionData.list[0].main.aqi}.webp`}
-alt="pollution icon"
-className="pollution-icon"
-/>
-<div>
-<p>
-CO:
-<span className="bold">
-{" "}
-{pollutionData.list[0].components.co} μg/m<sup>3</sup>
-</span>
-</p>
-<p>
-NH<sub>3</sub>:
-<span className="bold">
-{" "}
-{pollutionData.list[0].components.nh3} μg/m<sup>3</sup>
-</span>
-</p>
-<p>
-NO:
-<span className="bold">
-{" "}
-{pollutionData.list[0].components.no} μg/m<sup>3</sup>
-</span>
-</p>
-<p>
-NO<sub>2</sub>:
-<span className="bold">
-{" "}
-{pollutionData.list[0].components.no2} μg/m<sup>3</sup>
-</span>
-</p>
-<p>
-O<sub>3</sub>:
-<span className="bold">
-{" "}
-{pollutionData.list[0].components.o3} μg/m<sup>3</sup>
-</span>
-</p>
-<p>
-PM<sub>2.5</sub>:
-<span className="bold">
-{" "}
-{pollutionData.list[0].components.pm2_5} μg/m<sup>3</sup>
-</span>
-</p>
-<p>
-PM<sub>10</sub>:
-<span className="bold">
-{" "}
-{pollutionData.list[0].components.pm10} μg/m<sup>3</sup>
-</span>
-</p>
-<p>
-SO<sub>2</sub>:
-<span className="bold">
-{" "}
-{pollutionData.list[0].components.so2} μg/m<sup>3</sup>
-</span>
-</p>
-</div>  */}
+
         <div className="PollutionIndexContainer">
           <main className="main">
             {" "}
@@ -131,7 +67,7 @@ SO<sub>2</sub>:
               <label> {t("PollutionIndexTitles.dropdowntitle2")}</label>
             </div>
             <div className={`${all ? "noShowow" : ""}`}>
-              <div class="selected-info pollution-info-container">
+              <div className="selected-info pollution-info-container">
                 <h2 className="select-h2">
                   {t(`PollutionTextTitles.${pollutionLevel}`)}
                 </h2>

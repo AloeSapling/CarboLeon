@@ -1,7 +1,11 @@
 import { MapElem } from "../components/MapElem";
-function map() {
+import { useTranslation } from "react-i18next";
 
-    document.title = "CarboLeon | Map" 
+const map = () => {
+
+    // const {t} = useTranslation();
+    // document.title = `CarboLeon | ${t("NavBar.PolMap")}` 
+
     return(
         <>
         <div className="bg-img"></div>

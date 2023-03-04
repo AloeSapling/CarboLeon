@@ -113,7 +113,7 @@ export const MapElem = () => {
           </LayersControl.BaseLayer>
           <LayersControl.Overlay checked name={t("layer.airPollution")}>
             <TileLayer
-              url={`https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=${process.env.REACT_API_KEY}`}
+              url={`https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=${process.env.REACT_APP_API_KEY_WAQI}`}
               subdomains={["mt0", "mt1", "mt2", "mt3"]}
               attribution='Map <a href="https://memomaps.de/">memomaps.de</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               noWrap={true}

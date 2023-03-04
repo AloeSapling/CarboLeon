@@ -3,9 +3,11 @@ import { useTranslation } from "react-i18next";
 import Sponsors from '../components/Sponsors'
 
 function About() {
-  const [isDropdown, setIsDropdown] = useState(false);
-  document.title = "CarboLeon | About"
   const {t} = useTranslation()
+  document.title = `CarboLeon | ${t("NavBar.About")}`
+
+  const [isDropdown, setIsDropdown] = useState(false);
+  
   return (
     <>
         <div className="background-img">
