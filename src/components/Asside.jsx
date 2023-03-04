@@ -18,6 +18,28 @@ const Asside = () => {
     "vbad": 5,
     "ebad": 6
   }
+
+  const checker = () =>{
+    if(pollutionLevel === "good"){
+      return "green"
+    }
+    else if(pollutionLevel === "fine"){
+      return "yellow"
+    }
+    else if(pollutionLevel === "worse"){
+      return "orange"
+    }
+    else if(pollutionLevel === "bad"){
+      return "red"
+    }
+    else if(pollutionLevel === "vbad"){
+      return "purple"
+    }
+    else{
+      return "idk"
+    }
+  }
+
   const sourceIMG = levels[`${pollutionLevel}`]
   const randomTexts = 3
   return (
@@ -44,8 +66,8 @@ const Asside = () => {
           </div>
             <div>
               {/* Zmienić tutaj height i width na cos innego */}
-            <img src={`images/pollutionicons/${sourceIMG}.webp`}height="45px" width="80px" alt={`pollution icon for ${pollutionLevel} levels of pollutions`}/>
-              <h1>{t("AssideTitles.main")}{t(`AssideTitles.${pollutionLevel}`)}</h1>
+              <h1>{t("AssideTitles.main")}<p className={checker()}>{t(`AssideTitles.${pollutionLevel}`)}</p></h1>
+              <img className="aside-img" src={`images/pollutionicons/${sourceIMG}.webp`} alt={`pollution icon for ${pollutionLevel} levels of pollutions`}/>
               <h1>{t("AssideTitles.main2")}</h1>
             </div>
             <p>{t(`AssideTexts.${pollutionLevel}`)}</p>

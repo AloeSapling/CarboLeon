@@ -58,8 +58,10 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
     "Rain3": "Pada deszcz napisz się herbatki",
     "Clear3": "Jest Ładna pogoda, warto wyjść na zewnątrz"
   }
-  const weatherTipsNight = "Dobranoc"
-  const isDay = true
+  const weatherTipNight = "Dobranoc" 
+  let isDay = true
+//   console.log(new Date(currentData.dt*1000-(currentData.timezone)));
+//    console.log(currentData)
   useEffect(() => {
     resizeSplideRows();
   }, []);
@@ -84,7 +86,7 @@ const Main = ({ currentData, forecastData, date, childToParent }) => {
           {/* <p className="temp">jakość powietrza: </p>  to jest do zrobienia*/}
         </div>
         <div>
-          <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipsNight}</p>
+          <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipNight}</p>
         </div>
         <img
           alt="weather"

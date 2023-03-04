@@ -47,18 +47,18 @@ select{
     background: rgba(39,109,43,.5);
 }
 .good{
-    background: rgb(0, 156, 123);
+    background: #009c7b;
 }
 .fine{
     background: #f5e155;
 }
-.worse{
+.worsee{
     background: #fd9b45;
 }
-.bad{
+.badd{
     background: #d10035;
 }
-.vbad{
+.vbadd{
     background: #a571e0;
 }
 .ebad{

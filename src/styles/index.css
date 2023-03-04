@@ -93,3 +93,33 @@ body {
     align-items: center;
     justify-content: center;
 }
+.green{
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+    color: #009c7b;
+}
+.yellow{
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+    color: #f5e155;
+}
+.worse{
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+    color: #fd9b45;
+}
+.bad{
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+    color: #d10035;
+}
+.vbad{
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+    color: #a571e0;
+}
+.idk{
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+    color: #890633;
+}
+
+.aside-img{
+    width: 18vw;
+    height: auto;
+    margin: 1.5vh;
+}

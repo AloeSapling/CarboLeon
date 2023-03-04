@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Sponsors from "../components/Sponsors";
-import '../styles/pollutionindex.css'
+import "../styles/pollutionindex.css";
 
 const PollutionIndex = () => {
   document.title = "CarboLeon | Pollution Index";
@@ -12,12 +12,12 @@ const PollutionIndex = () => {
   const [all, setAll] = useState(false);
   const url = "https://api.openweathermap.org/data/2.5/air_pollution?";
 
-  function selectOnChange(props){
-    if(props === "all"){
-      setAll(true)
-    } else{
-      setAll(false)
-      setPollutionLevel(props)
+  function selectOnChange(props) {
+    if (props === "all") {
+      setAll(true);
+    } else {
+      setAll(false);
+      setPollutionLevel(props);
     }
   }
   useEffect(() => {
@@ -30,76 +30,75 @@ const PollutionIndex = () => {
   }, []);
   if (pollutionData)
     return (
-      <><><>
+      <>
         <div className="background-img">
           <h1>{t("PollutionIndexTitles.bgIMG")}</h1>
         </div>
         {/* <div className="margin3"> */}
         {/* <div className="pollution-params">
 <img
-  src={`images/pollutionicons/${pollutionData.list[0].main.aqi}.webp`}
-  alt="pollution icon"
-  className="pollution-icon"
+src={`images/pollutionicons/${pollutionData.list[0].main.aqi}.webp`}
+alt="pollution icon"
+className="pollution-icon"
 />
 <div>
-  <p>
-    CO:
-    <span className="bold">
-      {" "}
-      {pollutionData.list[0].components.co} μg/m<sup>3</sup>
-    </span>
-  </p>
-  <p>
-    NH<sub>3</sub>:
-    <span className="bold">
-      {" "}
-      {pollutionData.list[0].components.nh3} μg/m<sup>3</sup>
-    </span>
-  </p>
-  <p>
-    NO:
-    <span className="bold">
-      {" "}
-      {pollutionData.list[0].components.no} μg/m<sup>3</sup>
-    </span>
-  </p>
-  <p>
-    NO<sub>2</sub>:
-    <span className="bold">
-      {" "}
-      {pollutionData.list[0].components.no2} μg/m<sup>3</sup>
-    </span>
-  </p>
-  <p>
-    O<sub>3</sub>:
-    <span className="bold">
-      {" "}
-      {pollutionData.list[0].components.o3} μg/m<sup>3</sup>
-    </span>
-  </p>
-  <p>
-    PM<sub>2.5</sub>:
-    <span className="bold">
-      {" "}
-      {pollutionData.list[0].components.pm2_5} μg/m<sup>3</sup>
-    </span>
-  </p>
-  <p>
-    PM<sub>10</sub>:
-    <span className="bold">
-      {" "}
-      {pollutionData.list[0].components.pm10} μg/m<sup>3</sup>
-    </span>
-  </p>
-  <p>
-    SO<sub>2</sub>:
-    <span className="bold">
-      {" "}
-      {pollutionData.list[0].components.so2} μg/m<sup>3</sup>
-    </span>
-  </p>
+<p>
+CO:
+<span className="bold">
+{" "}
+{pollutionData.list[0].components.co} μg/m<sup>3</sup>
+</span>
+</p>
+<p>
+NH<sub>3</sub>:
+<span className="bold">
+{" "}
+{pollutionData.list[0].components.nh3} μg/m<sup>3</sup>
+</span>
+</p>
+<p>
+NO:
+<span className="bold">
+{" "}
+{pollutionData.list[0].components.no} μg/m<sup>3</sup>
+</span>
+</p>
+<p>
+NO<sub>2</sub>:
+<span className="bold">
+{" "}
+{pollutionData.list[0].components.no2} μg/m<sup>3</sup>
+</span>
+</p>
+<p>
+O<sub>3</sub>:
+<span className="bold">
+{" "}
+{pollutionData.list[0].components.o3} μg/m<sup>3</sup>
+</span>
+</p>
+<p>
+PM<sub>2.5</sub>:
+<span className="bold">
+{" "}
+{pollutionData.list[0].components.pm2_5} μg/m<sup>3</sup>
+</span>
+</p>
+<p>
+PM<sub>10</sub>:
+<span className="bold">
+{" "}
+{pollutionData.list[0].components.pm10} μg/m<sup>3</sup>
+</span>
+</p>
+<p>
+SO<sub>2</sub>:
+<span className="bold">
+{" "}
+{pollutionData.list[0].components.so2} μg/m<sup>3</sup>
+</span>
+</p>
 </div>  */}
-      </>
         <div className="PollutionIndexContainer">
           <main className="main">
             {" "}
@@ -133,9 +132,13 @@ const PollutionIndex = () => {
             </div>
             <div className={`${all ? "noShowow" : ""}`}>
               <div class="selected-info pollution-info-container">
-                <h2 className="select-h2">{t(`PollutionTextTitles.${pollutionLevel}`)}</h2>
+                <h2 className="select-h2">
+                  {t(`PollutionTextTitles.${pollutionLevel}`)}
+                </h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
-                <p className="PollutionText">{t(`PollutionTexts.${pollutionLevel}`)}</p>
+                <p className="PollutionText">
+                  {t(`PollutionTexts.${pollutionLevel}`)}
+                </p>
               </div>
             </div>
             <div className={`${all ? "" : "noShowow"}`}>
@@ -147,19 +150,19 @@ const PollutionIndex = () => {
               <div className="fine pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.fine`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
-               <p className="PollutionText">{t(`PollutionTexts.fine`)}</p>
+                <p className="PollutionText">{t(`PollutionTexts.fine`)}</p>
               </div>
-              <div className="worse pollution-info-container">
+              <div className="worsee pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.worse`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.worse`)}</p>
               </div>
-              <div className="bad pollution-info-container">
+              <div className="badd pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.bad`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.bad`)}</p>
               </div>
-              <div className="vbad pollution-info-container">
+              <div className="vbadd pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.vbad`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.vbad`)}</p>
@@ -167,13 +170,16 @@ const PollutionIndex = () => {
               <div className="ebad pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.ebad`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
-                <p className="PollutionText" id="odd-p">{t(`PollutionTexts.ebad`)}</p>
+                <p className="PollutionText" id="odd-p">
+                  {t(`PollutionTexts.ebad`)}
+                </p>
               </div>
             </div>
           </main>
         </div>
-      </><Sponsors /></>
+        <Sponsors />
+      </>
     );
 };
 
-export default PollutionIndex
+export default PollutionIndex;
