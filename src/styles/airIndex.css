@@ -29,7 +29,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0 auto;
 }
 @media screen and (max-width: 1100px) {
@@ -47,10 +47,10 @@
     width: 100%;
   }
 }
-.container .asside a {
+.container .asside .logosContainer a {
   text-decoration: none;
 }
-.container .asside a div {
+.container .asside .logosContainer a div {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -60,18 +60,44 @@
   gap: 5px;
   color: #6d6d6d;
 }
-.container .asside a div svg {
+.container .asside .logosContainer a div svg {
   width: 40px;
   height: 40px;
 }
 @media screen and (max-width: 700px) {
-  .container .asside a div svg {
+  .container .asside .logosContainer a div svg {
     width: 25px;
     height: 25px;
   }
 }
-.container .asside a div:hover {
+.container .asside .logosContainer a div:hover {
   color: #000;
+}
+.container .asside .pollution-params {
+  position: relative;
+}
+.container .asside .pollution-params .pollution-icon {
+  height: 180px;
+  width: 202.56px;
+  cursor: pointer;
+}
+.container .asside .pollution-params .hover-div {
+  pointer-events: none;
+  display: none;
+  position: absolute;
+  background: rgba(112, 111, 111, 0.6);
+  color: #fff;
+  padding: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+  width: 55%;
+  border-radius: 20px;
+}
+.container .asside .pollution-params .hover-div .pollution-params-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .container .home-main {
   padding: 0;
