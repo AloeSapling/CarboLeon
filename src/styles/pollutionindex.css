@@ -29,6 +29,7 @@ select{
     color: white;
     font-weight: bold;
     padding: 5px;
+    outline: none;
 }
 .select{
     margin: 3.5vh auto;
