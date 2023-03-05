@@ -1,3 +1,6 @@
+.main>.noShowow{
+    display: none;
+}
 .bold {
     font-weight: 700;
 }
@@ -44,7 +47,7 @@ select{
     margin: 3vh auto;
 }
 .selected-info{
-    background: rgba(39,109,43,.5);
+    background: rgba(39,109,43, .5);
 }
 .good{
     background: #009c7b;
