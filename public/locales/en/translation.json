@@ -144,12 +144,17 @@
     "AssideTitles": {
         "main": "Pollution levels are: ",
         "main2": " What can you do?",
-        "good": "good",
-        "fine": "fine",
-        "worse": "worse",
-        "bad": "bad",
-        "vbad": "very bad",
-        "ebad": "extremely bad"
+        "Good": "good",
+        "Fine": "fine",
+        "Worse": "worse",
+        "Bad": "bad",
+        "Very Bad": "very bad",
+        "Extreamly Bad": "extremely bad"
+    },
+        "AsideOther": {
+        "title": "Current AQI:",
+        "desc": "Hover on image to see air pollution details !",
+        "info": "Pollution Info"
     }
 
 }

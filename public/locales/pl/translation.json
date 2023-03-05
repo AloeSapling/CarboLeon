@@ -143,12 +143,17 @@
     "AssideTitles": {
         "main": "Poziom zanieczyszczenia w okolicy to: ",
         "main2": "Co możesz zrobić ?",
-        "good": "Dobry",
-        "fine": "umiarkowany",
-        "worse": "średni",
-        "bad": "niezdrowy",
-        "vbad": "bardzo niezdrowy",
-        "ebad": "zagrażający życiu"
+        "Good": "Dobry",
+        "Fine": "umiarkowany",
+        "Worse": "średni",
+        "Bad": "niezdrowy",
+        "Very Bad": "bardzo niezdrowy",
+        "Extreamly Bad": "zagrażający życiu"
+    },
+    "AsideOther": {
+        "title": "Obecne AQI:",
+        "desc": "Najedź na obrazek by zobaczyć więcej !",
+        "info": "Info o Zanieczyszczeniu"
     }
 
 }

@@ -60,13 +60,32 @@ const Main = ({ currentData, forecastData, date }) => {
     "Rain3": "Pada deszcz napisz się herbatki",
     "Clear3": "Jest Ładna pogoda, warto wyjść na zewnątrz"
   }
+
   const weatherTipNight = "Dobranoc" 
   let isDay = true
-//   console.log(new Date(currentData.dt*1000-(currentData.timezone)));
+const timetest  =() =>{
+
+
+
+  
+  // PROSZĘ TEGO NIE USUWAĆ
+
+
+
+  // console.log(currentData.timezone)
+  // console.log(currentData.timezone / 3600)
+  // console.log(new Date(currentData.dt * 1000))
+  // console.log(new Date((currentData.sys.sunset + currentData.timezone) * 1000))
+} 
 //    console.log(currentData)
   useEffect(() => {
     resizeSplideRows();
+    
   }, []);
+  useEffect(()=>{
+    timetest()
+  })
+
 
    return (
     <div className="weather-params">
@@ -82,6 +101,7 @@ const Main = ({ currentData, forecastData, date }) => {
             <p>
               {t(`Days.${[date.getDay()]}.day`)}, {date.getUTCDate()}{" "}
               {t(`Months.${[date.getMonth() + 1]}.mont`)}{" "}
+              {/* {new Date(currentData.dt*1000-(currentData.timezone))} */}
             </p>
           </div>
           <p className="temp">{Math.round(currentData.main.temp)} °C </p>

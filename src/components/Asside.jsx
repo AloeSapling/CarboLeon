@@ -50,7 +50,7 @@ const Asside = (pollution) => {
       setPollutionScale(5);
     else setPollutionScale(6);
   }, [pollution.pollution]);
-
+  console.log(PollutonTypes[pollutionScale - 1].name)
   return (
     <>
       <div className="logosContainer">
@@ -90,11 +90,11 @@ const Asside = (pollution) => {
           className="aqi-info"
           style={{ color: PollutonTypes[pollutionScale - 1].color }}
         >
-          Current AQI: {pollution.pollution.aqi} (
-          {PollutonTypes[pollutionScale - 1].name})
+          {t("AsideOther.title")} {pollution.pollution.aqi} (
+          {t(`AssideTitles.${PollutonTypes[pollutionScale - 1].name}`)})
         </p>
 
-        <p>Hover on image to see air pollution details !</p>
+        <p>{t("AsideOther.desc")}</p>
         <div className="hover-div" ref={hoverRef}>
           {pollution.pollution.iaqi.co && (
             <div className="pollution-params-container">
@@ -171,7 +171,7 @@ const Asside = (pollution) => {
               ? `${t(`AssideTexts.link1`)}`
               : `${t(`AssideTexts.link2`)}`}
           </p> */}
-        pollution Index --&gt;
+        {t("AsideOther.info")} --&gt;
       </Link>
     </>
   );
