@@ -88,17 +88,17 @@ const PollutionIndex = () => {
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.fine`)}</p>
               </div>
-              <div className="worse pollution-info-container">
+              <div className="worsee pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.worse`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.worse`)}</p>
               </div>
-              <div className="bad pollution-info-container">
+              <div className="badd pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.bad`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.bad`)}</p>
               </div>
-              <div className="vbad pollution-info-container">
+              <div className="vbadd pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.vbad`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.vbad`)}</p>

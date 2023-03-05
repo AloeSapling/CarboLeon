@@ -128,27 +128,27 @@
         "all": "każdy"
     },
     "AssideTexts": {
-        "good": "You shouldn't have to worry about pollution here. Stay happy and worryfree.",
-        "fine": "If you're experiencing heart or lung problems here, try wearing a mask. If the heart or lung problems don't stop try visiting a doctor.",
-        "worse": "Consider wearing a mask and being more green here. Try visiting a doctor if you're experiencing heart or lung problems.",
-        "bad": "It is reccomended to wear a mask and to visit a doctor if any heart or lung problems arise. Consider taking regular doctor visits.",
-        "vbad": "Highly reccomended to wear a mask here. It is reccomended to visit a doctor from time to time. Consider leaving if you feel constantly unwell here.",
-        "ebad": "Masks here are a near neccessity. Visiting a doctor regularly is reccomended and so is leaving the area (if possible).",
-        "random1": "If a city has a lot of smog and/or a very clouded sky, you should stray away from depressing things. This type of weather can be very depressing at times.",
-        "random2": "Masks are a very good way to avoid the effects of air pollution. Masks don't cure lung or heart problems, neither caan they always protect, so if you are experiencing heart or lung problems consider going to a doctor",
-        "random3": "A good way to lower air pollution is to take the bus, train, tram, ride a bike or walk/jog to work instead of riding a car. Doing this occasionally is good, but doing it all the time makes a bigger difference.",
-        "link1": "Find out more about different levels of air pollution here!",
-        "link2": "Find out more about the problem and it's solutions here!"
+        "good": "Nie powinieneś się martwić o zanieczyszczenie powietrza. Ciesz się świeżym powietrzem.",
+        "fine": "Jeśli masz problemy z sercem lub płucami, spróbuj założyć maskę. Jeśli problemy z sercem lub płucami nie ustępują, spróbuj odwiedzić lekarza.",
+        "worse": "Rozważ noszenie maski. Spróbuj odwiedzić lekarza, jeśli masz problemy z sercem lub płucami.",
+        "bad": "Zaleca się noszenie maski i wizytę u lekarza w przypadku problemów z sercem lub płucami. Rozważ regularne wizyty u lekarza.",
+        "vbad": "Zalecam noszenie maski. Od czasu do czasu zaleca się wizytę u lekarza. Rozważ wyjazd, jeśli ciągle źle się tutaj czujesz.",
+        "ebad": "Maski są tutaj niemal koniecznością. Zalecane są regularne wizyty u lekarza oraz opuszczanie terenu (jeśli to możliwe).",
+        "random1": "Jeśli w mieście jest dużo smogu i/lub bardzo pochmurne niebo, powinieneś trzymać się z dala od przygnębiających rzeczy. Taka pogoda może być czasami bardzo przygnębiająca.",
+        "random2": "Maseczki to bardzo dobry sposób na uniknięcie skutków zanieczyszczenia powietrza. Maski nie leczą problemów z płucami lub sercem, ani nie zawsze chronią, więc jeśli masz problemy z sercem lub płucami, rozważ pójście do lekarza",
+        "random3": "Dobrym sposobem na zmniejszenie zanieczyszczenia powietrza jest dojazd do pracy autobusem, pociągiem, tramwajem, rowerem lub spacer/jogging zamiast jazdy samochodem. Robienie tego od czasu do czasu jest dobre, ale robienie tego przez cały czas robi większą różnicę.",
+        "link1": "Dowiedz się więcej o różnych poziomach zanieczyszczenia powietrza tutaj!",
+        "link2": "Dowiedz się więcej o problemie i jego rozwiązaniach tutaj!"
     },
     "AssideTitles": {
-        "main": "Pollution levels are: ",
-        "main2": " What can you do?",
-        "good": "good",
-        "fine": "fine",
-        "worse": "worse",
-        "bad": "bad",
-        "vbad": "very bad",
-        "ebad": "extremely bad"
+        "main": "Poziom zanieczyszczenia w okolicy to: ",
+        "main2": "Co możesz zrobić ?",
+        "good": "Dobry",
+        "fine": "umiarkowany",
+        "worse": "średni",
+        "bad": "niezdrowy",
+        "vbad": "bardzo niezdrowy",
+        "ebad": "zagrażający życiu"
     }
 
 }
