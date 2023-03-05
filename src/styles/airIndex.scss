@@ -76,19 +76,28 @@ $grey-color: #6d6d6d;
     }
 
     .pollution-params {
+
       position: relative;
 
-      .pollution-icon {
-        height: 180px;
-        width: 202.56px;
-        cursor: pointer;
-      }
+        .pollution-icon {
+          height: 180px;
+          width: 202.56px;
+          cursor: pointer;
+        }
+  
+        .aqi-info {
+          font-size: 1.1em;
+          font-weight: 700;
+          margin-bottom: 25px;
+          color: #000;
+        }
+           
 
       .hover-div {
         pointer-events: none;
         display: none;
         position: absolute;
-        background: rgba(112, 111, 111, 0.6);
+        background: rgba(65, 65, 65, 0.7);
         color: #fff;
         padding: 25px;
         left: 50%;

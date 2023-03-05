@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Sponsors from "../components/Sponsors";
 import "../styles/pollutionindex.css";
@@ -7,11 +7,8 @@ const PollutionIndex = () => {
   const { t } = useTranslation();
   document.title = `CarboLeon | ${t("NavBar.PolIndex")}`;
 
-  const [pollutionData, setPollutionData] = useState(null);
   const [pollutionLevel, setPollutionLevel] = useState("good");
   const [all, setAll] = useState(false);
-  const url = "https://api.openweathermap.org/data/2.5/air_pollution?";
-
   function selectOnChange(props) {
     if (props === "all") {
       setAll(true);
@@ -20,15 +17,6 @@ const PollutionIndex = () => {
       setPollutionLevel(props);
     }
   }
-  useEffect(() => {
-    fetch(`${url}lat=40&lon=40&appid=${process.env.REACT_APP_API_KEY}`)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setPollutionData(data);
-      });
-  }, []);
-  if (pollutionData)
     return (
       <>
         <div className="background-img">
