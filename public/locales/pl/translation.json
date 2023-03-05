@@ -128,12 +128,12 @@
         "all": "każdy"
     },
     "AssideTexts": {
-        "good": "Nie powinieneś się martwić o zanieczyszczenie powietrza. Ciesz się świeżym powietrzem.",
-        "fine": "Jeśli masz problemy z sercem lub płucami, spróbuj założyć maskę. Jeśli problemy z sercem lub płucami nie ustępują, spróbuj odwiedzić lekarza.",
-        "worse": "Rozważ noszenie maski. Spróbuj odwiedzić lekarza, jeśli masz problemy z sercem lub płucami.",
-        "bad": "Zaleca się noszenie maski i wizytę u lekarza w przypadku problemów z sercem lub płucami. Rozważ regularne wizyty u lekarza.",
-        "vbad": "Zalecam noszenie maski. Od czasu do czasu zaleca się wizytę u lekarza. Rozważ wyjazd, jeśli ciągle źle się tutaj czujesz.",
-        "ebad": "Maski są tutaj niemal koniecznością. Zalecane są regularne wizyty u lekarza oraz opuszczanie terenu (jeśli to możliwe).",
+        "1": "Nie powinieneś się martwić o zanieczyszczenie powietrza. Ciesz się świeżym powietrzem.",
+        "2": "Jeśli masz problemy z sercem lub płucami, spróbuj założyć maskę. Jeśli problemy z sercem lub płucami nie ustępują, spróbuj odwiedzić lekarza.",
+        "3": "Rozważ noszenie maski. Spróbuj odwiedzić lekarza, jeśli masz problemy z sercem lub płucami.",
+        "4": "Zaleca się noszenie maski i wizytę u lekarza w przypadku problemów z sercem lub płucami. Rozważ regularne wizyty u lekarza.",
+        "5": "Zalecam noszenie maski. Od czasu do czasu zaleca się wizytę u lekarza. Rozważ wyjazd, jeśli ciągle źle się tutaj czujesz.",
+        "6": "Maski są tutaj niemal koniecznością. Zalecane są regularne wizyty u lekarza oraz opuszczanie terenu (jeśli to możliwe).",
         "random1": "Jeśli w mieście jest dużo smogu i/lub bardzo pochmurne niebo, powinieneś trzymać się z dala od przygnębiających rzeczy. Taka pogoda może być czasami bardzo przygnębiająca.",
         "random2": "Maseczki to bardzo dobry sposób na uniknięcie skutków zanieczyszczenia powietrza. Maski nie leczą problemów z płucami lub sercem, ani nie zawsze chronią, więc jeśli masz problemy z sercem lub płucami, rozważ pójście do lekarza",
         "random3": "Dobrym sposobem na zmniejszenie zanieczyszczenia powietrza jest dojazd do pracy autobusem, pociągiem, tramwajem, rowerem lub spacer/jogging zamiast jazdy samochodem. Robienie tego od czasu do czasu jest dobre, ale robienie tego przez cały czas robi większą różnicę.",
@@ -143,12 +143,12 @@
     "AssideTitles": {
         "main": "Poziom zanieczyszczenia w okolicy to: ",
         "main2": "Co możesz zrobić ?",
-        "Good": "Dobry",
-        "Fine": "umiarkowany",
-        "Worse": "średni",
-        "Bad": "niezdrowy",
-        "Very Bad": "bardzo niezdrowy",
-        "Extreamly Bad": "zagrażający życiu"
+        "1": "Dobry",
+        "2": "umiarkowany",
+        "3": "średni",
+        "4": "niezdrowy",
+        "5": "bardzo niezdrowy",
+        "6": "zagrażający życiu"
     },
     "AsideOther": {
         "title": "Obecne AQI:",

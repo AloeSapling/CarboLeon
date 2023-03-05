@@ -129,12 +129,12 @@
         "all": "all"
     },
     "AssideTexts": {
-        "good": "You shouldn't have to worry about pollution here. Stay happy and worryfree.",
-        "fine": "If you're experiencing heart or lung problems here, try wearing a mask. If the heart or lung problems don't stop try visiting a doctor.",
-        "worse": "Consider wearing a mask here. Try visiting a doctor if you're experiencing heart or lung problems.",
-        "bad": "It is recommended to wear a mask and to visit a doctor if any heart or lung problems arise. Consider taking regular doctor visits.",
-        "vbad": "Highly recommended to wear a mask here. It is recommended to visit a doctor from time to time. Consider leaving if you feel constantly unwell here.",
-        "ebad": "Masks here are a near necessity. Visiting a doctor regularly is recommended and so is leaving the area (if possible).",
+        "1": "You shouldn't have to worry about pollution here. Stay happy and worryfree.",
+        "2": "If you're experiencing heart or lung problems here, try wearing a mask. If the heart or lung problems don't stop try visiting a doctor.",
+        "3": "Consider wearing a mask here. Try visiting a doctor if you're experiencing heart or lung problems.",
+        "4": "It is recommended to wear a mask and to visit a doctor if any heart or lung problems arise. Consider taking regular doctor visits.",
+        "5": "Highly recommended to wear a mask here. It is recommended to visit a doctor from time to time. Consider leaving if you feel constantly unwell here.",
+        "6": "Masks here are a near necessity. Visiting a doctor regularly is recommended and so is leaving the area (if possible).",
         "random1": "Masks here are a near neccessity. Visiting a doctor regularly is reccomended and so is leaving the area (if possible). If a city has a lot of smog and/or a very cloudy sky, you should stay away from depressing things. This type of weather can be very depressing at times.",
         "random2": "Masks are a very good way to avoid the effects of air pollution. Masks don't cure lung or heart problems, neither caan they always protect, so if you are experiencing heart or lung problems consider going to a doctor",
         "random3": "A good way to lower air pollution is to take the bus, train, tram, ride a bike or walk/jog to work instead of riding a car. Doing this occasionally is good, but doing it all the time makes a bigger difference.",
@@ -144,12 +144,12 @@
     "AssideTitles": {
         "main": "Pollution levels are: ",
         "main2": " What can you do?",
-        "Good": "good",
-        "Fine": "fine",
-        "Worse": "worse",
-        "Bad": "bad",
-        "Very Bad": "very bad",
-        "Extreamly Bad": "extremely bad"
+        "1": "good",
+        "2": "fine",
+        "3": "worse",
+        "4": "bad",
+        "5": "very bad",
+        "6": "extremely bad"
     },
         "AsideOther": {
         "title": "Current AQI:",

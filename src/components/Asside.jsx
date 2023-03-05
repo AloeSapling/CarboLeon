@@ -37,7 +37,7 @@ const Asside = (pollution) => {
   ];
 
   const hoverRef = useRef(null);
-
+  
   useEffect(() => {
     if (pollution.pollution.aqi < 50) setPollutionScale(1);
     else if (pollution.pollution.aqi >= 51 && pollution.pollution.aqi < 101)
@@ -91,7 +91,7 @@ const Asside = (pollution) => {
           style={{ color: PollutonTypes[pollutionScale - 1].color }}
         >
           {t("AsideOther.title")} {pollution.pollution.aqi} (
-          {t(`AssideTitles.${PollutonTypes[pollutionScale - 1].name}`)})
+          {t(`AssideTitles.${pollutionScale}`)})
         </p>
 
         <p>{t("AsideOther.desc")}</p>
@@ -156,22 +156,23 @@ const Asside = (pollution) => {
           )}
         </div>
       </div>
-
-      {/*<h1>
+      <div>
+      <h1>
         {t("AssideTitles.main")}
-        {t(`AssideTitles.${pollutionLevel}`)}
+        {t(`AssideTitles.${pollutionScale}`)}
       </h1>
       <h1>{t("AssideTitles.main2")}</h1>
        </div>
-            <p>{t(`AssideTexts.${pollutionLevel}`)}</p>
-            <p>{t(`AssideTexts.random${Math.floor(Math.random()*randomTexts+1)}`)}</p> */}
+            <p>{t(`AssideTexts.${pollutionScale}`)}</p> 
+       
+            {/* // <p>{t(`AssideTexts.random${Math.floor(Math.random()*randomTexts+1)}`)}</p> */}
       <Link to="/pollutionindex">
-        {/* <p>
-            {pollutionLevel === "good"
+        <p>
+            {pollutionScale === "1"
               ? `${t(`AssideTexts.link1`)}`
               : `${t(`AssideTexts.link2`)}`}
-          </p> */}
-        {t("AsideOther.info")} --&gt;
+          </p>
+        {/* {t("AsideOther.info")} --&gt; */}
       </Link>
     </>
   );
