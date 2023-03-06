@@ -19,3 +19,9 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 500px) {
+    .THE-section{
+        padding: 10px;
+    }
+}

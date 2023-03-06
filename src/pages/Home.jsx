@@ -19,10 +19,10 @@ function Home() {
   const { t } = useTranslation();
   document.title = `Carboleon - ${t("Home.pageTitle")}`;
 
-  const [currentWeather, setCurrentWeather] = useState(null);
-  const [forecastWeather, setForecastWeather] = useState([]);
+  const [mainData, setMainData] = useState(null);
+  // const [forecastWeather, setForecastWeather] = useState([]);
   const [pollution, setPollution] = useState(null);
-  const [date, setDate] = useState(null);
+  // const [date, setDate] = useState(null);
   const [errorInfo, setErrorInfo] = useState(false);
   const [location, setLocation] = useState(null);
 
@@ -56,10 +56,11 @@ function Home() {
         `https://api.waqi.info/feed/geo:${lat};${lon}/?token=f22590119b76e420088f7c8919a6cc01a00ee770`
       ).then((res) => res.json());
 
-      setCurrentWeather(currentWeatherData);
-      setForecastWeather(forecastWeatherData.list);
+      // setCurrentWeather(currentWeatherData);
+      // setForecastWeather(forecastWeatherData.list);
       setPollution(pollutionData.data);
-      setDate(new Date());
+      // setDate(new Date());
+      setMainData({ currentWeatherData, forecastWeatherData })
       localStorage.setItem("city", location);
     }
 
@@ -78,7 +79,7 @@ function Home() {
     else setSearchingLocation("Warszawa");
   }, []);
 
-  if (currentWeather && forecastWeather && date && pollution)
+  if (mainData && pollution)
     return (
       <div className="body">
         <div className="background-img">
@@ -107,9 +108,7 @@ function Home() {
                   <h1 className="error">{t("Home.error")}</h1>
                 ) : null}
                 <Main
-                  currentData={currentWeather}
-                  forecastData={forecastWeather}
-                  date={date}
+                  mainData={mainData}
                 />
               </div>
             </div>
