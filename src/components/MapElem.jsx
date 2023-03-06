@@ -4,12 +4,12 @@ import "../styles/map.css";
 import "../styles/LeafletCSS&IMG/leaflet.css";
 import { useEffect, useRef, useState } from "react";
 import { MapContainer, useMap, FeatureGroup, TileLayer, LayersControl, Marker } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
+// import "leaflet/dist/leaflet.css";
 import { OpenStreetMapProvider, GeoSearchControl } from "leaflet-geosearch";
 import icon from "../styles/LeafletCSS&IMG/icon";
 import { EditControl } from "react-leaflet-draw";
 import osm from "../pages/osm-providers.js";
-import "leaflet/dist/leaflet.css";
+// import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 import L from "leaflet";
 import Legenda from "./Legenda";
@@ -26,12 +26,13 @@ export const MapElem = () => {
   delete L.Icon.Default.prototype._getIconUrl;
 
   L.Icon.Default.mergeOptions({
+    iconSize: [50, 75],
+    iconAnchor: [24, 75],
     iconRetinaUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-icon.png",
+       "https://www.linkpicture.com/q/Logo_geolocation.png",
     iconUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-icon.png",
-    shadowUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-shadow.png",
+      "https://www.linkpicture.com/q/Logo_geolocation.png",
+      shadowUrl: ""
   });
 
   const [center, setCenter] = useState({ lat: 24.4539, lng: 54.3773 });
@@ -105,7 +106,7 @@ export const MapElem = () => {
           </LayersControl.BaseLayer>
           <LayersControl.BaseLayer name={t("layer.airports")}>
             <TileLayer
-              url="https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=<insert-your-apikey-here> "
+              url="https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png"
               subdomains={["mt0", "mt1", "mt2", "mt3"]}
               attribution='Map <a href="https://memomaps.de/">memomaps.de</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               noWrap={true}

@@ -1,9 +1,9 @@
 import L from "leaflet";
 
 export default L.icon({
-  iconSize: [25, 41],
-  iconAnchor: [10, 41],
+  iconSize: [50, 75],
+  iconAnchor: [24, 75],
   popupAnchor: [2, -40],
-  iconUrl: "https://unpkg.com/leaflet@1.6/dist/images/marker-icon.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.6/dist/images/marker-shadow.png"
+  iconUrl: "https://www.linkpicture.com/q/Logo_geolocation.png",
+  // shadowUrl: "https://unpkg.com/leaflet@1.6/dist/images/marker-shadow.png"
 });
