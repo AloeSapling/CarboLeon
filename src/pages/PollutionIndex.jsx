@@ -7,8 +7,8 @@ const PollutionIndex = () => {
   const { t } = useTranslation();
   document.title = `CarboLeon | ${t("NavBar.PolIndex")}`;
 
-  const [pollutionLevel, setPollutionLevel] = useState("good");
-  const [all, setAll] = useState(false);
+  const [pollutionLevel, setPollutionLevel] = useState("all");
+  const [all, setAll] = useState(true);
   function selectOnChange(props) {
     if (props === "all") {
       setAll(true);
@@ -25,8 +25,6 @@ const PollutionIndex = () => {
 
         <div className="PollutionIndexContainer">
           <main className="main">
-            {" "}
-            {/* The main about section */}
             <h2 id="odd-h2">{t("PollutionTextTitles.what")}</h2>
             <div className="PollutionText">{t("PollutionTexts.what")}</div>
             <h2>{t("PollutionTextTitles.why")}</h2>
@@ -41,7 +39,7 @@ const PollutionIndex = () => {
               <select
                 id="pollutions"
                 name="pollutions"
-                defaultValue="good"
+                defaultValue="all"
                 onChange={(e) => selectOnChange(e.target.value)}
               >
                 <option value="good">{t("PollutionDropdown.good")}</option>
@@ -55,7 +53,7 @@ const PollutionIndex = () => {
               <label> {t("PollutionIndexTitles.dropdowntitle2")}</label>
             </div>
             <div className={`${all ? "noShowow" : ""}`}>
-              <div className="selected-info pollution-info-container">
+              <div className={`selected-info pollution-info-container p${pollutionLevel}`}>
                 <h2 className="select-h2">
                   {t(`PollutionTextTitles.${pollutionLevel}`)}
                 </h2>
@@ -66,32 +64,32 @@ const PollutionIndex = () => {
               </div>
             </div>
             <div className={`${all ? "" : "noShowow"}`}>
-              <div className="good pollution-info-container">
+              <div className="pgood pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.good`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.good`)}</p>
               </div>
-              <div className="fine pollution-info-container">
+              <div className="pfine pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.fine`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.fine`)}</p>
               </div>
-              <div className="worsee pollution-info-container">
+              <div className="pworse pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.worse`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.worse`)}</p>
               </div>
-              <div className="badd pollution-info-container">
+              <div className="pbad pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.bad`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.bad`)}</p>
               </div>
-              <div className="vbadd pollution-info-container">
+              <div className="pvbad pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.vbad`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText">{t(`PollutionTexts.vbad`)}</p>
               </div>
-              <div className="ebad pollution-info-container">
+              <div className="pebad pollution-info-container">
                 <h2 className="select-h2">{t(`PollutionTextTitles.ebad`)}</h2>
                 <h3>{t("PollutionTexts.wDo")}</h3>
                 <p className="PollutionText" id="odd-p">
