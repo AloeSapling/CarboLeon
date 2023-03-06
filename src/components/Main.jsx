@@ -127,7 +127,7 @@ const timetest  =() =>{
           {t("Home.part2")}
         </p>
         <div>
-          <p>{isDropdown ? "\u2227" : "\u2228"}</p>
+          <p>{isDropdown ? <img  src="images/arrowtop.png"/>: <img  src="images/arrowdown.png"/>}</p>
         </div>
       </button>
       {isDropdown ? (

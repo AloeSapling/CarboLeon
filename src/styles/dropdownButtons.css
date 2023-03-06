@@ -1,11 +1,12 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-down-o.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-up-o.css');
+
 .reveal-button{
     background-color: #e7e9ee;
     border: none;
     border-radius: 30px;
     overflow: hidden;
     width: 100%;
-    display: flex;
-    align-items: center;
 }
 
 .reveal-button p {
@@ -15,22 +16,25 @@
 }
 
 .reveal-button> p{
-    flex: 7;
-    padding: 40px;
-    font-size: large;
+    margin-top: 30px;
+    font-size: 28px;
     font-weight: 600;
+    color: rgb(47, 47, 47);
 }
+
 .reveal-button > div{
     display: flex;
-    padding: 100px 0;
     justify-content: center;
     align-items: center;
     flex: 1;
     text-align: center;
-    background-color: rgb(196, 196, 209);
+
 }
 
-
+.reveal-button div img{
+    width: 120px;
+    height: 140px;
+}
 
 .aboutDropLess{
     height: 250px;
