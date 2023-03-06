@@ -63,28 +63,33 @@ const Main = ({ currentData, forecastData, date }) => {
 
   const weatherTipNight = "Dobranoc" 
   let isDay = true
-const timetest  =() =>{
+// const timetest  =() =>{
 
 
-
-  
   // PROSZĘ TEGO NIE USUWAĆ
+  // var input = currentData.dt * 1000;
 
+  // let ok = currentData.dt * 1000
+  // console.log(ok)
+  // console.log(new Date(ok).toLocaleTimeString());
 
-
+  // console.log(new Date(ok).toTimeString());
+  // console.log(new Date(ok).toLocaleTimeString());
+  // console.log(currentData)
   // console.log(currentData.timezone)
+  // console.log(date.getHours())
   // console.log(currentData.timezone / 3600)
   // console.log(new Date(currentData.dt * 1000))
   // console.log(new Date((currentData.sys.sunset + currentData.timezone) * 1000))
-} 
+// } 
 //    console.log(currentData)
   useEffect(() => {
     resizeSplideRows();
     
   }, []);
-  useEffect(()=>{
-    timetest()
-  })
+  // useEffect(()=>{
+  //   timetest()
+  // })
 
 
    return (
