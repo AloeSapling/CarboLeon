@@ -1,33 +1,18 @@
 .sContainer .sponsor{
     display: flex;
-    gap: .30rem;
-    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    gap: 2rem 5rem;
     flex-wrap: wrap;
-    gap: .30rem;
-    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .sContainer{
     width: 100vw;
     background-color: white;
-    padding: 0 10vw;
-    padding: 0 10vw;
+    padding: 3vw 10vw 5vw 10vw;
 }
 .sContainer>h1{
-    padding: 24px;
     text-align: center;
-    padding: 24px;
-    text-align: center;
-}
-.sponsor a{
-    padding: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
+    margin-bottom: 40px;
 }
 
 .sContainer .sponsor img {
