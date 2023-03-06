@@ -26,12 +26,13 @@ export const MapElem = () => {
   delete L.Icon.Default.prototype._getIconUrl;
 
   L.Icon.Default.mergeOptions({
+    iconSize: [70, 95],
+    iconAnchor: [34, 95],
     iconRetinaUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-icon.png",
+       "https://www.linkpicture.com/q/Logo_geolocation.png",
     iconUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-icon.png",
-    shadowUrl:
-      "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/images/marker-shadow.png",
+      "https://www.linkpicture.com/q/Logo_geolocation.png",
+      shadowUrl: ""
   });
 
   const [center, setCenter] = useState({ lat: 24.4539, lng: 54.3773 });
@@ -105,7 +106,7 @@ export const MapElem = () => {
           </LayersControl.Overlay>
           <LayersControl.Overlay name={t("layer.airports")}>
             <TileLayer
-              url="https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=<insert-your-apikey-here> "
+              url="https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png"
               subdomains={["mt0", "mt1", "mt2", "mt3"]}
               attribution='Map <a href="https://memomaps.de/">memomaps.de</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               noWrap={true}
