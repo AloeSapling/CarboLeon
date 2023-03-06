@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import React from 'react'
 
 function Contact() {
-  document.title = "CarboLeon | Contact"
- const {t} = useTranslation()
+ const {t} = useTranslation();
+ document.title = `CarboLeon | ${t("NavBar.Contact")}`
 
   return (
     <>

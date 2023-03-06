@@ -1,0 +1,281 @@
+.container {
+  color: #6d6d6d;
+  background: rgba(39, 109, 43, 0.5);
+  padding: 40px;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1.6fr 4.4fr;
+  width: 100%;
+  gap: 3vh;
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+}
+.container .asside {
+  height: 100%;
+  width: 100%;
+  padding: 28px 15px;
+  text-align: center;
+  background: #e7e9ee;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  gap: 5vh;
+}
+.container .asside .logosContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1100px) {
+  .container .asside .logosContainer {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container .asside .logosContainer {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container .asside .logosContainer {
+    width: 100%;
+  }
+}
+.container .asside .logosContainer a {
+  text-decoration: none;
+}
+.container .asside .logosContainer a div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.3s;
+  gap: 5px;
+  color: #6d6d6d;
+}
+.container .asside .logosContainer a div svg {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 700px) {
+  .container .asside .logosContainer a div svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+.container .asside .logosContainer a div:hover {
+  color: #000;
+}
+.container .asside .pollution-params {
+  position: relative;
+}
+.container .asside .pollution-params .pollution-icon {
+  height: 180px;
+  width: 202.56px;
+  cursor: pointer;
+}
+.container .asside .pollution-params .hover-div {
+  pointer-events: none;
+  display: none;
+  position: absolute;
+  background: rgba(112, 111, 111, 0.6);
+  color: #fff;
+  padding: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+  width: 55%;
+  border-radius: 20px;
+}
+.container .asside .pollution-params .hover-div .pollution-params-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .home-main {
+  padding: 0;
+  align-items: center;
+  text-align: left;
+}
+.container .home-main .error {
+  color: #000;
+  background: rgb(233, 233, 0);
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3vh;
+  border-radius: 15px;
+}
+.container .home-main .search {
+  padding: 1.5vh;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #e7e9ee;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+.container .home-main .search input {
+  flex: 1;
+  font-size: 1em;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #000;
+  width: 100%;
+}
+.container .home-main .search ::-moz-placeholder {
+  color: #6d6d6d;
+}
+.container .home-main .search ::placeholder {
+  color: #6d6d6d;
+}
+.container .home-main .weather-params {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  width: 100%;
+}
+.container .home-main .weather-params .current-temp {
+  background-color: #e7e9ee;
+  padding: 30px;
+  width: 100%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1100px) {
+  .container .home-main .weather-params .current-temp {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.container .home-main .weather-params .current-temp .city {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.container .home-main .weather-params .current-temp .temp {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin: 40px 0 0 30px;
+}
+@media screen and (max-width: 700px) {
+  .container .home-main .weather-params .current-temp .temp {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+.container .home-main .weather-params .current-temp .weather-icon {
+  width: 40%;
+  height: 100%;
+}
+@media screen and (max-width: 1100px) {
+  .container .home-main .weather-params .current-temp .weather-icon {
+    width: 90%;
+  }
+}
+.container .home-main .weather-params .forecast-weather {
+  color: #000;
+  border-radius: 30px;
+  background: #e7e9ee;
+  width: 65vw;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1100px) {
+  .container .home-main .weather-params .forecast-weather {
+    width: 92vw;
+  }
+}
+.container .home-main .weather-params .forecast-weather .title {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.container .home-main .weather-params .forecast-weather .splide {
+  flex: 1;
+}
+.container .home-main .weather-params .forecast-weather .splide .splide-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.container .home-main .weather-params .forecast-weather .splide .splide-slide .time-info {
+  text-align: center;
+  font-weight: 500;
+  color: #6d6d6d;
+  font-size: 1.1em;
+}
+.container .home-main .weather-params .forecast-weather .splide .splide-slide .temp {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+.container .home-main .weather-params .forecast-weather .splide .splide-slide img {
+  margin-top: 30px;
+  width: 100%;
+}
+.container .home-main .weather-params .air-conditions {
+  color: #000;
+  border-radius: 30px;
+  background: #e7e9ee;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container .home-main .weather-params .air-conditions .title {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.container .home-main .weather-params .air-conditions .details {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+@media screen and (max-width: 700px) {
+  .container .home-main .weather-params .air-conditions .details {
+    grid-template-columns: 1fr;
+  }
+}
+.container .home-main .weather-params .air-conditions .details .prop-title {
+  color: #6d6d6d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .home-main .weather-params .air-conditions .details .prop-title svg {
+  font-size: 1.7em;
+}
+.container .home-main .weather-params .air-conditions .details .prop-title span {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.container .home-main .weather-params .air-conditions .details .measurement {
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 30px;
+}
+.container .home-main .forecast {
+  background: #dadce1;
+  border-radius: 30px;
+  padding: 15px;
+}/*# sourceMappingURL=airIndex.css.map */

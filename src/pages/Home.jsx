@@ -16,8 +16,12 @@ import "../styles/dropdownButtons.css";
 import "../styles/legenda.css";
 
 function Home() {
+  const { t } = useTranslation();
+  document.title = `Carboleon - ${t("Home.pageTitle")}`;
+
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecastWeather, setForecastWeather] = useState([]);
+  const [pollution, setPollution] = useState(null);
   const [date, setDate] = useState(null);
   const [errorInfo, setErrorInfo] = useState(false);
   const [location, setLocation] = useState(null);
@@ -28,8 +32,6 @@ function Home() {
     weatherForecastApi: "https://api.openweathermap.org/data/2.5/forecast?",
   };
 
-  document.title = "CarboLeon | Home";
-  const { t } = useTranslation();
   const setSearchingLocation = async (location) => {
     const geolocate = await fetch(
       `${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY}`
@@ -50,8 +52,13 @@ function Home() {
         `${api.weatherForecastApi}lat=${lat}&lon=${lon}&units=metric&lang=pl&appid=${process.env.REACT_APP_API_KEY}`
       ).then((res) => res.json());
 
+      const pollutionData = await fetch(
+        `https://api.waqi.info/feed/geo:${lat};${lon}/?token=f22590119b76e420088f7c8919a6cc01a00ee770`
+      ).then((res) => res.json());
+
       setCurrentWeather(currentWeatherData);
       setForecastWeather(forecastWeatherData.list);
+      setPollution(pollutionData.data);
       setDate(new Date());
       localStorage.setItem("city", location);
     }
@@ -71,7 +78,7 @@ function Home() {
     else setSearchingLocation("Warszawa");
   }, []);
 
-  if (currentWeather && forecastWeather)
+  if (currentWeather && forecastWeather && date && pollution)
     return (
       <div className="body">
         <div className="background-img">
@@ -82,7 +89,7 @@ function Home() {
           <div className="uberC">
             <div className="container">
               <div className="asside">
-                <Asside />
+                <Asside pollution={pollution} />
               </div>
 
               <div className="home-main">

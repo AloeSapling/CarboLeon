@@ -5,7 +5,9 @@ import { TbWind, TbTemperature } from "react-icons/tb";
 import { WiHumidity, WiBarometer } from "react-icons/wi";
 import { useTranslation } from "react-i18next";
 
+
 const Main = ({ currentData, forecastData, date }) => {
+
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
   const { t } = useTranslation();
@@ -19,42 +21,73 @@ const Main = ({ currentData, forecastData, date }) => {
   };
 
   window.addEventListener("resize", resizeSplideRows);
+  // const array2=["Thunderstorm","Clouds", "Rain", "Clear", ]
+  // const powiedzonka = () => {
+  //   // console.log(weatherTips[`${currentData.weather[0].main}`])
+  //   return weatherTips[`${currentData.weather[0].main}`]
+  //   // let i =0
+  //   // while(currentData.weather[0].main != array2[i]){
 
-  /* JAK COŚ TO POWIEDZONKA I POGODA MAJĄ BYĆ PO KOLEI TUTAJ MACIE STRONĘ DO WSZYSTKICH NAZW POGODY:  
+  //   //   for(let a=0; a<array2.length;a++){
+  //   //     i++
+  //   //     if(currentData.weather[0].main === array2[a]){
+  //   //       return weather[a]
+  //   //     }
+  //   //   }
+  //   // }
+  // }
 
+  /* Jak coś to na stronce https://openweathermap.org/weather-conditions w sekcji "weather condition codes" w kolumnie main są nazwy pogody.
+  
+  W object "weatherTips" wystarczy dać nazwę pogody jako key.
+  
+  Ponieważ jest random, to obok key dodaj liczbe w zakresie od 1-ilosctekstow, wtedy przy danej wylosowanej liczbie będzie dany tekst
+  
+  jeśli zmienisz ilość zranodmowyzowanych wypowiedzi to zmień też iloscTekstow*/
 
-
-  https://openweathermap.org/weather-conditions   
-
-
-
-    "WEATHER CONDITION CODES" I SZUKACIE W KOLUMNIE MAIN*/
-  const weather = ["Zostań w domu, jest burza, najlepiej napij się ciepłej herbatki :D","Jest pochmurno, zalecam zostać w domu","Pada deszcz napisz się herbatki","Jest Ładna pogoda, warto wyjść na zewnątrz",]
-  const array2=["Thunderstorm","Clouds", "Rain", "Clear", ]
-
-  const powiedzonka = () => {
-    let i =0
-    while(currentData.weather[0].main != array2[i]){
-
-      for(let a=0; a<array2.length;a++){
-        i++
-        if(currentData.weather[0].main === array2[a]){
-          return weather[a]
-        }
-      }
-    }
- 
+  const iloscTekstow = 3
+  const weatherTipsDay = {
+    "Thunderstorm1": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
+    "Clouds1": "Jest pochmurno, zalecane jest zostać w domu",
+    "Rain1": "Pada deszcz napij się herbatki",
+    "Clear1": "Jest Ładna pogoda, warto wyjść na zewnątrz",
+    "Thunderstorm2": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
+    "Clouds2": "Jest pochmurno, zalecane jest zostać w domu",
+    "Rain2": "Pada deszcz napij się herbatki",
+    "Clear2": "Jest Ładna pogoda, warto wyjść na zewnątrz",
+    "Thunderstorm3": "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
+    "Clouds3": "Jest pochmurno, zalecane jest zostać w domu",
+    "Rain3": "Pada deszcz napij się herbatki",
+    "Clear3": "Jest Ładna pogoda, warto wyjść na zewnątrz"
   }
 
+  const weatherTipNight = "Dobranoc" 
+  let isDay = true
+const timetest  =() =>{
+
+
+
   
+  // PROSZĘ TEGO NIE USUWAĆ
 
 
 
+  // console.log(currentData.timezone)
+  // console.log(currentData.timezone / 3600)
+  // console.log(new Date(currentData.dt * 1000))
+  // console.log(new Date((currentData.sys.sunset + currentData.timezone) * 1000))
+} 
+//    console.log(currentData)
   useEffect(() => {
     resizeSplideRows();
+    
   }, []);
+  useEffect(()=>{
+    timetest()
+  })
 
-  return (
+
+   return (
     <div className="weather-params">
       <div className="current-temp">
         <div>
@@ -68,13 +101,13 @@ const Main = ({ currentData, forecastData, date }) => {
             <p>
               {t(`Days.${[date.getDay()]}.day`)}, {date.getUTCDate()}{" "}
               {t(`Months.${[date.getMonth() + 1]}.mont`)}{" "}
+              {/* {new Date(currentData.dt*1000-(currentData.timezone))} */}
             </p>
           </div>
           <p className="temp">{Math.round(currentData.main.temp)} °C </p>
-          {/* <p className="temp">jakość powietrza: </p>  to jest do zrobienia*/}
         </div>
         <div>
-          <p>{powiedzonka()}</p>
+          <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipNight}</p>
         </div>
         <img
           alt="weather"

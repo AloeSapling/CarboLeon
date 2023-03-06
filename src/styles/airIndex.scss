@@ -8,7 +8,7 @@ $grey-color: #6d6d6d;
   padding: 40px;
   border-radius: 30px;
   display: grid;
-  grid-template-columns: 0.7fr 5fr;
+  grid-template-columns: 1.6fr 4.4fr;
   width: 100%;
   gap: 3vh;
 
@@ -19,49 +19,101 @@ $grey-color: #6d6d6d;
 
   .asside {
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
+    width: 100%;
+    padding: 28px 15px;
     text-align: center;
     background: #e7e9ee;
+    display: flex;
+    flex-direction: column;
     border-radius: 30px;
-    gap: 50px;
+    gap: 5vh;
 
-    @include md {
-      font-size: 15px;  
-      flex-direction: row;
+    .logosContainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      @include md {
+        width: 50%;
+
+      }
+      @include xs {
+        width: 70%;
+      }
+      @include xxs {
+        width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+  
+        div {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          transition: 0.3s;
+          gap: 5px;
+          color: $grey-color;
+    
+          svg {
+            width: 40px;
+            height: 40px;
+    
+            @include xs {
+              width: 25px;
+              height: 25px;
+            }
+          }
+          &:hover {
+            color: #000;
+          }
+      }
+        
+      }
     }
 
-    a {
-      text-decoration: none;
+    .pollution-params {
 
-      div {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        transition: 0.3s;
-        gap: 5px;
-        color: $grey-color;
-  
-        svg {
-          width: 40px;
-          height: 40px;
-  
-          @include xs {
-            width: 25px;
-            height: 25px;
-          }
+      position: relative;
+
+        .pollution-icon {
+          height: 180px;
+          width: 202.56px;
+          cursor: pointer;
         }
-        &:hover {
+  
+        .aqi-info {
+          font-size: 1.1em;
+          font-weight: 700;
+          margin-bottom: 25px;
           color: #000;
         }
+           
+
+      .hover-div {
+        pointer-events: none;
+        display: none;
+        position: absolute;
+        background: rgba(65, 65, 65, 0.7);
+        color: #fff;
+        padding: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 150px;
+        width: 55%;
+        border-radius: 20px;
+
+        .pollution-params-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
     }
-      
-    }
+
   }
   .home-main {
     padding: 0;
@@ -154,14 +206,14 @@ $grey-color: #6d6d6d;
         color: #000;
         border-radius: 30px;
         background: #e7e9ee;
-        width: 77vw;
+        width: 65vw;
         padding: 40px 20px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
 
-        @include xs {
-          width: 90vw;
+        @include md {
+          width: 92vw;
         }
 
 
