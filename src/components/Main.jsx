@@ -6,10 +6,12 @@ import { WiHumidity, WiBarometer } from "react-icons/wi";
 import { useTranslation } from "react-i18next";
 
 
-const Main = ({ currentData, forecastData, date }) => {
-
+const Main = (mainData) => {
   const [isDropdown, setIsDropdown] = useState(false);
   const [splideRows, setSplideRows] = useState(4);
+  const currentData = mainData.mainData.currentWeatherData 
+  const forecastData = mainData.mainData.forecastWeatherData.list
+  const date = new Date() 
   const { t } = useTranslation();
   const resizeSplideRows = () => {
     if (window.innerWidth > 1500) setSplideRows(4);

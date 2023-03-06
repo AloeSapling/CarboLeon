@@ -18,8 +18,6 @@ $grey-color: #6d6d6d;
   }
 
   .asside {
-    height: 100%;
-    width: 100%;
     padding: 28px 15px;
     text-align: center;
     background: #e7e9ee;
@@ -27,6 +25,10 @@ $grey-color: #6d6d6d;
     flex-direction: column;
     border-radius: 30px;
     gap: 5vh;
+
+    @include xxs {
+      width: 90vw;
+    }
 
     .logosContainer {
       width: 100%;
@@ -106,6 +108,10 @@ $grey-color: #6d6d6d;
         width: 55%;
         border-radius: 20px;
 
+        @include xs {
+          width: 75%;
+        }
+
         .pollution-params-container {
           display: flex;
           align-items: center;
@@ -119,6 +125,10 @@ $grey-color: #6d6d6d;
     padding: 0;
     align-items: center;
     text-align: left;
+
+    @include xxs {
+      width: 90vw;
+    }
 
     .error {
       color: #000;
@@ -213,7 +223,7 @@ $grey-color: #6d6d6d;
         margin: 0 auto;
 
         @include md {
-          width: 92vw;
+          width: 88vw;
         }
 
 
