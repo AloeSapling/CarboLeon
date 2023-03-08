@@ -68,9 +68,7 @@ select{
     background: #890633;
 }
 
-@media screen and (max-width: 1000px)  {
-    .pollution-info-container {
-        border-radius: 50px;
-        padding: 20px;
-    }
+.pollution-icon {
+    height: 300px;
+    aspect-ratio: 16/9;
 }

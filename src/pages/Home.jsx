@@ -20,10 +20,9 @@ function Home() {
   document.title = `Carboleon - ${t("Home.pageTitle")}`;
 
   const [mainData, setMainData] = useState(null);
-  // const [forecastWeather, setForecastWeather] = useState([]);
   const [pollution, setPollution] = useState(null);
-  // const [date, setDate] = useState(null);
   const [errorInfo, setErrorInfo] = useState(false);
+  const [coords, setCoords] = useState(null)
   const [location, setLocation] = useState(null);
 
   const api = {
@@ -59,6 +58,7 @@ function Home() {
       // setCurrentWeather(currentWeatherData);
       // setForecastWeather(forecastWeatherData.list);
       setPollution(pollutionData.data);
+      setCoords([lat, lon])
       // setDate(new Date());
       setMainData({ currentWeatherData, forecastWeatherData })
       localStorage.setItem("city", location);
@@ -77,11 +77,11 @@ function Home() {
     if (localStorage.getItem("city"))
       setSearchingLocation(localStorage.getItem("city"));
     else setSearchingLocation("Warszawa");
-  }, []);
+  }, [ ]);
 
-  if (mainData && pollution)
+  if (mainData && pollution && coords)
     return (
-      <div className="body">
+      <>
         <div className="background-img">
           <h1>CarboLeon</h1>
           <h1>{t("Home.title")}</h1>
@@ -115,12 +115,12 @@ function Home() {
           </div>
           <section className="THE-section">
             <div className="divV">
-              <MapElem></MapElem>
+              <MapElem coords={coords} />
             </div>
           </section>
         </div>
         <Sponsors />
-      </div>
+        </>
     );
 }
 
