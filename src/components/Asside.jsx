@@ -49,8 +49,7 @@ const Asside = (pollution) => {
     else if (pollution.pollution.aqi >= 201 && pollution.pollution.aqi < 251)
       setPollutionScale(5);
     else setPollutionScale(6);
-  }, [pollution.pollution]);
-  console.log(PollutonTypes[pollutionScale - 1].name)
+  }, [pollution.pollution])
   return (
     <>
       <div className="logosContainer">
