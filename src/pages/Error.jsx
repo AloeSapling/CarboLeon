@@ -1,6 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 
 const Error = () => {
+  const { t } = useTranslation();
+
   document.title = "CarboLeon | Error" ;
   return (
     <>

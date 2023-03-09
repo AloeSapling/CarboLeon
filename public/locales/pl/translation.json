@@ -157,8 +157,8 @@
     },
     "Error": {
         "title": "Przepraszamy :(",
-        "body": "coś jest nie tak",
-        "desc": "Coś poszło nie tak"
+        "desc": "404",
+        "body": "Nie znaleziono strony. Upewnij się, że URL jest poprawny"
 
     }
 
