@@ -34,8 +34,8 @@ export const MapElem = (coords) => {
   delete L.Icon.Default.prototype._getIconUrl;
 
   L.Icon.Default.mergeOptions({
-    iconSize: [60, 80],
-    iconAnchor: [29, 80],
+    iconSize: [69, 69],
+    iconAnchor: [50, 80],
     iconRetinaUrl: "https://www.linkpicture.com/q/Logo_geolocation.png",
     iconUrl: "https://www.linkpicture.com/q/Logo_geolocation.png",
     shadowUrl: "",
