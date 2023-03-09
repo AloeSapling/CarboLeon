@@ -155,6 +155,12 @@
         "title": "Current AQI:",
         "desc": "Hover on image to see air pollution details !",
         "info": "Pollution Info"
+    },
+    "Error": {
+        "title": "We're sorry :(",
+        "body": "Something's not right",
+        "desc": "Something went wrong"
+
     }
 
 }
