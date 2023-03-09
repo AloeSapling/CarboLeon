@@ -11,6 +11,7 @@ const Main = (mainData) => {
   const [splideRows, setSplideRows] = useState(4);
   const currentData = mainData.mainData.currentWeatherData 
   const forecastData = mainData.mainData.forecastWeatherData.list
+  const fullCity = mainData.mainData.fullCity
   const date = new Date() 
   const { t } = useTranslation();
   const resizeSplideRows = () => {
@@ -100,7 +101,7 @@ const Main = (mainData) => {
         <div>
           <div>
             <p className="city">
-              {currentData.name}, {currentData.sys.country}
+              {fullCity.city}, {fullCity.country}
             </p>
             <p className="weather-description">
               {currentData.weather[0].description}

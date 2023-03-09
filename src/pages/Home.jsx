@@ -22,8 +22,8 @@ function Home() {
   const [mainData, setMainData] = useState(null);
   const [pollution, setPollution] = useState(null);
   const [errorInfo, setErrorInfo] = useState(false);
-  const [coords, setCoords] = useState(null)
-  const [location, setLocation] = useState(null);
+  const [coords, setCoords] = useState(null);
+  const [location, setLocation] = useState('');
 
   const api = {
     weatherCurrentApi: "https://api.openweathermap.org/data/2.5/weather?",
@@ -55,12 +55,12 @@ function Home() {
         `https://api.waqi.info/feed/geo:${lat};${lon}/?token=f22590119b76e420088f7c8919a6cc01a00ee770`
       ).then((res) => res.json());
 
-      // setCurrentWeather(currentWeatherData);
-      // setForecastWeather(forecastWeatherData.list);
+      const city =  geolocate[0].name
+      const country = geolocate[0].country  
+      const fullCity = {city, country}
       setPollution(pollutionData.data);
-      setCoords([lat, lon])
-      // setDate(new Date());
-      setMainData({ currentWeatherData, forecastWeatherData })
+      setCoords([lat, lon]);
+      setMainData({ currentWeatherData, forecastWeatherData, fullCity });
       localStorage.setItem("city", location);
     }
 
@@ -77,51 +77,46 @@ function Home() {
     if (localStorage.getItem("city"))
       setSearchingLocation(localStorage.getItem("city"));
     else setSearchingLocation("Warszawa");
-  }, [ ]);
+  }, []);
 
-  if (mainData && pollution && coords)
-    return (
-      <>
-        <div className="background-img">
-          <h1>CarboLeon</h1>
-          <h1>{t("Home.title")}</h1>
-        </div>
-        <div className="margin2">
-          <div className="uberC">
-            <div className="container">
-              <div className="asside">
-                <Asside pollution={pollution} />
-              </div>
+  return (
+    <>
+      <div className="background-img">
+        <h1>CarboLeon</h1>
+        <h1>{t("Home.title")}</h1>
+      </div>
+      <div className="margin2">
+        <div className="uberC">
+          <div className="container">
+            <div className="asside">
+              {pollution ? <Asside pollution={pollution} /> : null}
+            </div>
 
-              <div className="home-main">
-                <div className="search">
-                  <FaSearch />
-                  <input
-                    type="text"
-                    placeholder={t("Home.input")}
-                    value={location}
-                    onChange={(e) => setLocation(e.target.value)}
-                    onKeyDown={searchLocation}
-                  />
-                </div>
-                {errorInfo ? (
-                  <h1 className="error">{t("Home.error")}</h1>
-                ) : null}
-                <Main
-                  mainData={mainData}
+            <div className="home-main">
+              <div className="search">
+                <FaSearch />
+                <input
+                  type="text"
+                  placeholder={t("Home.input")}
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
+                  onKeyDown={searchLocation}
                 />
               </div>
+              {errorInfo ? <h1 className="error">{t("Home.error")}</h1> : null}
+              {mainData ? <Main mainData={mainData} /> : null}
             </div>
           </div>
-          <section className="THE-section">
-            <div className="divV">
-              <MapElem coords={coords} />
-            </div>
-          </section>
         </div>
-        <Sponsors />
-        </>
-    );
+        <section className="THE-section">
+          <div className="divV">
+            {coords ? <MapElem coords={coords} /> : null}
+          </div>
+        </section>
+      </div>
+      <Sponsors />
+    </>
+  );
 }
 
 export default Home;

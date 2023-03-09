@@ -87,8 +87,6 @@ export const MapElem = (coords) => {
     setCenter({ lat: coords.coords[0], lng: coords.coords[1]})
   }, [coords])
 
-  console.log(center)
-
   return (
     <>
       <MapContainer
