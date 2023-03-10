@@ -1,41 +1,6 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-down-o.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-up-o.css');
 
-.reveal-button{
-    background-color: #e7e9ee;
-    border: none;
-    border-radius: 30px;
-    overflow: hidden;
-    width: 100%;
-}
-
-.reveal-button p {
-    width: 100%;
-    height: 100%;
-    font-weight: 800;
-}
-
-.reveal-button> p{
-    margin-top: 30px;
-    font-size: 28px;
-    font-weight: 600;
-    color: rgb(47, 47, 47);
-}
-
-.reveal-button > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    text-align: center;
-
-}
-
-.reveal-button div img{
-    width: 120px;
-    height: 140px;
-}
-
 .aboutDropLess{
     height: 250px;
     overflow: hidden;

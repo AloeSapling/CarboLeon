@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 const Sponsors = () => {
   const {t} = useTranslation()
   return (
-    <footer className="sContainer">
+    <footer className="sponsors-container">
           <h1>{t("Sponsors.1")}</h1>
           <div className="sponsor">
             <a href="https://www.e-tronix.eu/" rel="noreferrer" target="_blank">

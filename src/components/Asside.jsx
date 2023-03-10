@@ -77,7 +77,7 @@ const Asside = (pollution) => {
         <img
           src={`images/pollutionicons/${pollutionScale}.webp`}
           className="pollution-icon"
-          alt={`pollution icon for ${pollutionScale} levels of pollutions`}
+          alt={`pollution icon for ${pollutionScale} level of pollutions`}
           onMouseOver={() => {
             hoverRef.current.style.display = "block";
           }}
@@ -89,8 +89,7 @@ const Asside = (pollution) => {
           className="aqi-info"
           style={{ color: PollutonTypes[pollutionScale - 1].color }}
         >
-          {t("AsideOther.title")} {pollution.pollution.aqi} (
-          {t(`AssideTitles.${pollutionScale}`)})
+          {t("AsideOther.title")} {pollution.pollution.aqi} 
         </p>
 
         <p>{t("AsideOther.desc")}</p>
@@ -155,23 +154,17 @@ const Asside = (pollution) => {
           )}
         </div>
       </div>
-      <div>
-      <h1>
+      <p className="pollution-info-name">
         {t("AssideTitles.main")}
-        {t(`AssideTitles.${pollutionScale}`)}
-      </h1>
-      <h1>{t("AssideTitles.main2")}</h1>
-       </div>
+        <span style={{ color: PollutonTypes[pollutionScale - 1].color , fontWeight: 700}}>{t(`AssideTitles.${pollutionScale}`)}</span>
+      </p>
+      <h3>{t("AssideTitles.main2")}</h3>
             <p>{t(`AssideTexts.${pollutionScale}`)}</p> 
        
-            {/* // <p>{t(`AssideTexts.random${Math.floor(Math.random()*randomTexts+1)}`)}</p> */}
-      <Link to="/pollutionindex">
-        <p>
+      <Link to="/pollutionindex" className="pollution-index-link">
             {pollutionScale === "1"
               ? `${t(`AssideTexts.link1`)}`
               : `${t(`AssideTexts.link2`)}`}
-          </p>
-        {/* {t("AsideOther.info")} --&gt; */}
       </Link>
     </>
   );

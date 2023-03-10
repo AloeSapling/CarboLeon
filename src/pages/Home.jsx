@@ -23,7 +23,7 @@ function Home() {
   const [pollution, setPollution] = useState(null);
   const [errorInfo, setErrorInfo] = useState(false);
   const [coords, setCoords] = useState(null);
-  const [location, setLocation] = useState('');
+  const [location, setLocation] = useState("");
 
   const api = {
     weatherCurrentApi: "https://api.openweathermap.org/data/2.5/weather?",
@@ -55,9 +55,9 @@ function Home() {
         `https://api.waqi.info/feed/geo:${lat};${lon}/?token=f22590119b76e420088f7c8919a6cc01a00ee770`
       ).then((res) => res.json());
 
-      const city =  geolocate[0].name
-      const country = geolocate[0].country  
-      const fullCity = {city, country}
+      const city = geolocate[0].name;
+      const country = geolocate[0].country;
+      const fullCity = { city, country };
       setPollution(pollutionData.data);
       setCoords([lat, lon]);
       setMainData({ currentWeatherData, forecastWeatherData, fullCity });
@@ -86,33 +86,31 @@ function Home() {
         <h1>{t("Home.title")}</h1>
       </div>
       <div className="margin2">
-        <div className="uberC">
-          <div className="container">
-            <div className="asside">
-              {pollution ? <Asside pollution={pollution} /> : null}
-            </div>
+        <div className="container">
+          <div className="asside">
+            {pollution && <Asside pollution={pollution} />}
+          </div>
 
-            <div className="home-main">
-              <div className="search">
-                <FaSearch />
-                <input
-                  type="text"
-                  placeholder={t("Home.input")}
-                  value={location}
-                  onChange={(e) => setLocation(e.target.value)}
-                  onKeyDown={searchLocation}
-                />
-              </div>
-              {errorInfo ? <h1 className="error">{t("Home.error")}</h1> : null}
-              {mainData ? <Main mainData={mainData} /> : null}
+          <div className="home-main">
+            <div className="search">
+              <FaSearch />
+              <input
+                type="text"
+                placeholder={t("Home.input")}
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
+                onKeyDown={searchLocation}
+              />
             </div>
+            {errorInfo && <h1 className="error">{t("Home.error")}</h1>}
+            {mainData && <Main mainData={mainData} />}
           </div>
         </div>
-        <section className="THE-section">
-          <div className="divV">
-            {coords ? <MapElem coords={coords} /> : null}
+        <div className="main-map-container">
+          <div className="main-map-elem">
+            {coords && <MapElem coords={coords} />}
           </div>
-        </section>
+        </div>
       </div>
       <Sponsors />
     </>

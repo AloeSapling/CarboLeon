@@ -1,21 +1,21 @@
-.sContainer .sponsor{
+.sponsors-container .sponsor{
     display: flex;
     gap: 2rem 5rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-.sContainer{
+.sponsors-container{
     width: 100vw;
     background-color: white;
     padding: 3vw 10vw 5vw 10vw;
 }
-.sContainer>h1{
+.sponsors-container>h1{
     text-align: center;
     margin-bottom: 40px;
 }
 
-.sContainer .sponsor img {
+.sponsors-container .sponsor img {
     width: 300px;
 }
 
