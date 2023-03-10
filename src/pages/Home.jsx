@@ -85,8 +85,8 @@ function Home() {
         <h1>CarboLeon</h1>
         <h1>{t("Home.title")}</h1>
       </div>
-      <div className="margin2">
-        <div className="container">
+      <div className="margin">
+      <div className="container">
           <div className="asside">
             {pollution && <Asside pollution={pollution} />}
           </div>
@@ -112,6 +112,7 @@ function Home() {
           </div>
         </div>
       </div>
+        
       <Sponsors />
     </>
   );

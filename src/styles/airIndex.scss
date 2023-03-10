@@ -125,7 +125,7 @@ $grey-color: #6d6d6d;
 
     .pollution-info-name {
         line-height: 140%;
-        font-size: 1.1em      
+        font-size: 1.1em;    
     }
 
     .pollution-index-link {
@@ -187,6 +187,7 @@ $grey-color: #6d6d6d;
       width: 100%;
 
       .reveal-button{
+        cursor: pointer;
         background-color: #e7e9ee;
         border: none;
         border-radius: 30px;
@@ -271,7 +272,7 @@ $grey-color: #6d6d6d;
         color: #000;
         border-radius: 30px;
         background: #e7e9ee;
-        width: 65vw;
+        width: 61vw;
         padding: 40px 20px;
         display: flex;
         flex-direction: column;

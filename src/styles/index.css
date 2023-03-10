@@ -28,34 +28,9 @@ body {
 
 .margin {
     padding: 3vh 4vw 7vh 4vw;
-    background:   linear-gradient(to bottom right,rgb(115, 154, 73), rgb(44, 124, 44)) ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.margin2{
-    padding: 5vh 2.5vw;
-    background:   linear-gradient(to bottom right,rgb(115, 154, 73), rgb(44, 124, 44)) ;
-}
-
-.margin3{
-    padding: 3vh 3vw 7vh 3vw;
-    background:   linear-gradient(to bottom right,rgb(115, 154, 73), rgb(44, 124, 44)) ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.margin4{
-    background:linear-gradient(to bottom right,rgb(92, 148, 92), rgb(44, 124, 44)) ;
-    display: flex;
-    height: 88vh;
-    width: 100vw;
-    padding: 25px;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(#739a49,#2c7c2c);
+    color: #fff;
+    text-align: center;
 }
 
 .app {

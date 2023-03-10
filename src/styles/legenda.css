@@ -7,6 +7,7 @@
     z-index: 1000;
     bottom: 8px;
     left: 8px;
+    color: #000;
 }
 .inline{
     display: inline-block;
@@ -36,7 +37,7 @@
 }
 .LEContainer{
     display: flex;
-    align-items: ceter;
+    align-items: center;
     margin-bottom: 4px;
     gap: 20px;
 }

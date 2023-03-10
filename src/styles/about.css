@@ -19,7 +19,7 @@
     display: grid;
     place-items: center;
 }
-.mContainer{
+.about-info{
     width: 100%;
     border-radius: 30px;
     color: #fff;

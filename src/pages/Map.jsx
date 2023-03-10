@@ -6,8 +6,8 @@ const map = () => {
     return(
         <>
         <div className="bg-img"></div>
-        <div className="margin4">
-            <div className="mapp">
+        <div className="margin" style={{height: '88vh'}}>
+            <div className="map-map">
                 <MapElem coords={[52.237049, 21.017532]} />
             </div>
         </div>
