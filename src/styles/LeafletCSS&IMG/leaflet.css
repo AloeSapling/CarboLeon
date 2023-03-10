@@ -321,8 +321,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .leaflet-touch .leaflet-bar a {
 	width: 30px;
-	height: 35px;
-	line-height: 30px;
+	height: 30px;
+	line-height: 29px;
 	text-align: center;
 	}
 .leaflet-touch .leaflet-bar a:first-child {
