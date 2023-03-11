@@ -9,13 +9,21 @@
     margin-top: 34px;
 }
 .main-map-elem{
-    aspect-ratio: 3.5/1;
+    aspect-ratio: 2.5/1;
     width: 100%;
+    height: 100%;
     overflow: hidden;
     border-radius: 30px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
     .main-map-container{
         padding: 10px;
+        aspect-ratio: 2/1;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main-map-container{
+        aspect-ratio: 1/1;
     }
 }

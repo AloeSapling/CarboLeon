@@ -4,7 +4,7 @@ $grey-color: #6d6d6d;
 
 .container {
   color: $grey-color;
-  background: rgba(39, 109, 43, .5);
+  background: rgba(39, 109, 43, 0.5);
   padding: 40px;
   border-radius: 30px;
   display: grid;
@@ -27,7 +27,7 @@ $grey-color: #6d6d6d;
     gap: 2vw;
 
     @include xxs {
-      width: 90vw;
+      width: 87vw;
     }
 
     .logosContainer {
@@ -38,7 +38,6 @@ $grey-color: #6d6d6d;
       margin: 0 auto;
       @include md {
         width: 50%;
-
       }
       @include xs {
         width: 70%;
@@ -49,7 +48,7 @@ $grey-color: #6d6d6d;
 
       a {
         text-decoration: none;
-  
+
         div {
           cursor: pointer;
           display: flex;
@@ -59,11 +58,11 @@ $grey-color: #6d6d6d;
           transition: 0.3s;
           gap: 5px;
           color: $grey-color;
-    
+
           svg {
             width: 40px;
             height: 40px;
-    
+
             @include xs {
               width: 25px;
               height: 25px;
@@ -72,31 +71,33 @@ $grey-color: #6d6d6d;
           &:hover {
             color: #000;
           }
-      }
-        
+        }
       }
     }
 
     .pollution-params {
-
       position: relative;
 
-        .pollution-icon {
-          height: 180px;
-          width: 202.56px;
-          cursor: pointer;
-        }
-  
-        .aqi-info {
-          font-size: 1.1em;
-          font-weight: 700;
-          margin-bottom: 25px;
-          color: #000;
-        }
+      .pollution-icon {
+        cursor: pointer;
+        height: 202px;
+        margin: 10px;
 
-        p {
-          font-weight: 600;
-        }          
+        @include xxs {
+          height: 130px
+        }
+      }
+
+      .aqi-info {
+        font-size: 1.1em;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: #000;
+      }
+
+      p {
+        font-weight: 600;
+      }
 
       .hover-div {
         pointer-events: none;
@@ -119,20 +120,27 @@ $grey-color: #6d6d6d;
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          p {
+            font-weight: normal;
+          }
+
+          .bold {
+            font-weight: 700;
+          }
         }
       }
     }
 
     .pollution-info-name {
-        line-height: 140%;
-        font-size: 1.1em;    
+      line-height: 140%;
+      font-size: 1.1em;
     }
 
     .pollution-index-link {
       color: $grey-color;
       font-weight: 600;
     }
-
   }
   .home-main {
     padding: 0;
@@ -140,7 +148,7 @@ $grey-color: #6d6d6d;
     text-align: left;
 
     @include xxs {
-      width: 90vw;
+      width: 87vw;
     }
 
     .error {
@@ -186,7 +194,7 @@ $grey-color: #6d6d6d;
       gap: 3vh;
       width: 100%;
 
-      .reveal-button{
+      .reveal-button {
         cursor: pointer;
         background-color: #e7e9ee;
         border: none;
@@ -197,24 +205,23 @@ $grey-color: #6d6d6d;
         justify-content: space-between;
         align-items: center;
         overflow: hidden;
-        color: $grey-color; 
+        color: $grey-color;
 
         p {
           margin-left: 2vw;
           font-size: 1.1em;
           font-weight: 700;
-          font-family: 'Montserrat', sans-serif;
-          
+          font-family: "Montserrat", sans-serif;
         }
-        .dropdown-icon{
+        .dropdown-icon {
           width: 60px;
           height: 60px;
-          transition: .3s;
+          transition: 0.3s;
+        }
+        .rotate {
+          transform: rotate(0.5turn);
+        }
       }
-      .rotate {
-          transform: rotate(.5turn);
-      }
-    }
 
       .title {
         font-weight: 700;
@@ -267,19 +274,19 @@ $grey-color: #6d6d6d;
           }
         }
       }
-      
+
       .forecast-weather {
         color: #000;
         border-radius: 30px;
         background: #e7e9ee;
-        width: 61vw;
+        width: 63vw;
         padding: 40px 20px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
 
         @include md {
-          width: 88vw;
+          width: 89vw;
         }
 
         .splide {
@@ -320,7 +327,6 @@ $grey-color: #6d6d6d;
         display: flex;
         flex-direction: column;
 
-
         .details {
           flex: 1;
           display: grid;
@@ -338,7 +344,7 @@ $grey-color: #6d6d6d;
             align-items: center;
             gap: 10px;
             @include xs {
-              gap: 5px
+              gap: 5px;
             }
 
             svg {
@@ -351,10 +357,9 @@ $grey-color: #6d6d6d;
               font-size: 1.1em;
               font-weight: 500;
               @include xs {
-                font-size: .8em;
+                font-size: 0.8em;
               }
             }
-            
           }
           .measurement {
             margin-top: 20px;

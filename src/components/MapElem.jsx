@@ -15,7 +15,7 @@ import {
 import { OpenStreetMapProvider, GeoSearchControl } from "leaflet-geosearch";
 import icon from "../styles/LeafletCSS&IMG/icon";
 import { EditControl } from "react-leaflet-draw";
-import osm from "../pages/osm-providers.js";
+// import osm from "./osm-providers.js";
 // import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 import L from "leaflet";
