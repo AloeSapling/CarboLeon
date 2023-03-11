@@ -1,6 +1,7 @@
 import React from 'react'
-import '../styles/sponsors.css'
 import { useTranslation } from 'react-i18next'
+
+import '../styles/sponsors.css'
 
 const Sponsors = () => {
   const {t} = useTranslation()

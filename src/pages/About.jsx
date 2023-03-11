@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Sponsors from "../components/Sponsors";
 
+import '../styles/about.css'
+
 function About() {
   const { t } = useTranslation();
   document.title = `CarboLeon | ${t("NavBar.About")}`;

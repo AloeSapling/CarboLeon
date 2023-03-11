@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import React from "react";
 
+import '../styles/contact.css'
+
 function Contact() {
   const { t } = useTranslation();
   document.title = `CarboLeon | ${t("NavBar.Contact")}`;

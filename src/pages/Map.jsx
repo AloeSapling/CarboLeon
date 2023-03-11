@@ -1,7 +1,11 @@
+import React from "react";
 import { MapElem } from "../components/MapElem";
 
+import '../styles/map.css'
+
 const map = () => {
-    document.title = "CarboLeon - map"
+    
+    document.title = `CarboLeon - Map`
 
     return(
         <>

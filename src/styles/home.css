@@ -15,7 +15,7 @@
     border-radius: 30px;
 }
 @media screen and (max-width: 500px) {
-    .THE-section{
+    .main-map-container{
         padding: 10px;
     }
 }

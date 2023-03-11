@@ -6,14 +6,8 @@ import Sponsors from "../components/Sponsors";
 import { MapElem } from "../components/MapElem";
 
 import "../styles/home.css";
-import "../styles/sponsors.css";
 import "../styles/airIndex.scss";
-import "../styles/phones.css";
-import "../styles/index.css";
-import "../styles/contact.css";
-import "../styles/about.css";
-import "../styles/dropdownButtons.css";
-import "../styles/legenda.css";
+
 
 function Home() {
   const { t } = useTranslation();

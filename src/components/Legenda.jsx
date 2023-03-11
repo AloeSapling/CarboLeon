@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import '../styles/legend.css'
+
 const Legenda = () => {
   const { t } = useTranslation();
 

@@ -98,3 +98,36 @@ body {
     height: auto;
     margin: 1.5vh;
 }
+
+.fallback {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 99999999999999999;
+    background: linear-gradient(#739a49,#2c7c2c);
+}
+
+.loader {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    border: 15px solid #ddd;
+    border-top-color: transparent;      
+    animation: loading 1s ease infinite; 
+}
+
+@keyframes loading {
+    from {
+      transform: rotate(0turn);
+      
+    }
+    to {
+      transform: rotate(1turn);
+      
+    }
+  }

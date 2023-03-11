@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/geosearch.css";
-import "../styles/map.css";
 import "../styles/LeafletCSS&IMG/leaflet.css";
 import { useEffect, useRef, useState } from "react";
 import {
