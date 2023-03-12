@@ -27,7 +27,7 @@ function Home() {
 
   const setSearchingLocation = async (location) => {
       const geolocate = await fetch(
-        `${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY}`
+        `${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY_OPENWEATHER}`
       ).then((res) => res.json());
       if (!geolocate.length) {
         setErrorInfo(true);
@@ -38,15 +38,15 @@ function Home() {
         const currentWeatherData = await fetch(
           `${api.weatherCurrentApi}lat=${lat}&lon=${lon}&units=metric&lang=${t(
             "test.len"
-          )}&appid=${process.env.REACT_APP_API_KEY}`
+          )}&appid=${process.env.REACT_APP_API_KEY_OPENWEATHER}`
         ).then((res) => res.json());
   
         const forecastWeatherData = await fetch(
-          `${api.weatherForecastApi}lat=${lat}&lon=${lon}&units=metric&lang=pl&appid=${process.env.REACT_APP_API_KEY}`
+          `${api.weatherForecastApi}lat=${lat}&lon=${lon}&units=metric&lang=pl&appid=${process.env.REACT_APP_API_KEY_OPENWEATHER}`
         ).then((res) => res.json());
   
         const pollutionData = await fetch(
-          `https://api.waqi.info/feed/geo:${lat};${lon}/?token=f22590119b76e420088f7c8919a6cc01a00ee770`
+          `https://api.waqi.info/feed/geo:${lat};${lon}/?token=${process.env.REACT_APP_API_KEY_WAQI}`
         ).then((res) => res.json());
   
         const city = geolocate[0].name;
