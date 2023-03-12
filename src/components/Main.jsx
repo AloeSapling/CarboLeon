@@ -85,7 +85,7 @@ const timetest  =() =>{
   useEffect(()=>{
     timetest()
   })
-
+  console.log(currentData.weather[0])
 
    return (
     <div className="weather-params">
@@ -107,7 +107,8 @@ const timetest  =() =>{
           <p className="temp">{Math.round(currentData.main.temp)} °C </p>
         </div>
         <div>
-          <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipNight}</p>
+          {/* <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipNight}</p> */}
+          <p>{currentData.weather[0].main=="Clouds" ? `${t("WeatherTips.Clouds")}` : `${t(`WeatherTips.${currentData.weather[0].description}`)}`}</p>
         </div>
         <img
           alt="weather"

@@ -154,6 +154,66 @@
         "title": "Obecne AQI:",
         "desc": "Najedź na obrazek by zobaczyć więcej !",
         "info": "Info o Zanieczyszczeniu"
+    },
+    "WeatherTips": {
+        "thunderstorm with light rain": "Nie daj się zwieść łagodnym stukotem kropel deszczu!",
+        "thunderstorm with rain": "lepiej zostań w domu",
+        "thunderstorm with heavy rain": "lepiej zostać w domu",
+        "light thunderstorm": "Lekka burza z piorunami to dobry czas, aby obserwować spektakularne błyski i dźwięki natury",
+        "thunderstorm": "Burza to czas, rzeby odpocząć",
+        "heavy thunderstorm": "bądź ostrożny, a lepiej zostań w domu!",
+        "ragged thunderstorm": "To czas, żeby odpocząć",
+        "thunderstorm with light drizzle": "Napisz do bliskiej osoby",
+        "thunderstorm with drizzle": "Czy ćwiczysz w domu? Jeżeli nie, to teraz jest idealny moment",
+        "thunderstorm with heavy drizzle": "Wyłącz wszystkie urządzenia elektryczne",
+        
+        "light intensity drizzle": "to jest idealny czas na spacer z parasolem i cieszenie się cichą atmosferą",
+        "drizzle": "drizzle rizz",
+        "heavy intensity drizzle": "Lepiej poszukaj schronienia w budynkach, niż próbować przemoknąć do suchej nitki.",
+        "light intensity drizzle rain": "To dobry czas na przytulne spędzenie czasu w domu z dobrą książką lub filmem",
+        "drizzle rain": "unikaj wychodzenia na zewnątrz, jeśli to tylko możliwe.",
+        "heavy intensity drizzle rain": "Jeśli lubisz tańczyć w deszczu, to właśnie teraz jest twój czas, ale pamiętaj, żeby nie uderzyć przypadkiem w kogoś parasolem!",
+        "shower rain and drizzle": "Kiedy deszcz i mżawka spotykają się na Twojej drodze, to najlepiej ubrać się w kolorowe kalosze i zrobić sobie kolorowy dzień!",
+        "heavy shower rain and drizzle": "Jeśli chcesz poczuć się jak prawdziwy poszukiwacz przygód, to teraz jest idealna pora, by odkryć swoje wewnętrzne dziecko i skakać po kałużach!",
+        "shower drizzle": "Zostań w domu i odpocznij",
+
+        "light rain": "Jeśli chcesz poczuć się jak bohater komedii, to weź ze sobą parasolkę i spaceruj po deszczu",
+        "moderate rain": "To dobry czas na to, by wyjść na spacer i posłuchać odprężającej muzyki",
+        "heavy intensity rain": "Gdy deszcz pada z dużą intensywnością, lepiej schować się w ciepłym pomieszczeniu",
+        "very heavy rain": "To czas, żeby zostać w domu",
+        "extreme rain": "To nie czas na spacer lub wyjście z domu! Zrobić coś kreatywnego, jak malowanie czy rysowanie.",
+        "freezing rain": "Lepiej pozostać w domu i cieszyć się gorącą kawą lub herbatą.",
+        "light intensity shower rain": "To idealna pora na to, by zrobić sobie przerwę i wziąć ciepły prysznic",
+        "shower rain": "Jeśli potrzebujesz odrobiny energii, to zrób sobie krótki spacer po deszczu",
+        "heavy intensity shower rain": "Lepiej zostań w domu",
+        "ragged shower rain": "Lepiej schować się w bezpiecznym miejscu i poczekać, aż burza minie.",
+
+        "light snow": "To idealna pora na to, by wyjść na spacer i zrobić bałwana lub zorganizować bitwę na śnieżki z rodzeństwem lub przyjaciółmi!",
+        "snow": "Gdy leży już sporo śniegu, to możesz wybrać się na narty, snowboard lub sanki i poczuć się jak mistrz sportów zimowych!",
+        "heavy snow": "Zrób sobie gorącą czekoladę i obejrzyj swój ulubiony film",
+        "sleet": "To dobry czas na to, by zrobić coś kreatywnego, jak malowanie",
+        "light shower sleet": "Wyjdź na spacer.",
+        "shower sleet": "To idealny moment, by zrobić sobie herbatę i przeczytać ulubioną książkę.",
+        "light rain and snow": "Czy nie lepiej spędzić ten czas w domu?",
+        "rain and snow": "To dobry czas na to, by zrobić coś kreatywnego",
+        "light shower snow": "Gdy spada intensywny śnieg z prysznicem, to lepiej pozostać w domu",
+        "shower snow": "Lepiej schowaj się w ciepłym pomieszczeniu i spędź sobie dobry czas z rodziną lub przyjaciółmi.",
+        "heavy shower snow": "Gdy spada intensywny śnieg z prysznicem, to lepiej pozostać w domu",
+
+        "mist": "Zrób sobie pyszną kawę lub herbatę i rozgość się na kanapie z ulubioną książką lub filmem!",
+        "smoke": "Gdy w powietrzu unosi się dym, to lepiej zamknij okna i drzwi.",
+        "haze": "Lepiej zostań w domu",
+        "sand/dust whirls": "To jest czas, żeby zrobić coś kreatywnego",
+        "fog": "Zrób sobie pyszną zupę i poczuj jak dobrze jest w domu",
+        "sand": "To nie jest czas na spacer!",
+        "dust": "Gdy w powietrzu unosi się piasek lub kurz, to lepiej zakryj oczy, nos i usta.",
+        "volcanic ash": "Jeśli w powietrzu unosi się popiół wulkaniczny, to lepiej pozostać w domu i zamknąć okna",
+        "squalls": "Lepiej schowaj się w bezpiecznym pomieszczeniu",
+        "tornado": "Jeśli zbliża się tornado, to lepiej schować się w bezpiecznym pomieszczeniu",
+
+        "clear sky": "Wyjdź na spacer z przyjaciółmi!",
+
+        "Clouds": "Jeśli na niebie jest tylko kilka chmur, to najlepiej wyjść na zewnątrz"
     }
 
 }
