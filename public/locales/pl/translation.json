@@ -154,6 +154,12 @@
         "title": "Obecne AQI:",
         "desc": "Najedź na obrazek by zobaczyć więcej !",
         "info": "Info o Zanieczyszczeniu"
+    },
+    "Error": {
+        "title": "Przepraszamy :(",
+        "desc": "404",
+        "body": "Nie znaleziono strony. Upewnij się, że URL jest poprawny"
+
     }
 
 }

@@ -110,8 +110,7 @@ nav>ul>li{
 
 @media screen and (max-width: 1300px) {
     nav ul {
-        color: #fff;
-        border-top: 3px solid var(--text-color);
+        border-top: 3px solid #fff;
         flex-direction: column;
         position: absolute;
         top: 12vh;
@@ -127,6 +126,10 @@ nav>ul>li{
         align-items: center;
         transition: .4s ease-in-out;
     }  
+
+    nav ul a {
+        color: #fff;
+    }
 
     nav ul.open {
         transform: translateX(0);
@@ -190,10 +193,10 @@ nav>ul>li{
     nav ul {
         width: 100vw;
     }  
-    nav ul a:hover::after {
+    nav ul .header-link:hover::after {
         width: 0;
     }
-    nav ul a:hover {
+    nav ul .header-link:hover {
         color: rgb(18, 179, 18);
     }
 }   

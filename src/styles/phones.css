@@ -1,9 +1,9 @@
 @media screen and (max-width: 799px){ 
-    .THE-section .divV{
+    .main-map-container .main-map-elem{
         height: 400px;
 
     }
-    .divV{
+    .main-map-elem{
         width: 100%;
     }
 

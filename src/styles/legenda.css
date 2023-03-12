@@ -1,9 +1,8 @@
 .lContainer{
     border-radius: 30px;
     width: max-content; 
-    background-color: rgb(235, 235, 235);
+    background-color: rgba(235, 235, 235, .8);
     padding: 15px;
-    opacity: 0.8;
     position: absolute;
     z-index: 1000;
     bottom: 8px;

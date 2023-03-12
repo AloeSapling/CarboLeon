@@ -1,17 +1,14 @@
 import { MapElem } from "../components/MapElem";
-import { useTranslation } from "react-i18next";
 
 const map = () => {
-
-    // const {t} = useTranslation();
-    // document.title = `CarboLeon | ${t("NavBar.PolMap")}` 
+    document.title = "CarboLeon - map"
 
     return(
         <>
         <div className="bg-img"></div>
         <div className="margin4">
             <div className="mapp">
-                <MapElem></MapElem>
+                <MapElem coords={[52.237049, 21.017532]} />
             </div>
         </div>
         </>

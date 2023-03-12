@@ -3,7 +3,15 @@ import "../styles/geosearch.css";
 import "../styles/map.css";
 import "../styles/LeafletCSS&IMG/leaflet.css";
 import { useEffect, useRef, useState } from "react";
-import { MapContainer, useMap, FeatureGroup, TileLayer, LayersControl, Marker } from "react-leaflet";
+import {
+  MapContainer,
+  useMap,
+  FeatureGroup,
+  TileLayer,
+  LayersControl,
+  Marker,
+  Popup
+} from "react-leaflet";
 // import "leaflet/dist/leaflet.css";
 import { OpenStreetMapProvider, GeoSearchControl } from "leaflet-geosearch";
 import icon from "../styles/LeafletCSS&IMG/icon";
@@ -15,7 +23,7 @@ import L from "leaflet";
 import Legenda from "./Legenda";
 import { useTranslation } from "react-i18next";
 
-export const MapElem = () => {
+export const MapElem = (coords) => {
   const { t } = useTranslation();
 
   const mapBounds = [
@@ -26,16 +34,14 @@ export const MapElem = () => {
   delete L.Icon.Default.prototype._getIconUrl;
 
   L.Icon.Default.mergeOptions({
-    iconSize: [60, 80],
-    iconAnchor: [29, 80],
-    iconRetinaUrl:
-       "https://www.linkpicture.com/q/Logo_geolocation.png",
-    iconUrl:
-      "https://www.linkpicture.com/q/Logo_geolocation.png",
-      shadowUrl: ""
+    iconSize: [69, 69],
+    iconAnchor: [50, 80],
+    iconRetinaUrl: "https://www.linkpicture.com/q/Logo_geolocation.png",
+    iconUrl: "https://www.linkpicture.com/q/Logo_geolocation.png",
+    shadowUrl: "",
   });
 
-  const [center, setCenter] = useState({ lat: 24.4539, lng: 54.3773 });
+  const [center, setCenter] = useState({ lat: 52.237049, lng: 21.017532 });
   const ZOOM_LEVEL = 12;
   const mapRef = useRef();
 
@@ -43,6 +49,22 @@ export const MapElem = () => {
   const Search = (props) => {
     const map = useMap();
     const { provider } = props;
+
+    // function handleOnSetView() {
+    //   const { current = {} } = mapRef;
+    //   const { leafletElement: map } = current;
+  
+    //   map.setView(coords.coords, 14);
+    // }
+  
+    // function handleOnFlyTo() {
+    //   const { current = {} } = mapRef;
+    //   const { leafletElement: map } = current;
+  
+    //   map.flyTo(coords.coords, 14,  {
+    //     duration: 2
+    //   });
+    // }
 
     useEffect(() => {
       const provider = new OpenStreetMapProvider();
@@ -60,10 +82,15 @@ export const MapElem = () => {
     return null;
   };
 
+
+  useEffect(() =>  {
+    setCenter({ lat: coords.coords[0], lng: coords.coords[1]})
+  }, [coords])
+
   return (
     <>
       <MapContainer
-        center={[52.19871873744634, 21.02099770335431]}
+        center={center}
         maxBounds={mapBounds}
         zoom={10}
         minZoom={3}
@@ -130,13 +157,14 @@ export const MapElem = () => {
             />
           </LayersControl.Overlay>
         </LayersControl>
-         <Search provider={new OpenStreetMapProvider()}>
-            <Marker>
-            </Marker>
-            </Search> 
-        <Legenda />
+        <Search provider={new OpenStreetMapProvider()}>
+          <Marker />
+        </Search>
+
         {/* <MinimapControl position="topright" /> */}
-        
+        <Marker position={coords.coords} />
+         
+        <Legenda />
       </MapContainer>
     </>
   );

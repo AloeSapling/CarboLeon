@@ -24,7 +24,7 @@ $grey-color: #6d6d6d;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    gap: 5vh;
+    gap: 2vw;
 
     @include xxs {
       width: 90vw;
@@ -93,7 +93,10 @@ $grey-color: #6d6d6d;
           margin-bottom: 25px;
           color: #000;
         }
-           
+
+        p {
+          font-weight: 600;
+        }          
 
       .hover-div {
         pointer-events: none;
@@ -118,6 +121,16 @@ $grey-color: #6d6d6d;
           justify-content: space-between;
         }
       }
+    }
+
+    .pollution-info-name {
+        line-height: 140%;
+        font-size: 1.1em      
+    }
+
+    .pollution-index-link {
+      color: $grey-color;
+      font-weight: 600;
     }
 
   }
@@ -166,11 +179,52 @@ $grey-color: #6d6d6d;
         color: $grey-color;
       }
     }
+
     .weather-params {
       display: flex;
       flex-direction: column;
       gap: 3vh;
       width: 100%;
+
+      .reveal-button{
+        background-color: #e7e9ee;
+        border: none;
+        border-radius: 30px;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        color: $grey-color; 
+
+        p {
+          margin-left: 2vw;
+          font-size: 1.1em;
+          font-weight: 700;
+          font-family: 'Montserrat', sans-serif;
+          
+        }
+        .dropdown-icon{
+          width: 60px;
+          height: 60px;
+          transition: .3s;
+      }
+      .rotate {
+          transform: rotate(.5turn);
+      }
+    }
+
+      .title {
+        font-weight: 700;
+        font-size: 1.4em;
+        margin-bottom: 50px;
+        text-align: center;
+
+        @include xs {
+          margin-bottom: 20px;
+        }
+      }
 
       .current-temp {
         background-color: #e7e9ee;
@@ -212,6 +266,7 @@ $grey-color: #6d6d6d;
           }
         }
       }
+      
       .forecast-weather {
         color: #000;
         border-radius: 30px;
@@ -226,17 +281,9 @@ $grey-color: #6d6d6d;
           width: 88vw;
         }
 
-
-
-        .title {
-          font-weight: 700;
-          font-size: 1.4em;
-          margin-bottom: 50px;
-          text-align: center;
-        }
-
         .splide {
           flex: 1;
+          cursor: pointer;
 
           .splide-slide {
             display: flex;
@@ -263,6 +310,7 @@ $grey-color: #6d6d6d;
           }
         }
       }
+
       .air-conditions {
         color: #000;
         border-radius: 30px;
@@ -271,12 +319,6 @@ $grey-color: #6d6d6d;
         display: flex;
         flex-direction: column;
 
-        .title {
-          font-weight: 700;
-          font-size: 1.4em;
-          margin-bottom: 50px;
-          text-align: center;
-        }
 
         .details {
           flex: 1;
@@ -286,6 +328,7 @@ $grey-color: #6d6d6d;
 
           @include xs {
             grid-template-columns: 1fr;
+            gap: 25px;
           }
 
           .prop-title {
@@ -293,23 +336,40 @@ $grey-color: #6d6d6d;
             display: flex;
             align-items: center;
             gap: 10px;
+            @include xs {
+              gap: 5px
+            }
 
             svg {
               font-size: 1.7em;
+              @include xs {
+                font-size: 1.4em;
+              }
             }
             span {
               font-size: 1.1em;
               font-weight: 500;
+              @include xs {
+                font-size: .8em;
+              }
             }
+            
           }
           .measurement {
             margin-top: 20px;
             margin-left: 40px;
             font-size: 30px;
+
+            @include xs {
+              margin-top: 10px;
+              font-size: 25px;
+              margin-left: 25px;
+            }
           }
         }
       }
     }
+
     .forecast {
       background: #dadce1;
       border-radius: 30px;

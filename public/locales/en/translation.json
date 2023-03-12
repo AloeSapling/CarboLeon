@@ -151,10 +151,16 @@
         "5": "very bad",
         "6": "extremely bad"
     },
-        "AsideOther": {
+    "AsideOther": {
         "title": "Current AQI:",
         "desc": "Hover on image to see air pollution details !",
         "info": "Pollution Info"
+    },
+    "Error": {
+        "title": "We're sorry :(",
+        "desc": "404",
+        "body": "Page not found. Check URL adress"
+
     }
 
 }
