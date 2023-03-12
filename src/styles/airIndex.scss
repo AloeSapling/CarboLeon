@@ -248,6 +248,10 @@ $grey-color: #6d6d6d;
           text-align: center;
         }
 
+        div {
+          flex: 1;
+        }
+
         .city {
           color: #000;
           font-size: 2rem;
@@ -260,14 +264,17 @@ $grey-color: #6d6d6d;
           color: #000;
           margin: 40px 0 0 30px;
 
+          @include md {
+            margin: 20px 0;
+          }
+          
           @include xs {
             font-size: 2rem;
-            margin: 0;
+
           }
         }
         .weather-icon {
           width: 40%;
-          height: 100%;
 
           @include md {
             width: 90%;

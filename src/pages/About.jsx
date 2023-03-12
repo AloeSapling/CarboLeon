@@ -17,9 +17,6 @@ function About() {
       </div>
       <div className="margin">
         <div className="about-info">
-          <main className="main">
-            {" "}
-            {/* The main about section */}
             <h1>{t("About.1")}</h1>
             <div className={`about ${isDropdown ? "" : "about-drop-less"}`}>
               {/* <p>&#x9;&#x9;Carboleon is a project developed by a small, but ambitious group of teenagers as part of the "Zwolnieni z Teorii" nationwide olympiad. The competition centers around creating a project based around being helpful to society. Our take on the contest's topic is a website that helps aquire current information about air quality and the atmosphere. We also dedicated ourselves to making this information accurate, readilly available and detailed yet simple to understand. In order to accomplish this hefty task we opted to create a website with information being split into 2 categories: the 'air index' and the 'pollution map'. </p>
@@ -29,13 +26,12 @@ function About() {
               {/* <p>For more information, check out our <a href='https://www.wikipedia.com'>wikipedia page</a>.</p> */}
               {t("About.Text")}
             </div>
-          </main>
         </div>
         <button
           className="dropdown-about"
-          onClick={() => setIsDropdown(!isDropdown)}
+          onClick={() => setIsDropdown(prev => !prev)}
         >
-          {isDropdown ? t("About.btn-show") : t("About.btn-hide")}
+          {!isDropdown ? t("About.btn-show") : t("About.btn-hide")}
         </button>
       </div>
       <Sponsors />
