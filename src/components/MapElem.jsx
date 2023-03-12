@@ -30,7 +30,7 @@ export const MapElem = (coords) => {
     [-90, -180],
     [90, 180],
   ];
-
+    
   delete L.Icon.Default.prototype._getIconUrl;
 
   L.Icon.Default.mergeOptions({
@@ -40,10 +40,16 @@ export const MapElem = (coords) => {
     iconUrl: "https://www.linkpicture.com/q/Logo_geolocation.png",
     shadowUrl: "",
   });
+  
 
   const [center, setCenter] = useState({ lat: 52.237049, lng: 21.017532 });
   const ZOOM_LEVEL = 12;
   const mapRef = useRef();
+
+  // useEffect(
+  //   () => {
+  //       mapRef.current.setView({ lat: coords.coords[0], lng: coords.coords[1]})
+  //   }, [coords])
 
   const _created = (e) => console.log(e);
   const Search = (props) => {
@@ -168,6 +174,7 @@ export const MapElem = (coords) => {
       </MapContainer>
     </>
   );
+  
 };
 export default MapElem;
 // TWÓRCA: BARTOSZ GRZYB MASTER / Legenda: AloeS and John333🔥
