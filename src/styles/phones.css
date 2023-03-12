@@ -1,11 +1,4 @@
 @media screen and (max-width: 799px){ 
-    .THE-section .divV{
-        height: 400px;
-
-    }
-    .divV{
-        width: 100%;
-    }
 
     .leaflet-control-attribution{
         height: 50px;

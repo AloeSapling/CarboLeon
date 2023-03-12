@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../styles/navbar.css";
 import { useTranslation } from "react-i18next";
+
+import "../styles/navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,14 @@ const Navbar = () => {
     i18n.changeLanguage(lang);
   }
 
-  window.addEventListener("scroll", changeColor);
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    }
+  })
+  
 
   return (
     <nav className={color ? "bg" : ""}>
@@ -56,28 +64,44 @@ const Navbar = () => {
           </button>
         </li>
         <li>
-          <Link to="/" className="header-link">
+          <Link to="/" className="header-link" onClick={() => setIsOpen(false)}>
             {t("NavBar.Home")}
           </Link>
         </li>
         <li>
-          <Link to="/about" className="header-link">
-          {t("NavBar.About")}
+          <Link
+            to="/about"
+            className="header-link"
+            onClick={() => setIsOpen(false)}
+          >
+            {t("NavBar.About")}
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="header-link">
-          {t("NavBar.Contact")}
+          <Link
+            to="/contact"
+            className="header-link"
+            onClick={() => setIsOpen(false)}
+          >
+            {t("NavBar.Contact")}
           </Link>
         </li>
         <li>
-          <Link to="/map" className="header-link">
-          {t("NavBar.PolMap")}
+          <Link
+            to="/map"
+            className="header-link"
+            onClick={() => setIsOpen(false)}
+          >
+            {t("NavBar.PolMap")}
           </Link>
         </li>
         <li>
-          <Link to="/pollutionindex" className="header-link">
-          {t("NavBar.PolIndex")}
+          <Link
+            to="/pollutionindex"
+            className="header-link"
+            onClick={() => setIsOpen(false)}
+          >
+            {t("NavBar.PolIndex")}
           </Link>
         </li>
       </ul>

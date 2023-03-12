@@ -4,7 +4,7 @@ $grey-color: #6d6d6d;
 
 .container {
   color: $grey-color;
-  background: rgba(39, 109, 43, .5);
+  background: rgba(39, 109, 43, 0.5);
   padding: 40px;
   border-radius: 30px;
   display: grid;
@@ -18,15 +18,17 @@ $grey-color: #6d6d6d;
   }
 
   .asside {
-    height: 100%;
-    width: 100%;
     padding: 28px 15px;
     text-align: center;
     background: #e7e9ee;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    gap: 5vh;
+    gap: 2vw;
+
+    @include xxs {
+      width: 87vw;
+    }
 
     .logosContainer {
       width: 100%;
@@ -36,7 +38,6 @@ $grey-color: #6d6d6d;
       margin: 0 auto;
       @include md {
         width: 50%;
-
       }
       @include xs {
         width: 70%;
@@ -47,7 +48,7 @@ $grey-color: #6d6d6d;
 
       a {
         text-decoration: none;
-  
+
         div {
           cursor: pointer;
           display: flex;
@@ -57,11 +58,11 @@ $grey-color: #6d6d6d;
           transition: 0.3s;
           gap: 5px;
           color: $grey-color;
-    
+
           svg {
             width: 40px;
             height: 40px;
-    
+
             @include xs {
               width: 25px;
               height: 25px;
@@ -70,28 +71,33 @@ $grey-color: #6d6d6d;
           &:hover {
             color: #000;
           }
-      }
-        
+        }
       }
     }
 
     .pollution-params {
-
       position: relative;
 
-        .pollution-icon {
-          height: 180px;
-          width: 202.56px;
-          cursor: pointer;
+      .pollution-icon {
+        cursor: pointer;
+        height: 202px;
+        margin: 10px;
+
+        @include xxs {
+          height: 130px
         }
-  
-        .aqi-info {
-          font-size: 1.1em;
-          font-weight: 700;
-          margin-bottom: 25px;
-          color: #000;
-        }
-           
+      }
+
+      .aqi-info {
+        font-size: 1.1em;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: #000;
+      }
+
+      p {
+        font-weight: 600;
+      }
 
       .hover-div {
         pointer-events: none;
@@ -106,19 +112,44 @@ $grey-color: #6d6d6d;
         width: 55%;
         border-radius: 20px;
 
+        @include xs {
+          width: 75%;
+        }
+
         .pollution-params-container {
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          p {
+            font-weight: normal;
+          }
+
+          .bold {
+            font-weight: 700;
+          }
         }
       }
     }
 
+    .pollution-info-name {
+      line-height: 140%;
+      font-size: 1.1em;
+    }
+
+    .pollution-index-link {
+      color: $grey-color;
+      font-weight: 600;
+    }
   }
   .home-main {
     padding: 0;
     align-items: center;
     text-align: left;
+
+    @include xxs {
+      width: 87vw;
+    }
 
     .error {
       color: #000;
@@ -156,11 +187,52 @@ $grey-color: #6d6d6d;
         color: $grey-color;
       }
     }
+
     .weather-params {
       display: flex;
       flex-direction: column;
       gap: 3vh;
       width: 100%;
+
+      .reveal-button {
+        cursor: pointer;
+        background-color: #e7e9ee;
+        border: none;
+        border-radius: 30px;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        color: $grey-color;
+
+        p {
+          margin-left: 2vw;
+          font-size: 1.1em;
+          font-weight: 700;
+          font-family: "Montserrat", sans-serif;
+        }
+        .dropdown-icon {
+          width: 60px;
+          height: 60px;
+          transition: 0.3s;
+        }
+        .rotate {
+          transform: rotate(0.5turn);
+        }
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 1.4em;
+        margin-bottom: 50px;
+        text-align: center;
+
+        @include xs {
+          margin-bottom: 20px;
+        }
+      }
 
       .current-temp {
         background-color: #e7e9ee;
@@ -202,31 +274,24 @@ $grey-color: #6d6d6d;
           }
         }
       }
+
       .forecast-weather {
         color: #000;
         border-radius: 30px;
         background: #e7e9ee;
-        width: 65vw;
+        width: 63vw;
         padding: 40px 20px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
 
         @include md {
-          width: 92vw;
-        }
-
-
-
-        .title {
-          font-weight: 700;
-          font-size: 1.4em;
-          margin-bottom: 50px;
-          text-align: center;
+          width: 89vw;
         }
 
         .splide {
           flex: 1;
+          cursor: pointer;
 
           .splide-slide {
             display: flex;
@@ -253,6 +318,7 @@ $grey-color: #6d6d6d;
           }
         }
       }
+
       .air-conditions {
         color: #000;
         border-radius: 30px;
@@ -260,13 +326,6 @@ $grey-color: #6d6d6d;
         padding: 40px 20px;
         display: flex;
         flex-direction: column;
-
-        .title {
-          font-weight: 700;
-          font-size: 1.4em;
-          margin-bottom: 50px;
-          text-align: center;
-        }
 
         .details {
           flex: 1;
@@ -276,6 +335,7 @@ $grey-color: #6d6d6d;
 
           @include xs {
             grid-template-columns: 1fr;
+            gap: 25px;
           }
 
           .prop-title {
@@ -283,23 +343,39 @@ $grey-color: #6d6d6d;
             display: flex;
             align-items: center;
             gap: 10px;
+            @include xs {
+              gap: 5px;
+            }
 
             svg {
               font-size: 1.7em;
+              @include xs {
+                font-size: 1.4em;
+              }
             }
             span {
               font-size: 1.1em;
               font-weight: 500;
+              @include xs {
+                font-size: 0.8em;
+              }
             }
           }
           .measurement {
             margin-top: 20px;
             margin-left: 40px;
             font-size: 30px;
+
+            @include xs {
+              margin-top: 10px;
+              font-size: 25px;
+              margin-left: 25px;
+            }
           }
         }
       }
     }
+
     .forecast {
       background: #dadce1;
       border-radius: 30px;

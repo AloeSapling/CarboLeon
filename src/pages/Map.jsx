@@ -1,17 +1,18 @@
+import React from "react";
 import { MapElem } from "../components/MapElem";
-import { useTranslation } from "react-i18next";
+
+import '../styles/map.css'
 
 const map = () => {
-
-    // const {t} = useTranslation();
-    // document.title = `CarboLeon | ${t("NavBar.PolMap")}` 
+    
+    document.title = `CarboLeon - Map`
 
     return(
         <>
         <div className="bg-img"></div>
-        <div className="margin4">
-            <div className="mapp">
-                <MapElem></MapElem>
+        <div className="margin" style={{height: '88vh'}}>
+            <div className="map-map">
+                <MapElem coords={[52.237049, 21.017532]} />
             </div>
         </div>
         </>

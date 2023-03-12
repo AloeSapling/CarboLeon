@@ -1,79 +1,25 @@
-.sectar{
-    display: block;
-}
-.SAContain{
-    display: inline-block;
-}
-.sponsorIContainer{
-    display: inline-block;
-    position: relative;
-    top: 0;
-}
-.cTitle{
-    text-align: center;
-    margin-bottom: 15px;
-}
-.tContainer{
+.contact-text{
     border-radius: 30px;
     color: #fff;
-    /* border: solid hsl(120, 48%, 35%) 5px; */
     background: rgba(39, 109, 43, 0.5);
     padding: 20px;
+    margin: 0 auto;
 }
-.socials{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 24px;
-}
-.iSocial{
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    padding:20px;
-    width: fit-content;
+
+.contact-text-background{
+    color: #fff;
+    background: rgba(39, 109, 43, 0.5);
     text-align: center;
-    margin-left: 12px;
-    margin-right: 12px;
-    font-size: 10px;
-}
-.iSocial>p{
-    margin-top: 14px;
-    font-weight: bold;
-    font-size: xx-large;
-    color: white;
-}
-.insta{
-    background-image: linear-gradient(to top left, rgb(192, 1, 151), rgb(255, 185, 246));
-}
-.tik{
-    background-image: linear-gradient(to bottom right,rgb(120, 96, 255), rgb(0, 0, 0));
-}
-.youtub{
-    background-image: linear-gradient(to top left, rgb(192, 1, 1), rgb(255, 185, 185));
-}
-.faceboo{
-    background-image: linear-gradient(to top left, rgb(1, 132, 192), rgb(185, 235, 255));
-}
-.blanku{
-    color: #fff;
-    background: rgba(39, 109, 43, 0.5);
-    font-size: 25px;
-}
-.blankus{
-    color: #fff;
-    background: rgba(39, 109, 43, 0.5);
+    padding: 15px;
+    border-radius: 30px;
+    margin: 40px auto;
     width: 70%;
 }
-.contact{
-    margin-bottom: 20px;
-    width: fit-content;
+
+.contact-text-background p {
+    margin-top: 20px;
 }
-.contact>p{
-    font-weight: bold;
-    margin: 4px;
-}
+
 .qr{
     background-color: white;
     border-radius: 30px;
@@ -90,4 +36,42 @@
     color: inherit;
     text-decoration: inherit;
     margin-top: 10px;
+}
+
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.contact-container-qr-code{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding:20px;
+    width: fit-content;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 10px;
+}
+.contact-container-qr-code > p {
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+}
+.instagram{
+    background-image: linear-gradient(to top left, rgb(192, 1, 151), rgb(255, 185, 246));
+}
+.tiktok{
+    background-image: linear-gradient(to bottom right,rgb(120, 96, 255), rgb(0, 0, 0));
+}
+.youtube{
+    background-image: linear-gradient(to top left, rgb(192, 1, 1), rgb(255, 185, 185));
+}
+.facebook{
+    background-image: linear-gradient(to top left, rgb(1, 132, 192), rgb(185, 235, 255));
 }

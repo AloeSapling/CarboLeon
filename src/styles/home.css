@@ -1,4 +1,4 @@
-.THE-section{
+.main-map-container{
     width: 100%;
     border-radius: 30px;
     display: flex;
@@ -8,14 +8,22 @@
     background-color: rgba(39, 109, 43, 0.5);
     margin-top: 34px;
 }
-.divV{
-    aspect-ratio: 3.5/1;
+.main-map-elem{
+    aspect-ratio: 2.5/1;
     width: 100%;
+    height: 100%;
     overflow: hidden;
     border-radius: 30px;
 }
-.uberC{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 1150px) {
+    .main-map-container{
+        padding: 10px;
+        aspect-ratio: 2/1;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main-map-container{
+        aspect-ratio: 1/1;
+    }
 }
