@@ -1,29 +1,24 @@
-.main{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    padding: 20px;
-}
-.main h1{
+
+.about-info h1{
     font-size: 42px;
     margin-bottom: 20px;
 }
-.main>div{
+.about-info>div{
     display: block;
     line-height: 155%;
     font-weight: 500;
 }
-.main>div>p{
+.about-info>div>p{
     white-space: pre-wrap;
     padding-top: 12px;
     display: grid;
     place-items: center;
 }
-.mContainer{
-    width: 100%;
+.about-info{
     border-radius: 30px;
     color: #fff;
     background: rgba(39, 109, 43, 0.5);
+    padding: 20px
 }
 
 .about{
@@ -31,4 +26,34 @@
     text-align: center;
     margin: 0 auto;
     position: relative;
+}
+
+.dropdown-about{
+    display: none;
+    color: #fff;
+    background: rgba(39, 109, 43, 0.5);
+    border: 0;
+    border-radius: 30px;
+    font-size: x-large;
+    font-weight: bold ;
+    padding: 15px;
+    margin: 20px auto 0 auto;
+}
+
+.contain {
+    display: none;
+}
+
+.contain.show {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .dropdown-about {
+        display: block;
+    }
+    .about-drop-less{
+        height: 250px;
+        overflow: hidden;
+    }
 }

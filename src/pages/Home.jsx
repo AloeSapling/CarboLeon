@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { FaSearch } from "react-icons/fa";
 import { Main, Asside } from "../components";
@@ -6,14 +6,8 @@ import Sponsors from "../components/Sponsors";
 import { MapElem } from "../components/MapElem";
 
 import "../styles/home.css";
-import "../styles/sponsors.css";
 import "../styles/airIndex.scss";
-import "../styles/phones.css";
-import "../styles/index.css";
-import "../styles/contact.css";
-import "../styles/about.css";
-import "../styles/dropdownButtons.css";
-import "../styles/legenda.css";
+
 
 function Home() {
   const { t } = useTranslation();
@@ -23,7 +17,7 @@ function Home() {
   const [pollution, setPollution] = useState(null);
   const [errorInfo, setErrorInfo] = useState(false);
   const [coords, setCoords] = useState(null);
-  const [location, setLocation] = useState("");
+  const locationRef = useRef(null)
 
   const api = {
     weatherCurrentApi: "https://api.openweathermap.org/data/2.5/weather?",
@@ -32,44 +26,43 @@ function Home() {
   };
 
   const setSearchingLocation = async (location) => {
-    const geolocate = await fetch(
-      `${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY}`
-    ).then((res) => res.json());
-    if (!geolocate.length) {
-      setErrorInfo(true);
-    } else {
-      const lat = geolocate[0].lat;
-      const lon = geolocate[0].lon;
-      setErrorInfo(false);
-      const currentWeatherData = await fetch(
-        `${api.weatherCurrentApi}lat=${lat}&lon=${lon}&units=metric&lang=${t(
-          "test.len"
-        )}&appid=${process.env.REACT_APP_API_KEY}`
+      const geolocate = await fetch(
+        `${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY_OPENWEATHER}`
       ).then((res) => res.json());
-
-      const forecastWeatherData = await fetch(
-        `${api.weatherForecastApi}lat=${lat}&lon=${lon}&units=metric&lang=pl&appid=${process.env.REACT_APP_API_KEY}`
-      ).then((res) => res.json());
-
-      const pollutionData = await fetch(
-        `https://api.waqi.info/feed/geo:${lat};${lon}/?token=f22590119b76e420088f7c8919a6cc01a00ee770`
-      ).then((res) => res.json());
-
-      const city = geolocate[0].name;
-      const country = geolocate[0].country;
-      const fullCity = { city, country };
-      setPollution(pollutionData.data);
-      setCoords([lat, lon]);
-      setMainData({ currentWeatherData, forecastWeatherData, fullCity });
-      localStorage.setItem("city", location);
-    }
-
-    setLocation("");
-  };
+      if (!geolocate.length) {
+        setErrorInfo(true);
+      } else {
+        const lat = geolocate[0].lat;
+        const lon = geolocate[0].lon;
+        setErrorInfo(false);
+        const currentWeatherData = await fetch(
+          `${api.weatherCurrentApi}lat=${lat}&lon=${lon}&units=metric&lang=${t(
+            "test.len"
+          )}&appid=${process.env.REACT_APP_API_KEY_OPENWEATHER}`
+        ).then((res) => res.json());
+  
+        const forecastWeatherData = await fetch(
+          `${api.weatherForecastApi}lat=${lat}&lon=${lon}&units=metric&lang=pl&appid=${process.env.REACT_APP_API_KEY_OPENWEATHER}`
+        ).then((res) => res.json());
+  
+        const pollutionData = await fetch(
+          `https://api.waqi.info/feed/geo:${lat};${lon}/?token=${process.env.REACT_APP_API_KEY_WAQI}`
+        ).then((res) => res.json());
+  
+        const city = geolocate[0].name;
+        const country = geolocate[0].country;
+        const fullCity = { city, country };
+        setPollution(pollutionData.data);
+        setCoords([lat, lon]);
+        setMainData({ currentWeatherData, forecastWeatherData, fullCity });
+        locationRef.current.value = null
+        localStorage.setItem("city", location);
+      }
+  }
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
-      setSearchingLocation(location);
+      setSearchingLocation(locationRef.current.value);
     }
   };
 
@@ -85,8 +78,8 @@ function Home() {
         <h1>CarboLeon</h1>
         <h1>{t("Home.title")}</h1>
       </div>
-      <div className="margin2">
-        <div className="container">
+      <div className="margin">
+      <div className="container">
           <div className="asside">
             {pollution && <Asside pollution={pollution} />}
           </div>
@@ -97,8 +90,7 @@ function Home() {
               <input
                 type="text"
                 placeholder={t("Home.input")}
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
+                ref={locationRef}
                 onKeyDown={searchLocation}
               />
             </div>
@@ -112,6 +104,7 @@ function Home() {
           </div>
         </div>
       </div>
+        
       <Sponsors />
     </>
   );

@@ -37,7 +37,7 @@ const Asside = (pollution) => {
   ];
 
   const hoverRef = useRef(null);
-  
+
   useEffect(() => {
     if (pollution.pollution.aqi < 50) setPollutionScale(1);
     else if (pollution.pollution.aqi >= 51 && pollution.pollution.aqi < 101)
@@ -49,27 +49,21 @@ const Asside = (pollution) => {
     else if (pollution.pollution.aqi >= 201 && pollution.pollution.aqi < 251)
       setPollutionScale(5);
     else setPollutionScale(6);
-  }, [pollution.pollution])
+  }, [pollution.pollution]);
   return (
     <>
       <div className="logosContainer">
         <Link to="/about">
-          <div>
-            <TbZoomQuestion />
-            <p>{t("asside.about")}</p>
-          </div>
+          <TbZoomQuestion />
+          <p>{t("asside.about")}</p>
         </Link>
         <Link to="/contact">
-          <div>
-            <TiPhoneOutline />
-            <p>{t("asside.consup")}</p>
-          </div>
+          <TiPhoneOutline />
+          <p>{t("asside.consup")}</p>
         </Link>
         <Link to="/map">
-          <div>
-            <TbMap2 />
-            <p>{t("asside.map")}</p>
-          </div>
+          <TbMap2 />
+          <p>{t("asside.map")}</p>
         </Link>
       </div>
       {/* <div> */}
@@ -89,7 +83,7 @@ const Asside = (pollution) => {
           className="aqi-info"
           style={{ color: PollutonTypes[pollutionScale - 1].color }}
         >
-          {t("AsideOther.title")} {pollution.pollution.aqi} 
+          {t("AsideOther.title")} {pollution.pollution.aqi}
         </p>
 
         <p>{t("AsideOther.desc")}</p>
@@ -132,7 +126,7 @@ const Asside = (pollution) => {
               </p>
             </div>
           )}
-           {pollution.pollution.iaqi.pm10 && (
+          {pollution.pollution.iaqi.pm10 && (
             <div className="pollution-params-container">
               <p>
                 PM<sub>10</sub>:
@@ -141,7 +135,7 @@ const Asside = (pollution) => {
                 {pollution.pollution.iaqi.pm10.v} μg/m<sup>3</sup>
               </p>
             </div>
-          )} 
+          )}
           {pollution.pollution.iaqi.so2 && (
             <div className="pollution-params-container">
               <p>
@@ -156,15 +150,22 @@ const Asside = (pollution) => {
       </div>
       <p className="pollution-info-name">
         {t("AssideTitles.main")}
-        <span style={{ color: PollutonTypes[pollutionScale - 1].color , fontWeight: 700}}>{t(`AssideTitles.${pollutionScale}`)}</span>
+        <span
+          style={{
+            color: PollutonTypes[pollutionScale - 1].color,
+            fontWeight: 700,
+          }}
+        >
+          {t(`AssideTitles.${pollutionScale}`)}
+        </span>
       </p>
       <h3>{t("AssideTitles.main2")}</h3>
-            <p>{t(`AssideTexts.${pollutionScale}`)}</p> 
-       
+      <p>{t(`AssideTexts.${pollutionScale}`)}</p>
+
       <Link to="/pollutionindex" className="pollution-index-link">
-            {pollutionScale === "1"
-              ? `${t(`AssideTexts.link1`)}`
-              : `${t(`AssideTexts.link2`)}`}
+        {pollutionScale === "1"
+          ? `${t(`AssideTexts.link1`)}`
+          : `${t(`AssideTexts.link2`)}`}
       </Link>
     </>
   );

@@ -1,11 +1,4 @@
 @media screen and (max-width: 799px){ 
-    .main-map-container .main-map-elem{
-        height: 400px;
-
-    }
-    .main-map-elem{
-        width: 100%;
-    }
 
     .leaflet-control-attribution{
         height: 50px;

@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../styles/navbar.css";
 import { useTranslation } from "react-i18next";
+
+import "../styles/navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,14 @@ const Navbar = () => {
     i18n.changeLanguage(lang);
   }
 
-  window.addEventListener("scroll", changeColor);
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    }
+  })
+  
 
   return (
     <nav className={color ? "bg" : ""}>

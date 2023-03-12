@@ -10,7 +10,7 @@
     },
     "About": {
         "1": "What is CarboLeon?",
-        "Text": "Carboleon is a website whose purpose is to show and educate about the global and local situation of air pollution. Thanks to the hard work and commitment of the development team, this goal has not only been fulfilled, but also expanded to provide knowledge about more then just air pollution!\n\n Now, alongside a pollution map that's easy to read and use, the website also features a weather index.\n To help the site function, it uses various API's including 'openstreetmap', 'leaflet', 'waqi' and 'openweather'.\n\n The project is for a polish national competition called 'Zwolnieni z Teorii' and is funded by it's sponsor: 'e-tronix.pl', 'oko-design'.\n\n Check out our social media's to find more interesting content related to our cause!",
+        "Text": "Carboleon is a website whose purpose is to show and educate about the global and local situation of air pollution. Thanks to the hard work and commitment of the development team, this goal has not only been fulfilled, but also expanded to provide knowledge about more then just air pollution!\n\n Now, alongside a pollution map that's easy to read and use, the website also features a weather index.\n To help the site function, it uses various API's including 'openstreetmap', 'leaflet', 'waqi' and 'openweather'.\n\n The project is for a polish national competition called 'Zwolnieni z Teorii' and is funded by it's sponsor: 'e-tronix', 'oko-design', 'ZSE 1 Kraków' and 'LS4TECH'.\n\n Check out our social media's to find more interesting content related to our cause!",
         "title": "Find out something about us",
         "btn-hide": "Hide",
         "btn-show": "Show More"
@@ -156,11 +156,70 @@
         "desc": "Hover on image to see air pollution details !",
         "info": "Pollution Info"
     },
+    "WeatherTips": {
+        "thunderstorm with light rain": "During this weather you can have a really nice time, doing basically anything!",
+        "thunderstorm with rain": "Best to stay at home.",
+        "thunderstorm with heavy rain": "Best to stay at home.",
+        "light thunderstorm": "A light thunderstorm is a good time to observe lightning strikes and the sounds of nature.",
+        "thunderstorm": "It's a good idea to have some rest during a storm.",
+        "heavy thunderstorm": "Be careful! Better stay at home!",
+        "ragged thunderstorm": "This is the right time to have some rest.",
+        "thunderstorm with light drizzle": "Write to somebody that's close to you.",
+        "thunderstorm with drizzle": "Do you exercise? If not, then this is the perfect moment to do so.",
+        "thunderstorm with heavy drizzle": "Turn off all your electrical devices!",
+        
+        "light intensity drizzle": "This is the perfect moment to go for a walk with an umbrella and enjoy the quiet atmosphere.",
+        "drizzle": "drizzle rizz",
+        "heavy intensity drizzle": "Better to seek shelter in buildings than to be absolutely soaked",
+        "light intensity drizzle rain": "This is a good time to have a cosy evening with a good book or film.",
+        "drizzle rain": "Avoid going outside, if possible.",
+        "heavy intensity drizzle rain": "If you like dancing in the rain, then this is your moment to shine! Be careful tot not hit anyone with your umbrella though!",
+        "shower rain and drizzle": "When rain and drizzle meet at your path, it's best to wear some colourful galoshes and make your day colourful too!",
+        "heavy shower rain and drizzle": "Wanna feel like the same happiness you felt as a child? This is the perfect moment to find your inner child and jump on puddles!",
+        "shower drizzle": "Stay at home and rest.",
+
+        "light rain": "Wanna feel like a main character in movie or show? Take an umbrella and just go for a walk in the rain.",
+        "moderate rain": "This is a good moment to go for a walk and listen to music.",
+        "heavy intensity rain": "If rain is pouring with heavy intensity, it's best to cuddle up in a warm room.",
+        "very heavy rain": "you should just stay at home.",
+        "extreme rain": "This is not a time to go for a walk or even exit your home! Do some at-home activities, preferably something creative like painting or drawing.",
+        "freezing rain": "Better stay at home and delight yourself with some hot coffee or tea.",
+        "light intensity shower rain": "Perfect moment to take a break and take a hot shower.",
+        "shower rain": "If you need a bit of energy, take a walk in the rain.",
+        "heavy intensity shower rain": "Best to stay at home.",
+        "ragged shower rain": "Better to cuddle up in a safe area and wait out the storm.",
+
+        "light snow": "This is the perfect moment to go for a walk and make a snowman or organize a snowball fight with your siblings or friends!",
+        "snow": "When there is a lot of snow, you can go skiing, snowboarding or sleigh-riding and feel like a master of winter sports!",
+        "heavy snow": "Make yourself some hot chocolate and watch your favourite film.",
+        "sleet": "This is a good time to do something creative, like drawing!",
+        "light shower sleet": "Go for a walk.",
+        "shower sleet": "This is the perfect moment to make yourself some tea and read your favourite book",
+        "light rain and snow": "Isn't it better to spend this time at home?",
+        "rain and snow": "This is a good time to do something creative.",
+        "light shower snow": "If there is light shower snow, then it's best to stay at home.",
+        "shower snow": "Best to cuddle up in a warm room and spend some quality time with your friends or family.",
+        "heavy shower snow": "If it's intensly snowing, then it's best to stay at home for the day.",
+
+        "mist": "Make yourself a tasty cup of coffee or tea and relax on the couch. A good idea is to read your favourite book or watch a film!",
+        "smoke": "If there is smoke in the air, best close your windows and doors.",
+        "haze": "Better stay at home.",
+        "sand/dust whirls": "This is good time to start doing some creative at-home activities.",
+        "fog": "Make yourself a delicious soup, sit back and relax. Just enjoy the vibe.",
+        "sand": "This is not a good time for a walk!",
+        "dust": "If you see sand or dust in the air, then it's best to cover your eyes,nose and mouth.",
+        "volcanic ash": "If you can see volcanic ash in the area, then it's best to stay at home and close your windows.",
+        "squalls": "Better seek shelter.",
+        "tornado": "If a tornado is approaching, then it's best to seek shelter in a secure and safe area.",
+
+        "clear sky": "Go for a walk with your friends (or alone)!",
+
+        "Clouds": "If there are only a few clouds in the sky, then it's best to go outside."
+    },
     "Error": {
         "title": "We're sorry :(",
         "desc": "404",
         "body": "Page not found. Check URL adress"
 
     }
-
 }

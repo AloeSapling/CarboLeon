@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Sponsors from "../components/Sponsors";
+
 import "../styles/pollutionindex.css";
 
 const PollutionIndex = () => {
@@ -23,7 +24,7 @@ const PollutionIndex = () => {
           <h1>{t("PollutionIndexTitles.bgIMG")}</h1>
         </div>
 
-        <div className="PollutionIndexContainer">
+        <div className="margin">
           <main className="main">
             <h2 id="odd-h2">{t("PollutionTextTitles.what")}</h2>
             <div className="PollutionText">{t("PollutionTexts.what")}</div>

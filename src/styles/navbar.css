@@ -131,6 +131,10 @@ nav>ul>li{
         color: #fff;
     }
 
+    nav ul .header-link:hover::after {
+        color: #fff;
+    }
+
     nav ul.open {
         transform: translateX(0);
     }

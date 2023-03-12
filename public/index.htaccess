@@ -1,4 +1,4 @@
-options +FollowSymLinks
+ptions +FollowSymLinks
 RewriteEngine on 
 options +FollowSymLinks
 RewriteEngine on 
