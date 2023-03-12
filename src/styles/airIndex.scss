@@ -1,11 +1,12 @@
 @import "../constants/breakpoints";
 
-$grey-color: #6d6d6d;
+$grey-color: #504f4f;
+$lightgrey-background: #fff;
 
 .container {
   color: $grey-color;
   background: rgba(39, 109, 43, 0.5);
-  padding: 40px;
+  padding: 25px;
   border-radius: 30px;
   display: grid;
   grid-template-columns: 1.6fr 4.4fr;
@@ -13,14 +14,18 @@ $grey-color: #6d6d6d;
   gap: 3vh;
 
   @include md {
-    padding: 10px;
+    padding: 20px;
     grid-template-columns: 1fr;
+  }
+
+  @include xxs {
+    padding: 10px;
   }
 
   .asside {
     padding: 28px 15px;
     text-align: center;
-    background: #e7e9ee;
+    background: $lightgrey-background;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
@@ -31,11 +36,16 @@ $grey-color: #6d6d6d;
     }
 
     .logosContainer {
-      width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       margin: 0 auto;
+      width: 80%;
+
+      @include breakpoint(1500px) {
+        width: 100%;
+      }
+
       @include md {
         width: 50%;
       }
@@ -48,29 +58,27 @@ $grey-color: #6d6d6d;
 
       a {
         text-decoration: none;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.3s;
+        gap: 5px;
+        color: $grey-color;
 
-        div {
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          transition: 0.3s;
-          gap: 5px;
-          color: $grey-color;
+        svg {
+          width: 40px;
+          height: 40px;
 
-          svg {
-            width: 40px;
-            height: 40px;
-
-            @include xs {
-              width: 25px;
-              height: 25px;
-            }
+          @include xs {
+            width: 25px;
+            height: 25px;
           }
-          &:hover {
-            color: #000;
-          }
+        }
+        &:hover {
+          color: #000;
         }
       }
     }
@@ -84,7 +92,7 @@ $grey-color: #6d6d6d;
         margin: 10px;
 
         @include xxs {
-          height: 130px
+          height: 130px;
         }
       }
 
@@ -167,7 +175,7 @@ $grey-color: #6d6d6d;
       outline: none;
       border-radius: 10px;
 
-      background: #e7e9ee;
+      background: $lightgrey-background;
       display: flex;
       align-items: center;
       gap: 20px;
@@ -196,7 +204,7 @@ $grey-color: #6d6d6d;
 
       .reveal-button {
         cursor: pointer;
-        background-color: #e7e9ee;
+        background-color: $lightgrey-background;
         border: none;
         border-radius: 30px;
         width: 100%;
@@ -235,7 +243,7 @@ $grey-color: #6d6d6d;
       }
 
       .current-temp {
-        background-color: #e7e9ee;
+        background-color: $lightgrey-background;
         padding: 30px;
         width: 100%;
         border-radius: 30px;
@@ -267,10 +275,9 @@ $grey-color: #6d6d6d;
           @include md {
             margin: 20px 0;
           }
-          
+
           @include xs {
             font-size: 2rem;
-
           }
         }
         .weather-icon {
@@ -285,7 +292,7 @@ $grey-color: #6d6d6d;
       .forecast-weather {
         color: #000;
         border-radius: 30px;
-        background: #e7e9ee;
+        background: $lightgrey-background;
         width: 63vw;
         padding: 40px 20px;
         display: flex;
@@ -329,7 +336,7 @@ $grey-color: #6d6d6d;
       .air-conditions {
         color: #000;
         border-radius: 30px;
-        background: #e7e9ee;
+        background: $lightgrey-background;
         padding: 40px 20px;
         display: flex;
         flex-direction: column;

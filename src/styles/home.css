@@ -4,9 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    padding: 28px;
+    padding: 25px;
     background-color: rgba(39, 109, 43, 0.5);
-    margin-top: 34px;
+    margin-top: 35px;
 }
 .main-map-elem{
     aspect-ratio: 2.5/1;
@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 1150px) {
     .main-map-container{
-        padding: 10px;
+        padding: 20px;
         aspect-ratio: 2/1;
     }
 }
@@ -25,5 +25,6 @@
 @media screen and (max-width: 550px) {
     .main-map-container{
         aspect-ratio: 1/1;
+        padding: 10px
     }
 }
