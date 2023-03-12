@@ -101,7 +101,7 @@ const Main = (mainData) => {
         </div>
         <div>
           {/* <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipNight}</p> */}
-          <p>{currentData.weather[0].main=="Clouds" ? `${t("WeatherTips.Clouds")}` : `${t(`WeatherTips.${currentData.weather[0].description}`)}`}</p>
+          <p>{currentData.weather[0].main=="801" ? `${t("WeatherTips.Clouds")}` : `${t(`WeatherTips.${currentData.weather[0].id}`)}`}</p>
         </div>
         <img
           alt="weather"
