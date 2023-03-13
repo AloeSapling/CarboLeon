@@ -42,7 +42,6 @@ const Navbar = () => {
             className="langBtn"
             onClick={() => {
               handleClick("en");
-              window.location.reload();
             }}
             alt="uk button"
           >
@@ -52,7 +51,6 @@ const Navbar = () => {
             className="langBtn"
             onClick={() => {
               handleClick("pl");
-              window.location.reload();
             }}
             alt="poland button"
           >

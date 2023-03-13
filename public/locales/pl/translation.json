@@ -15,21 +15,37 @@
         "btn-show": "Pokaż więcej"
     },
     "Days": [
-        {"day":"Niedziela"},
-        {"day":"Poniedziałek"},
-        {"day":"Wtorek"},
-        {"day":"Środa"},
-        {"day":"Czwartek"},
-        {"day":"Piątek"},
-        {"day":"Sobota"},
-        {"day":"Niedziela"}
-        ],
+        {
+            "day": "Niedziela"
+        },
+        {
+            "day": "Poniedziałek"
+        },
+        {
+            "day": "Wtorek"
+        },
+        {
+            "day": "Środa"
+        },
+        {
+            "day": "Czwartek"
+        },
+        {
+            "day": "Piątek"
+        },
+        {
+            "day": "Sobota"
+        },
+        {
+            "day": "Niedziela"
+        }
+    ],
     "Home": {
         "pageTitle": "Sprawdź jakość powietrza, pogodę oraz ciekawe miejsca w twojej okolicy",
         "title": "Wiedz, czym ODDYCHASZ",
         "input": "Wpisza nazwę miasta",
         "error": "Nie znaleziono miasta. Spróbuj ponownie",
-        "part1": "Kliknij mnie żeby",
+        "part1": "Kliknij mnie żeby ",
         "hide": "schować",
         "show": "rozwinąć",
         "part2": "detale",
@@ -44,19 +60,45 @@
         "1": "Nasi Sponsorzy"
     },
     "Months": [
-        {"mont":"Grudzień"},
-        {"mont":"Styczeń"}, 
-        {"mont":"Luty"}, 
-        {"mont":"Marzec"}, 
-        {"mont":"Kwiecień"}, 
-        {"mont":"Maj"}, 
-        {"mont":"Czerwiec"}, 
-        {"mont":"Lipiec"}, 
-        {"mont":"Sierpień"}, 
-        {"mont":"Wrzesień"}, 
-        {"mont":"Październik"}, 
-        {"mont":"Listopad"}, 
-        {"mont":"Grudzień"}
+        {
+            "mont": "Grudzień"
+        },
+        {
+            "mont": "Styczeń"
+        },
+        {
+            "mont": "Luty"
+        },
+        {
+            "mont": "Marzec"
+        },
+        {
+            "mont": "Kwiecień"
+        },
+        {
+            "mont": "Maj"
+        },
+        {
+            "mont": "Czerwiec"
+        },
+        {
+            "mont": "Lipiec"
+        },
+        {
+            "mont": "Sierpień"
+        },
+        {
+            "mont": "Wrzesień"
+        },
+        {
+            "mont": "Październik"
+        },
+        {
+            "mont": "Listopad"
+        },
+        {
+            "mont": "Grudzień"
+        }
     ],
     "apiLang": {
         "lang": "pl"
@@ -70,12 +112,12 @@
         "good": "Dobre (0-50)",
         "fine": "Umiarkowane (51-100)",
         "worse": "Średnie (101-150)",
-        "bad":  "Niezdrowe (151-200)",
+        "bad": "Niezdrowe (151-200)",
         "vbad": "Bardzo niezdrowe (201-300)",
         "ebad": "Zagrożające życiu (300+)"
     },
-    "test":{
-        "len":"pl"
+    "test": {
+        "len": "pl"
     },
     "layer": {
         "satelite": "Satelita",
@@ -91,10 +133,10 @@
         "PolIndex": "Info o Zanieczyszczeniu"
     },
     "PollutionTexts": {
-        "what":"Zanieczyszczenie powietrza to kontaminacja powietrza przez szkodliwe dla środowiska substancje. Są one szkodliwe ponieważ zmieniają naturalne cechy atmosfery ziemskiej. Do nich zaliczamy cząsteczki, które możemy wdychać złożony z siarczanów, azotanów, amoniaku, chlorków sodu, czarnego węgla, pyłu mineralnego lub wody. Nazywamy je również “cząstkami stałymi” (PM z ang. “Particulate Matter”). PM może być o różnych rozmiarach i jest generalnie definiowany swoją średnicą aerodynamiczną, z czego PM2.5 oraz PM10 są najbardziej pospolitymi w ramach regulacyjnych i istotnych dla zdrowia.",
+        "what": "Zanieczyszczenie powietrza to kontaminacja powietrza przez szkodliwe dla środowiska substancje. Są one szkodliwe ponieważ zmieniają naturalne cechy atmosfery ziemskiej. Do nich zaliczamy cząsteczki, które możemy wdychać złożony z siarczanów, azotanów, amoniaku, chlorków sodu, czarnego węgla, pyłu mineralnego lub wody. Nazywamy je również “cząstkami stałymi” (PM z ang. “Particulate Matter”). PM może być o różnych rozmiarach i jest generalnie definiowany swoją średnicą aerodynamiczną, z czego PM2.5 oraz PM10 są najbardziej pospolitymi w ramach regulacyjnych i istotnych dla zdrowia.",
         "why": "Wiele osób cierpi z powodu zanieczyszczenia powietrza, i nawet o tym nie wiedząc, ty możesz być jednym z nich! Duża część ludzkości nie rozumie powagę tej sytuacji. 7 milionów - taka jest liczba osób które zmarły PRZEDWCZEŚNIE z powodu zanieczyszczenia i jego skutków. Jest również bardzo możliwe,  że kontaminacja powietrza przyczyniła się do wielu śmierci osób starszych. Podobnie jak z wieloma rakami, jest trudno wykryć w wczesnych fazach, że cierpisz z tego powodu. Część powodu dlaczego posiada tą cechę jest ponieważ to dosłownie może powodować raka płuc lub inne choroby jak np. Udary, choroby serca, ostre i przewlekłe choroby układu oddechowego. Dla większości, jak nie wszystkich śmiertelnych skutków zanieczyszczonego powietrza, trudno jest znaleźć powód chorób, jak i symptomy będące niezauważalne, nieistniejące lub przypominające pospolite choroby póki nie będzie za późno…",
         "wFight": "Jeżeli chodzi o zwalczanie zanieczyszczenie powietrza, to najlepsza rzecz jaką możesz zrobić to poinformować innych o problemie, sprzeciwiać się usuwaniu obiektów, które usuwają CO2 (np. Lasy albo inne rośliny) i wspierać fundacje, które sadzą więcej roślin. Choć dobrze jest to robić, zwalczanie poziomu który teraz mamy to jedynie pół problemu - trzeba również zwalczyć źródła tej kontaminacji powietrza. Ważne w tym jest pamiętać, że choć pojedynczy człowiek może niewiele zdziałać, to grupy indywidualnych osób już mogą wiele, ale jak każda z osób, która mogłaby być częścią tej grupy, nie jest ponieważ uważa, że jej czyny są bezsensowne, to wtedy nic nie zostanie zdziałane. Do rzeczy, które ty i inni możecie robić należą: zmiana formy transport - najlepiej zmienić modę transportu na pociągi, autobusy, rowery lub zwykłe chodzenie (jeśli jest to niemożliwe to zmiana na auto hybrydowe lub elektryczne jest krokiem w dobrą stronę), zmień swoje ogrzewanie domowe na elektryczne lub gazowe, bądź uważny na temat od jakich firm kupujesz produkty - kupując od nich produkt wspierasz ich oraz ich działania (jeśli ich działania tworzą zanieczyszczenie, to wtedy wspierasz to kupując ich produkty).",
-        "wDo":"Co możesz zrobić?",
+        "wDo": "Co możesz zrobić?",
         "good": "Twoje miasto/okolica nie jest zbytnio zanieczyszczona, więc nie możesz za dużo zrobić, żeby się uchronić, bo nie ma za bardzo przed czym (przynajmniej jeśli chodzi o zanieczyszczenie). Powinieneś się cieszyć i być wdzięczny, że ty i/lub urzędnicy krajowi/miasta i/lub twoi współmieszkańcy miasta utrzymują je czyste.",
         "fine": "Twoje miasto/okolica nie jest aż tak zanieczyszczone. Nie powinieneś musieć się zbytnio martwić o zanieczyszczeniu. Jeżeli doświadczasz problemy płucne, to jest możliwość, że powinieneś pójść z tym do lekarza lub zacząć nosić maseczkę albo kupić sobie oczyszczacz powietrza (jeżeli cię stać na niego).",
         "worse": "Twoje miasto/okolica jest trochę zanieczyszczone. Powinieneś zacząć myśleć nad kupieniem sobie maseczki i/lub kupienia sobie oczyszczacza powietrza(jeżeli cię stać na niego). Jak doświadczasz problemy płucne to warto się skontaktować z lekarzem. Spróbuj jechać autobusem albo na rowerze do pracy/szkoły.",
@@ -103,7 +145,7 @@
         "ebad": "Twoje miasto/okolica w dużym stopniu cierpi z powodu zanieczyszczenia powietrza. Jest bardzo rekomendowane nosić maseczkę i zmienić swój styl życia na bardziej “zielony”. Poinformuj innych w twoim mieście/okolicy o okropnej sytuacji i problemie. Jeśli doświadczasz: ciągłe kaszlanie, ciągłe bóle głowu lub bólu serca/klatki piersiowej - powinieneś skontaktować się z lekarzem. Powinieneś zacząć chodzić regularnie do lekarza. Ogranicz czas spędzany blisko dymu i innych form zanieczyszczenia, jeśli to nie jest możliwe, unikaj wdychania niego. Pogoda jaką przynosi zanieczyszczenie, może spowodować depresję lub inne choroby psychiczne, staraj się unikać nabywania ich. Jeżeli jest to możliwe, weź pod dużą uwagę rozważanie wyprowadzki."
     },
     "PollutionTextTitles": {
-        "what":"Czym jest zanieczyszczenie powietrza?",
+        "what": "Czym jest zanieczyszczenie powietrza?",
         "why": "Czemu powinno cię to obchodzić zanieczyszczenie powietrza?",
         "wFight": "Co możesz zrobić, żeby zwalczyć zanieczyszczenie powietrza?",
         "good": "Dobre poziomy zanieczyszczenia (0-50)",
@@ -156,70 +198,236 @@
         "info": "Info o Zanieczyszczeniu"
     },
     "WeatherTips": {
-        "thunderstorm with light rain": "Nie daj się zwieść łagodnym stukotem kropel deszczu!",
-        "thunderstorm with rain": "lepiej zostań w domu",
-        "thunderstorm with heavy rain": "lepiej zostać w domu",
-        "light thunderstorm": "Lekka burza z piorunami to dobry czas, aby obserwować spektakularne błyski i dźwięki natury",
-        "thunderstorm": "Burza to czas, rzeby odpocząć",
-        "heavy thunderstorm": "bądź ostrożny, a lepiej zostań w domu!",
-        "ragged thunderstorm": "To czas, żeby odpocząć",
-        "thunderstorm with light drizzle": "Napisz do bliskiej osoby",
-        "thunderstorm with drizzle": "Czy ćwiczysz w domu? Jeżeli nie, to teraz jest idealny moment",
-        "thunderstorm with heavy drizzle": "Wyłącz wszystkie urządzenia elektryczne",
-        
-        "light intensity drizzle": "to jest idealny czas na spacer z parasolem i cieszenie się cichą atmosferą",
-        "drizzle": "drizzle rizz",
-        "heavy intensity drizzle": "Lepiej poszukaj schronienia w budynkach, niż próbować przemoknąć do suchej nitki.",
-        "light intensity drizzle rain": "To dobry czas na przytulne spędzenie czasu w domu z dobrą książką lub filmem",
-        "drizzle rain": "unikaj wychodzenia na zewnątrz, jeśli to tylko możliwe.",
-        "heavy intensity drizzle rain": "Jeśli lubisz tańczyć w deszczu, to właśnie teraz jest twój czas, ale pamiętaj, żeby nie uderzyć przypadkiem w kogoś parasolem!",
-        "shower rain and drizzle": "Kiedy deszcz i mżawka spotykają się na Twojej drodze, to najlepiej ubrać się w kolorowe kalosze i zrobić sobie kolorowy dzień!",
-        "heavy shower rain and drizzle": "Jeśli chcesz poczuć się jak prawdziwy poszukiwacz przygód, to teraz jest idealna pora, by odkryć swoje wewnętrzne dziecko i skakać po kałużach!",
-        "shower drizzle": "Zostań w domu i odpocznij",
+        "200": {
+            "weatherAdvice": "Nie daj się zwieść łagodnym stukotem kropel deszczu!",
+            "weatherType": "burza z lekkim deszczem"
+        },
+        "201": {
+            "weatherAdvice": "lepiej zostań w domu",
+            "weatherType": "burza z deszczem"
+        },
+        "202": {
+            "weatherAdvice": "lepiej zostać w domu",
+            "weatherType": "burza z ulewnym deszczem"
+        },
+        "210": {
+            "weatherAdvice": "Lekka burza z piorunami to dobry czas, aby obserwować spektakularne błyski i dźwięki natury",
+            "weatherType": "lekka burza"
+        },
+        "211": {
+            "weatherAdvice": "Burza to czas, rzeby odpocząć",
+            "weatherType": "burza"
+        },
+        "212": {
+            "weatherAdvice": "bądź ostrożny, a lepiej zostań w domu!",
+            "weatherType": "silna burza"
+        },
+        "221": {
+            "weatherAdvice": "To czas, żeby odpocząć",
+            "weatherType": "rozszalała burza"
+        },
+        "230": {
+            "weatherAdvice": "Napisz do bliskiej osoby",
+            "weatherType": "burza z lekką mżawką"
+        },
+        "231": {
+            "weatherAdvice": "Czy ćwiczysz w domu? Jeżeli nie, to teraz jest idealny moment",
+            "weatherType": "burza z mżawką"
+        },
+        "232": {
+            "weatherAdvice": "Wyłącz wszystkie urządzenia elektryczne",
+            "weatherType": "burza z ulewnym deszczem"
+        },
 
-        "light rain": "Jeśli chcesz poczuć się jak bohater komedii, to weź ze sobą parasolkę i spaceruj po deszczu",
-        "moderate rain": "To dobry czas na to, by wyjść na spacer i posłuchać odprężającej muzyki",
-        "heavy intensity rain": "Gdy deszcz pada z dużą intensywnością, lepiej schować się w ciepłym pomieszczeniu",
-        "very heavy rain": "To czas, żeby zostać w domu",
-        "extreme rain": "To nie czas na spacer lub wyjście z domu! Zrobić coś kreatywnego, jak malowanie czy rysowanie.",
-        "freezing rain": "Lepiej pozostać w domu i cieszyć się gorącą kawą lub herbatą.",
-        "light intensity shower rain": "To idealna pora na to, by zrobić sobie przerwę i wziąć ciepły prysznic",
-        "shower rain": "Jeśli potrzebujesz odrobiny energii, to zrób sobie krótki spacer po deszczu",
-        "heavy intensity shower rain": "Lepiej zostań w domu",
-        "ragged shower rain": "Lepiej schować się w bezpiecznym miejscu i poczekać, aż burza minie.",
+        "300": {
+            "weatherAdvice": "to jest idealny czas na spacer z parasolem i cieszenie się cichą atmosferą",
+            "weatherType": "lekka mżawka"
+        },
+        "301": {
+            "weatherAdvice": "po prostu lekka mżawka. Jeśli chcesz odrobinę odsapnąć jest to idealny czas na spacer ",
+            "weatherType": "mżawka"
+        },
+        "302": {
+            "weatherAdvice": "Lepiej poszukaj schronienia w budynkach, niż próbować przemoknąć do suchej nitki.",
+            "weatherType": "mocna intensywna mżawka"
+        },
+        "310": {
+            "weatherAdvice": "To dobry czas na przytulne spędzenie czasu w domu z dobrą książką lub filmem",
+            "weatherType": "słaba intensywna mżawka"
+        },
+        "311": {
+            "weatherAdvice": "unikaj wychodzenia na zewnątrz, jeśli to tylko możliwe.",
+            "weatherType": "mżawka"
+        },
+        "312": {
+            "weatherAdvice": "Jeśli lubisz tańczyć w deszczu, to właśnie teraz jest twój czas, ale pamiętaj, żeby nie uderzyć przypadkiem w kogoś parasolem!",
+            "weatherType": "intansywna mżawka"
+        },
+        "313": {
+            "weatherAdvice": "Kiedy deszcz i mżawka spotykają się na Twojej drodze, to najlepiej ubrać się w kolorowe kalosze i zrobić sobie kolorowy dzień!",
+            "weatherType": "przelotny deszcz i mżawka"
+        },
+        "314": {
+            "weatherAdvice": "Jeśli chcesz poczuć się jak prawdziwy poszukiwacz przygód, to teraz jest idealna pora, by odkryć swoje wewnętrzne dziecko i skakać po kałużach!",
+            "weatherType": "ulewny deszcz i mżawka"
+        },
+        "321": {
+            "weatherAdvice": "Zostań w domu i odpocznij",
+            "weatherType": "przelotna mżawka"
+        },
 
-        "light snow": "To idealna pora na to, by wyjść na spacer i zrobić bałwana lub zorganizować bitwę na śnieżki z rodzeństwem lub przyjaciółmi!",
-        "snow": "Gdy leży już sporo śniegu, to możesz wybrać się na narty, snowboard lub sanki i poczuć się jak mistrz sportów zimowych!",
-        "heavy snow": "Zrób sobie gorącą czekoladę i obejrzyj swój ulubiony film",
-        "sleet": "To dobry czas na to, by zrobić coś kreatywnego, jak malowanie",
-        "light shower sleet": "Wyjdź na spacer.",
-        "shower sleet": "To idealny moment, by zrobić sobie herbatę i przeczytać ulubioną książkę.",
-        "light rain and snow": "Czy nie lepiej spędzić ten czas w domu?",
-        "rain and snow": "To dobry czas na to, by zrobić coś kreatywnego",
-        "light shower snow": "Gdy spada intensywny śnieg z prysznicem, to lepiej pozostać w domu",
-        "shower snow": "Lepiej schowaj się w ciepłym pomieszczeniu i spędź sobie dobry czas z rodziną lub przyjaciółmi.",
-        "heavy shower snow": "Gdy spada intensywny śnieg z prysznicem, to lepiej pozostać w domu",
+        "500": {
+            "weatherAdvice": "Jeśli chcesz poczuć się jak bohater komedii, to weź ze sobą parasolkę i spaceruj po deszczu",
+            "weatherType": "lekki deszcz"
+        },
+        "501": {
+            "weatherAdvice": "To dobry czas na to, by wyjść na spacer i posłuchać odprężającej muzyki",
+            "weatherType": "umiarkowane opady"
+        },
+        "502": {
+            "weatherAdvice": "Gdy deszcz pada z dużą intensywnością, lepiej schować się w ciepłym pomieszczeniu",
+            "weatherType": "intensywny deszcz"
+        },
+        "503": {
+            "weatherAdvice": "To czas, żeby zostać w domu",
+            "weatherType": "bardzo intensywny deszcz"
+        },
+        "504": {
+            "weatherAdvice": "To nie czas na spacer lub wyjście z domu! Zrobić coś kreatywnego, jak malowanie czy rysowanie.",
+            "weatherType": "ekstremalny deszcz"
+        },
+        "511": {
+            "weatherAdvice": "Lepiej pozostać w domu i cieszyć się gorącą kawą lub herbatą.",
+            "weatherType": "zimny deszcz"
+        },
+        "520": {
+            "weatherAdvice": "To idealna pora na to, by zrobić sobie przerwę i wziąć ciepły prysznic",
+            "weatherType": "deszcz o małej intensywności"
+        },
+        "521": {
+            "weatherAdvice": "Jeśli potrzebujesz odrobiny energii, to zrób sobie krótki spacer po deszczu",
+            "weatherType": "przelotny deszcz"
+        },
+        "522": {
+            "weatherAdvice": "Lepiej zostań w domu",
+            "weatherType": "ulewny deszcz o dużej intensywności"
+        },
+        "531": {
+            "weatherAdvice": "Lepiej schować się w bezpiecznym miejscu i poczekać, aż burza minie.",
+            "weatherType": "rozszalały deszcz"
+        },
 
-        "mist": "Zrób sobie pyszną kawę lub herbatę i rozgość się na kanapie z ulubioną książką lub filmem!",
-        "smoke": "Gdy w powietrzu unosi się dym, to lepiej zamknij okna i drzwi.",
-        "haze": "Lepiej zostań w domu",
-        "sand/dust whirls": "To jest czas, żeby zrobić coś kreatywnego",
-        "fog": "Zrób sobie pyszną zupę i poczuj jak dobrze jest w domu",
-        "sand": "To nie jest czas na spacer!",
-        "dust": "Gdy w powietrzu unosi się piasek lub kurz, to lepiej zakryj oczy, nos i usta.",
-        "volcanic ash": "Jeśli w powietrzu unosi się popiół wulkaniczny, to lepiej pozostać w domu i zamknąć okna",
-        "squalls": "Lepiej schowaj się w bezpiecznym pomieszczeniu",
-        "tornado": "Jeśli zbliża się tornado, to lepiej schować się w bezpiecznym pomieszczeniu",
+        "600": {
+            "weatherAdvice": "To idealna pora na to, by wyjść na spacer i zrobić bałwana lub zorganizować bitwę na śnieżki z rodzeństwem lub przyjaciółmi!",
+            "weatherType": "lekkie opady śniegu"
+        },
+        "601": {
+            "weatherAdvice": "Gdy leży już sporo śniegu, to możesz wybrać się na narty, snowboard lub sanki i poczuć się jak mistrz sportów zimowych!",
+            "weatherType": "śnieg"
+        },
+        "602": {
+            "weatherAdvice": "Zrób sobie gorącą czekoladę i obejrzyj swój ulubiony film",
+            "weatherType": "duże opady śniegu"
+        },
+        "611": {
+            "weatherAdvice": "To dobry czas na to, by zrobić coś kreatywnego, jak malowanie",
+            "weatherType": "śnieg z deszczem"
+        },
+        "612": {
+            "weatherAdvice": "Wyjdź na spacer.",
+            "weatherType": "lekki przelotny deszcz ze śniegiem"
+        },
+        "613": {
+            "weatherAdvice": "To idealny moment, by zrobić sobie herbatę i przeczytać ulubioną książkę.",
+            "weatherType": "deszcz ze śniegiem"
+        },
+        "615": {
+            "weatherAdvice": "Czy nie lepiej spędzić ten czas w domu?",
+            "weatherType": "lekki deszcz i śnieg"
+        },
+        "616": {
+            "weatherAdvice": "To dobry czas na to, by zrobić coś kreatywnego",
+            "weatherType": "deszcz i śnieg"
+        },
+        "620": {
+            "weatherAdvice": "Gdy spada intensywny śnieg z prysznicem, to lepiej pozostać w domu",
+            "weatherType": "lekki przelotny śnieg"
+        },
+        "621": {
+            "weatherAdvice": "Lepiej schowaj się w ciepłym pomieszczeniu i spędź sobie dobry czas z rodziną lub przyjaciółmi.",
+            "weatherType": "opady śniegu"
+        },
+        "622": {
+            "weatherAdvice": "Gdy spada intensywny śnieg z prysznicem, to lepiej pozostać w domu",
+            "weatherType": "intensywne opady śniegu"
+        },
 
-        "clear sky": "Wyjdź na spacer z przyjaciółmi!",
+        "701": {
+            "weatherAdvice": "Zrób sobie pyszną kawę lub herbatę i rozgość się na kanapie z ulubioną książką lub filmem!",
+            "weatherType": "mgła"
+        },
+        "711": {
+            "weatherAdvice": "Gdy w powietrzu unosi się dym, to lepiej zamknij okna i drzwi.",
+            "weatherType": "dym"
+        },
+        "721": {
+            "weatherAdvice": "Lepiej zostań w domu",
+            "weatherType": "mgła"
+        },
+        "731": {
+            "weatherAdvice": "To jest czas, żeby zrobić coś kreatywnego",
+            "weatherType": "wiry pisaku"
+        },
+        "741": {
+            "weatherAdvice": "Zrób sobie pyszną zupę i poczuj jak dobrze jest w domu",
+            "weatherType": "mgła"
+        },
+        "751": {
+            "weatherAdvice": "To nie jest czas na spacer!",
+            "weatherType": "wiry piasku"
+        },
+        "761": {
+            "weatherAdvice": "Gdy w powietrzu unosi się piasek lub kurz, to lepiej zakryj oczy, nos i usta.",
+            "weatherType": "pył"
+        },
+        "762": {
+            "weatherAdvice": "Jeśli w powietrzu unosi się popiół wulkaniczny, to lepiej pozostać w domu i zamknąć okna",
+            "weatherType": "pył wulkaniczny"
+        },
+        "771": {
+            "weatherAdvice": "Lepiej schowaj się w bezpiecznym pomieszczeniu",
+            "weatherType": "szkwał"
+        },
+        "781": {
+            "weatherAdvice": "Jeśli zbliża się tornado, to lepiej schować się w bezpiecznym pomieszczeniu",
+            "weatherType": "tornado"
+        },
 
-        "Clouds": "Jeśli na niebie jest tylko kilka chmur, to najlepiej wyjść na zewnątrz"
+        "800": {
+            "weatherAdvice": "Wyjdź na spacer z przyjaciółmi!",
+            "weatherType": "bezchmurne niebo"
+        },
+
+        "801": {
+            "weatherAdvice": "Jeśli na niebie jest tylko kilka chmur, to najlepiej wyjść na zewnątrz",
+            "weatherType": "mało chmur"
+        },
+        "802": {
+            "weatherAdvice": "Jeśli na niebie jest tylko kilka chmur, to najlepiej wyjść na zewnątrz",
+            "weatherType": "rozproszone chmury"
+        },
+        "803": {
+            "weatherAdvice": "Jeśli na niebie jest tylko kilka chmur, to najlepiej wyjść na zewnątrz",
+            "weatherType": "rozbite chmury"
+        },
+        "804": {
+            "weatherAdvice": "Jeśli na niebie jest tylko kilka chmur, to najlepiej wyjść na zewnątrz",
+            "weatherType": "zachmurzenie"
+        }
     },
     "Error": {
         "title": "Przepraszamy :(",
         "desc": "404",
         "body": "Nie znaleziono strony. Upewnij się, że URL jest poprawny"
-
     }
-
 }

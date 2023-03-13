@@ -22,55 +22,55 @@ const Main = (mainData) => {
       setSplideRows(2);
     else setSplideRows(1);
   };
+
+
+  // const iloscTekstow = 3;
+  // const weatherTipsDay = {
+  //   Thunderstorm1:
+  //     "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
+  //   Clouds1: "Jest pochmurno, zalecane jest zostać w domu",
+  //   Rain1: "Pada deszcz napij się herbatki",
+  //   Clear1: "Jest Ładna pogoda, warto wyjść na zewnątrz",
+  //   Thunderstorm2:
+  //     "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
+  //   Clouds2: "Jest pochmurno, zalecane jest zostać w domu",
+  //   Rain2: "Pada deszcz napij się herbatki",
+  //   Clear2: "Jest Ładna pogoda, warto wyjść na zewnątrz",
+  //   Thunderstorm3:
+  //     "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
+  //   Clouds3: "Jest pochmurno, zalecane jest zostać w domu",
+  //   Rain3: "Pada deszcz napij się herbatki",
+  //   Clear3: "Jest Ładna pogoda, warto wyjść na zewnątrz",
+  // };
+
+  // const weatherTipNight = "Dobranoc";
+  // let isDay = true;
+  // const timetest  =() =>{
+
   
 
-  const iloscTekstow = 3;
-  const weatherTipsDay = {
-    Thunderstorm1:
-      "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
-    Clouds1: "Jest pochmurno, zalecane jest zostać w domu",
-    Rain1: "Pada deszcz napij się herbatki",
-    Clear1: "Jest Ładna pogoda, warto wyjść na zewnątrz",
-    Thunderstorm2:
-      "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
-    Clouds2: "Jest pochmurno, zalecane jest zostać w domu",
-    Rain2: "Pada deszcz napij się herbatki",
-    Clear2: "Jest Ładna pogoda, warto wyjść na zewnątrz",
-    Thunderstorm3:
-      "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
-    Clouds3: "Jest pochmurno, zalecane jest zostać w domu",
-    Rain3: "Pada deszcz napij się herbatki",
-    Clear3: "Jest Ładna pogoda, warto wyjść na zewnątrz",
-  };
+  // let ok = currentData.dt * 1000
+  // console.log(ok)
+  // console.log(new Date(ok).toLocaleTimeString());
 
-  const weatherTipNight = "Dobranoc";
-  let isDay = true;
-  const timetest  =() =>{
+  // console.log(new Date(ok).toTimeString());
+  // console.log(new Date(ok).toLocaleTimeString());
+  // console.log(currentData)
+  // console.log(currentData.timezone)
+  // console.log(date.getHours())
+  // console.log(currentData.timezone / 3600)
+  // console.log(new Date(currentData.dt * 1000))
+  // console.log(new Date((currentData.sys.sunset + currentData.timezone) * 1000))
+  // }
 
-  
-  var input = currentData.dt * 1000;
+  // useEffect(()=>{
+  //   timetest()
+  // })
+  // console.log(currentData.weather[0])
 
-  let ok = currentData.dt * 1000
-  console.log(ok)
-  console.log(new Date(ok).toLocaleTimeString());
-
-  console.log(new Date(ok).toTimeString());
-  console.log(new Date(ok).toLocaleTimeString());
-  console.log(currentData)
-  console.log(currentData.timezone)
-  console.log(date.getHours())
-  console.log(currentData.timezone / 3600)
-  console.log(new Date(currentData.dt * 1000))
-  console.log(new Date((currentData.sys.sunset + currentData.timezone) * 1000))
-  }
-  //    console.log(currentData)
   useEffect(() => {
     resizeSplideRows();
   }, []);
-  useEffect(()=>{
-    timetest()
-  })
-  console.log(currentData.weather[0])
 
   return (
     <div className="weather-params">
@@ -81,7 +81,7 @@ const Main = (mainData) => {
               {fullCity.city}, {fullCity.country}
             </p>
             <p className="weather-description">
-              {currentData.weather[0].description}
+            {t(`WeatherTips.${currentData.weather[0].id}.weatherType`)}
             </p>
             <p>
               {t(`Days.${[date.getDay()]}.day`)}, {date.getUTCDate()}{" "}
@@ -91,7 +91,7 @@ const Main = (mainData) => {
           <p className="temp">{Math.round(currentData.main.temp)} °C </p>
         </div>
         <div>
-          <p>{currentData.weather[0].main=="Clouds" ? `${t("WeatherTips.Clouds")}` : `${t(`WeatherTips.${currentData.weather[0].description}`)}`}</p>
+          <p>{t(`WeatherTips.${currentData.weather[0].id}.weatherAdvice`)}</p>
         </div>
         <img
           alt="weather"
