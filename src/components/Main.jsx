@@ -22,8 +22,7 @@ const Main = (mainData) => {
       setSplideRows(2);
     else setSplideRows(1);
   };
-
-  window.addEventListener("resize", resizeSplideRows);
+  
 
   const iloscTekstow = 3;
   const weatherTipsDay = {
