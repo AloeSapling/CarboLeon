@@ -25,14 +25,6 @@ const Main = (mainData) => {
 
   window.addEventListener("resize", resizeSplideRows);
 
-  /* Jak coś to na stronce https://openweathermap.org/weather-conditions w sekcji "weather condition codes" w kolumnie main są nazwy pogody.
-  
-  W object "weatherTips" wystarczy dać nazwę pogody jako key.
-  
-  Ponieważ jest random, to obok key dodaj liczbe w zakresie od 1-ilosctekstow, wtedy przy danej wylosowanej liczbie będzie dany tekst
-  
-  jeśli zmienisz ilość zranodmowyzowanych wypowiedzi to zmień też iloscTekstow*/
-
   const iloscTekstow = 3;
   const weatherTipsDay = {
     Thunderstorm1:
@@ -100,7 +92,6 @@ const Main = (mainData) => {
           <p className="temp">{Math.round(currentData.main.temp)} °C </p>
         </div>
         <div>
-          {/* <p>{isDay ? weatherTipsDay[`${currentData.weather[0].main}${Math.floor(Math.random()*iloscTekstow+1)}`] : weatherTipNight}</p> */}
           <p>{currentData.weather[0].main=="Clouds" ? `${t("WeatherTips.Clouds")}` : `${t(`WeatherTips.${currentData.weather[0].description}`)}`}</p>
         </div>
         <img
@@ -153,9 +144,9 @@ const Main = (mainData) => {
           {t("Home.part2")}
         </p>
         {isDropdown ? (
-          <IoIosArrowDropdownCircle className="dropdown-icon rotate" />
+          <IoIosArrowDropdownCircle className="dropdown-icon rotate" alt="arrow-up" />
         ) : (
-          <IoIosArrowDropdownCircle className="dropdown-icon" />
+          <IoIosArrowDropdownCircle className="dropdown-icon"alt="arrow-down" />
         )}
       </button>
       {isDropdown && (
