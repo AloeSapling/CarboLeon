@@ -293,6 +293,7 @@ $lightgrey-background: #fff;
           height: auto;
 
           @include md {
+            margin-top: 50px;
             width: 90%;
           }
         }
