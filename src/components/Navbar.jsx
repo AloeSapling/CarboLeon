@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import "../styles/navbar.css";
+import '../styles/navbar.css'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +45,7 @@ const Navbar = () => {
             }}
             alt="uk button"
           >
-            <img className="langimg" src="images/flags/uk.png" alt="uk flag" />
+            <img className="langimg" src="images/flags/uk.webp" alt="uk flag" />
           </button>
           <button
             className="langBtn"
@@ -56,7 +56,7 @@ const Navbar = () => {
           >
             <img
               className="langimg"
-              src="images/flags/poland.png"
+              src="images/flags/poland.webp"
               alt="poland flag"
             />
           </button>

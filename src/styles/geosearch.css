@@ -15,7 +15,7 @@
 
 /* magnifying glass */
 .leaflet-control-geosearch a.leaflet-bar-part {
-   background-image: url(./LeafletCSS&IMG/magnifing-glass.png);
+   background-image: url(./LeafletCSS&IMG/magnifing-glass.webp);
   background-size: 20px 20px;
 }
 

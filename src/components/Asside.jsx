@@ -159,7 +159,7 @@ const Asside = (pollution) => {
           {t(`AssideTitles.${pollutionScale}`)}
         </span>
       </p>
-      <h3>{t("AssideTitles.main2")}</h3>
+      <p className="h3">{t("AssideTitles.main2")}</p>
       <p>{t(`AssideTexts.${pollutionScale}`)}</p>
 
       <Link to="/pollutionindex" className="pollution-index-link">

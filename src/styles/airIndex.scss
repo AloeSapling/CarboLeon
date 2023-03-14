@@ -90,6 +90,7 @@ $lightgrey-background: #fff;
         cursor: pointer;
         height: 202px;
         margin: 10px;
+        width: auto;
 
         @include xxs {
           height: 130px;
@@ -143,6 +144,13 @@ $lightgrey-background: #fff;
     .pollution-info-name {
       line-height: 140%;
       font-size: 1.1em;
+
+      
+    }
+
+    .h3 {
+      font-size: 1.17em;
+      font-weight: bold;
     }
 
     .pollution-index-link {
@@ -282,6 +290,7 @@ $lightgrey-background: #fff;
         }
         .weather-icon {
           width: 40%;
+          height: auto;
 
           @include md {
             width: 90%;
@@ -328,6 +337,7 @@ $lightgrey-background: #fff;
             img {
               margin-top: 30px;
               width: 100%;
+              height: auto;
             }
           }
         }

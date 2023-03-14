@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/geosearch.css";
 import "../styles/LeafletCSS&IMG/leaflet.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   MapContainer,
   useMap,
@@ -9,7 +9,7 @@ import {
   TileLayer,
   LayersControl,
   Marker,
-  Popup
+  // Popup
 } from "react-leaflet";
 // import "leaflet/dist/leaflet.css";
 import { OpenStreetMapProvider, GeoSearchControl } from "leaflet-geosearch";
@@ -35,15 +35,15 @@ export const MapElem = (coords) => {
   L.Icon.Default.mergeOptions({
     iconSize: [69, 69],
     iconAnchor: [50, 80],
-    iconRetinaUrl: "https://www.linkpicture.com/q/Logo_geolocation.png",
+    iconRetinaUrl: "../styles/LeafletCSS&IMG/",
     iconUrl: "https://www.linkpicture.com/q/Logo_geolocation.png",
     shadowUrl: "",
   });
   
 
   const [center, setCenter] = useState({ lat: 52.237049, lng: 21.017532 });
-  const ZOOM_LEVEL = 12;
-  const mapRef = useRef();
+  // const ZOOM_LEVEL = 12;
+  // const mapRef = useRef();
 
   // useEffect(
   //   () => {
@@ -53,7 +53,7 @@ export const MapElem = (coords) => {
   const _created = (e) => console.log(e);
   const Search = (props) => {
     const map = useMap();
-    const { provider } = props;
+    // const { provider } = props;
 
     // function handleOnSetView() {
     //   const { current = {} } = mapRef;
@@ -95,6 +95,7 @@ export const MapElem = (coords) => {
   return (
     <>
       <MapContainer
+        preferCanvas={true  }
         center={center}
         maxBounds={mapBounds}
         zoom={10}

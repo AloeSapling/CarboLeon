@@ -23,51 +23,6 @@ const Main = (mainData) => {
     else setSplideRows(1);
   };
 
-
-  // const iloscTekstow = 3;
-  // const weatherTipsDay = {
-  //   Thunderstorm1:
-  //     "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
-  //   Clouds1: "Jest pochmurno, zalecane jest zostać w domu",
-  //   Rain1: "Pada deszcz napij się herbatki",
-  //   Clear1: "Jest Ładna pogoda, warto wyjść na zewnątrz",
-  //   Thunderstorm2:
-  //     "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
-  //   Clouds2: "Jest pochmurno, zalecane jest zostać w domu",
-  //   Rain2: "Pada deszcz napij się herbatki",
-  //   Clear2: "Jest Ładna pogoda, warto wyjść na zewnątrz",
-  //   Thunderstorm3:
-  //     "Zostań w domu - jest burza. Najlepiej napij się ciepłej herbatki :D",
-  //   Clouds3: "Jest pochmurno, zalecane jest zostać w domu",
-  //   Rain3: "Pada deszcz napij się herbatki",
-  //   Clear3: "Jest Ładna pogoda, warto wyjść na zewnątrz",
-  // };
-
-  // const weatherTipNight = "Dobranoc";
-  // let isDay = true;
-  // const timetest  =() =>{
-
-  
-
-  // let ok = currentData.dt * 1000
-  // console.log(ok)
-  // console.log(new Date(ok).toLocaleTimeString());
-
-  // console.log(new Date(ok).toTimeString());
-  // console.log(new Date(ok).toLocaleTimeString());
-  // console.log(currentData)
-  // console.log(currentData.timezone)
-  // console.log(date.getHours())
-  // console.log(currentData.timezone / 3600)
-  // console.log(new Date(currentData.dt * 1000))
-  // console.log(new Date((currentData.sys.sunset + currentData.timezone) * 1000))
-  // }
-
-  // useEffect(()=>{
-  //   timetest()
-  // })
-  // console.log(currentData.weather[0])
-
   useEffect(() => {
     resizeSplideRows();
   }, []);
