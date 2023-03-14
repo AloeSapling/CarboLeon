@@ -89,10 +89,10 @@ nav ul .header-link:hover::after {
 .nav-toggle {
     display: none;
 }
-nav>ul>li{
+nav ul li{
     display: flex;
     align-items: center;
-    gap: 1.5vw;
+    gap: 3vw;
 }
 
 @media screen and (max-width: 1500px) {    
