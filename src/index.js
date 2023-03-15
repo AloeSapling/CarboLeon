@@ -4,7 +4,6 @@ import App from './App'
 import './i18next'
 
 import './styles/index.css'
-import './styles/phones.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(  

@@ -84,6 +84,7 @@ nav ul .header-link:hover::after {
     width: 8vh;
     height: 8vh;
     margin: 1vh 0;
+    border-radius: 50%;
 }
 
 .nav-toggle {

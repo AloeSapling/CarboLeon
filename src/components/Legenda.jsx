@@ -7,30 +7,30 @@ const Legenda = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="lContainer">
-      <div className="LEContainer">
-        <span className="inline iDiv dVRed"></span>
-        <h3 className="inline">{t("Legend.ebad")}</h3>
+    <div className="legend-container">
+      <div className="legend-item">
+        <span className=" pollution-box dark-red"></span>
+        <p className="h3">{t("Legend.ebad")}</p>
       </div>
-      <div className="LEContainer">
-        <span className="inline iDiv dPurple"></span>
-        <h3 className="inline">{t("Legend.vbad")}</h3>
+      <div className="legend-item">
+        <span className=" pollution-box purple"></span>
+        <p className="h3">{t("Legend.vbad")}</p>
       </div>
-      <div className="LEContainer">
-        <span className="inline iDiv dRed"></span>
-        <h3 className="inline">{t("Legend.bad")}</h3>
+      <div className="legend-item">
+        <span className=" pollution-box red"></span>
+        <p className="h3">{t("Legend.bad")}</p>
       </div>
-      <div className="LEContainer">
-        <span className="inline iDiv dOrange"></span>
-        <h3 className="inline">{t("Legend.worse")}</h3>
+      <div className="legend-item">
+        <span className=" pollution-box orange"></span>
+        <p className="h3">{t("Legend.worse")}</p>
       </div>
-      <div className="LEContainer">
-        <span className="inline iDiv dYellow"></span>
-        <h3 className="inline">{t("Legend.fine")}</h3>
+      <div className="legend-item">
+        <span className=" pollution-box yellow"></span>
+        <p className="h3">{t("Legend.fine")}</p>
       </div>
-      <div className="LEContainer">
-        <span className="inline iDiv dGreen"></span>
-        <h3 className="inline">{t("Legend.good")}</h3>
+      <div className="legend-item">
+        <span className=" pollution-box green"></span>
+        <p className="h3">{t("Legend.good")}</p>
       </div>
     </div>
   );

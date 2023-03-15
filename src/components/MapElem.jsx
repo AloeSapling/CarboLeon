@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/geosearch.css";
 import "../styles/LeafletCSS&IMG/leaflet.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import {
   MapContainer,
   useMap,
@@ -29,47 +29,21 @@ export const MapElem = (coords) => {
     [-90, -180],
     [90, 180],
   ];
-    
+
   delete L.Icon.Default.prototype._getIconUrl;
 
   L.Icon.Default.mergeOptions({
     iconSize: [69, 69],
     iconAnchor: [50, 80],
-    iconRetinaUrl: "../styles/LeafletCSS&IMG/",
     iconUrl: "https://www.linkpicture.com/q/Logo_geolocation.png",
-    shadowUrl: "",
   });
-  
 
-  const [center, setCenter] = useState({ lat: 52.237049, lng: 21.017532 });
-  // const ZOOM_LEVEL = 12;
-  // const mapRef = useRef();
-
-  // useEffect(
-  //   () => {
-  //       mapRef.current.setView({ lat: coords.coords[0], lng: coords.coords[1]})
-  //   }, [coords])
+  const [center, setCenter] = useState(null);
+  const mapRef = useRef(null);
 
   const _created = (e) => console.log(e);
   const Search = (props) => {
     const map = useMap();
-    // const { provider } = props;
-
-    // function handleOnSetView() {
-    //   const { current = {} } = mapRef;
-    //   const { leafletElement: map } = current;
-  
-    //   map.setView(coords.coords, 14);
-    // }
-  
-    // function handleOnFlyTo() {
-    //   const { current = {} } = mapRef;
-    //   const { leafletElement: map } = current;
-  
-    //   map.flyTo(coords.coords, 14,  {
-    //     duration: 2
-    //   });
-    // }
 
     useEffect(() => {
       const provider = new OpenStreetMapProvider();
@@ -87,19 +61,27 @@ export const MapElem = (coords) => {
     return null;
   };
 
+  function handleOnFlyTo() {
+    const { current = {} } = mapRef;
+    current.flyTo(coords.coords, 14, {
+      duration: 2,
+    });
+  }
 
-  useEffect(() =>  {
-    setCenter({ lat: coords.coords[0], lng: coords.coords[1]})
-  }, [coords])
+  useEffect(() => {
+    setCenter({ lat: coords.coords[0], lng: coords.coords[1] });
+    if(mapRef.current) handleOnFlyTo()
+  }, [coords]);
 
-  return (
+  if(center) return (
     <>
       <MapContainer
-        preferCanvas={true  }
+        preferCanvas={true}
         center={center}
         maxBounds={mapBounds}
         zoom={10}
         minZoom={3}
+        ref={mapRef}
       >
         <FeatureGroup>
           <EditControl
@@ -122,13 +104,12 @@ export const MapElem = (coords) => {
           noWrap="true"
         />
         <LayersControl>
-        <LayersControl.BaseLayer name={t("Mapa początkowa")} checked>
+          <LayersControl.BaseLayer name={t("layer.defaultMap")} checked>
             <TileLayer
               url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"
               subdomains={["mt0", "mt1", "mt2", "mt3"]}
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               noWrap={true}
-              
             />
           </LayersControl.BaseLayer>
           <LayersControl.BaseLayer name={t("layer.satelite")}>
@@ -169,12 +150,11 @@ export const MapElem = (coords) => {
 
         {/* <MinimapControl position="topright" /> */}
         <Marker position={coords.coords} />
-         
+
         <Legenda />
       </MapContainer>
     </>
   );
-  
 };
 export default MapElem;
-// TWÓRCA: BARTOSZ GRZYB MASTER / Legenda: AloeS and John333🔥
+// TWÓRCA: BARTOSZ GRZYB MASTER and @janekskr / Legenda: AloeS and @janekskr

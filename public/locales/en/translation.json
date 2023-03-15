@@ -116,14 +116,12 @@
         "vbad": "Very bad (201-300)",
         "ebad": "Extremely bad (300+)"
     },
-    "test": {
-        "len": "en"
-    },
     "layer": {
         "satelite": "Satelite",
         "topographicMap": "Topographic Map",
         "airports": "Airports",
-        "airPollution": "Air Pollution"
+        "airPollution": "Air Pollution",
+        "defaultMap": "Default Map"
     },
     "NavBar": {
         "Home": "Home",

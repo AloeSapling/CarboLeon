@@ -109,7 +109,7 @@ const Navbar = () => {
         className={`nav-toggle ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="bar"></div>
+        <div className="bar" />
       </div>
     </nav>
   );

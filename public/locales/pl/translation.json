@@ -116,14 +116,12 @@
         "vbad": "Bardzo niezdrowe (201-300)",
         "ebad": "Zagrożające życiu (300+)"
     },
-    "test": {
-        "len": "pl"
-    },
     "layer": {
         "satelite": "Satelita",
         "topographicMap": "Mapa Topograficzna",
         "airports": "Lotniska",
-        "airPollution": "Zanieczyszczenie Powietrza"
+        "airPollution": "Zanieczyszczenie Powietrza",
+        "defaultMap": "Mapa Początkowa"
     },
     "NavBar": {
         "Home": "Strona Główna",
