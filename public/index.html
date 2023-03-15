@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="CarboLeon service" />
-    <meta name="keywords" content="Zanieczyszczenie, Zanieczyszczenie powietrza, Powietrze, Balls, Zanieczyszczenie, Pogoda"/>
+    <meta name="keywords" content="Zanieczyszczenie, Zanieczyszczenie powietrza, Powietrze, Balls, Zanieczyszczenie, Pogoda" />
+    <title>Carboleon</title>
+    <meta name="description" content="CarboLeon to strona dzięki, której dowiesz sie o zanieczyszczeniu powietrza, pogodzie oraz ciekawych miejsc w twojej okolicy. Wszystko stworzone z myślą o TOBIE !" />
     <link rel="apple-touch-icon" href="logo.webp" />
     <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="preload" fetchpriority="high" as="image" href="images/backgroundCameleon.webp" type="image/webp">
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-S0J1J9EQ4Y"
@@ -23,24 +27,25 @@
       gtag("config", "G-S0J1J9EQ4Y");
     </script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S0J1J9EQ4Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S0J1J9EQ4Y"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-S0J1J9EQ4Y');
-</script>
-<!-- Event snippet for Website traffic (2) conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-11115590529/iPZGCK7m8ZEYEIHnqbQp'});
-</script>
-
-    <title>Carboleon</title>
-    <meta
-      name="description"
-      content="CarboLeon to strona dzięki, której dowiesz sie o zanieczyszczeniu powietrza, pogodzie oraz ciekawych miejsc w twojej okolicy. Wszystko stworzone z myślą o TOBIE !"
-    />
+      gtag("config", "G-S0J1J9EQ4Y");
+    </script>
+    <!-- Event snippet for Website traffic (2) conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-11115590529/iPZGCK7m8ZEYEIHnqbQp",
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
