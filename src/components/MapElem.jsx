@@ -36,6 +36,7 @@ export const MapElem = (coords) => {
     iconSize: [69, 69],
     iconAnchor: [50, 80],
     iconUrl: "https://www.linkpicture.com/q/Logo_geolocation.png",
+    shadowUrl: ""
   });
 
   const [center, setCenter] = useState(null);
