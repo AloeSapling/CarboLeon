@@ -137,7 +137,7 @@ const Main = (mainData) => {
             <div>
               <div className="prop-title">
                 <TbTemperature />
-                <span>{t("Home.sens")}</span>
+                <span>{t("Home.sesns")}</span>
               </div>
               <h3 className="measurement">
                 {Math.round(currentData.main.feels_like)} °C
