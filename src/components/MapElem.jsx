@@ -9,7 +9,7 @@ import {
   TileLayer,
   LayersControl,
   Marker,
-  // Popup
+  Popup
 } from "react-leaflet";
 // import "leaflet/dist/leaflet.css";
 import { OpenStreetMapProvider, GeoSearchControl } from "leaflet-geosearch";
@@ -150,7 +150,11 @@ export const MapElem = (coords) => {
         </Search>
 
         {/* <MinimapControl position="topright" /> */}
-        <Marker position={coords.coords} />
+        <Marker position={coords.coords}>
+            <Popup>
+              <p>{coords.coords}</p>
+            </Popup>
+        </Marker>
 
         <Legenda />
       </MapContainer>
