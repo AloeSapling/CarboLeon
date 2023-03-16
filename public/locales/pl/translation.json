@@ -53,7 +53,7 @@
         "presure": "Ciśnienie",
         "hum": "Wilgotność",
         "wind": "wiatr",
-        "sesns": "Wyczuwana temperatura",
+        "sens": "Wyczuwana temperatura",
         "Fore": "Zapowiadana pogoda"
     },
     "Sponsors": {
