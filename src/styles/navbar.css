@@ -115,7 +115,7 @@ nav ul li{
         flex-direction: column;
         position: absolute;
         top: 12vh;
-        padding-top: 40px;
+        padding: 40px 15px 0 15px;
         right: 0;
         width: 50vw;
         transform: translateX(100vw);

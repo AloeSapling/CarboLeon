@@ -75,3 +75,28 @@
 .facebook{
     background-image: linear-gradient(to top left, rgb(1, 132, 192), rgb(185, 235, 255));
 }
+
+.contact-email {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 700px)  {
+    .contact-email {
+        font-size: 1em;
+    } 
+    h2  {
+        font-size: 1.3em;
+    }
+
+    .contact-text-background h1 {
+        font-size: 1em;
+    }
+    .contact-text-background {
+        width: 80%;
+    }
+    .socials {
+        margin-top: 40px;
+    }
+}

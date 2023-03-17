@@ -85,10 +85,10 @@ function Contact() {
           </a>
         </div>
         <div className=" contact-text-background">
-          <h1>{t("Contact.4")}</h1>
-          <p>{t("Contact.5")}</p>
+          <h1>{t("Contact.5")}</h1>
+          <p>{t("Contact.4")}</p>
         </div>
-        <p>carbo.leon333@gmail.com</p>
+        <a href="mailto:carbo.leon333@gmail.com" rel="noreferrer" target="_blank" className="contact-email">carbo.leon333@gmail.com</a>
       </div>
     </>
   );

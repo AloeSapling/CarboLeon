@@ -14,6 +14,7 @@ const Main = (mainData) => {
   const fullCity = mainData.mainData.fullCity;
   const date = new Date();
   const { t } = useTranslation();
+
   const resizeSplideRows = () => {
     if (window.innerWidth > 1500) setSplideRows(4);
     else if (window.innerWidth < 1500 && window.innerWidth > 900)
@@ -24,8 +25,13 @@ const Main = (mainData) => {
   };
 
   useEffect(() => {
-    resizeSplideRows();
-  }, []);
+    window.addEventListener("resize", resizeSplideRows)
+
+    return () => {
+      window.removeEventListener("resize", resizeSplideRows)
+    }
+  }, [])
+
 
   return (
     <div className="weather-params">
