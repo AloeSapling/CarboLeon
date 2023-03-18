@@ -25,7 +25,9 @@ const Main = (mainData) => {
   };
 
   useEffect(() => {
+    resizeSplideRows()
     window.addEventListener("resize", resizeSplideRows)
+    }
 
     return () => {
       window.removeEventListener("resize", resizeSplideRows)
