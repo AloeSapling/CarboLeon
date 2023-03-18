@@ -8,17 +8,16 @@
     background: linear-gradient(#739a49,#2c7c2c);
     color: white;
 }
-.PollutionIndexContainer h2{
-    margin: 2.5vh auto;
+h2{
+    margin: 3vh 0;
 }
-#odd-h2{
-    margin-top: .5vh;
+
+.select-h2 {
+    margin: 0 0 3vh 0;
 }
+
 #odd-p{
     margin-bottom: 3vh;
-}
-.PollutionIndexContainer .select-h2{
-    margin: 2.5vh auto 1.5vh auto;
 }
 select{
     height: 3vh;
@@ -46,6 +45,11 @@ select{
     border-radius: 70px;
     margin: 3vh auto;
 }
+
+.pollution-info-container h3 {
+    margin: 1.5vh 0;;
+}
+
 .selected-info{
     background: rgba(39,109,43, .9);
 }

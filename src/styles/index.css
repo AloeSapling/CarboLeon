@@ -57,7 +57,8 @@ body {
 .background-img h1 {
     text-align: center;
     color: white;
-    padding: 0 20px
+    padding: 0 20px;
+    font-size: 2em;
 }
 
 

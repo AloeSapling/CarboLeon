@@ -25,9 +25,9 @@ function Home() {
     weatherForecastApi: "https://api.openweathermap.org/data/2.5/forecast?",
   };
 
-  const coordsByGeolocation = () => {
-    navigator.geolocation.getCurrentPosition((coords) => {console.log(coords.coords.latitude, coords.coords.longitude)})
-  }
+  // const coordsByGeolocation = () => {
+  //   navigator.geolocation.getCurrentPosition((coords) => {console.log(coords.coords.latitude, coords.coords.longitude)})
+  // }
 
   const setSearchingLocation = async (location) => {
       const geolocate = await fetch(
@@ -71,7 +71,6 @@ function Home() {
   };
 
   useEffect(() => {
-    coordsByGeolocation()
     if (localStorage.getItem("city"))
       setSearchingLocation(localStorage.getItem("city"));
     else setSearchingLocation("Warszawa");

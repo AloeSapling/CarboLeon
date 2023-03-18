@@ -17,7 +17,7 @@
 }
 
 .contact-text-background p {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .qr{
@@ -35,7 +35,6 @@
 .socials a{
     color: inherit;
     text-decoration: inherit;
-    margin-top: 10px;
 }
 
 .socials{
@@ -43,7 +42,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 24px;
+    gap: 3vh;
 }
 
 .contact-container-qr-code{
@@ -87,16 +86,17 @@
         font-size: 1em;
     } 
     h2  {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
-    .contact-text-background h1 {
-        font-size: 1em;
-    }
-    .contact-text-background {
-        width: 80%;
+    .contact-text-background{
+        width: 90%;
     }
     .socials {
         margin-top: 40px;
+        gap: 5vh;
+    }
+    h1 {
+        font-size: 1.4em;
     }
 }
