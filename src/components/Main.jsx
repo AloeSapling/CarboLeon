@@ -24,15 +24,15 @@ const Main = (mainData) => {
     else setSplideRows(1);
   };
 
-  useEffect(() => {
+  useEffect(
+    () => {{
     resizeSplideRows()
     window.addEventListener("resize", resizeSplideRows)
     }
 
     return () => {
       window.removeEventListener("resize", resizeSplideRows)
-    }
-  }, [])
+    }}, [])
 
 
   return (

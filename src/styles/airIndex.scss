@@ -89,8 +89,8 @@ $lightgrey-background: #fff;
       .pollution-icon {
         cursor: pointer;
         height: 202px;
+        width: 227px;
         margin: 10px;
-        width: auto;
 
         @include xxs {
           height: 130px;
@@ -294,7 +294,7 @@ $lightgrey-background: #fff;
 
           @include md {
             margin-top: 50px;
-            width: 90%;
+            width: 100%;
           }
         }
       }
@@ -310,7 +310,11 @@ $lightgrey-background: #fff;
         margin: 0 auto;
 
         @include md {
-          width: 89vw;
+          width: 88vw;
+        }
+
+        @include xs {
+          width: 84vw;
         }
 
         .splide {

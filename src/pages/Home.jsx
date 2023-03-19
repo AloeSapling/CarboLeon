@@ -65,7 +65,7 @@ function Home() {
   }
 
   const searchLocation = (event) => {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && locationRef.current.value !== "") {
       setSearchingLocation(locationRef.current.value);
     }
   };
@@ -73,7 +73,7 @@ function Home() {
   useEffect(() => {
     if (localStorage.getItem("city"))
       setSearchingLocation(localStorage.getItem("city"));
-    else setSearchingLocation("Warszawa");
+    else setSearchingLocation("Kraków ");
   }, []);
 
   return (

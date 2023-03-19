@@ -39,14 +39,14 @@ const Asside = (pollution) => {
   const hoverRef = useRef(null);
 
   useEffect(() => {
-    if (pollution.pollution.aqi < 50) setPollutionScale(1);
-    else if (pollution.pollution.aqi >= 51 && pollution.pollution.aqi < 101)
+    if (pollution.pollution.aqi <= 50) setPollutionScale(1);
+    else if (pollution.pollution.aqi >= 51 && pollution.pollution.aqi <= 100)
       setPollutionScale(2);
-    else if (pollution.pollution.aqi >= 101 && pollution.pollution.aqi < 151)
+    else if (pollution.pollution.aqi >= 101 && pollution.pollution.aqi <= 150)
       setPollutionScale(3);
-    else if (pollution.pollution.aqi >= 151 && pollution.pollution.aqi < 201)
+    else if (pollution.pollution.aqi >= 151 && pollution.pollution.aqi <= 200)
       setPollutionScale(4);
-    else if (pollution.pollution.aqi >= 201 && pollution.pollution.aqi < 251)
+    else if (pollution.pollution.aqi >= 201 && pollution.pollution.aqi <= 250)
       setPollutionScale(5);
     else setPollutionScale(6);
   }, [pollution.pollution]);
@@ -66,7 +66,6 @@ const Asside = (pollution) => {
           <p>{t("asside.map")}</p>
         </Link>
       </div>
-      {/* <div> */}
       <div className="pollution-params">
         <img
           src={`images/pollutionicons/${pollutionScale}.webp`}
