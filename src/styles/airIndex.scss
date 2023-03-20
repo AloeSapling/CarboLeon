@@ -94,6 +94,7 @@ $lightgrey-background: #fff;
 
         @include xxs {
           height: 130px;
+          width: 179px
         }
       }
 
@@ -143,9 +144,7 @@ $lightgrey-background: #fff;
 
     .pollution-info-name {
       line-height: 140%;
-      font-size: 1.1em;
-
-      
+      font-size: 1.1em;    
     }
 
     .h3 {
