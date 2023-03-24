@@ -17,7 +17,7 @@
 
 .sponsors-container .sponsor img {
     width: 300px;
-    height: auto;
+    aspect-ratio: 1/1;
 }
 
 

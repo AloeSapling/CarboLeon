@@ -289,7 +289,7 @@ $lightgrey-background: #fff;
         }
         .weather-icon {
           width: 40%;
-          height: auto;
+          aspect-ratio: 350/197;
 
           @include md {
             margin-top: 50px;
@@ -341,7 +341,7 @@ $lightgrey-background: #fff;
             img {
               margin-top: 30px;
               width: 100%;
-              height: auto;
+              aspect-ratio: 350/197;
             }
           }
         }

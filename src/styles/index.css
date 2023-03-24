@@ -93,6 +93,38 @@ body {
     animation: loading 1s ease infinite; 
 }
 
+.skeleton-loading {
+    background: #739a49;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    min-height: 50px;
+}
+
+.skeleton-loading::after{
+    content: '';
+    width: 200px;
+    background: linear-gradient(to right,#2c7c2c, #628839);
+    height: max-content;
+    position: absolute;
+    left: -20%;
+    top: -100%;
+    transform: rotate(10deg);
+    animation: skeleton-loading 2s infinite linear;
+
+}
+
+@keyframes skeleton-loading {
+    from {
+        left: -20%;
+    }
+
+    to {
+    left: 120%; 
+    }
+}
+
 @keyframes loading {
     from {
       transform: rotate(0turn);

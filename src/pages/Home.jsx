@@ -25,10 +25,6 @@ function Home() {
     weatherForecastApi: "https://api.openweathermap.org/data/2.5/forecast?",
   };
 
-  // const coordsByGeolocation = () => {
-  //   navigator.geolocation.getCurrentPosition((coords) => {console.log(coords.coords.latitude, coords.coords.longitude)})
-  // }
-
   const setSearchingLocation = async (location) => {
       const geolocate = await fetch(
         `${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY_OPENWEATHER}`
