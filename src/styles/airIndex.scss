@@ -119,8 +119,12 @@ $lightgrey-background: #fff;
         left: 50%;
         transform: translateX(-50%);
         top: 150px;
-        width: 55%;
+        width: 75%;
         border-radius: 20px;
+
+        @include md {
+          width: 40%;
+        }
 
         @include xs {
           width: 75%;
