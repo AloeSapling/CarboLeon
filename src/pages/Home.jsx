@@ -1,12 +1,14 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, lazy } from "react";
 import { useTranslation } from "react-i18next";
 import { FaSearch } from "react-icons/fa";
-import { Main, Asside } from "../components";
-import Sponsors from "../components/Sponsors";
-import { MapElem } from "../components/MapElem";
 
 import "../styles/home.css";
 import "../styles/airIndex.scss";
+
+const Main = lazy(() => import("../components/Main"))
+const Asside = lazy(() => import("../components/Asside"))
+const Sponsors = lazy(() => import("../components/Sponsors"))
+const MapElem = lazy(() => import("../components/MapElem"))
 
 
 function Home() {

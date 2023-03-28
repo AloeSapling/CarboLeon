@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, lazy } from "react";
 import { useTranslation } from "react-i18next";
-import Sponsors from "../components/Sponsors";
 
 import "../styles/pollutionindex.css";
+
+const Sponsors = lazy(() => import("../components/Sponsors") ) 
 
 const PollutionIndex = () => {
   const { t } = useTranslation();

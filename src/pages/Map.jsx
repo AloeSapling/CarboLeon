@@ -1,7 +1,8 @@
-import React from "react";
-import { MapElem } from "../components/MapElem";
+import React, {lazy} from "react";
 
 import '../styles/map.css'
+
+const MapElem = lazy(() => import("../components/MapElem"))
 
 const map = () => {
     
