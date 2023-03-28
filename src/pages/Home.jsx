@@ -21,20 +21,12 @@ function Home() {
 
   const api = {
     weatherCurrentApi: "https://api.openweathermap.org/data/2.5/weather?",
-    geolocationApi: "https://api.openweathermap.org/geo/1.0/direct?",
+    geolocationApi: "https://api.openweathermap.org/geo/1.0/",
     weatherForecastApi: "https://api.openweathermap.org/data/2.5/forecast?",
   };
 
-  const setSearchingLocation = async (location) => {
-      const geolocate = await fetch(
-        `${api.geolocationApi}q=${location}&appid=${process.env.REACT_APP_API_KEY_OPENWEATHER}`
-      ).then((res) => res.json());
-      if (!geolocate.length) {
-        setErrorInfo(true);
-      } else {
-        const lat = geolocate[0].lat;
-        const lon = geolocate[0].lon;
-        setErrorInfo(false);
+  const geolocateByCoords = async(lat, lon) => {
+    setErrorInfo(false);
         const currentWeatherData = await fetch(
           `${api.weatherCurrentApi}lat=${lat}&lon=${lon}&units=metric&lang=${t(
             "test.len"
@@ -48,15 +40,30 @@ function Home() {
         const pollutionData = await fetch(
           `https://api.waqi.info/feed/geo:${lat};${lon}/?token=${process.env.REACT_APP_API_KEY_WAQI}`
         ).then((res) => res.json());
-  
-        const city = geolocate[0].name;
-        const country = geolocate[0].country;
+          
+        const cityData = await fetch(`${api.geolocationApi}reverse?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_API_KEY_OPENWEATHER}`).then((res) => res.json());
+        const city = cityData[0].name
+        const country = cityData[0].country
+
         const fullCity = { city, country };
         setPollution(pollutionData.data);
         setCoords([lat, lon]);
         setMainData({ currentWeatherData, forecastWeatherData, fullCity });
-        locationRef.current.value = null
-        localStorage.setItem("city", location);
+        localStorage.setItem("lat", lat);
+        localStorage.setItem("lon", lon)
+        locationRef.current.value = null    
+  }
+
+  const setSearchingLocation = async (location) => {
+      const geolocate = await fetch(
+        `${api.geolocationApi}direct?q=${location}&appid=${process.env.REACT_APP_API_KEY_OPENWEATHER}`
+      ).then((res) => res.json());
+      if (!geolocate.length) {
+        setErrorInfo(true);
+      } else {
+        const lat = +`${geolocate[0].lat.toString().slice(0, 5)}`;
+        const lon = +`${geolocate[0].lon.toString().slice(0, 5)}`;
+        geolocateByCoords(lat, lon)         
       }
   }
 
@@ -67,9 +74,16 @@ function Home() {
   };
 
   useEffect(() => {
-    if (localStorage.getItem("city"))
-      setSearchingLocation(localStorage.getItem("city"));
-    else setSearchingLocation("Kraków ");
+    if(navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((pos) => {
+        const coords = pos.coords
+        geolocateByCoords(+`${coords.latitude.toString().slice(0, 5)}`, +`${coords.longitude.toString().slice(0, 5)}`)
+      }) 
+    } else if (localStorage.getItem("lon") && localStorage.getItem("lat")) {
+      geolocateByCoords(localStorage.getItem("lon"), localStorage.getItem("lat"))
+    } else {
+      geolocateByCoords(50.049, 19.944)
+    }
   }, []);
 
   return (
