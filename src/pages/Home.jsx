@@ -63,8 +63,8 @@ function Home() {
       if (!geolocate.length) {
         setErrorInfo(true);
       } else {
-        const lat = +`${geolocate[0].lat.toString().slice(0, 5)}`;
-        const lon = +`${geolocate[0].lon.toString().slice(0, 5)}`;
+        const lat = geolocate[0].lat;
+        const lon = geolocate[0].lon;
         geolocateByCoords(lat, lon)         
       }
   }
@@ -79,12 +79,18 @@ function Home() {
     if(navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((pos) => {
         const coords = pos.coords
-        geolocateByCoords(+`${coords.latitude.toString().slice(0, 5)}`, +`${coords.longitude.toString().slice(0, 5)}`)
+        geolocateByCoords(coords.latitude, coords.longitude)
+      },() => {
+        if (localStorage.getItem("lat") && localStorage.getItem("lon")) {
+          geolocateByCoords(localStorage.getItem("lat"), localStorage.getItem("lon"))
+        } else {
+          geolocateByCoords(50.02440811574995, 19.977215477370695)
+        }
       }) 
-    } else if (localStorage.getItem("lon") && localStorage.getItem("lat")) {
-      geolocateByCoords(localStorage.getItem("lon"), localStorage.getItem("lat"))
+    } else if (localStorage.getItem("lat") && localStorage.getItem("lon")) {
+      geolocateByCoords(localStorage.getItem("lat"), localStorage.getItem("lon"))
     } else {
-      geolocateByCoords(50.049, 19.944)
+      geolocateByCoords(50.02440811574995, 19.977215477370695)
     }
   }, []);
 
