@@ -161,6 +161,7 @@ $lightgrey-background: #fff;
       font-weight: 600;
     }
   }
+  
   .home-main {
     padding: 0;
     align-items: center;
@@ -204,6 +205,10 @@ $lightgrey-background: #fff;
       }
       ::placeholder {
         color: $grey-color;
+      }
+
+      svg {
+        cursor: pointer;
       }
     }
 

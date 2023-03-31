@@ -1,15 +1,15 @@
-import React, { useState, lazy } from "react";
-import { useTranslation } from "react-i18next";
+import { useState, lazy } from "react"
+import { useTranslation } from "react-i18next"
 
-import "../styles/about.css";
+import "../styles/about.css"
 
-const Sponsors = lazy("../components/Sponsors")
+const Sponsors = lazy(() => import("../components/Sponsors"))
 
 function About() {
   const { t } = useTranslation();
-  document.title = `CarboLeon | ${t("NavBar.About")}`;
+  document.title = `CarboLeon | ${t("NavBar.About")}`
 
-  const [isDropdown, setIsDropdown] = useState(false);
+  const [isDropdown, setIsDropdown] = useState(false)
 
   return (
     <>
@@ -32,7 +32,7 @@ function About() {
       </div>
       <Sponsors />
     </>
-  );
+  )
 }
 
-export default About;
+export default About

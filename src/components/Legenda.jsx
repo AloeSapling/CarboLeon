@@ -1,10 +1,9 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 
 import '../styles/legend.css'
 
 const Legenda = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <div className="legend-container">
@@ -33,9 +32,9 @@ const Legenda = () => {
         <p className="h3">{t("Legend.good")}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Legenda;
+export default Legenda
 
 //made by john333 🧑🏿‍🦱

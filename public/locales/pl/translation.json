@@ -42,10 +42,10 @@
     ],
     "Home": {
         "pageTitle": "Sprawdź jakość powietrza, pogodę oraz ciekawe miejsca w twojej okolicy",
-        "title": "Wiedz, czym ODDYCHASZ",
+        "title": "Wiesz, czym Oddychasz",
         "input": "Wpisza nazwę miasta",
         "error": "Nie znaleziono miasta. Spróbuj ponownie",
-        "part1": "Kliknij mnie żeby ",
+        "part1": "Kliknij, żeby ",
         "hide": "schować",
         "show": "rozwinąć",
         "part2": "detale",
