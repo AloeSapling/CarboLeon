@@ -14,7 +14,6 @@ const Main = (mainData) => {
   const fullCity = mainData.mainData.fullCity;
   const date = new Date();
   const { t } = useTranslation();
-
   const resizeSplideRows = () => {
     if (window.innerWidth > 1500) setSplideRows(4);
     else if (window.innerWidth < 1500 && window.innerWidth > 900)
