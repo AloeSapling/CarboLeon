@@ -1,27 +1,28 @@
-import React, { useState, useEffect } from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/dist/css/splide.min.css";
-import { TbWind, TbTemperature } from "react-icons/tb";
-import { WiHumidity, WiBarometer } from "react-icons/wi";
-import { IoIosArrowDropdownCircle } from "react-icons/io";
-import { useTranslation } from "react-i18next";
+import { useState, useEffect } from "react"
+import { Splide, SplideSlide } from "@splidejs/react-splide"
+import "@splidejs/splide/dist/css/splide.min.css"
+import { TbWind, TbTemperature } from "react-icons/tb"
+import { WiHumidity, WiBarometer } from "react-icons/wi"
+import { IoIosArrowDropdownCircle } from "react-icons/io"
+import { useTranslation } from "react-i18next"
 
 const Main = (mainData) => {
-  const [isDropdown, setIsDropdown] = useState(false);
-  const [splideRows, setSplideRows] = useState(4);
-  const currentData = mainData.mainData.currentWeatherData;
-  const forecastData = mainData.mainData.forecastWeatherData.list;
-  const fullCity = mainData.mainData.fullCity;
-  const date = new Date();
-  const { t } = useTranslation();
+  const [isDropdown, setIsDropdown] = useState(false)
+  const [splideRows, setSplideRows] = useState(4)
+  const currentData = mainData.mainData.currentWeatherData
+  const forecastData = mainData.mainData.forecastWeatherData.list
+  const fullCity = mainData.mainData.fullCity
+  const date = new Date()
+  const { t } = useTranslation()
+
   const resizeSplideRows = () => {
-    if (window.innerWidth > 1500) setSplideRows(4);
+    if (window.innerWidth > 1500) setSplideRows(4)
     else if (window.innerWidth < 1500 && window.innerWidth > 900)
-      setSplideRows(3);
+      setSplideRows(3)
     else if (window.innerWidth < 900 && window.innerWidth > 550)
-      setSplideRows(2);
-    else setSplideRows(1);
-  };
+      setSplideRows(2)
+    else setSplideRows(1)
+  }
 
   useEffect(
     () => {{
@@ -154,9 +155,9 @@ const Main = (mainData) => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main
 
 //twórca John333

@@ -1,10 +1,9 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 
 const Error = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
-  document.title = "CarboLeon | Error" ;
+  document.title = "CarboLeon | Error" 
   return (
     <>
       <div className="background-img">
@@ -15,7 +14,7 @@ const Error = () => {
         <p>{t("Error.desc")}</p>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Error;
+export default Error

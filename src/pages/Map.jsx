@@ -1,16 +1,16 @@
-import React, {lazy} from "react";
+import {lazy} from "react"
 
-import '../styles/map.css'
+import '../styles/map.css'  
 
 const MapElem = lazy(() => import("../components/MapElem"))
-
+    
 const map = () => {
     
     document.title = `CarboLeon - Map`
 
     return(
         <>
-        <div className="bg-img"></div>
+        <div className="bg-img" />
         <div className="margin" style={{height: '88vh'}}>
             <div className="map-map">
                 <MapElem coords={[52.237049, 21.017532]}  />
