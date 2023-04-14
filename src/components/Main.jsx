@@ -160,4 +160,4 @@ const Main = (mainData) => {
 
 export default Main
 
-//twórca John333
+

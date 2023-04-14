@@ -148,4 +148,4 @@ export const MapElem = (coords) => {
   )
 }
 export default MapElem
-// TWÓRCA: BARTOSZ GRZYB MASTER and @janekskr / Legenda: AloeS and @janekskr
+

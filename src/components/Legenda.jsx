@@ -37,4 +37,4 @@ const Legenda = () => {
 
 export default Legenda
 
-//made by john333 🧑🏿‍🦱
+
