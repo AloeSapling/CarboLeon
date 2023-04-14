@@ -79,6 +79,7 @@ function Home() {
     if(navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((pos) => {
         const coords = pos.coords
+        console.log(coords);
         geolocateByCoords(coords.latitude, coords.longitude)
       },() => {
         if (localStorage.getItem("lat") && localStorage.getItem("lon")) {
