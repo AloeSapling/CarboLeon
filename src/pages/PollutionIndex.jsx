@@ -1,22 +1,22 @@
-import React, { useState, lazy } from "react";
-import { useTranslation } from "react-i18next";
+import { useState, lazy } from "react"
+import { useTranslation } from "react-i18next"
 
-import "../styles/pollutionindex.css";
+import "../styles/pollutionindex.css"
 
 const Sponsors = lazy(() => import("../components/Sponsors") ) 
 
 const PollutionIndex = () => {
-  const { t } = useTranslation();
-  document.title = `CarboLeon | ${t("NavBar.PolIndex")}`;
+  const { t } = useTranslation()
+  document.title = `CarboLeon | ${t("NavBar.PolIndex")}`
 
-  const [pollutionLevel, setPollutionLevel] = useState("all");
-  const [all, setAll] = useState(true);
+  const [pollutionLevel, setPollutionLevel] = useState("all")
+  const [all, setAll] = useState(true)
   function selectOnChange(props) {
     if (props === "all") {
-      setAll(true);
+      setAll(true)
     } else {
-      setAll(false);
-      setPollutionLevel(props);
+      setAll(false)
+      setPollutionLevel(props)
     }
   }
     return (
@@ -103,7 +103,7 @@ const PollutionIndex = () => {
         </div>
         <Sponsors />
       </>
-    );
-};
+    )
+}
 
-export default PollutionIndex;
+export default PollutionIndex

@@ -1,21 +1,19 @@
-import React, { lazy, Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Navbar } from "./components";
+import { lazy, Suspense } from "react"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Navbar } from "./components"
 
-const Home = lazy(() => import("./pages/Home"));
-const About = lazy(() => import("./pages/About"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Error = lazy(() => import("./pages/Error"));
-const Map = lazy(() => import("./pages/Map"));
-const PollutionIndex = lazy(() => import("./pages/PollutionIndex"));
+const Home = lazy(() => import("./pages/Home"))
+const About = lazy(() => import("./pages/About"))
+const Contact = lazy(() => import("./pages/Contact"))
+const Error = lazy(() => import("./pages/Error"))
+const Map = lazy(() => import("./pages/Map"))
+const PollutionIndex = lazy(() => import("./pages/PollutionIndex"))
 
 const App = () => {
   return (
     <Suspense
       fallback={
-        <div className="fallback">
-          <div className="loader" />
-        </div>
+        <div className="fallback" />
       }
     >
       <BrowserRouter>
@@ -33,7 +31,7 @@ const App = () => {
         </div>
       </BrowserRouter>
     </Suspense>
-  );
-};
+  )
+}
 
-export default App;
+export default App

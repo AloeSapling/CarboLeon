@@ -1,31 +1,31 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 
 import '../styles/navbar.css'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [color, setColor] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
+  const [color, setColor] = useState(false)
   const changeColor = () => {
     if (window.scrollY > 0) {
-      setColor(true);
+      setColor(true)
     } else {
-      setColor(false);
+      setColor(false)
     }
-  };
+  }
 
-  const { i18n, t } = useTranslation();
+  const { i18n, t } = useTranslation()
 
   function handleClick(lang) {
-    i18n.changeLanguage(lang);
+    i18n.changeLanguage(lang)
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", changeColor);
+    window.addEventListener("scroll", changeColor)
 
     return () => {
-      window.removeEventListener("scroll", changeColor);
+      window.removeEventListener("scroll", changeColor)
     }
   })
   
@@ -41,7 +41,7 @@ const Navbar = () => {
           <button
             className="langBtn"
             onClick={() => {
-              handleClick("en");
+              handleClick("en")
               setIsOpen(false)
             }}
             alt="uk button"
@@ -51,7 +51,7 @@ const Navbar = () => {
           <button
             className="langBtn"
             onClick={() => {
-              handleClick("pl");
+              handleClick("pl")
               setIsOpen(false)
             }}
             alt="poland button"
@@ -112,7 +112,7 @@ const Navbar = () => {
         <div className="bar" />
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

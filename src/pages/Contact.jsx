@@ -1,11 +1,10 @@
-import { useTranslation } from "react-i18next";
-import React from "react";
+import { useTranslation } from "react-i18next"
 
 import '../styles/contact.css'
 
 function Contact() {
-  const { t } = useTranslation();
-  document.title = `CarboLeon | ${t("NavBar.Contact")}`;
+  const { t } = useTranslation()
+  document.title = `CarboLeon | ${t("NavBar.Contact")}`
 
   return (
     <>
@@ -91,7 +90,7 @@ function Contact() {
         <a href="mailto:carbo.leon333@gmail.com" rel="noreferrer" target="_blank" className="contact-email">carbo.leon333@gmail.com</a>
       </div>
     </>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

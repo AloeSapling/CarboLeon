@@ -125,6 +125,7 @@ nav ul li{
         background: rgba(0, 0, 0, 0.7);
         justify-content: flex-start;
         align-items: center;
+        height: 88vh;
         transition: .4s ease-in-out;
     }  
 
