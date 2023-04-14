@@ -82,18 +82,6 @@ function Home() {
   }
 
   useEffect(() => {
-<<<<<<< HEAD
-    if(navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((pos) => {
-        const coords = pos.coords
-        console.log(coords);
-        geolocateByCoords(coords.latitude, coords.longitude)
-      },() => {
-        if (localStorage.getItem("lat") && localStorage.getItem("lon")) {
-          geolocateByCoords(localStorage.getItem("lat"), localStorage.getItem("lon"))
-        } else {
-          geolocateByCoords(50.02440811574995, 19.977215477370695)
-=======
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (pos) => {
@@ -109,7 +97,6 @@ function Home() {
           } else {
             geolocateByCoords(50.02440811574995, 19.977215477370695)
           }
->>>>>>> 102d9b58a2261f980e0b5d4bab3d9c4689d86655
         }
       )
     } else if (localStorage.getItem("lat") && localStorage.getItem("lon")) {
