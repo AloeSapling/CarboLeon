@@ -97,7 +97,7 @@ export const MapElem = (coords) => {
             <TileLayer
               url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"
               subdomains={["mt0", "mt1", "mt2", "mt3"]}
-              attribution='&copy <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               noWrap={true}
             />
           </LayersControl.BaseLayer>
@@ -105,14 +105,14 @@ export const MapElem = (coords) => {
             <TileLayer
               url="http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
               subdomains={["mt0", "mt1", "mt2", "mt3"]}
-              attribution="Tiles &copy Esri &mdash Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
+              attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
               noWrap={true}
             />
           </LayersControl.BaseLayer>
           <LayersControl.BaseLayer name={t("layer.topographicMap")}>
             <TileLayer
               url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
-              attribution='Map data: &copy <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+              attribution='Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
               noWrap={true}
             />
           </LayersControl.BaseLayer>
@@ -120,7 +120,7 @@ export const MapElem = (coords) => {
             <TileLayer
               url="https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png"
               subdomains={["mt0", "mt1", "mt2", "mt3"]}
-              attribution='Map <a href="https://memomaps.de/">memomaps.de</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, map data &copy <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              attribution='Map <a href="https://memomaps.de/">memomaps.de</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               noWrap={true}
             />
           </LayersControl.BaseLayer>
@@ -128,7 +128,7 @@ export const MapElem = (coords) => {
             <TileLayer
               url={`https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=${process.env.REACT_APP_API_KEY_WAQI}`}
               subdomains={["mt0", "mt1", "mt2", "mt3"]}
-              attribution='Map <a href="https://memomaps.de/">memomaps.de</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, map data &copy <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              attribution='Map <a href="https://memomaps.de/">memomaps.de</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               noWrap={true}
             />
           </LayersControl.Overlay>
