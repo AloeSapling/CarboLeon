@@ -15,4 +15,4 @@ We used apis form:
     [**OpenWeather**](https://openweathermap.org/) and 
     [**WAQI**](https://waqi.info/)
 
-remember to dowload all dependencies
+remember to download all dependencies
