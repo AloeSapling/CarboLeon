@@ -15,4 +15,4 @@ We used apis form:
     [**OpenWeather**](https://openweathermap.org/) and 
     [**WAQI**](https://waqi.info/)
 
-remember to download all dependencies
+As it is a react app, you must remember to download all the dependecies and node modules.
