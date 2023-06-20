@@ -1,6 +1,6 @@
 # CarboLeon
 
-[!preview image][image-preview]
+![Alt Website preview][image-preview]
 
 ## Introduction
 
