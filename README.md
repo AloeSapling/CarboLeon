@@ -1,5 +1,7 @@
 # CarboLeon
 
+[!preview image][image-preview]
+
 ## Introduction
 
 Hi !
