@@ -8,10 +8,12 @@ Hi !
 
 This is our project CarboLeon !
 
-We have made it for *"[Zwolnieni z Teorii][zzt]"* competition, and now we want to make it opensource ! If you want to see how the website looks simply go to [https://carboleon.eu/][carboleon-link]. If you would like to use our project or you just want to play with it simply add **.env** file with two variables that contains API keys: 
+We have made it for *[Zwolnieni z Teorii][zzt]* competition, and now we want to make it opensource ! If you want to see how the website looks simply go to [https://carboleon.eu/][carboleon-link]. If you would like to use our project or you just want to play with it simply add `.env` file with two variables that contains API keys: 
 
--    **REACT_APP_API_KEY_OPENWEATHER**     
--    **REACT_APP_API_KEY_WAQI**
+```
+REACT_APP_API_KEY_OPENWEATHER   
+REACT_APP_API_KEY_WAQI
+```
 
 We used apis form:
 
